@@ -1,0 +1,12 @@
+---
+title: "assign01"
+format: html
+---
+
+Note:
+
+This website was created through the use of Quarto in Rstudio. Quarto is a good tool to use because it works well with R, and it makes it simple to publish a professional-looking website on GitHub.
+
+The navigation bar is designed to be clear and easy to use. The "Home" tab gives a description about me and my demonstration making this website, and the "About" tab is a section that gives a quick introduction about me.
+
+Additionally, I've uploaded my resume in the navigation bar, where I present my professional and academic background. This website is not only a place for this specific assignment, but also an opportunity for future use for other projects.

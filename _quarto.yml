@@ -1,0 +1,28 @@
+project:
+  type: website
+  output-dir: docs
+  
+website:
+  title: "Kasra Akbari"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - about.qmd
+      - text: Assignments
+        menu: 
+          - assign01.qmd
+          - assign02.qmd
+
+    right: 
+      - text: CV/Resume
+        menu: 
+          - resume2025.qmd
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true
+editor: visual
+

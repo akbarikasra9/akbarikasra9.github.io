@@ -1,0 +1,11 @@
+---
+title: "Kasra Akbari"
+---
+
+Welcome to the world of data science.
+
+My name is Kasra Akbari, and I am a Social Data Analytics major at the University of Texas at Dallas and I made this website to demonstrate my skills using R and Quarto.
+
+```{r}
+plot(iris, pch=20, cex= .8, col="firebrick")
+```

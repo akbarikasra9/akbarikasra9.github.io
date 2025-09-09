@@ -1,0 +1,11 @@
+---
+title: "About"
+---
+
+About Kasra Akbari
+
+Kasra Akbari is a Social Data Analytics Major at UT Dallas.
+
+```{r}
+1 + 1
+```
