@@ -54,5 +54,47 @@
     "title": "About",
     "section": "",
     "text": "About Kasra Akbari\nKasra Akbari is a Social Data Analytics Major at UT Dallas.\n\n1 + 1\n\n[1] 2"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Kasra Akbari",
+    "section": "",
+    "text": "Welcome to the world of data science.\nMy name is Kasra Akbari, and I am a Social Data Analytics major at the University of Texas at Dallas and I made this website to demonstrate my skills using R and Quarto.\n\nplot(iris, pch=20, cex= .8, col=\"firebrick\")"
+  },
+  {
+    "objectID": "podcast.html",
+    "href": "podcast.html",
+    "title": "podcast",
+    "section": "",
+    "text": "Karen Ng is the Head of Product for a company called HubSpot, and in this podcast, she discusses how data is the currency that AI is running and will continue to run in the future, where there will be a world where AI will grow faster and stronger. However, humans still play an important role in data gathering.\n\n\n\nOne point I find interesting is how Ms. Ng mentions the future looking to be hybrid for people’s work with data. In a hybrid setting, there are three important roles.\nFirst are chatbots, which are useful for answering questions quickly. Secondly, copilots are human assistants, and lastly there are data agents, where their role is to help clean data and help build a context layer.\nMs. Ng discusses the agents’ essential role in a team, where making an agent platform makes everything easier because they provide instructions and information on how to gather and clean data.\n\n\n\n\nAn additional point I found interesting in the podcast are interoffice dynamics because it demonstrates job operations in a hybrid-office team. There are three blueprints on a hybrid-office team.\nThe first blueprint is context-sharing. Where does data come from? How can it be tackled? What solutions come out at the end of the process?\nThe second part is building customer-relations renewals and policies.\nFinally, building the actual team: how do we get the resources? How do we build the team once the tools are received? It has been proven that finding a shared language for data use makes it easy to help and measure customer-relations and its values.\n\n\n\n\nOverall, this podcast has made great points on the functions of a hybrid-team with their uses of AI. It makes many interesting points and raises important questions on the long-term effects of data collection and the future of the use of AI in the data-driven world."
+  },
+  {
+    "objectID": "podcast.html#hybrid-roles-in-data-teams",
+    "href": "podcast.html#hybrid-roles-in-data-teams",
+    "title": "podcast",
+    "section": "",
+    "text": "One point I find interesting is how Ms. Ng mentions the future looking to be hybrid for people’s work with data. In a hybrid setting, there are three important roles.\nFirst are chatbots, which are useful for answering questions quickly. Secondly, copilots are human assistants, and lastly there are data agents, where their role is to help clean data and help build a context layer.\nMs. Ng discusses the agents’ essential role in a team, where making an agent platform makes everything easier because they provide instructions and information on how to gather and clean data."
+  },
+  {
+    "objectID": "podcast.html#interoffice-dynamics-in-hybrid-teams",
+    "href": "podcast.html#interoffice-dynamics-in-hybrid-teams",
+    "title": "podcast",
+    "section": "",
+    "text": "An additional point I found interesting in the podcast are interoffice dynamics because it demonstrates job operations in a hybrid-office team. There are three blueprints on a hybrid-office team.\nThe first blueprint is context-sharing. Where does data come from? How can it be tackled? What solutions come out at the end of the process?\nThe second part is building customer-relations renewals and policies.\nFinally, building the actual team: how do we get the resources? How do we build the team once the tools are received? It has been proven that finding a shared language for data use makes it easy to help and measure customer-relations and its values."
+  },
+  {
+    "objectID": "podcast.html#final-thoughts",
+    "href": "podcast.html#final-thoughts",
+    "title": "podcast",
+    "section": "",
+    "text": "Overall, this podcast has made great points on the functions of a hybrid-team with their uses of AI. It makes many interesting points and raises important questions on the long-term effects of data collection and the future of the use of AI in the data-driven world."
+  },
+  {
+    "objectID": "assign02.html",
+    "href": "assign02.html",
+    "title": "assign02",
+    "section": "",
+    "text": "When it comes to using and gathering data from the Google Trends website and the gtrendsR Package, they differ in multiple ways.\nThe Google Trends method is easy to use because individuals can categorize one column per keyword, and the date coverage can be set manually however they like. One minor setback of this method is that the data must be manually downloaded as CSV files each time, which makes it less efficient and not easily repeatable.\nOn the contrary, the gtrendsR package is a method that requires more work and can be complex, as it involves the use of R codes for automatic data downloads, which also requires coding knowledge. However, the repetitions are simple and can be easily scripted unlike the website, making it more efficient and reproducible once it is set up."
   }
 ]
