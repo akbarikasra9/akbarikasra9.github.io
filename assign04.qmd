@@ -1,0 +1,28 @@
+---
+title: "Assignment 04: Webscraping 1"
+format: html
+---
+
+```{r}
+# Load packages
+library(tidyverse)
+library(rvest)
+
+# Import dataset
+fores <- read_csv("data/fores.csv", col_types = cols(NA...7 = col_skip(), 
+    NA...8 = col_skip(), newdate = col_skip()))
+View(fores)
+foreign_reserves_data <- read_csv("data/foreign_reserves_data.csv", 
+    col_types = cols(Other_Currencies = col_skip(), 
+        Unallocated_Reserves = col_skip(), 
+        `NA` = col_skip()))
+View(foreign_reserves_data)
+
+# Top 5 rows for each data frame
+head(fores, 5)
+head(foreign_reserves_data, 5)
+```
+
+To gain web data for research, the R programming language and its rvest01 package is an efficient approach to data collection, production and web scraping. Using a website's developer tools to copy any Xpaths helps the researcher target and retrieve specific information. However, it is important to know that not every website allows web scraping due to privacy and ethical concerns, so it's best to scrape any public data from public websites as much as possible. When scraping from a website, researchers should identify essential XPaths, integrate them into an R script, and deploy the rvest01 package to gain a structured data from the website. It's important to remove any unnecessary information to make the data look more presentable. These methods are efficient for web-based data collection and preparations for any research analysis.
+
+To demonstrate this process, I apply my method in this assignment by retrieving data from Wikipedia on foreign exchange reserves. I identified two tables of interest, which are "Foreign Exchange Reserves By Country" and "Currency Composition Of Foreign Exchange Reserves" (COFER). The XPaths corresponding to each table were extracted and applied within R to obtain the datasets. To make the data look more presentable, I removed unneccessary data. This created an efficient organization and preparation process of data from a public source, showing the practical use of the rvest01 package in managing web-based data acquisition.

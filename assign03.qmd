@@ -1,0 +1,6 @@
+---
+title: "Assignment 3: Mapping Census Data"
+format: html
+---
+
+![](images/clipboard-11295822.png)

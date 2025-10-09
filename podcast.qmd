@@ -1,0 +1,36 @@
+---
+title: "Podcast Review"
+format: html
+---
+
+# Building & Managing Human+Agent Hybrid Teams with Karen Ng
+
+Karen Ng is the Head of Product for a company called HubSpot, and in this podcast, she discusses how data is the currency that AI is running and will continue to run in the future, where there will be a world where AI will grow faster and stronger. However, humans still play an important role in data gathering.
+
+------------------------------------------------------------------------
+
+## Hybrid Roles in Data Teams
+
+One point I find interesting is how Ms. Ng mentions the future looking to be hybrid for people’s work with data. In a hybrid setting, there are three important roles.
+
+First are chatbots, which are useful for answering questions quickly. Secondly, copilots are human assistants, and lastly there are data agents, where their role is to help clean data and help build a context layer.
+
+Ms. Ng discusses the agents’ essential role in a team, where making an agent platform makes everything easier because they provide instructions and information on how to gather and clean data.
+
+------------------------------------------------------------------------
+
+## Interoffice Dynamics in Hybrid Teams
+
+An additional point I found interesting in the podcast are interoffice dynamics because it demonstrates job operations in a hybrid-office team. There are three blueprints on a hybrid-office team.
+
+The first blueprint is context-sharing. Where does data come from? How can it be tackled? What solutions come out at the end of the process?
+
+The second part is building customer-relations renewals and policies.
+
+Finally, building the actual team: how do we get the resources? How do we build the team once the tools are received? It has been proven that finding a shared language for data use makes it easy to help and measure customer-relations and its values.
+
+------------------------------------------------------------------------
+
+## Final Thoughts
+
+Overall, this podcast has made great points on the functions of a hybrid-team with their uses of AI. It makes many interesting points and raises important questions on the long-term effects of data collection and the future of the use of AI in the data-driven world.

@@ -1,0 +1,114 @@
+[
+  {
+    "objectID": "assign01.html",
+    "href": "assign01.html",
+    "title": "Assignment 1",
+    "section": "",
+    "text": "Note:\nThis website was created through the use of Quarto in Rstudio. Quarto is a good tool to use because it works well with R, and it makes it simple to publish a professional-looking website on GitHub.\nThe navigation bar is designed to be clear and easy to use. The “Home” tab gives a description about me and my demonstration making this website, and the “About” tab is a section that gives a quick introduction about me.\nAdditionally, I’ve uploaded my resume in the navigation bar, where I present my professional and academic background. This website is not only a place for this specific assignment, but also an opportunity for future use for other projects."
+  },
+  {
+    "objectID": "resume2025.html",
+    "href": "resume2025.html",
+    "title": "Resume 2025",
+    "section": "",
+    "text": "Celina, TX, 75009 | (214)-499-8057 | akbarikasra9@gmail.com | LinkedIn\n\n\n\nThe University of Texas at Dallas — B.A. in Political Science\nGraduation: May 2024 | GPA: 3.6\nThe University of Texas at Dallas — M.S. in Social Data Analytics and Research\nExpected Graduation: May 2027\n\n\n\n\nDelegate, UTD Model United Nations — Jan 2023 – May 2024\n- Conducted market research on domestic and international policies, analyzing trends, institutions, and key stakeholders to develop policy solutions.\n- Compiled structured reports evaluating decision-making processes and policy effectiveness.\n- Delivered persuasive arguments in formal discussions, enhancing public speaking, analytical, and presentation skills.\nOfficer, UTD MOVE Texas — Sep 2023 – May 2024\n- Led strategic outreach initiatives to increase voter registration and civic engagement.\n- Organized workshops and data-driven engagement strategies to inform and mobilize communities.\n- Developed targeted marketing strategies to enhance student engagement.\nParticipant, John Marshall Pre-Law Society — Oct 2021 – May 2024\n- Gained expertise in business strategy and research methodologies through mentorship and networking.\n- Conducted policy research and legal analysis, refining critical thinking skills.\n- Developed competitive assessments to evaluate industry trends.\n\n\n\n\nStock Associate, Zara (Frisco, TX) — Dec 2024 – Present\n- Managing inventory operations with efficiency and accuracy in a fast-paced retail environment.\n- Utilizing data tracking systems to improve stock accuracy.\n- Maintaining store organization and product replenishment.\nSales Associate, TJ Maxx (Prosper, TX) — Dec 2022 – Dec 2024\n- Delivered excellent customer service and applied problem-solving skills to address customer concerns.\n- Assisted in merchandising strategies to optimize product visibility.\n- Processed transactions efficiently while maintaining accuracy.\n\n\n\n\n\nModel UN Position Paper Award — Feb 21, 2023 | Portland, OR\n\nModel UN Distinguished Delegation Award — Apr 6, 2023 | New York City, NY\n\nModel UN Outstanding Delegation Award — Nov 24, 2023 | Erfurt, Germany\n\nMath and Coding Camp Certificate of Completion — Aug 20, 2025 | Richardson, TX\n\n\n\n\n\n\nPublic Speaking & Presentation\n\nMicrosoft Office, Google Suite & CRM Tools\n\nQuantitative Research & Data Visualization (Excel)\n\nMultilingual: English, German, Persian\n\nData Analysis & Programming: R, SPSS, STATA"
+  },
+  {
+    "objectID": "resume2025.html#education",
+    "href": "resume2025.html#education",
+    "title": "Resume 2025",
+    "section": "",
+    "text": "The University of Texas at Dallas — B.A. in Political Science\nGraduation: May 2024 | GPA: 3.6\nThe University of Texas at Dallas — M.S. in Social Data Analytics and Research\nExpected Graduation: May 2027"
+  },
+  {
+    "objectID": "resume2025.html#professional-experience",
+    "href": "resume2025.html#professional-experience",
+    "title": "Resume 2025",
+    "section": "",
+    "text": "Delegate, UTD Model United Nations — Jan 2023 – May 2024\n- Conducted market research on domestic and international policies, analyzing trends, institutions, and key stakeholders to develop policy solutions.\n- Compiled structured reports evaluating decision-making processes and policy effectiveness.\n- Delivered persuasive arguments in formal discussions, enhancing public speaking, analytical, and presentation skills.\nOfficer, UTD MOVE Texas — Sep 2023 – May 2024\n- Led strategic outreach initiatives to increase voter registration and civic engagement.\n- Organized workshops and data-driven engagement strategies to inform and mobilize communities.\n- Developed targeted marketing strategies to enhance student engagement.\nParticipant, John Marshall Pre-Law Society — Oct 2021 – May 2024\n- Gained expertise in business strategy and research methodologies through mentorship and networking.\n- Conducted policy research and legal analysis, refining critical thinking skills.\n- Developed competitive assessments to evaluate industry trends."
+  },
+  {
+    "objectID": "resume2025.html#work-experience",
+    "href": "resume2025.html#work-experience",
+    "title": "Resume 2025",
+    "section": "",
+    "text": "Stock Associate, Zara (Frisco, TX) — Dec 2024 – Present\n- Managing inventory operations with efficiency and accuracy in a fast-paced retail environment.\n- Utilizing data tracking systems to improve stock accuracy.\n- Maintaining store organization and product replenishment.\nSales Associate, TJ Maxx (Prosper, TX) — Dec 2022 – Dec 2024\n- Delivered excellent customer service and applied problem-solving skills to address customer concerns.\n- Assisted in merchandising strategies to optimize product visibility.\n- Processed transactions efficiently while maintaining accuracy."
+  },
+  {
+    "objectID": "resume2025.html#achievements",
+    "href": "resume2025.html#achievements",
+    "title": "Resume 2025",
+    "section": "",
+    "text": "Model UN Position Paper Award — Feb 21, 2023 | Portland, OR\n\nModel UN Distinguished Delegation Award — Apr 6, 2023 | New York City, NY\n\nModel UN Outstanding Delegation Award — Nov 24, 2023 | Erfurt, Germany\n\nMath and Coding Camp Certificate of Completion — Aug 20, 2025 | Richardson, TX"
+  },
+  {
+    "objectID": "resume2025.html#skills",
+    "href": "resume2025.html#skills",
+    "title": "Resume 2025",
+    "section": "",
+    "text": "Public Speaking & Presentation\n\nMicrosoft Office, Google Suite & CRM Tools\n\nQuantitative Research & Data Visualization (Excel)\n\nMultilingual: English, German, Persian\n\nData Analysis & Programming: R, SPSS, STATA"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About Kasra Akbari\nKasra Akbari is a Social Data Analytics Major at UT Dallas.\n\n1 + 1\n\n[1] 2"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Kasra Akbari",
+    "section": "",
+    "text": "Welcome to the world of data science.\nMy name is Kasra Akbari, and I am a Social Data Analytics major at the University of Texas at Dallas and I made this website to demonstrate my skills using R and Quarto.\n\nplot(iris, pch=20, cex= .8, col=\"firebrick\")"
+  },
+  {
+    "objectID": "podcast.html",
+    "href": "podcast.html",
+    "title": "Podcast Review",
+    "section": "",
+    "text": "Karen Ng is the Head of Product for a company called HubSpot, and in this podcast, she discusses how data is the currency that AI is running and will continue to run in the future, where there will be a world where AI will grow faster and stronger. However, humans still play an important role in data gathering.\n\n\n\nOne point I find interesting is how Ms. Ng mentions the future looking to be hybrid for people’s work with data. In a hybrid setting, there are three important roles.\nFirst are chatbots, which are useful for answering questions quickly. Secondly, copilots are human assistants, and lastly there are data agents, where their role is to help clean data and help build a context layer.\nMs. Ng discusses the agents’ essential role in a team, where making an agent platform makes everything easier because they provide instructions and information on how to gather and clean data.\n\n\n\n\nAn additional point I found interesting in the podcast are interoffice dynamics because it demonstrates job operations in a hybrid-office team. There are three blueprints on a hybrid-office team.\nThe first blueprint is context-sharing. Where does data come from? How can it be tackled? What solutions come out at the end of the process?\nThe second part is building customer-relations renewals and policies.\nFinally, building the actual team: how do we get the resources? How do we build the team once the tools are received? It has been proven that finding a shared language for data use makes it easy to help and measure customer-relations and its values.\n\n\n\n\nOverall, this podcast has made great points on the functions of a hybrid-team with their uses of AI. It makes many interesting points and raises important questions on the long-term effects of data collection and the future of the use of AI in the data-driven world."
+  },
+  {
+    "objectID": "podcast.html#hybrid-roles-in-data-teams",
+    "href": "podcast.html#hybrid-roles-in-data-teams",
+    "title": "Podcast Review",
+    "section": "",
+    "text": "One point I find interesting is how Ms. Ng mentions the future looking to be hybrid for people’s work with data. In a hybrid setting, there are three important roles.\nFirst are chatbots, which are useful for answering questions quickly. Secondly, copilots are human assistants, and lastly there are data agents, where their role is to help clean data and help build a context layer.\nMs. Ng discusses the agents’ essential role in a team, where making an agent platform makes everything easier because they provide instructions and information on how to gather and clean data."
+  },
+  {
+    "objectID": "podcast.html#interoffice-dynamics-in-hybrid-teams",
+    "href": "podcast.html#interoffice-dynamics-in-hybrid-teams",
+    "title": "Podcast Review",
+    "section": "",
+    "text": "An additional point I found interesting in the podcast are interoffice dynamics because it demonstrates job operations in a hybrid-office team. There are three blueprints on a hybrid-office team.\nThe first blueprint is context-sharing. Where does data come from? How can it be tackled? What solutions come out at the end of the process?\nThe second part is building customer-relations renewals and policies.\nFinally, building the actual team: how do we get the resources? How do we build the team once the tools are received? It has been proven that finding a shared language for data use makes it easy to help and measure customer-relations and its values."
+  },
+  {
+    "objectID": "podcast.html#final-thoughts",
+    "href": "podcast.html#final-thoughts",
+    "title": "Podcast Review",
+    "section": "",
+    "text": "Overall, this podcast has made great points on the functions of a hybrid-team with their uses of AI. It makes many interesting points and raises important questions on the long-term effects of data collection and the future of the use of AI in the data-driven world."
+  },
+  {
+    "objectID": "assign02.html",
+    "href": "assign02.html",
+    "title": "Assignment 2",
+    "section": "",
+    "text": "When it comes to using and gathering data from the Google Trends website and the gtrendsR Package, they differ in multiple ways, but they also share similarity of data visualization. I gathered my data from Google Trends on Trump, Kamala Harris and the elections over the last five years, and used the gtrendsR01.R package to code and provide the data about those topics, as shown on the visual above. The dates, intervals, and graphs from both methods appeared similar, demonstrating spikes of the 2020 and 2024 elections.\nThe Google Trends method is easy to use because individuals can categorize one column per keyword, and the date coverage can be set manually however they like. One minor setback of this method is that the data must be downloaded manually, but it’s still manageable.\nOn the contrary, the gtrendsR package is a method that requires more work and can be complex, as it involves the use of R codes for automatic data downloads, which also requires coding knowledge. However, the repetitions are simple and can be easily scripted unlike the website, making it more efficient and reproducible once it is set up. It’s also easy to code and create a CSV file through the use of R."
+  },
+  {
+    "objectID": "assign03.html",
+    "href": "assign03.html",
+    "title": "assign03",
+    "section": "",
+    "text": "Assignment 3: Mapping Census Data"
+  },
+  {
+    "objectID": "assign04.html",
+    "href": "assign04.html",
+    "title": "Assignment 04: Webscraping 1",
+    "section": "",
+    "text": "# Load packages\nlibrary(tidyverse)\n\n── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──\n✔ dplyr     1.1.4     ✔ readr     2.1.5\n✔ forcats   1.0.0     ✔ stringr   1.5.1\n✔ ggplot2   4.0.0     ✔ tibble    3.3.0\n✔ lubridate 1.9.4     ✔ tidyr     1.3.1\n✔ purrr     1.1.0     \n── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──\n✖ dplyr::filter() masks stats::filter()\n✖ dplyr::lag()    masks stats::lag()\nℹ Use the conflicted package (&lt;http://conflicted.r-lib.org/&gt;) to force all conflicts to become errors\n\nlibrary(rvest)\n\n\nAttaching package: 'rvest'\n\nThe following object is masked from 'package:readr':\n\n    guess_encoding\n\n# Import dataset\nfores &lt;- read_csv(\"data/fores.csv\", col_types = cols(NA...7 = col_skip(), \n    NA...8 = col_skip(), newdate = col_skip()))\n\nNew names:\n• `NA` -&gt; `NA...7`\n• `NA` -&gt; `NA...8`\n\nView(fores)\nforeign_reserves_data &lt;- read_csv(\"data/foreign_reserves_data.csv\", \n    col_types = cols(Other_Currencies = col_skip(), \n        Unallocated_Reserves = col_skip(), \n        `NA` = col_skip()))\nView(foreign_reserves_data)\n\n# Top 5 rows for each data frame\nhead(fores, 5)\n\n# A tibble: 5 × 6\n  Rank                               Country   Forexres     Date  Change Sources\n  &lt;chr&gt;                              &lt;chr&gt;     &lt;chr&gt;        &lt;chr&gt; &lt;chr&gt;  &lt;chr&gt;  \n1 Country(as recognized by the U.N.) Continent Including g… Incl… Exclu… Exclud…\n2 Country(as recognized by the U.N.) Continent millions U.… Chan… milli… Change \n3 China                              Asia      3,643,149    41,0… 3,389… 31,221 \n4 Japan                              Asia      1,324,210    19,7… 1,230… 16,230 \n5 Switzerland                        Europe    1,007,710    13,9… 897,2… 14,490 \n\nhead(foreign_reserves_data, 5)\n\n# A tibble: 5 × 11\n   Year Quarter USD      Euro     JPY    GBP    CAN    CNY    AUD    CHF   Total\n  &lt;dbl&gt; &lt;chr&gt;   &lt;chr&gt;    &lt;chr&gt;    &lt;chr&gt;  &lt;chr&gt;  &lt;chr&gt;  &lt;chr&gt;  &lt;chr&gt;  &lt;chr&gt; &lt;chr&gt;\n1    NA &lt;NA&gt;    USD      EUR      JPY    GBP    CAD    CNY    AUD    CHF   Total\n2  2019 Q1      6,727.09 2,208.79 584.63 495.70 208.64 212.26 181.95 15.27 11,6…\n3  2019 Q2      6,752.28 2,264.88 611.87 497.41 209.85 212.80 186.71 15.53 11,7…\n4  2019 Q3      6,728.85 2,212.74 612.75 492.22 205.44 213.83 182.48 16.20 11,6…\n5  2019 Q4      6,674.83 2,279.30 631.00 511.51 206.71 215.81 187.18 17.36 11,8…\n\n\nTo gain web data for research, the R programming language and its rvest01 package is an efficient approach to data collection, production and web scraping. Using a website’s developer tools to copy any Xpaths helps the researcher target and retrieve specific information. However, it is important to know that not every website allows web scraping due to privacy and ethical concerns, so it’s best to scrape any public data from public websites as much as possible. When scraping from a website, researchers should identify essential XPaths, integrate them into an R script, and deploy the rvest01 package to gain a structured data from the website. It’s important to remove any unnecessary information to make the data look more presentable. These methods are efficient for web-based data collection and preparations for any research analysis.\nTo demonstrate this process, I apply my method in this assignment by retrieving data from Wikipedia on foreign exchange reserves. I identified two tables of interest, which are “Foreign Exchange Reserves By Country” and “Currency Composition Of Foreign Exchange Reserves” (COFER). The XPaths corresponding to each table were extracted and applied within R to obtain the datasets. To make the data look more presentable, I removed unneccessary data. This created an efficient organization and preparation process of data from a public source, showing the practical use of the rvest01 package in managing web-based data acquisition."
+  }
+]
