@@ -116,6 +116,90 @@
     "href": "assign05.html",
     "title": "Assignment 5: Government Data API",
     "section": "",
-    "text": "For this assignment, I used the gov01data.R package to scrape government documents. Two issues have been encountered, but they have been solved. Here is an overview of the scraping process:\n\nFile Format Requirements: The initial challenges involved downloading the dataset listings. I assumed that only the CSV file was required; however, the govdata01 package also relies on the json library for parsing structured data. This was a necessary step because I had to download both the CSV and JSON versions of the dataset to ensure compatibility with the package’s functions and to enable proper data extraction.\nFile Downloads: The other challenges involved downloading the government files. I put in a code where I wanted to download the first ten document files, but the problem was that R was only able to download the first five documents, and the other five failed. At some point, the code worked and downloaded all ten files.\nData Usability and Recommendations: Despite these challenges, the resulting dataset remains usable, as it includes a diverse range of government documents spanning multiple decades. For future development, implementing a more stronger filtering mechanism—such as sorting by date or inplementing metadata-based date filtering—would improve the precision and reproducibility of document retrieval."
+    "text": "For this assignment, I used the gov01data.R package to scrape government documents. Two issues have been encountered, but they have been solved. Here is an overview of the scraping process:\n\nFile Format Requirements: The initial challenges involved downloading the dataset listings. I assumed that only the CSV file was required; however, the govdata01 package relies on both files, which in this case are the CSV and JSON files. This was a necessary step because it ensures compatibility with the package’s functions and to enable proper data extraction.\nFile Downloads: During the download process, the last five entries failed to retrieve successfully due to missing or empty pdf link fields in the JSON data. Items 6-10 were shown as “Failed to download” because those records did not have valid PDF URLs.\nData Usability and Recommendations: Despite these challenges, the resulting dataset remains usable, as it includes a diverse range of government documents from recent times. For future development, implementing a stronger filtering mechanism—such as automatically excluding records with missing pdf link fields—would improve the overall efficiency of the document retrieval process. Below, I’ve pasted my codes and the results.\n\n\n## Scraping Government data\n## Website: GovInfo (https://www.govinfo.gov/app/search/)\n## Prerequisite: Download from website the list of files to be downloaded\n## Designed for background job\n\n# Start with a clean plate and lean loading to save memory\n\ngc(reset=T)\n\n          used (Mb) gc trigger (Mb) max used (Mb)\nNcells  603827 32.3    1374185 73.4   603827 32.3\nVcells 1096251  8.4    8388608 64.0  1096251  8.4\n\n# install.packages(c(\"purrr\", \"magrittr\")\nlibrary(purrr)\nlibrary(magrittr) # Alternatively, load tidyverse\n\n\nAttaching package: 'magrittr'\n\n\nThe following object is masked from 'package:purrr':\n\n    set_names\n\n## Set path for reading the listing and home directory\n## For Windows, use \"c:\"\\\\directory\\\\subdirectory\\\\\n## For Mac, \"/Users/YOURNAME/path/\"\n\nlibrary(rjson)\nlibrary(jsonlite)\n\n\nAttaching package: 'jsonlite'\n\n\nThe following objects are masked from 'package:rjson':\n\n    fromJSON, toJSON\n\n\nThe following object is masked from 'package:purrr':\n\n    flatten\n\nlibrary(data.table)\n\n\nAttaching package: 'data.table'\n\n\nThe following object is masked from 'package:purrr':\n\n    transpose\n\nlibrary(readr)\n\n## CSV method\ngovfiles= read.csv(file=\"data/govinfo-search-results-2025-10-23T01_43_22.csv\", skip=2)\n\n## JSON method\n### rjson\ngf_list &lt;- rjson::fromJSON(file =\"data/govinfo-search-results-2025-10-23T01_43_50.json\")\ngovfile2=dplyr::bind_rows(gf_list$resultSet)\n\n### jsonlite\ngf_list1 = jsonlite::read_json(\"data/govinfo-search-results-2025-10-23T01_43_50.json\")\n\n### Extract the list\ngovfiles3 &lt;- gf_list1$resultSet\n\n### One more step\ngovfiles3 &lt;- gf_list1$resultSet |&gt; dplyr::bind_rows()\n\n\n# Preparing for bulk download of government documents\ngovfiles$id = govfiles$packageId\npdf_govfiles_url = govfiles3$pdfLink\npdf_govfiles_id &lt;- govfiles3$index\n\n# Directory to save the pdf's\n# Be sure to create a folder for storing the pdf's\nsave_dir &lt;- \"datamethods\"\n\n# Function to download pdfs\ndownload_govfiles_pdf &lt;- function(url, id) {\n  tryCatch({\n    destfile &lt;- paste0(save_dir, \"govfiles_\", id, \".pdf\")\n    download.file(url, destfile = destfile, mode = \"wb\") # Binary files\n    Sys.sleep(runif(1, 1, 3))  # Important: random sleep between 1 and 3 seconds to avoid suspicion of \"hacking\" the server\n    return(paste(\"Successfully downloaded:\", url))\n  },\n  error = function(e) {\n    return(paste(\"Failed to download:\", url))\n  })\n}\n# Download files, potentially in parallel for speed\n# Simple timer, can use package like tictoc\n\n## Try ten\nstart.time &lt;- Sys.time()\nmessage(\"Starting downloads\")\n\nStarting downloads\n\nresults &lt;- 1:10 %&gt;% \n  purrr::map_chr(~ download_govfiles_pdf(pdf_govfiles_url[.], pdf_govfiles_id[.]))\n\nWarning in download.file(url, destfile = destfile, mode = \"wb\"): URL '': status\nwas 'URL using bad/illegal format or missing URL'\nWarning in download.file(url, destfile = destfile, mode = \"wb\"): URL '': status\nwas 'URL using bad/illegal format or missing URL'\nWarning in download.file(url, destfile = destfile, mode = \"wb\"): URL '': status\nwas 'URL using bad/illegal format or missing URL'\nWarning in download.file(url, destfile = destfile, mode = \"wb\"): URL '': status\nwas 'URL using bad/illegal format or missing URL'\nWarning in download.file(url, destfile = destfile, mode = \"wb\"): URL '': status\nwas 'URL using bad/illegal format or missing URL'\n\nmessage(\"Finished downloads\")\n\nFinished downloads\n\nend.time &lt;- Sys.time()\ntime.taken &lt;- end.time - start.time\ntime.taken\n\nTime difference of 11.09595 secs\n\n# Print results\nprint(results)\n\n [1] \"Successfully downloaded: https://www.govinfo.gov/content/pkg/CCAL-119hcal-2025-10-21/pdf/CCAL-119hcal-2025-10-21-pt9.pdf\" \n [2] \"Successfully downloaded: https://www.govinfo.gov/content/pkg/CCAL-119hcal-2025-10-21/pdf/CCAL-119hcal-2025-10-21-pt13.pdf\"\n [3] \"Successfully downloaded: https://www.govinfo.gov/content/pkg/CCAL-119hcal-2025-10-21/pdf/CCAL-119hcal-2025-10-21-pt22.pdf\"\n [4] \"Successfully downloaded: https://www.govinfo.gov/content/pkg/CCAL-119scal-2025-10-21/pdf/CCAL-119scal-2025-10-21-pt2.pdf\" \n [5] \"Successfully downloaded: https://www.govinfo.gov/content/pkg/CCAL-119scal-2025-10-21/pdf/CCAL-119scal-2025-10-21-pt6.pdf\" \n [6] \"Failed to download: \"                                                                                                     \n [7] \"Failed to download: \"                                                                                                     \n [8] \"Failed to download: \"                                                                                                     \n [9] \"Failed to download: \"                                                                                                     \n[10] \"Failed to download: \"                                                                                                     \n\n## Exercise: Try downloading 118th Congress Congressional Hearings in Committee on Foreign Affairs?"
+  },
+  {
+    "objectID": "assign05.html#website-govinfo-httpswww.govinfo.govappsearch",
+    "href": "assign05.html#website-govinfo-httpswww.govinfo.govappsearch",
+    "title": "Assignment 5: Government Data API",
+    "section": "Website: GovInfo (https://www.govinfo.gov/app/search/)",
+    "text": "Website: GovInfo (https://www.govinfo.gov/app/search/)"
+  },
+  {
+    "objectID": "assign05.html#prerequisite-download-from-website-the-list-of-files-to-be-downloaded",
+    "href": "assign05.html#prerequisite-download-from-website-the-list-of-files-to-be-downloaded",
+    "title": "Assignment 5: Government Data API",
+    "section": "Prerequisite: Download from website the list of files to be downloaded",
+    "text": "Prerequisite: Download from website the list of files to be downloaded"
+  },
+  {
+    "objectID": "assign05.html#designed-for-background-job",
+    "href": "assign05.html#designed-for-background-job",
+    "title": "Assignment 5: Government Data API",
+    "section": "Designed for background job",
+    "text": "Designed for background job"
+  },
+  {
+    "objectID": "assign05.html#set-path-for-reading-the-listing-and-home-directory",
+    "href": "assign05.html#set-path-for-reading-the-listing-and-home-directory",
+    "title": "Assignment 5: Government Data API",
+    "section": "Set path for reading the listing and home directory",
+    "text": "Set path for reading the listing and home directory"
+  },
+  {
+    "objectID": "assign05.html#for-windows-use-cdirectorysubdirectory",
+    "href": "assign05.html#for-windows-use-cdirectorysubdirectory",
+    "title": "Assignment 5: Government Data API",
+    "section": "For Windows, use “c:”\\directory\\subdirectory\\",
+    "text": "For Windows, use “c:”\\directory\\subdirectory\\"
+  },
+  {
+    "objectID": "assign05.html#for-mac-usersyournamepath",
+    "href": "assign05.html#for-mac-usersyournamepath",
+    "title": "Assignment 5: Government Data API",
+    "section": "For Mac, “/Users/YOURNAME/path/”",
+    "text": "For Mac, “/Users/YOURNAME/path/”\nlibrary(rjson) library(jsonlite) library(data.table) library(readr)"
+  },
+  {
+    "objectID": "assign05.html#csv-method",
+    "href": "assign05.html#csv-method",
+    "title": "Assignment 5: Government Data API",
+    "section": "CSV method",
+    "text": "CSV method\ngovfiles= read.csv(file=“govinfo-search-results-2025-10-22T02_04_09.csv”, skip=2)"
+  },
+  {
+    "objectID": "assign05.html#json-method",
+    "href": "assign05.html#json-method",
+    "title": "Assignment 5: Government Data API",
+    "section": "JSON method",
+    "text": "JSON method\n\nrjson\ngf_list &lt;- rjson::fromJSON(file =“govinfo-search-results-2025-10-22T02_05_19.json”) govfile2=dplyr::bind_rows(gf_list$resultSet)\n\n\njsonlite\ngf_list1 = jsonlite::read_json(“govinfo-search-results-2025-10-22T02_05_19.json”)\n\n\nExtract the list\ngovfiles3 &lt;- gf_list1$resultSet\n\n\nOne more step\ngovfiles3 &lt;- gf_list1$resultSet |&gt; dplyr::bind_rows()"
+  },
+  {
+    "objectID": "assign05.html#try-downloading-one-document",
+    "href": "assign05.html#try-downloading-one-document",
+    "title": "Assignment 5: Government Data API",
+    "section": "Try downloading one document",
+    "text": "Try downloading one document\nstart.time &lt;- Sys.time() message(“Starting downloads”) results &lt;- 1:1 %&gt;% purrr::map_chr(~ download_govfiles_pdf(pdf_govfiles_url[.], pdf_govfiles_id[.])) message(“Finished downloads”) end.time &lt;- Sys.time() time.taken &lt;- end.time - start.time time.taken"
+  },
+  {
+    "objectID": "assign05.html#try-five",
+    "href": "assign05.html#try-five",
+    "title": "Assignment 5: Government Data API",
+    "section": "Try five",
+    "text": "Try five\nstart.time &lt;- Sys.time() message(“Starting downloads”) results &lt;- 1:5 %&gt;% purrr::map_chr(~ download_govfiles_pdf(pdf_govfiles_url[.], pdf_govfiles_id[.])) message(“Finished downloads”) end.time &lt;- Sys.time() time.taken &lt;- end.time - start.time time.taken"
+  },
+  {
+    "objectID": "assign05.html#download-all-caution-this-may-take-a-while-and-lots-of-space",
+    "href": "assign05.html#download-all-caution-this-may-take-a-while-and-lots-of-space",
+    "title": "Assignment 5: Government Data API",
+    "section": "Download all: Caution, this may take a while and lots of space",
+    "text": "Download all: Caution, this may take a while and lots of space\nstart.time &lt;- Sys.time() message(“Starting downloads”) results &lt;- 1:length(pdf_govfiles_url) %&gt;% purrr::map_chr(~ download_govfiles_pdf(pdf_govfiles_url[.], pdf_govfiles_id[.])) message(“Finished downloads”) end.time &lt;- Sys.time() time.taken &lt;- end.time - start.time time.taken"
+  },
+  {
+    "objectID": "assign05.html#exercise-try-downloading-118th-congress-congressional-hearings-in-committee-on-foreign-affairs",
+    "href": "assign05.html#exercise-try-downloading-118th-congress-congressional-hearings-in-committee-on-foreign-affairs",
+    "title": "Assignment 5: Government Data API",
+    "section": "Exercise: Try downloading 118th Congress Congressional Hearings in Committee on Foreign Affairs?",
+    "text": "Exercise: Try downloading 118th Congress Congressional Hearings in Committee on Foreign Affairs?"
   }
 ]
