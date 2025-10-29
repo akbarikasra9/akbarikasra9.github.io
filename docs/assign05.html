@@ -215,8 +215,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>For this assignment, I used the gov01data.R package to scrape government documents. Two issues have been encountered, but they have been solved. Here is an overview of the scraping process:</p>
 <ol type="1">
 <li><p>File Format Requirements: The initial challenges involved downloading the dataset listings. I assumed that only the CSV file was required; however, the govdata01 package relies on both files, which in this case are the CSV and JSON files. This was a necessary step because it ensures compatibility with the package’s functions and to enable proper data extraction.</p></li>
-<li><p>File Downloads: During the download process, the last five entries failed to retrieve successfully due to missing or empty pdf link fields in the JSON data. Items 6-10 were shown as “Failed to download” because those records did not have valid PDF URLs.</p></li>
-<li><p>Data Usability and Recommendations: Despite these challenges, the resulting dataset remains usable, as it includes a diverse range of government documents from recent times. For future development, implementing a stronger filtering mechanism—such as automatically excluding records with missing pdf link fields—would improve the overall efficiency of the document retrieval process. Below, I’ve pasted my codes and the results.</p></li>
+<li><p>File Downloads: During the download process, the last five entries failed to retrieve successfully due to missing or empty pdf link fields in the JSON data. Items 6-10 were shown as “Failed to download” because those records did not have valid PDF URLs. However, I downloaded new CSV ans JSON files and the 10 downloads worked.</p></li>
+<li><p>Data Usability and Recommendations: Despite these challenges, the resulting dataset remains usable, as it includes a diverse range of government documents from recent times. For future development, implementing a stronger filtering mechanism—such as automatically excluding records with missing pdf link fields—would improve the overall efficiency of the document retrieval process. Below, I’ve pasted my codes and the twenty files I’ve downloaded.</p></li>
 </ol>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="do">## Scraping Government data</span></span>
@@ -229,8 +229,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="fu">gc</span>(<span class="at">reset=</span>T)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>          used (Mb) gc trigger (Mb) max used (Mb)
-Ncells  603827 32.3    1374185 73.4   603827 32.3
-Vcells 1096251  8.4    8388608 64.0  1096251  8.4</code></pre>
+Ncells  603816 32.3    1374154 73.4   603816 32.3
+Vcells 1096228  8.4    8388608 64.0  1096228  8.4</code></pre>
 </div>
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># install.packages(c("purrr", "magrittr")</span></span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(purrr)</span>
@@ -277,15 +277,15 @@ Attaching package: 'data.table'</code></pre>
 <div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(readr)</span>
 <span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a><span class="do">## CSV method</span></span>
-<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a>govfiles<span class="ot">=</span> <span class="fu">read.csv</span>(<span class="at">file=</span><span class="st">"data/govinfo-search-results-2025-10-23T01_43_22.csv"</span>, <span class="at">skip=</span><span class="dv">2</span>)</span>
+<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a>govfiles<span class="ot">=</span> <span class="fu">read.csv</span>(<span class="at">file=</span><span class="st">"data/govinfo-search-results-2025-10-29T19_06_10.csv"</span>, <span class="at">skip=</span><span class="dv">2</span>)</span>
 <span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb13-6"><a href="#cb13-6" aria-hidden="true" tabindex="-1"></a><span class="do">## JSON method</span></span>
 <span id="cb13-7"><a href="#cb13-7" aria-hidden="true" tabindex="-1"></a><span class="do">### rjson</span></span>
-<span id="cb13-8"><a href="#cb13-8" aria-hidden="true" tabindex="-1"></a>gf_list <span class="ot">&lt;-</span> rjson<span class="sc">::</span><span class="fu">fromJSON</span>(<span class="at">file =</span><span class="st">"data/govinfo-search-results-2025-10-23T01_43_50.json"</span>)</span>
+<span id="cb13-8"><a href="#cb13-8" aria-hidden="true" tabindex="-1"></a>gf_list <span class="ot">&lt;-</span> rjson<span class="sc">::</span><span class="fu">fromJSON</span>(<span class="at">file =</span><span class="st">"data/govinfo-search-results-2025-10-29T19_06_42.json"</span>)</span>
 <span id="cb13-9"><a href="#cb13-9" aria-hidden="true" tabindex="-1"></a>govfile2<span class="ot">=</span>dplyr<span class="sc">::</span><span class="fu">bind_rows</span>(gf_list<span class="sc">$</span>resultSet)</span>
 <span id="cb13-10"><a href="#cb13-10" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb13-11"><a href="#cb13-11" aria-hidden="true" tabindex="-1"></a><span class="do">### jsonlite</span></span>
-<span id="cb13-12"><a href="#cb13-12" aria-hidden="true" tabindex="-1"></a>gf_list1 <span class="ot">=</span> jsonlite<span class="sc">::</span><span class="fu">read_json</span>(<span class="st">"data/govinfo-search-results-2025-10-23T01_43_50.json"</span>)</span>
+<span id="cb13-12"><a href="#cb13-12" aria-hidden="true" tabindex="-1"></a>gf_list1 <span class="ot">=</span> jsonlite<span class="sc">::</span><span class="fu">read_json</span>(<span class="st">"data/govinfo-search-results-2025-10-29T19_06_42.json"</span>)</span>
 <span id="cb13-13"><a href="#cb13-13" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb13-14"><a href="#cb13-14" aria-hidden="true" tabindex="-1"></a><span class="do">### Extract the list</span></span>
 <span id="cb13-15"><a href="#cb13-15" aria-hidden="true" tabindex="-1"></a>govfiles3 <span class="ot">&lt;-</span> gf_list1<span class="sc">$</span>resultSet</span>
@@ -324,18 +324,10 @@ Attaching package: 'data.table'</code></pre>
 <div class="cell-output cell-output-stderr">
 <pre><code>Starting downloads</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>results <span class="ot">&lt;-</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">10</span> <span class="sc">%&gt;%</span> </span>
+<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>results <span class="ot">&lt;-</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">20</span> <span class="sc">%&gt;%</span> </span>
 <span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a>  purrr<span class="sc">::</span><span class="fu">map_chr</span>(<span class="sc">~</span> <span class="fu">download_govfiles_pdf</span>(pdf_govfiles_url[.], pdf_govfiles_id[.]))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stderr">
 <pre><code>Warning in download.file(url, destfile = destfile, mode = "wb"): URL '': status
-was 'URL using bad/illegal format or missing URL'
-Warning in download.file(url, destfile = destfile, mode = "wb"): URL '': status
-was 'URL using bad/illegal format or missing URL'
-Warning in download.file(url, destfile = destfile, mode = "wb"): URL '': status
-was 'URL using bad/illegal format or missing URL'
-Warning in download.file(url, destfile = destfile, mode = "wb"): URL '': status
-was 'URL using bad/illegal format or missing URL'
-Warning in download.file(url, destfile = destfile, mode = "wb"): URL '': status
 was 'URL using bad/illegal format or missing URL'</code></pre>
 </div>
 <div class="sourceCode cell-code" id="cb17"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="fu">message</span>(<span class="st">"Finished downloads"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -346,23 +338,32 @@ was 'URL using bad/illegal format or missing URL'</code></pre>
 <span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a>time.taken <span class="ot">&lt;-</span> end.time <span class="sc">-</span> start.time</span>
 <span id="cb19-3"><a href="#cb19-3" aria-hidden="true" tabindex="-1"></a>time.taken</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>Time difference of 11.09595 secs</code></pre>
+<pre><code>Time difference of 53.70565 secs</code></pre>
 </div>
 <div class="sourceCode cell-code" id="cb21"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Print results</span></span>
 <span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(results)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code> [1] "Successfully downloaded: https://www.govinfo.gov/content/pkg/CCAL-119hcal-2025-10-21/pdf/CCAL-119hcal-2025-10-21-pt9.pdf" 
- [2] "Successfully downloaded: https://www.govinfo.gov/content/pkg/CCAL-119hcal-2025-10-21/pdf/CCAL-119hcal-2025-10-21-pt13.pdf"
- [3] "Successfully downloaded: https://www.govinfo.gov/content/pkg/CCAL-119hcal-2025-10-21/pdf/CCAL-119hcal-2025-10-21-pt22.pdf"
- [4] "Successfully downloaded: https://www.govinfo.gov/content/pkg/CCAL-119scal-2025-10-21/pdf/CCAL-119scal-2025-10-21-pt2.pdf" 
- [5] "Successfully downloaded: https://www.govinfo.gov/content/pkg/CCAL-119scal-2025-10-21/pdf/CCAL-119scal-2025-10-21-pt6.pdf" 
- [6] "Failed to download: "                                                                                                     
- [7] "Failed to download: "                                                                                                     
- [8] "Failed to download: "                                                                                                     
- [9] "Failed to download: "                                                                                                     
-[10] "Failed to download: "                                                                                                     </code></pre>
+<pre><code> [1] "Successfully downloaded: https://www.govinfo.gov/content/pkg/CCAL-119scal-2025-10-29/pdf/CCAL-119scal-2025-10-29-pt2.pdf" 
+ [2] "Successfully downloaded: https://www.govinfo.gov/content/pkg/CCAL-119scal-2025-10-29/pdf/CCAL-119scal-2025-10-29-pt6.pdf" 
+ [3] "Failed to download: "                                                                                                     
+ [4] "Successfully downloaded: https://www.govinfo.gov/content/pkg/CCAL-119hcal-2025-10-28/pdf/CCAL-119hcal-2025-10-28-pt9.pdf" 
+ [5] "Successfully downloaded: https://www.govinfo.gov/content/pkg/CCAL-119hcal-2025-10-28/pdf/CCAL-119hcal-2025-10-28-pt13.pdf"
+ [6] "Successfully downloaded: https://www.govinfo.gov/content/pkg/CCAL-119hcal-2025-10-28/pdf/CCAL-119hcal-2025-10-28-pt22.pdf"
+ [7] "Successfully downloaded: https://www.govinfo.gov/content/pkg/BILLS-119s3056is/pdf/BILLS-119s3056is.pdf"                   
+ [8] "Successfully downloaded: https://www.govinfo.gov/content/pkg/CREC-2025-10-27/pdf/CREC-2025-10-27-pt1-PgS7753-4.pdf"       
+ [9] "Successfully downloaded: https://www.govinfo.gov/content/pkg/CCAL-119scal-2025-10-27/pdf/CCAL-119scal-2025-10-27-pt2.pdf" 
+[10] "Successfully downloaded: https://www.govinfo.gov/content/pkg/CCAL-119scal-2025-10-27/pdf/CCAL-119scal-2025-10-27-pt6.pdf" 
+[11] "Successfully downloaded: https://www.govinfo.gov/content/pkg/CCAL-119hcal-2025-10-24/pdf/CCAL-119hcal-2025-10-24-pt9.pdf" 
+[12] "Successfully downloaded: https://www.govinfo.gov/content/pkg/CCAL-119hcal-2025-10-24/pdf/CCAL-119hcal-2025-10-24-pt13.pdf"
+[13] "Successfully downloaded: https://www.govinfo.gov/content/pkg/CREC-2025-10-23/pdf/CREC-2025-10-23-pt1-PgD1072.pdf"         
+[14] "Successfully downloaded: https://www.govinfo.gov/content/pkg/CREC-2025-10-23/pdf/CREC-2025-10-23-pt1-PgS7722-9.pdf"       
+[15] "Successfully downloaded: https://www.govinfo.gov/content/pkg/CREC-2025-10-23/pdf/CREC-2025-10-23-pt1-PgS7729-5.pdf"       
+[16] "Successfully downloaded: https://www.govinfo.gov/content/pkg/CREC-2025-10-23/pdf/CREC-2025-10-23-pt1-PgS7730.pdf"         
+[17] "Successfully downloaded: https://www.govinfo.gov/content/pkg/CREC-2025-10-23/pdf/CREC-2025-10-23-pt1-PgS7732.pdf"         
+[18] "Successfully downloaded: https://www.govinfo.gov/content/pkg/CREC-2025-10-23/pdf/CREC-2025-10-23-pt1-PgS7733-3.pdf"       
+[19] "Successfully downloaded: https://www.govinfo.gov/content/pkg/CCAL-119scal-2025-10-23/pdf/CCAL-119scal-2025-10-23-pt2.pdf" 
+[20] "Successfully downloaded: https://www.govinfo.gov/content/pkg/CCAL-119scal-2025-10-23/pdf/CCAL-119scal-2025-10-23-pt6.pdf" </code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb23"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a><span class="do">## Exercise: Try downloading 118th Congress Congressional Hearings in Committee on Foreign Affairs?</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 
 
