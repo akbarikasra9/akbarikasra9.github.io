@@ -154,6 +154,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
  <span class="dropdown-text">Assignment 4: Webscraping 1</span></a>
   </li>  
         <li>
+    <a class="dropdown-item" href="./assign05.html">
+ <span class="dropdown-text">Assignment 5: Government Data API</span></a>
+  </li>  
+        <li>
     <a class="dropdown-item" href="./podcast.html">
  <span class="dropdown-text">Podcast Review</span></a>
   </li>  
@@ -212,6 +216,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Load packages</span></span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stderr">
+<pre><code>Warning: package 'tidyverse' was built under R version 4.5.2</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: package 'lubridate' was built under R version 4.5.2</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
 <pre><code>── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
 ✔ dplyr     1.1.4     ✔ readr     2.1.5
 ✔ forcats   1.0.0     ✔ stringr   1.5.1
@@ -223,7 +233,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 ✖ dplyr::lag()    masks stats::lag()
 ℹ Use the conflicted package (&lt;http://conflicted.r-lib.org/&gt;) to force all conflicts to become errors</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(rvest)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(rvest)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stderr">
 <pre><code>
 Attaching package: 'rvest'
@@ -232,23 +242,23 @@ The following object is masked from 'package:readr':
 
     guess_encoding</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Import dataset</span></span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>fores <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="st">"data/fores.csv"</span>, <span class="at">col_types =</span> <span class="fu">cols</span>(<span class="at">NA...7 =</span> <span class="fu">col_skip</span>(), </span>
-<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>    <span class="at">NA...8 =</span> <span class="fu">col_skip</span>(), <span class="at">newdate =</span> <span class="fu">col_skip</span>()))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Import dataset</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>fores <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="st">"data/fores.csv"</span>, <span class="at">col_types =</span> <span class="fu">cols</span>(<span class="at">NA...7 =</span> <span class="fu">col_skip</span>(), </span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>    <span class="at">NA...8 =</span> <span class="fu">col_skip</span>(), <span class="at">newdate =</span> <span class="fu">col_skip</span>()))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stderr">
 <pre><code>New names:
 • `NA` -&gt; `NA...7`
 • `NA` -&gt; `NA...8`</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">View</span>(fores)</span>
-<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>foreign_reserves_data <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="st">"data/foreign_reserves_data.csv"</span>, </span>
-<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>    <span class="at">col_types =</span> <span class="fu">cols</span>(<span class="at">Other_Currencies =</span> <span class="fu">col_skip</span>(), </span>
-<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>        <span class="at">Unallocated_Reserves =</span> <span class="fu">col_skip</span>(), </span>
-<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>        <span class="st">`</span><span class="at">NA</span><span class="st">`</span> <span class="ot">=</span> <span class="fu">col_skip</span>()))</span>
-<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a><span class="fu">View</span>(foreign_reserves_data)</span>
-<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a><span class="co"># Top 5 rows for each data frame</span></span>
-<span id="cb7-9"><a href="#cb7-9" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(fores, <span class="dv">5</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="fu">View</span>(fores)</span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>foreign_reserves_data <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="st">"data/foreign_reserves_data.csv"</span>, </span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>    <span class="at">col_types =</span> <span class="fu">cols</span>(<span class="at">Other_Currencies =</span> <span class="fu">col_skip</span>(), </span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>        <span class="at">Unallocated_Reserves =</span> <span class="fu">col_skip</span>(), </span>
+<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a>        <span class="st">`</span><span class="at">NA</span><span class="st">`</span> <span class="ot">=</span> <span class="fu">col_skip</span>()))</span>
+<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a><span class="fu">View</span>(foreign_reserves_data)</span>
+<span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-8"><a href="#cb9-8" aria-hidden="true" tabindex="-1"></a><span class="co"># Top 5 rows for each data frame</span></span>
+<span id="cb9-9"><a href="#cb9-9" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(fores, <span class="dv">5</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 5 × 6
   Rank                               Country   Forexres     Date  Change Sources
@@ -259,7 +269,7 @@ The following object is masked from 'package:readr':
 4 Japan                              Asia      1,324,210    19,7… 1,230… 16,230 
 5 Switzerland                        Europe    1,007,710    13,9… 897,2… 14,490 </code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(foreign_reserves_data, <span class="dv">5</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(foreign_reserves_data, <span class="dv">5</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 5 × 11
    Year Quarter USD      Euro     JPY    GBP    CAN    CNY    AUD    CHF   Total
@@ -271,8 +281,8 @@ The following object is masked from 'package:readr':
 5  2019 Q4      6,674.83 2,279.30 631.00 511.51 206.71 215.81 187.18 17.36 11,8…</code></pre>
 </div>
 </div>
-<p>To gain web data for research, the R programming language and its rvest01 package is an efficient approach to data collection, production and web scraping. Using a website’s developer tools to copy any Xpaths helps the researcher target and retrieve specific information. However, it is important to know that not every website allows web scraping due to privacy and ethical concerns, so it’s best to scrape any public data from public websites as much as possible. When scraping from a website, researchers should identify essential XPaths, integrate them into an R script, and deploy the rvest01 package to gain a structured data from the website. It’s important to remove any unnecessary information to make the data look more presentable. These methods are efficient for web-based data collection and preparations for any research analysis.</p>
-<p>To demonstrate this process, I apply my method in this assignment by retrieving data from Wikipedia on foreign exchange reserves. I identified two tables of interest, which are “Foreign Exchange Reserves By Country” and “Currency Composition Of Foreign Exchange Reserves” (COFER). The XPaths corresponding to each table were extracted and applied within R to obtain the datasets. To make the data look more presentable, I removed unneccessary data. This created an efficient organization and preparation process of data from a public source, showing the practical use of the rvest01 package in managing web-based data acquisition.</p>
+<p>To gain web data for research, the R programming language and its rvest01 package is an efficient approach to data collection, production and web scraping. Using a website’s developer tools to copy any Xpaths helps the researcher target and retrieve specific information. However, it is important to know that not every website allows web scraping due to privacy and ethical concerns, so it’s best to scrape any public data from public websites as much as possible. When scraping from a website, researchers should identify essential XPaths, integrate them into an R script, and deploy the rvest package to gain a structured data from the website. It’s important to remove any unnecessary information to make the data look more presentable. These methods are efficient for web-based data collection and preparations for any research analysis.</p>
+<p>To demonstrate this process, I apply my method in this assignment by retrieving data from Wikipedia on foreign exchange reserves. In this assignment I used an AI model, specifically ChatGBT to assist me with creating a dataframe and generate the top 5 cases. I identified two tables of interest, which are “Foreign Exchange Reserves By Country” and “Currency Composition Of Foreign Exchange Reserves” (COFER). The XPaths corresponding to each table were extracted and applied within R to obtain the datasets. To make the data look more presentable, I removed unneccessary data. This created an efficient organization and preparation process of data from a public source, showing the practical use of the rvest01 package in managing web-based data acquisition.</p>
 
 
 
