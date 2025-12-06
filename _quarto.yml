@@ -3,7 +3,7 @@ project:
   output-dir: docs
   
 website:
-  title: "Kasra Akbari"
+  title: "Akbari Kasra"
   navbar:
     left:
       - href: index.qmd
@@ -15,6 +15,9 @@ website:
           - assign02.qmd
           - assign03.qmd
           - assign04.qmd
+          - assign05.qmd
+          - assign06p1.qmd
+          - assign06p2.qmd
           - podcast.qmd
 
     right: 
