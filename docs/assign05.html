@@ -223,9 +223,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>For this assignment, I used the gov01data.R package to scrape government documents. Three issues have been encountered, but they have been solved. Here is an overview of the scraping process:</p>
 <ol type="1">
 <li><p>File Format Requirements: The initial challenges involved downloading the dataset listings. I assumed that only the CSV file was required; however, the govdata01 package relies on both files, which in this case are the CSV and JSON files. This was a necessary step because it ensures compatibility with the package’s functions and to enable proper data extraction.</p></li>
-<li><p>Setting the File Directory<strong>:</strong> Before initiating the downloads, the CSV and JSON files were not being recognized because no designated directory existed for file storage. With the guidance of AI, specifially ChatGBT, I determined that a dedicated folder was required to properly organize and access the data files. As a result, I created a folder named <em>data</em> to store the CSV and JSON files, allowing the subsequent download and processing steps to be completed successfully.</p></li>
+<li><p>Setting the File Directory<strong>:</strong> Before starting with the downloads, the CSV and JSON files were not being recognized because there was no designated directory for it. With the guidance of AI, specifially ChatGBT, I determined that a dedicated folder was required to properly organize and access the data files. As a result, I used my folder that I created for assignment 4 named <em>data</em>, and stored the CSV and JSON files, which allowed the download and processing steps to be completed successfully.</p></li>
 <li><p>File Downloads<strong>:</strong> During the first download process, the last five entries failed because the corresponding JSON records contained missing or empty PDF link fields. As a result, items 6–10 were labeled “Failed to download” due to the absence of valid PDF URLs. To resolve this issue, I obtained updated CSV and JSON files and attempted the process again with 20 government records. On the second attempt, 19 of the 20 files downloaded successfully, with only the third file failing due to a persistent missing PDF reference.</p></li>
-<li><p>Data Usability and Recommendations: Despite these challenges, the resulting dataset remains usable, as it includes a diverse range of government documents from recent times. For future development, implementing a stronger filtering mechanism—such as automatically excluding records with missing pdf link fields—would improve the overall efficiency of the document retrieval process. Below, I’ve pasted my codes and the twenty files I’ve downloaded.</p></li>
+<li><p>Data Usability and Recommendations: Despite these challenges, the resulting dataset remains usable, as it includes a diverse range of government documents from recent times. For future development, implementing a stronger filtering mechanism—such as automatically excluding records with missing pdf link fields—would improve the overall efficiency of the document retrieval process. Below, I’ve pasted my codes where 19 out of 20 government files were downloaded.</p></li>
 </ol>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="do">## Scraping Government data</span></span>
@@ -239,7 +239,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="cell-output cell-output-stdout">
 <pre><code>          used (Mb) gc trigger (Mb) max used (Mb)
 Ncells  603820 32.3    1374165 73.4   603820 32.3
-Vcells 1096605  8.4    8388608 64.0  1096605  8.4</code></pre>
+Vcells 1096622  8.4    8388608 64.0  1096622  8.4</code></pre>
 </div>
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># install.packages(c("purrr", "magrittr")</span></span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(purrr)</span>
@@ -347,7 +347,7 @@ was 'URL using bad/illegal format or missing URL'</code></pre>
 <span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a>time.taken <span class="ot">&lt;-</span> end.time <span class="sc">-</span> start.time</span>
 <span id="cb19-3"><a href="#cb19-3" aria-hidden="true" tabindex="-1"></a>time.taken</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>Time difference of 45.94484 secs</code></pre>
+<pre><code>Time difference of 42.69276 secs</code></pre>
 </div>
 <div class="sourceCode cell-code" id="cb21"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Print results</span></span>
 <span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(results)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
