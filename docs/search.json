@@ -53,14 +53,14 @@
     "href": "about.html",
     "title": "About",
     "section": "",
-    "text": "Kasra Akbari is an Austrian-Iranian, who moved with his family to the United States in 2014. He pursued his middle school, high school and college education in Texas, and is now a Social Data Analytics Major at UT Dallas, expected to graduate in May 2027.\n\n1 + 1\n\n[1] 2"
+    "text": "Akbari Kasra is an Austrian-Iranian, who moved with his family to the United States in 2014. He pursued his middle school, high school and college education in Texas, and is now a Social Data Analytics Major at UT Dallas, expected to graduate in May 2027.\n\n1 + 1\n\n[1] 2"
   },
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Kasra Akbari",
+    "title": "Akbari Kasra",
     "section": "",
-    "text": "Welcome to the world of data science.\nMy name is Kasra Akbari, and I am a Social Data Analytics major at the University of Texas at Dallas and I made this website to demonstrate my skills using R and Quarto.\n\nplot(iris, pch=20, cex= .8, col=\"firebrick\")"
+    "text": "Welcome to the world of data science.\nMy name is Akbari Kasra, and I am a Social Data Analytics major at the University of Texas at Dallas and I made this website to demonstrate my skills using R and Quarto.\n\nplot(iris, pch=20, cex= .8, col=\"firebrick\")"
   },
   {
     "objectID": "podcast.html",
