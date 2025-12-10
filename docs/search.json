@@ -4,7 +4,7 @@
     "href": "assign01.html",
     "title": "Assignment 1: Creating a Quarto Website",
     "section": "",
-    "text": "Note:\nThis website was created through the use of Quarto in Rstudio. Quarto is a good tool to use because it works well with R, and it makes it simple to publish a professional-looking website on GitHub.\nThe navigation bar is designed to be clear and easy to use. The “Home” tab gives a description about me and my demonstration making this website. The “Assignment” tab is where I post my assignments for this class. Additionally, the “About” tab is a section that gives a quick introduction about me.\nFinally, I’ve uploaded my resume in the navigation bar, where I present my professional and academic background. This website is not only a place for this specific assignment, but also an opportunity for future use for other projects."
+    "text": "Note:\nThis website was created through the use of Quarto in Rstudio. Quarto is a good tool to use because it works well with R, and it makes it simple to publish a professional-looking website on GitHub.\nThe navigation bar is designed to be clear and easy to use. The “Home” tab gives a description about me and my demonstration making this website. The “Assignment” tab is where I post my assignments for this class. Additionally, the “About” tab is a section that gives a quick introduction about me.\nFinally, I’ve uploaded my resume in the navigation bar, where I used ChatGBT as an assistance tool to make it look more presentable to illustrate my professional and academic background. This website is not only a place for this specific assignment, but also an opportunity for future use for other projects."
   },
   {
     "objectID": "resume2025.html",
