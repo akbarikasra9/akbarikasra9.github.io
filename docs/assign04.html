@@ -2,12 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.32">
+<meta name="generator" content="quarto-1.8.25">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Assignment 4: Webscraping 1 – Akbari Kasra</title>
+<title>Assignment 4: Webscraping 1 – Kasra Akbari</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -67,14 +67,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <meta name="quarto:offset" content="./">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-dfb324f25d9b1687192fa8be62ac8f9c.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-d1897f967d4dc882e6c3c4aa210b578e.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -114,8 +115,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
+    <a href="./index.html" class="navbar-brand navbar-brand-logo">
+    </a>
     <a class="navbar-brand" href="./index.html">
-    <span class="navbar-title">Akbari Kasra</span>
+    <span class="navbar-title">Kasra Akbari</span>
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -132,11 +135,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <a class="nav-link" href="./about.html"> 
 <span class="menu-text">About</span></a>
   </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./research.html"> 
+<span class="menu-text">Research</span></a>
+  </li>  
   <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-assignments" role="link" data-bs-toggle="dropdown" aria-expanded="false">
- <span class="menu-text">Assignments</span>
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-assignments-for-data-methods" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Assignments for Data Methods</span>
     </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-assignments">    
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-assignments-for-data-methods">    
         <li>
     <a class="dropdown-item" href="./assign01.html">
  <span class="dropdown-text">Assignment 1: Creating a Quarto Website</span></a>
@@ -171,6 +178,17 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </li>  
     </ul>
   </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-assignments-for-knowledge-mining" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Assignments for Knowledge Mining</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-assignments-for-knowledge-mining">    
+        <li>
+    <a class="dropdown-item" href="./assignment1.html">
+ <span class="dropdown-text">Assignment 1</span></a>
+  </li>  
+    </ul>
+  </li>
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item dropdown ">
@@ -180,7 +198,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-cvresume">    
         <li>
     <a class="dropdown-item" href="./resume2025.html">
- <span class="dropdown-text">Resume 2025</span></a>
+ <span class="dropdown-text">Resume 2026</span></a>
   </li>  
     </ul>
   </li>
@@ -223,8 +241,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>To gain web data for research, the R programming language and its rvest01 package is an efficient approach to data collection, production and web scraping. Using a website’s developer tools to copy any Xpaths helps the researcher target and retrieve specific information. However, it is important to know that not every website allows web scraping due to privacy and ethical concerns, so it’s best to scrape any public data from public websites as much as possible. When scraping from a website, researchers should identify essential XPaths, integrate them into an R script, and deploy the rvest package to gain a structured data from the website. It’s important to remove any unnecessary information to make the data look more presentable. These methods are efficient for web-based data collection and preparations for any research analysis.</p>
 <p>To demonstrate this process, I apply my method in this assignment by retrieving data from Wikipedia on foreign exchange reserves. I identified two tables of interest, which are “Foreign Exchange Reserves By Country” and “Currency Composition Of Foreign Exchange Reserves” (COFER). The XPaths corresponding to each table were extracted and applied within R to obtain the datasets. I used the rvest_wiki01.R package that was provided to us by Dr.&nbsp;Karl Ho and implemented the Xpaths into the code and gave me the table I needed. However, I didn’t know how to paste the tables into the quarto file. Fortunately, Dr.&nbsp;Ho gave me the idea of creating a dataframe and using the head() function to generate the top five cases of the scraped table. With this recommendation, I asked ChatGBT to assist me with how to create a dataframe and generate the top 5 cases. With the help of AI, I used the downloaded CSV files and imported it into the quarto page, and made sure the data looks more presentable by removing uneccessary rows. All of these steps helped me create a more cleaner and organized table. Overall, this is an efficient way of organizing, processing, and preparing data from a public source, showing the practical use of the rvest01 package in managing web-based data acquisition. The codes and the work done are pasted below.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Load packages</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Load packages</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stderr">
 <pre><code>Warning: package 'tidyverse' was built under R version 4.5.2</code></pre>
 </div>
@@ -243,7 +261,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 ✖ dplyr::lag()    masks stats::lag()
 ℹ Use the conflicted package (&lt;http://conflicted.r-lib.org/&gt;) to force all conflicts to become errors</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(rvest)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(rvest)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stderr">
 <pre><code>
 Attaching package: 'rvest'
@@ -252,15 +270,15 @@ The following object is masked from 'package:readr':
 
     guess_encoding</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Import dataset</span></span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Import dataset</span></span>
 <span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>fores <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="st">"data/fores.csv"</span>, <span class="at">col_types =</span> <span class="fu">cols</span>(<span class="at">NA...7 =</span> <span class="fu">col_skip</span>(), </span>
-<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>    <span class="at">NA...8 =</span> <span class="fu">col_skip</span>(), <span class="at">newdate =</span> <span class="fu">col_skip</span>()))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>    <span class="at">NA...8 =</span> <span class="fu">col_skip</span>(), <span class="at">newdate =</span> <span class="fu">col_skip</span>()))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stderr">
 <pre><code>New names:
 • `NA` -&gt; `NA...7`
 • `NA` -&gt; `NA...8`</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="fu">View</span>(fores)</span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="fu">View</span>(fores)</span>
 <span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>foreign_reserves_data <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="st">"data/foreign_reserves_data.csv"</span>, </span>
 <span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>    <span class="at">col_types =</span> <span class="fu">cols</span>(<span class="at">Other_Currencies =</span> <span class="fu">col_skip</span>(), </span>
 <span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>        <span class="at">Unallocated_Reserves =</span> <span class="fu">col_skip</span>(), </span>
@@ -268,7 +286,7 @@ The following object is masked from 'package:readr':
 <span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a><span class="fu">View</span>(foreign_reserves_data)</span>
 <span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb9-8"><a href="#cb9-8" aria-hidden="true" tabindex="-1"></a><span class="co"># Top 5 rows for each data frame</span></span>
-<span id="cb9-9"><a href="#cb9-9" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(fores, <span class="dv">5</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb9-9"><a href="#cb9-9" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(fores, <span class="dv">5</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 5 × 6
   Rank                               Country   Forexres     Date  Change Sources
@@ -279,7 +297,7 @@ The following object is masked from 'package:readr':
 4 Japan                              Asia      1,324,210    19,7… 1,230… 16,230 
 5 Switzerland                        Europe    1,007,710    13,9… 897,2… 14,490 </code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(foreign_reserves_data, <span class="dv">5</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(foreign_reserves_data, <span class="dv">5</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 5 × 11
    Year Quarter USD      Euro     JPY    GBP    CAN    CNY    AUD    CHF   Total
@@ -346,13 +364,14 @@ The following object is masked from 'package:readr':
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-        const codeEl = trigger.previousElementSibling.cloneNode(true);
-        for (const childEl of codeEl.children) {
-          if (isCodeAnnotation(childEl)) {
-            childEl.remove();
-          }
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
         }
-        return codeEl.innerText;
+      }
+      return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy
