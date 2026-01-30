@@ -229,5 +229,12 @@
     "title": "Assignment 1",
     "section": "",
     "text": "This page includes my first assignment for my knowledge mining class."
+  },
+  {
+    "objectID": "assign1.html",
+    "href": "assign1.html",
+    "title": "Assignment 1: Real-World Uses of Database Systems and Information Management",
+    "section": "",
+    "text": "Name and describe three applications you have used that employed a database system to store and access persistent data. (e.g. airlines, online trade, banking, university system)\n\nThree applications I have used that employed a database system to store and access persistent data are Online Shopping Applications, Streaming Services and Online Multiplayer Video Games.\n\nFirstly, online shopping applications such as Amazon, Shein, Temu, and AliExpress, uses their databases to store consumer item listings, order histories, user accounts, shipping information and payment records, which allows\nSecond, streaming services such as Neflix, Amazon Prime, HBO Max, and Disney + utilize their database to manage user-profiles and subscriptions, which also allows them to establish personal watch-recommendations and content across all devices such as smartphones, tablets, laptops, personalized computers and gaming consoles.\nThird, online video games, like Call of Duty, Fortnite, Battlefield, Valorant and FIFA, allows databases to store and manage player data, such as accounts, user-statistics, achievements, in-game currency, micro-transactions and in-game currencies. It also ensures that these games can be played cross-platforms, such as through Xbox, Playstation and Steam (PC), where players can switch, transfer and update their data throughout these platforms."
   }
 ]
