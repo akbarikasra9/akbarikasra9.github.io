@@ -235,6 +235,139 @@
     "href": "assign1.html",
     "title": "Assignment 1: Information Management Applications and Database Systems",
     "section": "",
-    "text": "Name and describe three applications you have used that employed a database system to store and access persistent data (e.g. airlines, online trade, banking, university system)\n\nThree applications I have used that employed a database system to store and access persistent data are Online Shopping Applications, Streaming Services and Online Multiplayer Video Games.\n\n1.1. First, online shopping applications such as Amazon, Shein, Temu, and AliExpress, uses their databases to store product listings, order histories, user accounts, shipping information and payment records, which allows users to browse for items, complete transactions, track orders and view purchase histories.\n1.2. Second, streaming services such as Neflix, Amazon Prime, HBO Max, and Disney + utilize their database to manage user-profiles and subscriptions, which enables content-recommendations and allows users to access their services across all devices such as smartphones, tablets, laptops, personalized computers and gaming consoles.\n1.3. Third, online video games, like Call of Duty, Fortnite, Battlefield, Valorant and FIFA, allows databases to store and manage player data, such as accounts, user-statistics, achievements, micro-transaction records and in-game currencies. It also supports cross-platform functionality across systems such as through Xbox, Playstation and Steam (PC), where players can switch, transfer and update their data throughout these platforms.\n\n\nPropose three applications in domain projects (e.g. criminology, economics, brain science, etc.) Be sure you include: Purpose, Functions, Simple Interface Design.\n\n2.1. The first domain that I focus is cybersecurity, for which I propose an application that contains a database where cyber-incident reports will be stored and maintained.\n\nPurpose: To collect and analyze cybersecurity attacks in order to identify attack patterns, detect viruses and improve response strategies.\nFunction:\n\nStoring cyber-incident reports\nTrack types of viruses and its source origins\nGenerate reports on prevented incidents\n\nSimple Interface Design:\n\nIncident Submission form\nFilter options by attack type and its severity level\nProviding graphs and dashboards demonstrating incident frequencies and trends\n\n\n2.2. The second domain in focus is Data Analytics, where I propose a system that manages and stores data research and analyses.\n\nPurpose: To store, organize, and manage numerous datasets used in academic and other professional types of research, ensuring data safety and retrieval.\nFunction:\n\nStoring organized and unorganized datasets\nManaging data sources and collection dates\nProviding users access to code, query, and summarize datasets\n\nSimple Interface Design:\n\nSafe and secure access for users\nDataset upload/download forms and management forms\nFilter tools by date, variable and/or dataset type"
+    "text": "Applications using database systems\n\nProposed domain-based applications\n\nNoSQL databases\n\nSocial media database design"
+  },
+  {
+    "objectID": "assign1.html#introduction",
+    "href": "assign1.html#introduction",
+    "title": "Assignment 1: Information Management Applications and Database Systems",
+    "section": "",
+    "text": "Applications using database systems\n\nProposed domain-based applications\n\nNoSQL databases\n\nSocial media database design"
+  },
+  {
+    "objectID": "assign1.html#applications-using-database-systems",
+    "href": "assign1.html#applications-using-database-systems",
+    "title": "Assignment 1: Information Management Applications and Database Systems",
+    "section": "Applications Using Database Systems",
+    "text": "Applications Using Database Systems\nQuestion 1\nName and describe three applications you have used that employ a database system to store and access persistent data."
+  },
+  {
+    "objectID": "assign1.html#overview-of-applications",
+    "href": "assign1.html#overview-of-applications",
+    "title": "Assignment 1: Information Management Applications and Database Systems",
+    "section": "Overview of Applications",
+    "text": "Overview of Applications\nThree applications I have used that employ database systems to store and access persistent data are:\n\nOnline Shopping Applications\n\nStreaming Services\n\nOnline Multiplayer Video Games"
+  },
+  {
+    "objectID": "assign1.html#online-shopping-applications",
+    "href": "assign1.html#online-shopping-applications",
+    "title": "Assignment 1: Information Management Applications and Database Systems",
+    "section": "Online Shopping Applications",
+    "text": "Online Shopping Applications\nExamples: - Amazon\n- Shein\n- Temu\n- AliExpress\nDatabase Usage: - Store product listings\n- Manage user accounts\n- Track order histories and shipping information\n- Maintain payment records\nThese databases allow users to browse items, complete transactions, track orders, and view purchase histories."
+  },
+  {
+    "objectID": "assign1.html#streaming-services",
+    "href": "assign1.html#streaming-services",
+    "title": "Assignment 1: Information Management Applications and Database Systems",
+    "section": "Streaming Services",
+    "text": "Streaming Services\nExamples: - Netflix\n- Amazon Prime\n- HBO Max\n- Disney+\nDatabase Usage: - Manage user profiles and subscriptions\n- Store viewing history\n- Generate personalized content recommendations\n- Enable access across smartphones, tablets, laptops, desktops, and gaming consoles"
+  },
+  {
+    "objectID": "assign1.html#online-multiplayer-video-games",
+    "href": "assign1.html#online-multiplayer-video-games",
+    "title": "Assignment 1: Information Management Applications and Database Systems",
+    "section": "Online Multiplayer Video Games",
+    "text": "Online Multiplayer Video Games\nExamples: - Call of Duty\n- Fortnite\n- Battlefield\n- Valorant\n- FIFA\nDatabase Usage: - Store player accounts and user statistics\n- Track achievements and in-game currency\n- Record microtransaction data\n- Support cross-platform play (Xbox, PlayStation, PC/Steam)"
+  },
+  {
+    "objectID": "assign1.html#proposed-domain-applications",
+    "href": "assign1.html#proposed-domain-applications",
+    "title": "Assignment 1: Information Management Applications and Database Systems",
+    "section": "Proposed Domain Applications",
+    "text": "Proposed Domain Applications\nQuestion 2\nPropose three applications in domain projects and describe their purpose, functions, and interface design."
+  },
+  {
+    "objectID": "assign1.html#selected-domains",
+    "href": "assign1.html#selected-domains",
+    "title": "Assignment 1: Information Management Applications and Database Systems",
+    "section": "Selected Domains",
+    "text": "Selected Domains\nThe three domains selected for proposed applications are:\n\nCybersecurity\n\nData Analytics\n\nArtificial Intelligence / Machine Learning"
+  },
+  {
+    "objectID": "assign1.html#domain-1-cybersecurity",
+    "href": "assign1.html#domain-1-cybersecurity",
+    "title": "Assignment 1: Information Management Applications and Database Systems",
+    "section": "Domain 1: Cybersecurity",
+    "text": "Domain 1: Cybersecurity\nApplication: Cyber Incident Reporting Database\n\n\nCybersecurity – Purpose\n\nCollect and analyze cybersecurity attacks\n\nIdentify attack patterns\n\nDetect viruses\n\nImprove response strategies\n\n\n\n\nCybersecurity – Functions\n\nStore cyber-incident reports\n\nTrack types of attacks and source origins\n\nGenerate reports on prevented incidents\n\n\n\n\nCybersecurity – Interface Design\n\nIncident submission form\n\nFilters by attack type and severity level\n\nDashboards and graphs showing incident frequency and trends"
+  },
+  {
+    "objectID": "assign1.html#domain-2-data-analytics",
+    "href": "assign1.html#domain-2-data-analytics",
+    "title": "Assignment 1: Information Management Applications and Database Systems",
+    "section": "Domain 2: Data Analytics",
+    "text": "Domain 2: Data Analytics\nApplication: Research Data Management System\n\n\nData Analytics – Purpose\n\nStore, organize, and manage datasets used in academic and professional research\n\nEnsure data safety and efficient retrieval\n\n\n\n\nData Analytics – Functions\n\nStore structured and unstructured datasets\n\nManage data sources and collection dates\n\nProvide users access to query, code, and summarize datasets\n\n\n\n\nData Analytics – Interface Design\n\nSecure user access\n\nDataset upload and download forms\n\nFilters by date, variable, and dataset type"
+  },
+  {
+    "objectID": "assign1.html#domain-3-machine-learning-artificial-intelligence",
+    "href": "assign1.html#domain-3-machine-learning-artificial-intelligence",
+    "title": "Assignment 1: Information Management Applications and Database Systems",
+    "section": "Domain 3: Machine Learning / Artificial Intelligence",
+    "text": "Domain 3: Machine Learning / Artificial Intelligence\nApplication: Machine Learning Model Database\n\n\nML / AI – Purpose\n\nStore and manage machine learning models\n\nConnect models to research datasets\n\n\n\n\nML / AI – Functions\n\nStore machine learning models in a centralized repository\n\nEstablish relationships between models and datasets\n\n\n\n\nML / AI – Interface Design\n\nModel upload interface\n\nComparison graphs and charts for model performance"
+  },
+  {
+    "objectID": "assign1.html#why-nosql-emerged",
+    "href": "assign1.html#why-nosql-emerged",
+    "title": "Assignment 1: Information Management Applications and Database Systems",
+    "section": "Why NoSQL Emerged",
+    "text": "Why NoSQL Emerged\nQuestion 4\nWhy did NoSQL systems emerge in the 2000s?"
+  },
+  {
+    "objectID": "assign1.html#nosql-vs.-traditional-databases",
+    "href": "assign1.html#nosql-vs.-traditional-databases",
+    "title": "Assignment 1: Information Management Applications and Database Systems",
+    "section": "NoSQL vs. Traditional Databases",
+    "text": "NoSQL vs. Traditional Databases\nTraditional relational databases became increasingly difficult to scale as data volumes grew rapidly, particularly for scientific and web-centric organizations.\nNoSQL systems emerged in the 2000s in response to these challenges by providing:\n\nHorizontal scalability\n\nHigh data throughput\n\nFlexible, non-relational data models\n\nNoSQL databases prioritize performance and scalability over rigid schemas and strict consistency, having an advantage over traditional relational database management systems."
+  },
+  {
+    "objectID": "assign1.html#social-media-database-design",
+    "href": "assign1.html#social-media-database-design",
+    "title": "Assignment 1: Information Management Applications and Database Systems",
+    "section": "Social Media Database Design",
+    "text": "Social Media Database Design\nQuestion 6\nDescribe at least three tables used in a social networking or social media system such as Twitter or Reddit."
+  },
+  {
+    "objectID": "assign1.html#users-table",
+    "href": "assign1.html#users-table",
+    "title": "Assignment 1: Information Management Applications and Database Systems",
+    "section": "Users Table",
+    "text": "Users Table\n\nStores user account information\n\nExamples: User ID, username, email address, and authentication credentials"
+  },
+  {
+    "objectID": "assign1.html#posts-table",
+    "href": "assign1.html#posts-table",
+    "title": "Assignment 1: Information Management Applications and Database Systems",
+    "section": "Posts Table",
+    "text": "Posts Table\n\nStores user-generated content, post IDs and content text\n\nTimestamps for creation and publication of posts"
+  },
+  {
+    "objectID": "assign1.html#followers-table",
+    "href": "assign1.html#followers-table",
+    "title": "Assignment 1: Information Management Applications and Database Systems",
+    "section": "Followers Table",
+    "text": "Followers Table\n\nManages relationships between users\n\nRecords follower and following connections"
+  },
+  {
+    "objectID": "assign1.html#interactions-table",
+    "href": "assign1.html#interactions-table",
+    "title": "Assignment 1: Information Management Applications and Database Systems",
+    "section": "Interactions Table",
+    "text": "Interactions Table\n\nStores user engagement data\n\nLikes, comments, shares, saves and reposts"
+  },
+  {
+    "objectID": "assign1.html#conclusion",
+    "href": "assign1.html#conclusion",
+    "title": "Assignment 1: Information Management Applications and Database Systems",
+    "section": "Conclusion",
+    "text": "Conclusion\n\nDatabase systems support everyday applications\n\nDomain-specific databases enable scalable research and analysis\n\nNoSQL systems address modern data challenges"
   }
 ]
