@@ -235,14 +235,14 @@
     "href": "assign1.html",
     "title": "Assignment 1: Information Management Applications and Database Systems",
     "section": "",
-    "text": "Applications using database systems\n\nProposed domain-based applications\n\nNoSQL databases\n\nSocial media database design"
+    "text": "Applications using database systems\nProposed domain-based applications\nNoSQL databases\nSocial media database design"
   },
   {
     "objectID": "assign1.html#introduction",
     "href": "assign1.html#introduction",
     "title": "Assignment 1: Information Management Applications and Database Systems",
     "section": "",
-    "text": "Applications using database systems\n\nProposed domain-based applications\n\nNoSQL databases\n\nSocial media database design"
+    "text": "Applications using database systems\nProposed domain-based applications\nNoSQL databases\nSocial media database design"
   },
   {
     "objectID": "assign1.html#applications-using-database-systems",
@@ -256,28 +256,28 @@
     "href": "assign1.html#overview-of-applications",
     "title": "Assignment 1: Information Management Applications and Database Systems",
     "section": "Overview of Applications",
-    "text": "Overview of Applications\nThree applications I have used that employ database systems to store and access persistent data are:\n\nOnline Shopping Applications\n\nStreaming Services\n\nOnline Multiplayer Video Games"
+    "text": "Overview of Applications\nThree applications I have used that employ database systems to store and access persistent data are:\n\nOnline Shopping Applications\nStreaming Services\nOnline Multiplayer Video Games"
   },
   {
     "objectID": "assign1.html#online-shopping-applications",
     "href": "assign1.html#online-shopping-applications",
     "title": "Assignment 1: Information Management Applications and Database Systems",
     "section": "Online Shopping Applications",
-    "text": "Online Shopping Applications\nExamples: - Amazon\n- Shein\n- Temu\n- AliExpress\nDatabase Usage: - Store product listings\n- Manage user accounts\n- Track order histories and shipping information\n- Maintain payment records\nThese databases allow users to browse items, complete transactions, track orders, and view purchase histories."
+    "text": "Online Shopping Applications\nExamples:\n\nAmazon\nShein\nTemu\nAliExpress\n\nDatabase Usage:\n\nStore product listings\nManage user accounts\nTrack order histories and shipping information\nMaintain payment records\n\nThese databases allow users to browse items, complete transactions, track orders, and view purchase histories."
   },
   {
     "objectID": "assign1.html#streaming-services",
     "href": "assign1.html#streaming-services",
     "title": "Assignment 1: Information Management Applications and Database Systems",
     "section": "Streaming Services",
-    "text": "Streaming Services\nExamples: - Netflix\n- Amazon Prime\n- HBO Max\n- Disney+\nDatabase Usage: - Manage user profiles and subscriptions\n- Store viewing history\n- Generate personalized content recommendations\n- Enable access across smartphones, tablets, laptops, desktops, and gaming consoles"
+    "text": "Streaming Services\nExamples:\n\nNetflix\nAmazon Prime\nHBO Max\nDisney+\n\nDatabase Usage\n\nManage user profiles and subscriptions\nStore viewing history\nGenerate personalized content recommendations\nEnable access across smartphones, tablets, laptops, desktops, and gaming consoles"
   },
   {
     "objectID": "assign1.html#online-multiplayer-video-games",
     "href": "assign1.html#online-multiplayer-video-games",
     "title": "Assignment 1: Information Management Applications and Database Systems",
     "section": "Online Multiplayer Video Games",
-    "text": "Online Multiplayer Video Games\nExamples: - Call of Duty\n- Fortnite\n- Battlefield\n- Valorant\n- FIFA\nDatabase Usage: - Store player accounts and user statistics\n- Track achievements and in-game currency\n- Record microtransaction data\n- Support cross-platform play (Xbox, PlayStation, PC/Steam)"
+    "text": "Online Multiplayer Video Games\nExamples:\n\nCall of Duty\nFortnite\nBattlefield\nValorant\nFIFA\n\nDatabase Usage\n\nStore player accounts and user statistics\nTrack achievements and in-game currency\nRecord microtransaction data\nSupport cross-platform play (Xbox, PlayStation, PC/Steam)"
   },
   {
     "objectID": "assign1.html#proposed-domain-applications",
@@ -291,35 +291,35 @@
     "href": "assign1.html#selected-domains",
     "title": "Assignment 1: Information Management Applications and Database Systems",
     "section": "Selected Domains",
-    "text": "Selected Domains\nThe three domains selected for proposed applications are:\n\nCybersecurity\n\nData Analytics\n\nArtificial Intelligence / Machine Learning"
+    "text": "Selected Domains\n\nCybersecurity\nData Analytics\nArtificial Intelligence / Machine Learning"
   },
   {
     "objectID": "assign1.html#domain-1-cybersecurity",
     "href": "assign1.html#domain-1-cybersecurity",
     "title": "Assignment 1: Information Management Applications and Database Systems",
     "section": "Domain 1: Cybersecurity",
-    "text": "Domain 1: Cybersecurity\nApplication: Cyber Incident Reporting Database\n\n\nCybersecurity – Purpose\n\nCollect and analyze cybersecurity attacks\n\nIdentify attack patterns\n\nDetect viruses\n\nImprove response strategies\n\n\n\n\nCybersecurity – Functions\n\nStore cyber-incident reports\n\nTrack types of attacks and source origins\n\nGenerate reports on prevented incidents\n\n\n\n\nCybersecurity – Interface Design\n\nIncident submission form\n\nFilters by attack type and severity level\n\nDashboards and graphs showing incident frequency and trends"
+    "text": "Domain 1: Cybersecurity\nApplication: Cyber Incident Reporting Database\n\n\nPurpose\n\nCollect and analyze cybersecurity attacks\nIdentify attack patterns\nDetect viruses\nImprove response strategies\n\n\n\n\nFunctions\n\nStore cyber-incident reports\nTrack types of attacks and source origins\nGenerate reports on prevented incidents\n\n\n\n\nInterface Design\n\nIncident submission form\nFilters by attack type and severity level\nDashboards and graphs showing incident frequency and trends"
   },
   {
     "objectID": "assign1.html#domain-2-data-analytics",
     "href": "assign1.html#domain-2-data-analytics",
     "title": "Assignment 1: Information Management Applications and Database Systems",
     "section": "Domain 2: Data Analytics",
-    "text": "Domain 2: Data Analytics\nApplication: Research Data Management System\n\n\nData Analytics – Purpose\n\nStore, organize, and manage datasets used in academic and professional research\n\nEnsure data safety and efficient retrieval\n\n\n\n\nData Analytics – Functions\n\nStore structured and unstructured datasets\n\nManage data sources and collection dates\n\nProvide users access to query, code, and summarize datasets\n\n\n\n\nData Analytics – Interface Design\n\nSecure user access\n\nDataset upload and download forms\n\nFilters by date, variable, and dataset type"
+    "text": "Domain 2: Data Analytics\nApplication: Research Data Management System\n\n\nPurpose\n\nStore, organize, and manage datasets used in academic and professional research\nEnsure data safety and efficient retrieval\n\n\n\n\nFunctions\n\nStore structured and unstructured datasets\nManage data sources and collection dates\nProvide users access to query, code, and summarize datasets\n\n\n\n\nInterface Design\n\nSecure user access\nDataset upload and download forms\nFilters by date, variable, and dataset type"
   },
   {
     "objectID": "assign1.html#domain-3-machine-learning-artificial-intelligence",
     "href": "assign1.html#domain-3-machine-learning-artificial-intelligence",
     "title": "Assignment 1: Information Management Applications and Database Systems",
     "section": "Domain 3: Machine Learning / Artificial Intelligence",
-    "text": "Domain 3: Machine Learning / Artificial Intelligence\nApplication: Machine Learning Model Database\n\n\nML / AI – Purpose\n\nStore and manage machine learning models\n\nConnect models to research datasets\n\n\n\n\nML / AI – Functions\n\nStore machine learning models in a centralized repository\n\nEstablish relationships between models and datasets\n\n\n\n\nML / AI – Interface Design\n\nModel upload interface\n\nComparison graphs and charts for model performance"
+    "text": "Domain 3: Machine Learning / Artificial Intelligence\nApplication: Machine Learning Model Database\n\n\nPurpose\n\nStore and manage machine learning models\nConnect models to research datasets\n\n\n\n\nFunctions\n\nStore machine learning models in a centralized repository\nEstablish relationships between models and datasets\n\n\n\n\nInterface Design\n\nModel upload interface\nComparison graphs and charts for model performance"
   },
   {
     "objectID": "assign1.html#why-nosql-emerged",
     "href": "assign1.html#why-nosql-emerged",
     "title": "Assignment 1: Information Management Applications and Database Systems",
     "section": "Why NoSQL Emerged",
-    "text": "Why NoSQL Emerged\nQuestion 4\nWhy did NoSQL systems emerge in the 2000s?"
+    "text": "Why NoSQL Emerged\nQuestion 4\nTraditional relational databases became increasingly difficult to scale as data volumes grew rapidly, particularly for scientific and web-centric organizations.\nNoSQL systems emerged in response by providing:\n\nHorizontal scalability\nHigh data throughput\nFlexible, non-relational data models\n\nUnlike traditional relational database management systems, NoSQL databases prioritize performance and scalability over rigid schemas and strict consistency."
   },
   {
     "objectID": "assign1.html#nosql-vs.-traditional-databases",
@@ -333,41 +333,90 @@
     "href": "assign1.html#social-media-database-design",
     "title": "Assignment 1: Information Management Applications and Database Systems",
     "section": "Social Media Database Design",
-    "text": "Social Media Database Design\nQuestion 6\nDescribe at least three tables used in a social networking or social media system such as Twitter or Reddit."
+    "text": "Social Media Database Design\nQuestion 6"
   },
   {
     "objectID": "assign1.html#users-table",
     "href": "assign1.html#users-table",
     "title": "Assignment 1: Information Management Applications and Database Systems",
     "section": "Users Table",
-    "text": "Users Table\n\nStores user account information\n\nExamples: User ID, username, email address, and authentication credentials"
+    "text": "Users Table\n\nStores user account information\nUser ID, username, email address\nAuthentication credentials"
   },
   {
     "objectID": "assign1.html#posts-table",
     "href": "assign1.html#posts-table",
     "title": "Assignment 1: Information Management Applications and Database Systems",
     "section": "Posts Table",
-    "text": "Posts Table\n\nStores user-generated content, post IDs and content text\n\nTimestamps for creation and publication of posts"
+    "text": "Posts Table\n\nStores user-generated content\nPost IDs and content text\nTimestamps for creation and publication"
   },
   {
     "objectID": "assign1.html#followers-table",
     "href": "assign1.html#followers-table",
     "title": "Assignment 1: Information Management Applications and Database Systems",
     "section": "Followers Table",
-    "text": "Followers Table\n\nManages relationships between users\n\nRecords follower and following connections"
+    "text": "Followers Table\n\nManages relationships between users\nRecords follower and following connections"
   },
   {
     "objectID": "assign1.html#interactions-table",
     "href": "assign1.html#interactions-table",
     "title": "Assignment 1: Information Management Applications and Database Systems",
     "section": "Interactions Table",
-    "text": "Interactions Table\n\nStores user engagement data\n\nLikes, comments, shares, saves and reposts"
+    "text": "Interactions Table\n\nStores user engagement data\nLikes, comments, shares\nSaves and reposts"
   },
   {
     "objectID": "assign1.html#conclusion",
     "href": "assign1.html#conclusion",
     "title": "Assignment 1: Information Management Applications and Database Systems",
     "section": "Conclusion",
-    "text": "Conclusion\n\nDatabase systems support everyday applications\n\nDomain-specific databases enable scalable research and analysis\n\nNoSQL systems address modern data challenges"
+    "text": "Conclusion\n\nDatabase systems support everyday applications\nDomain-specific databases enable scalable research and analysis\nNoSQL systems address modern data challenges"
+  },
+  {
+    "objectID": "assign1.html#thank-you",
+    "href": "assign1.html#thank-you",
+    "title": "Assignment 1: Information Management Applications and Database Systems",
+    "section": "Thank You",
+    "text": "Thank You"
+  },
+  {
+    "objectID": "assignment1.html#create-object-using-the-assignment-operator--",
+    "href": "assignment1.html#create-object-using-the-assignment-operator--",
+    "title": "Assignment 1: Brush Up R and Quarto",
+    "section": "Create object using the assignment operator (<-, =)",
+    "text": "Create object using the assignment operator (&lt;-, =)\n\nx &lt;- c(1,3,2,5)\nx\n\n[1] 1 3 2 5\n\nx = c(1,6,2)\nx\n\n[1] 1 6 2\n\ny = c(1,4,3)"
+  },
+  {
+    "objectID": "assignment1.html#using-function",
+    "href": "assignment1.html#using-function",
+    "title": "Assignment 1: Brush Up R and Quarto",
+    "section": "Using function",
+    "text": "Using function\n\nlength(x)  # What does length() do?\n\n[1] 3\n\nlength(y)\n\n[1] 3"
+  },
+  {
+    "objectID": "assignment1.html#using---operators",
+    "href": "assignment1.html#using---operators",
+    "title": "Assignment 1: Brush Up R and Quarto",
+    "section": "Using +, -, *, /,^ operators",
+    "text": "Using +, -, *, /,^ operators\n\nx+y\n\n[1]  2 10  5\n\nls() # List objects in the environment\n\n[1] \"x\" \"y\"\n\nrm(x,y) # Remove objects\nls()\n\ncharacter(0)\n\nrm(list=ls()) # Danger! What does this do?  Not recommended!"
+  },
+  {
+    "objectID": "assignment1.html#matrix-operations",
+    "href": "assignment1.html#matrix-operations",
+    "title": "Assignment 1: Brush Up R and Quarto",
+    "section": "Matrix operations",
+    "text": "Matrix operations\n\n?matrix\n\nstarting httpd help server ... done\n\nx=matrix(data=c(1,2,3,4), nrow=2, ncol=2) # Create a 2x2 matrix object\nx\n\n     [,1] [,2]\n[1,]    1    3\n[2,]    2    4\n\nx=matrix(c(1,2,3,4),2,2)\nmatrix(c(1,2,3,4),2,2,byrow=T) # What about byrow=F?\n\n     [,1] [,2]\n[1,]    1    2\n[2,]    3    4\n\nsqrt(x) # What does x look like?\n\n         [,1]     [,2]\n[1,] 1.000000 1.732051\n[2,] 1.414214 2.000000\n\nx\n\n     [,1] [,2]\n[1,]    1    3\n[2,]    2    4\n\nx^2\n\n     [,1] [,2]\n[1,]    1    9\n[2,]    4   16\n\nx=rnorm(50) # Generate a vector of 50 numbers using the rnorm() function\n\ny=x+rnorm(50,mean=50,sd=.1) # What does rnorm(50,mean=50,sd=.1) generate?\n\ncor(x,y) # Correlation of x and y\n\n[1] 0.996404\n\nset.seed(1303) # Set the seed for Random Number Generator (RNG) to generate values that are reproducible.\nrnorm(50)\n\n [1] -1.1439763145  1.3421293656  2.1853904757  0.5363925179  0.0631929665\n [6]  0.5022344825 -0.0004167247  0.5658198405 -0.5725226890 -1.1102250073\n[11] -0.0486871234 -0.6956562176  0.8289174803  0.2066528551 -0.2356745091\n[16] -0.5563104914 -0.3647543571  0.8623550343 -0.6307715354  0.3136021252\n[21] -0.9314953177  0.8238676185  0.5233707021  0.7069214120  0.4202043256\n[26] -0.2690521547 -1.5103172999 -0.6902124766 -0.1434719524 -1.0135274099\n[31]  1.5732737361  0.0127465055  0.8726470499  0.4220661905 -0.0188157917\n[36]  2.6157489689 -0.6931401748 -0.2663217810 -0.7206364412  1.3677342065\n[41]  0.2640073322  0.6321868074 -1.3306509858  0.0268888182  1.0406363208\n[46]  1.3120237985 -0.0300020767 -0.2500257125  0.0234144857  1.6598706557\n\nset.seed(3) # Try different seeds?\ny=rnorm(100)"
+  },
+  {
+    "objectID": "assignment1.html#simple-descriptive-statistics-base",
+    "href": "assignment1.html#simple-descriptive-statistics-base",
+    "title": "Assignment 1: Brush Up R and Quarto",
+    "section": "Simple descriptive statistics (base)",
+    "text": "Simple descriptive statistics (base)\n\nmean(y)\n\n[1] 0.01103557\n\nvar(y)\n\n[1] 0.7328675\n\nsqrt(var(y))\n\n[1] 0.8560768\n\nsd(y)\n\n[1] 0.8560768"
+  },
+  {
+    "objectID": "assignment1.html#visualization-using-r-graphics-without-packages",
+    "href": "assignment1.html#visualization-using-r-graphics-without-packages",
+    "title": "Assignment 1: Brush Up R and Quarto",
+    "section": "Visualization using R Graphics (without packages)",
+    "text": "Visualization using R Graphics (without packages)\n\nx=rnorm(100)\ny=rnorm(100)\nplot(x,y)\n\n\n\n\n\n\n\nplot(x,y, pch=20, col = \"firebrick\") # Scatterplot for two numeric variables by default\n\n\n\n\n\n\n\nplot(x,y, pch=20, col = \"steelblue\",xlab=\"this is the x-axis\",ylab=\"this is the y-axis\",main=\"Plot of X vs Y\") # Add labels\n\n\n\n\n\n\n\npdf(\"Figure01.pdf\") # Save as pdf, add a path or it will be stored on the project directory\nplot(x,y,pch=20, col=\"forestgreen\") # Try different colors?\ndev.off() # Close the file using the dev.off function\n\npng \n  2 \n\nx=seq(1,10) # Same as x=c(1:10)\nx\n\n [1]  1  2  3  4  5  6  7  8  9 10\n\nx=1:10\nx\n\n [1]  1  2  3  4  5  6  7  8  9 10\n\nx=seq(-pi,pi,length=50)\ny=x"
   }
 ]
