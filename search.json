@@ -1,0 +1,499 @@
+[
+  {
+    "objectID": "assign01.html",
+    "href": "assign01.html",
+    "title": "Assignment 1: Creating a Quarto Website",
+    "section": "",
+    "text": "Note:\nThis website was created through the use of Quarto in Rstudio. Quarto is a good tool to use because it works well with R, and it makes it simple to publish a professional-looking website on GitHub.\nThe navigation bar is designed to be clear and easy to use. The “Home” tab gives a description about me and my demonstration making this website. The “Assignment” tab is where I post my assignments for this class. Additionally, the “About” tab is a section that gives a quick introduction about me.\nFinally, I’ve uploaded my resume in the navigation bar, where I used ChatGBT as an assistance tool to make it look more presentable to illustrate my professional and academic background. This website is not only a place for this specific assignment, but also an opportunity for future use for other projects."
+  },
+  {
+    "objectID": "resume2025.html",
+    "href": "resume2025.html",
+    "title": "Resume 2026",
+    "section": "",
+    "text": "Celina, TX, 75009 | (214)-499-8057 | akbarikasra9@gmail.com | LinkedIn\n\n\n\nThe University of Texas at Dallas — B.A. in Political Science\nGraduation: May 2024 | GPA: 3.6\nThe University of Texas at Dallas — M.S. in Social Data Analytics and Research\nExpected Graduation: May 2027\n\n\n\n\nDelegate, UTD Model United Nations — Jan 2023 – May 2024\n- Conducted market research on domestic and international policies, analyzing trends, institutions, and key stakeholders to develop policy solutions.\n- Compiled structured reports evaluating decision-making processes and policy effectiveness.\n- Delivered persuasive arguments in formal discussions, enhancing public speaking, analytical, and presentation skills.\nOfficer, UTD MOVE Texas — Sep 2023 – May 2024\n- Led strategic outreach initiatives to increase voter registration and civic engagement.\n- Organized workshops and data-driven engagement strategies to inform and mobilize communities.\n- Developed targeted marketing strategies to enhance student engagement.\nParticipant, John Marshall Pre-Law Society — Oct 2021 – May 2024\n- Gained expertise in business strategy and research methodologies through mentorship and networking.\n- Conducted policy research and legal analysis, refining critical thinking skills.\n- Developed competitive assessments to evaluate industry trends.\n\n\n\n\nStock Associate, Zara (Frisco, TX) — Dec 2024 – Present\n- Managing inventory operations with efficiency and accuracy in a fast-paced retail environment.\n- Utilizing data tracking systems to improve stock accuracy.\n- Maintaining store organization and product replenishment.\nSales Associate, TJ Maxx (Prosper, TX) — Dec 2022 – Dec 2024\n- Delivered excellent customer service and applied problem-solving skills to address customer concerns.\n- Assisted in merchandising strategies to optimize product visibility.\n- Processed transactions efficiently while maintaining accuracy.\n\n\n\n\n\nModel UN Position Paper Award — Feb 21, 2023 | Portland, OR\n\nModel UN Distinguished Delegation Award — Apr 6, 2023 | New York City, NY\n\nModel UN Outstanding Delegation Award — Nov 24, 2023 | Erfurt, Germany\n\nMath and Coding Camp Certificate of Completion — Aug 20, 2025 | Richardson, TX\n\n\n\n\n\n\nPublic Speaking & Presentation\n\nMicrosoft Office, Google Suite & CRM Tools\n\nQuantitative Research & Data Visualization (Excel)\n\nMultilingual: English, German, Persian\n\nData Analysis & Programming: R, SPSS, STATA"
+  },
+  {
+    "objectID": "resume2025.html#education",
+    "href": "resume2025.html#education",
+    "title": "Resume 2026",
+    "section": "",
+    "text": "The University of Texas at Dallas — B.A. in Political Science\nGraduation: May 2024 | GPA: 3.6\nThe University of Texas at Dallas — M.S. in Social Data Analytics and Research\nExpected Graduation: May 2027"
+  },
+  {
+    "objectID": "resume2025.html#professional-experience",
+    "href": "resume2025.html#professional-experience",
+    "title": "Resume 2026",
+    "section": "",
+    "text": "Delegate, UTD Model United Nations — Jan 2023 – May 2024\n- Conducted market research on domestic and international policies, analyzing trends, institutions, and key stakeholders to develop policy solutions.\n- Compiled structured reports evaluating decision-making processes and policy effectiveness.\n- Delivered persuasive arguments in formal discussions, enhancing public speaking, analytical, and presentation skills.\nOfficer, UTD MOVE Texas — Sep 2023 – May 2024\n- Led strategic outreach initiatives to increase voter registration and civic engagement.\n- Organized workshops and data-driven engagement strategies to inform and mobilize communities.\n- Developed targeted marketing strategies to enhance student engagement.\nParticipant, John Marshall Pre-Law Society — Oct 2021 – May 2024\n- Gained expertise in business strategy and research methodologies through mentorship and networking.\n- Conducted policy research and legal analysis, refining critical thinking skills.\n- Developed competitive assessments to evaluate industry trends."
+  },
+  {
+    "objectID": "resume2025.html#work-experience",
+    "href": "resume2025.html#work-experience",
+    "title": "Resume 2026",
+    "section": "",
+    "text": "Stock Associate, Zara (Frisco, TX) — Dec 2024 – Present\n- Managing inventory operations with efficiency and accuracy in a fast-paced retail environment.\n- Utilizing data tracking systems to improve stock accuracy.\n- Maintaining store organization and product replenishment.\nSales Associate, TJ Maxx (Prosper, TX) — Dec 2022 – Dec 2024\n- Delivered excellent customer service and applied problem-solving skills to address customer concerns.\n- Assisted in merchandising strategies to optimize product visibility.\n- Processed transactions efficiently while maintaining accuracy."
+  },
+  {
+    "objectID": "resume2025.html#achievements",
+    "href": "resume2025.html#achievements",
+    "title": "Resume 2026",
+    "section": "",
+    "text": "Model UN Position Paper Award — Feb 21, 2023 | Portland, OR\n\nModel UN Distinguished Delegation Award — Apr 6, 2023 | New York City, NY\n\nModel UN Outstanding Delegation Award — Nov 24, 2023 | Erfurt, Germany\n\nMath and Coding Camp Certificate of Completion — Aug 20, 2025 | Richardson, TX"
+  },
+  {
+    "objectID": "resume2025.html#skills",
+    "href": "resume2025.html#skills",
+    "title": "Resume 2026",
+    "section": "",
+    "text": "Public Speaking & Presentation\n\nMicrosoft Office, Google Suite & CRM Tools\n\nQuantitative Research & Data Visualization (Excel)\n\nMultilingual: English, German, Persian\n\nData Analysis & Programming: R, SPSS, STATA"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "Kasra Akbari is an Austrian-Iranian, who moved with his family to the United States in 2014. He pursued his middle school, high school and college education in Texas, and is now a Social Data Analytics Major at UT Dallas, expected to graduate in May 2027.\n\n1 + 1\n\n[1] 2"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Kasra Akbari",
+    "section": "",
+    "text": "Welcome to the world of data science.\nMy name is Kasra Akbari, and I am a Social Data Analytics major at the University of Texas at Dallas and I made this website to demonstrate my skills using R and Quarto.\n\nplot(iris, pch=20, cex= .8, col=\"firebrick\")"
+  },
+  {
+    "objectID": "podcast.html",
+    "href": "podcast.html",
+    "title": "Podcast Review",
+    "section": "",
+    "text": "Karen Ng is the Head of Product for a company called HubSpot, and in this podcast, she discusses how data is the currency that AI is running and will continue to run in the future, where there will be a world where AI will grow faster and stronger. However, humans still play an important role in data gathering.\n\n\n\nOne point I find intriguing is how Ms. Ng mentions the future looking to be hybrid for people’s work with data. In a hybrid setting, there are three important roles.\nFirst are chatbots, which are useful for answering questions quickly. Secondly, copilots are human assistants, and lastly there are data agents, where their role is to help clean data and help build a context layer.\nMs. Ng discusses the agents’ essential role in a team, where making an agent platform makes everything easier because they provide instructions and information on how to gather and clean data.\n\n\n\n\nAn additional point I found interesting in the podcast are interoffice dynamics because it demonstrates job operations in a hybrid-office team. There are three blueprints on a hybrid-office team.\nThe first blueprint is context-sharing. Where does data come from? How can it be tackled? What solutions come out at the end of the process?\nThe second part is building customer-relations renewals and policies.\nFinally, building the actual team: how do we get the resources? How do we build the team once the tools are received? It has been proven that finding a shared language for data use makes it easy to help and measure customer-relations and its values.\n\n\n\n\nOverall, this podcast has made great points on the functions of a hybrid-team with their uses of AI. It makes many interesting points and raises important questions on the long-term effects of data collection and the future of the use of AI in the data-driven world."
+  },
+  {
+    "objectID": "podcast.html#hybrid-roles-in-data-teams",
+    "href": "podcast.html#hybrid-roles-in-data-teams",
+    "title": "Podcast Review",
+    "section": "",
+    "text": "One point I find intriguing is how Ms. Ng mentions the future looking to be hybrid for people’s work with data. In a hybrid setting, there are three important roles.\nFirst are chatbots, which are useful for answering questions quickly. Secondly, copilots are human assistants, and lastly there are data agents, where their role is to help clean data and help build a context layer.\nMs. Ng discusses the agents’ essential role in a team, where making an agent platform makes everything easier because they provide instructions and information on how to gather and clean data."
+  },
+  {
+    "objectID": "podcast.html#interoffice-dynamics-in-hybrid-teams",
+    "href": "podcast.html#interoffice-dynamics-in-hybrid-teams",
+    "title": "Podcast Review",
+    "section": "",
+    "text": "An additional point I found interesting in the podcast are interoffice dynamics because it demonstrates job operations in a hybrid-office team. There are three blueprints on a hybrid-office team.\nThe first blueprint is context-sharing. Where does data come from? How can it be tackled? What solutions come out at the end of the process?\nThe second part is building customer-relations renewals and policies.\nFinally, building the actual team: how do we get the resources? How do we build the team once the tools are received? It has been proven that finding a shared language for data use makes it easy to help and measure customer-relations and its values."
+  },
+  {
+    "objectID": "podcast.html#final-thoughts",
+    "href": "podcast.html#final-thoughts",
+    "title": "Podcast Review",
+    "section": "",
+    "text": "Overall, this podcast has made great points on the functions of a hybrid-team with their uses of AI. It makes many interesting points and raises important questions on the long-term effects of data collection and the future of the use of AI in the data-driven world."
+  },
+  {
+    "objectID": "assign02.html",
+    "href": "assign02.html",
+    "title": "Assignment 2: Google Trends Data",
+    "section": "",
+    "text": "library(gtrendsR)\n\nTrumpHarrisElection = gtrends(c(\"Trump\",\"Harris\",\"Election\"),\n                              onlyInterest = TRUE, geo = \"US\",\n                              gprop = \"web\", time = \"today+5-y\",\n                              category = 0)\nthe_df = TrumpHarrisElection$interest_over_time\nplot(TrumpHarrisElection)\n\nWarning: `aes_string()` was deprecated in ggplot2 3.0.0.\nℹ Please use tidy evaluation idioms with `aes()`.\nℹ See also `vignette(\"ggplot2-in-packages\")` for more information.\nℹ The deprecated feature was likely used in the gtrendsR package.\n  Please report the issue at &lt;https://github.com/PMassicotte/gtrendsR/issues&gt;.\n\n\n\n\n\n\n\n\ntg = gtrends(\"tariff\", time = \"all\")\n\n# Save to CSV\nwrite.csv(the_df, \"TrumpHarrisElection.csv\", row.names = FALSE)\n\n# Save to RDS\nsaveRDS(the_df, \"TrumpHarrisElection.rds\")\n\nWhen it comes to using and gathering data from the Google Trends website and the gtrendsR Package, they differ in multiple ways, but they also share similarity of data visualization. I gathered my data from Google Trends on Trump, Kamala Harris and the elections over the last five years, and used the gtrendsR01.R package to code and provide the data about those topics, as shown on the visual above. The dates, intervals, and graphs from both methods appeared similar, demonstrating spikes of the 2020 and 2024 elections. I used ChatGBT to assist me the codes I need to save my data into CSV and R formats, and they are pasted in the code above.\nThe Google Trends method is easy to use because individuals can categorize one column per keyword, and the date coverage can be set manually however they like. One minor setback of this method is that the data must be downloaded manually, but it’s still manageable.\nOn the contrary, the gtrendsR package is a method that requires more work and can be complex, as it involves the use of R codes for automatic data downloads, which also requires coding knowledge. However, the repetitions are simple and can be easily scripted unlike the website, making it more efficient and reproducible once it is set up. It’s also easy to code and create a CSV file through the use of R.\nI also plotted Google Trends data for Donald Trump, Kamala Harris, and the election within the five years individually on RStudio."
+  },
+  {
+    "objectID": "assign03.html",
+    "href": "assign03.html",
+    "title": "Assignment 3: Mapping Census Data",
+    "section": "",
+    "text": "#install.packages(c(\"tidycensus\", \"tigris\", \"sf\", \"dplyr\",\"ggplot2\", \"readr\", \"tidyr\"))\nlibrary(tidycensus)\nlibrary(tigris)\n\nTo enable caching of data, set `options(tigris_use_cache = TRUE)`\nin your R script or .Rprofile.\n\nlibrary(sf)\n\nLinking to GEOS 3.13.1, GDAL 3.11.0, PROJ 9.6.0; sf_use_s2() is TRUE\n\nlibrary(dplyr)\n\n\nAttaching package: 'dplyr'\n\n\nThe following objects are masked from 'package:stats':\n\n    filter, lag\n\n\nThe following objects are masked from 'package:base':\n\n    intersect, setdiff, setequal, union\n\nlibrary(ggplot2)\nlibrary(readr)\n\noptions(tigris_use_cache = TRUE)\n\ncensus_api_key(\"c5c7d8f0315d0bb7a67c1a7549772a162a4eecfa\", install = FALSE)\n\nTo install your API key for use in future sessions, run this function with `install = TRUE`.\n\nvars &lt;- load_variables(2023, \"acs5\", cache = TRUE)\n# View a few example codes\nvars |&gt; dplyr::filter(grepl(\"^B19\", name)) |&gt; dplyr::slice_head(n = 10)\n\n# A tibble: 10 × 4\n   name        label                                concept            geography\n   &lt;chr&gt;       &lt;chr&gt;                                &lt;chr&gt;              &lt;chr&gt;    \n 1 B19001A_001 Estimate!!Total:                     Household Income … tract    \n 2 B19001A_002 Estimate!!Total:!!Less than $10,000  Household Income … tract    \n 3 B19001A_003 Estimate!!Total:!!$10,000 to $14,999 Household Income … tract    \n 4 B19001A_004 Estimate!!Total:!!$15,000 to $19,999 Household Income … tract    \n 5 B19001A_005 Estimate!!Total:!!$20,000 to $24,999 Household Income … tract    \n 6 B19001A_006 Estimate!!Total:!!$25,000 to $29,999 Household Income … tract    \n 7 B19001A_007 Estimate!!Total:!!$30,000 to $34,999 Household Income … tract    \n 8 B19001A_008 Estimate!!Total:!!$35,000 to $39,999 Household Income … tract    \n 9 B19001A_009 Estimate!!Total:!!$40,000 to $44,999 Household Income … tract    \n10 B19001A_010 Estimate!!Total:!!$45,000 to $49,999 Household Income … tract    \n\nstate_abbr &lt;- \"CA\"\ngeo_level  &lt;- \"county\"   # options: state, county, tract, block group\nmy_vars    &lt;- c(income = \"B19013_001\", poverty = \"B17001_002\")\nyear_acs   &lt;- 2023\nsurvey     &lt;- \"acs5\"\n\n\nacs &lt;- get_acs(\n  geography = geo_level,\n  variables = my_vars,\n  state = state_abbr,\n  year = year_acs,\n  survey = survey,\n  geometry = TRUE\n)\n\nGetting data from the 2019-2023 5-year ACS\n\nacs_wide &lt;- acs |&gt;\n  tidyr::pivot_wider(\n    id_cols = c(GEOID, NAME, geometry),\n    names_from = variable,\n    values_from = c(estimate, moe)\n  )\n\nggplot(acs_wide) +\n  geom_sf(aes(fill = estimate_income), color = NA) +\n  scale_fill_viridis_c(name = \"Median HH Income\") +\n  labs(title = paste0(\"ACS \", year_acs, \" 5-year: Median Income — \", state_abbr, \" (\", geo_level, \")\"),\n       caption = \"Source: U.S. Census Bureau via tidycensus\") +\n  theme_minimal()\n\n\n\n\n\n\n\ntop10 &lt;- acs_wide |&gt;\n  arrange(desc(estimate_poverty)) |&gt;\n  select(NAME, estimate_poverty, moe_poverty) |&gt;\n  slice_head(n = 10)\n\nbottom10 &lt;- acs_wide |&gt;\n  arrange(estimate_poverty) |&gt;\n  select(NAME, estimate_poverty, moe_poverty) |&gt;\n  slice_head(n = 10)\n\ntop10\n\nSimple feature collection with 10 features and 3 fields\nGeometry type: MULTIPOLYGON\nDimension:     XY\nBounding box:  xmin: -122.3423 ymin: 32.53444 xmax: -114.1312 ymax: 38.7364\nGeodetic CRS:  NAD83\n# A tibble: 10 × 4\n   NAME                   estimate_poverty moe_poverty                  geometry\n   &lt;chr&gt;                             &lt;dbl&gt;       &lt;dbl&gt;        &lt;MULTIPOLYGON [°]&gt;\n 1 Los Angeles County, C…          1322476       15552 (((-118.6044 33.47855, -…\n 2 San Diego County, Cal…           330602        7963 (((-117.596 33.38779, -1…\n 3 Orange County, Califo…           296493        8509 (((-118.1146 33.74461, -…\n 4 San Bernardino County…           291226        9076 (((-117.8025 33.97555, -…\n 5 Riverside County, Cal…           266955        8729 (((-117.6763 33.88882, -…\n 6 Sacramento County, Ca…           197472        6775 (((-121.8625 38.06795, -…\n 7 Fresno County, Califo…           185717        5965 (((-120.9094 36.7477, -1…\n 8 Kern County, Californ…           168825        6993 (((-120.1944 35.78936, -…\n 9 Alameda County, Calif…           149752        4801 (((-122.3423 37.80556, -…\n10 Santa Clara County, C…           128470        5622 (((-122.2027 37.36305, -…\n\nbottom10\n\nSimple feature collection with 10 features and 3 fields\nGeometry type: MULTIPOLYGON\nDimension:     XY\nBounding box:  xmin: -124.256 ymin: 35.78669 xmax: -115.648 ymax: 42.00076\nGeodetic CRS:  NAD83\n# A tibble: 10 × 4\n   NAME                   estimate_poverty moe_poverty                  geometry\n   &lt;chr&gt;                             &lt;dbl&gt;       &lt;dbl&gt;        &lt;MULTIPOLYGON [°]&gt;\n 1 Alpine County, Califo…              209          98 (((-120.0724 38.70277, -…\n 2 Sierra County, Califo…              325         202 (((-121.0575 39.53999, -…\n 3 Mono County, Californ…             1441         480 (((-119.6489 38.28912, -…\n 4 Modoc County, Califor…             1717         357 (((-121.4572 41.94994, -…\n 5 Inyo County, Californ…             1928         439 (((-118.79 37.39403, -11…\n 6 Plumas County, Califo…             2075         538 (((-121.497 40.43702, -1…\n 7 Colusa County, Califo…             2332         598 (((-122.7851 39.38298, -…\n 8 Mariposa County, Cali…             2347         449 (((-120.3944 37.67504, -…\n 9 Trinity County, Calif…             2830         755 (((-123.6224 40.9317, -1…\n10 Del Norte County, Cal…             2900         589 (((-124.2175 41.95081, -…\n\n\nIn this assignment, I present data on median household incomes in the state of California by county. The yellow-highlighted counties represent the areas with the highest incomes, whereas the dark-blue areas represent the counties with the lowest incomes.\nThe next visualization shows the top 10 highest-income counties in California, such as Los Angeles, San Diego, and Orange County. Then, I present the top 10 counties with the lowest incomes, which include Mariposa, Trinity, and Del Norte County."
+  },
+  {
+    "objectID": "assign04.html",
+    "href": "assign04.html",
+    "title": "Assignment 4: Webscraping 1",
+    "section": "",
+    "text": "To gain web data for research, the R programming language and its rvest01 package is an efficient approach to data collection, production and web scraping. Using a website’s developer tools to copy any Xpaths helps the researcher target and retrieve specific information. However, it is important to know that not every website allows web scraping due to privacy and ethical concerns, so it’s best to scrape any public data from public websites as much as possible. When scraping from a website, researchers should identify essential XPaths, integrate them into an R script, and deploy the rvest package to gain a structured data from the website. It’s important to remove any unnecessary information to make the data look more presentable. These methods are efficient for web-based data collection and preparations for any research analysis.\nTo demonstrate this process, I apply my method in this assignment by retrieving data from Wikipedia on foreign exchange reserves. I identified two tables of interest, which are “Foreign Exchange Reserves By Country” and “Currency Composition Of Foreign Exchange Reserves” (COFER). The XPaths corresponding to each table were extracted and applied within R to obtain the datasets. I used the rvest_wiki01.R package that was provided to us by Dr. Karl Ho and implemented the Xpaths into the code and gave me the table I needed. However, I didn’t know how to paste the tables into the quarto file. Fortunately, Dr. Ho gave me the idea of creating a dataframe and using the head() function to generate the top five cases of the scraped table. With this recommendation, I asked ChatGBT to assist me with how to create a dataframe and generate the top 5 cases. With the help of AI, I used the downloaded CSV files and imported it into the quarto page, and made sure the data looks more presentable by removing uneccessary rows. All of these steps helped me create a more cleaner and organized table. Overall, this is an efficient way of organizing, processing, and preparing data from a public source, showing the practical use of the rvest01 package in managing web-based data acquisition. The codes and the work done are pasted below.\n\n# Load packages\nlibrary(tidyverse)\n\nWarning: package 'tidyverse' was built under R version 4.5.2\n\n\nWarning: package 'lubridate' was built under R version 4.5.2\n\n\n── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──\n✔ dplyr     1.1.4     ✔ readr     2.1.5\n✔ forcats   1.0.0     ✔ stringr   1.5.1\n✔ ggplot2   4.0.0     ✔ tibble    3.3.0\n✔ lubridate 1.9.4     ✔ tidyr     1.3.1\n✔ purrr     1.1.0     \n── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──\n✖ dplyr::filter() masks stats::filter()\n✖ dplyr::lag()    masks stats::lag()\nℹ Use the conflicted package (&lt;http://conflicted.r-lib.org/&gt;) to force all conflicts to become errors\n\nlibrary(rvest)\n\n\nAttaching package: 'rvest'\n\nThe following object is masked from 'package:readr':\n\n    guess_encoding\n\n# Import dataset\nfores &lt;- read_csv(\"data/fores.csv\", col_types = cols(NA...7 = col_skip(), \n    NA...8 = col_skip(), newdate = col_skip()))\n\nNew names:\n• `NA` -&gt; `NA...7`\n• `NA` -&gt; `NA...8`\n\nView(fores)\nforeign_reserves_data &lt;- read_csv(\"data/foreign_reserves_data.csv\", \n    col_types = cols(Other_Currencies = col_skip(), \n        Unallocated_Reserves = col_skip(), \n        `NA` = col_skip()))\nView(foreign_reserves_data)\n\n# Top 5 rows for each data frame\nhead(fores, 5)\n\n# A tibble: 5 × 6\n  Rank                               Country   Forexres     Date  Change Sources\n  &lt;chr&gt;                              &lt;chr&gt;     &lt;chr&gt;        &lt;chr&gt; &lt;chr&gt;  &lt;chr&gt;  \n1 Country(as recognized by the U.N.) Continent Including g… Incl… Exclu… Exclud…\n2 Country(as recognized by the U.N.) Continent millions U.… Chan… milli… Change \n3 China                              Asia      3,643,149    41,0… 3,389… 31,221 \n4 Japan                              Asia      1,324,210    19,7… 1,230… 16,230 \n5 Switzerland                        Europe    1,007,710    13,9… 897,2… 14,490 \n\nhead(foreign_reserves_data, 5)\n\n# A tibble: 5 × 11\n   Year Quarter USD      Euro     JPY    GBP    CAN    CNY    AUD    CHF   Total\n  &lt;dbl&gt; &lt;chr&gt;   &lt;chr&gt;    &lt;chr&gt;    &lt;chr&gt;  &lt;chr&gt;  &lt;chr&gt;  &lt;chr&gt;  &lt;chr&gt;  &lt;chr&gt; &lt;chr&gt;\n1    NA &lt;NA&gt;    USD      EUR      JPY    GBP    CAD    CNY    AUD    CHF   Total\n2  2019 Q1      6,727.09 2,208.79 584.63 495.70 208.64 212.26 181.95 15.27 11,6…\n3  2019 Q2      6,752.28 2,264.88 611.87 497.41 209.85 212.80 186.71 15.53 11,7…\n4  2019 Q3      6,728.85 2,212.74 612.75 492.22 205.44 213.83 182.48 16.20 11,6…\n5  2019 Q4      6,674.83 2,279.30 631.00 511.51 206.71 215.81 187.18 17.36 11,8…"
+  },
+  {
+    "objectID": "assign05.html",
+    "href": "assign05.html",
+    "title": "Assignment 5: Government Data API",
+    "section": "",
+    "text": "For this assignment, I used the gov01data.R package to scrape government documents. Three issues have been encountered, but they have been solved. Here is an overview of the scraping process:\n\nFile Format Requirements: The initial challenges involved downloading the dataset listings. I assumed that only the CSV file was required; however, the govdata01 package relies on both files, which in this case are the CSV and JSON files. This was a necessary step because it ensures compatibility with the package’s functions and to enable proper data extraction.\nSetting the File Directory: Before starting with the downloads, the CSV and JSON files were not being recognized because there was no designated directory for it. With the guidance of AI, specifially ChatGBT, I determined that a dedicated folder was required to properly organize and access the data files. As a result, I used my folder that I created for assignment 4 named data, and stored the CSV and JSON files, which allowed the download and processing steps to be completed successfully.\nFile Downloads: During the first download process, the last five entries failed because the corresponding JSON records contained missing or empty PDF link fields. As a result, items 6–10 were labeled “Failed to download” due to the absence of valid PDF URLs. To resolve this issue, I obtained updated CSV and JSON files and attempted the process again with 20 government records. On the second attempt, 19 of the 20 files downloaded successfully, with only the third file failing due to a persistent missing PDF reference.\nData Usability and Recommendations: Despite these challenges, the resulting dataset remains usable, as it includes a diverse range of government documents from recent times. For future development, implementing a stronger filtering mechanism—such as automatically excluding records with missing pdf link fields—would improve the overall efficiency of the document retrieval process. Below, I’ve pasted my codes where 19 out of 20 government files were downloaded.\n\n\n## Scraping Government data\n## Website: GovInfo (https://www.govinfo.gov/app/search/)\n## Prerequisite: Download from website the list of files to be downloaded\n## Designed for background job\n\n# Start with a clean plate and lean loading to save memory\n\ngc(reset=T)\n\n          used (Mb) gc trigger (Mb) max used (Mb)\nNcells  603820 32.3    1374165 73.4   603820 32.3\nVcells 1096622  8.4    8388608 64.0  1096622  8.4\n\n# install.packages(c(\"purrr\", \"magrittr\")\nlibrary(purrr)\nlibrary(magrittr) # Alternatively, load tidyverse\n\n\nAttaching package: 'magrittr'\n\n\nThe following object is masked from 'package:purrr':\n\n    set_names\n\n## Set path for reading the listing and home directory\n## For Windows, use \"c:\"\\\\directory\\\\subdirectory\\\\\n## For Mac, \"/Users/YOURNAME/path/\"\n\nlibrary(rjson)\nlibrary(jsonlite)\n\n\nAttaching package: 'jsonlite'\n\n\nThe following objects are masked from 'package:rjson':\n\n    fromJSON, toJSON\n\n\nThe following object is masked from 'package:purrr':\n\n    flatten\n\nlibrary(data.table)\n\n\nAttaching package: 'data.table'\n\n\nThe following object is masked from 'package:purrr':\n\n    transpose\n\nlibrary(readr)\n\n## CSV method\ngovfiles= read.csv(file=\"data/govinfo-search-results-2025-10-29T19_06_10.csv\", skip=2)\n\n## JSON method\n### rjson\ngf_list &lt;- rjson::fromJSON(file =\"data/govinfo-search-results-2025-10-29T19_06_42.json\")\ngovfile2=dplyr::bind_rows(gf_list$resultSet)\n\n### jsonlite\ngf_list1 = jsonlite::read_json(\"data/govinfo-search-results-2025-10-29T19_06_42.json\")\n\n### Extract the list\ngovfiles3 &lt;- gf_list1$resultSet\n\n### One more step\ngovfiles3 &lt;- gf_list1$resultSet |&gt; dplyr::bind_rows()\n\n\n# Preparing for bulk download of government documents\ngovfiles$id = govfiles$packageId\npdf_govfiles_url = govfiles3$pdfLink\npdf_govfiles_id &lt;- govfiles3$index\n\n# Directory to save the pdf's\n# Be sure to create a folder for storing the pdf's\nsave_dir &lt;- \"datamethods\"\n\n# Function to download pdfs\ndownload_govfiles_pdf &lt;- function(url, id) {\n  tryCatch({\n    destfile &lt;- paste0(save_dir, \"govfiles_\", id, \".pdf\")\n    download.file(url, destfile = destfile, mode = \"wb\") # Binary files\n    Sys.sleep(runif(1, 1, 3))  # Important: random sleep between 1 and 3 seconds to avoid suspicion of \"hacking\" the server\n    return(paste(\"Successfully downloaded:\", url))\n  },\n  error = function(e) {\n    return(paste(\"Failed to download:\", url))\n  })\n}\n# Download files, potentially in parallel for speed\n# Simple timer, can use package like tictoc\n\n## Try twenty\nstart.time &lt;- Sys.time()\nmessage(\"Starting downloads\")\n\nStarting downloads\n\nresults &lt;- 1:20 %&gt;% \n  purrr::map_chr(~ download_govfiles_pdf(pdf_govfiles_url[.], pdf_govfiles_id[.]))\n\nWarning in download.file(url, destfile = destfile, mode = \"wb\"): URL '': status\nwas 'URL using bad/illegal format or missing URL'\n\nmessage(\"Finished downloads\")\n\nFinished downloads\n\nend.time &lt;- Sys.time()\ntime.taken &lt;- end.time - start.time\ntime.taken\n\nTime difference of 40.49169 secs\n\n# Print results\nprint(results)\n\n [1] \"Successfully downloaded: https://www.govinfo.gov/content/pkg/CCAL-119scal-2025-10-29/pdf/CCAL-119scal-2025-10-29-pt2.pdf\" \n [2] \"Successfully downloaded: https://www.govinfo.gov/content/pkg/CCAL-119scal-2025-10-29/pdf/CCAL-119scal-2025-10-29-pt6.pdf\" \n [3] \"Failed to download: \"                                                                                                     \n [4] \"Successfully downloaded: https://www.govinfo.gov/content/pkg/CCAL-119hcal-2025-10-28/pdf/CCAL-119hcal-2025-10-28-pt9.pdf\" \n [5] \"Successfully downloaded: https://www.govinfo.gov/content/pkg/CCAL-119hcal-2025-10-28/pdf/CCAL-119hcal-2025-10-28-pt13.pdf\"\n [6] \"Successfully downloaded: https://www.govinfo.gov/content/pkg/CCAL-119hcal-2025-10-28/pdf/CCAL-119hcal-2025-10-28-pt22.pdf\"\n [7] \"Successfully downloaded: https://www.govinfo.gov/content/pkg/BILLS-119s3056is/pdf/BILLS-119s3056is.pdf\"                   \n [8] \"Successfully downloaded: https://www.govinfo.gov/content/pkg/CREC-2025-10-27/pdf/CREC-2025-10-27-pt1-PgS7753-4.pdf\"       \n [9] \"Successfully downloaded: https://www.govinfo.gov/content/pkg/CCAL-119scal-2025-10-27/pdf/CCAL-119scal-2025-10-27-pt2.pdf\" \n[10] \"Successfully downloaded: https://www.govinfo.gov/content/pkg/CCAL-119scal-2025-10-27/pdf/CCAL-119scal-2025-10-27-pt6.pdf\" \n[11] \"Successfully downloaded: https://www.govinfo.gov/content/pkg/CCAL-119hcal-2025-10-24/pdf/CCAL-119hcal-2025-10-24-pt9.pdf\" \n[12] \"Successfully downloaded: https://www.govinfo.gov/content/pkg/CCAL-119hcal-2025-10-24/pdf/CCAL-119hcal-2025-10-24-pt13.pdf\"\n[13] \"Successfully downloaded: https://www.govinfo.gov/content/pkg/CREC-2025-10-23/pdf/CREC-2025-10-23-pt1-PgD1072.pdf\"         \n[14] \"Successfully downloaded: https://www.govinfo.gov/content/pkg/CREC-2025-10-23/pdf/CREC-2025-10-23-pt1-PgS7722-9.pdf\"       \n[15] \"Successfully downloaded: https://www.govinfo.gov/content/pkg/CREC-2025-10-23/pdf/CREC-2025-10-23-pt1-PgS7729-5.pdf\"       \n[16] \"Successfully downloaded: https://www.govinfo.gov/content/pkg/CREC-2025-10-23/pdf/CREC-2025-10-23-pt1-PgS7730.pdf\"         \n[17] \"Successfully downloaded: https://www.govinfo.gov/content/pkg/CREC-2025-10-23/pdf/CREC-2025-10-23-pt1-PgS7732.pdf\"         \n[18] \"Successfully downloaded: https://www.govinfo.gov/content/pkg/CREC-2025-10-23/pdf/CREC-2025-10-23-pt1-PgS7733-3.pdf\"       \n[19] \"Successfully downloaded: https://www.govinfo.gov/content/pkg/CCAL-119scal-2025-10-23/pdf/CCAL-119scal-2025-10-23-pt2.pdf\" \n[20] \"Successfully downloaded: https://www.govinfo.gov/content/pkg/CCAL-119scal-2025-10-23/pdf/CCAL-119scal-2025-10-23-pt6.pdf\""
+  },
+  {
+    "objectID": "assign05.html#website-govinfo-httpswww.govinfo.govappsearch",
+    "href": "assign05.html#website-govinfo-httpswww.govinfo.govappsearch",
+    "title": "Assignment 5: Government Data API",
+    "section": "Website: GovInfo (https://www.govinfo.gov/app/search/)",
+    "text": "Website: GovInfo (https://www.govinfo.gov/app/search/)"
+  },
+  {
+    "objectID": "assign05.html#prerequisite-download-from-website-the-list-of-files-to-be-downloaded",
+    "href": "assign05.html#prerequisite-download-from-website-the-list-of-files-to-be-downloaded",
+    "title": "Assignment 5: Government Data API",
+    "section": "Prerequisite: Download from website the list of files to be downloaded",
+    "text": "Prerequisite: Download from website the list of files to be downloaded"
+  },
+  {
+    "objectID": "assign05.html#designed-for-background-job",
+    "href": "assign05.html#designed-for-background-job",
+    "title": "Assignment 5: Government Data API",
+    "section": "Designed for background job",
+    "text": "Designed for background job"
+  },
+  {
+    "objectID": "assign05.html#set-path-for-reading-the-listing-and-home-directory",
+    "href": "assign05.html#set-path-for-reading-the-listing-and-home-directory",
+    "title": "Assignment 5: Government Data API",
+    "section": "Set path for reading the listing and home directory",
+    "text": "Set path for reading the listing and home directory"
+  },
+  {
+    "objectID": "assign05.html#for-windows-use-cdirectorysubdirectory",
+    "href": "assign05.html#for-windows-use-cdirectorysubdirectory",
+    "title": "Assignment 5: Government Data API",
+    "section": "For Windows, use “c:”\\directory\\subdirectory\\",
+    "text": "For Windows, use “c:”\\directory\\subdirectory\\"
+  },
+  {
+    "objectID": "assign05.html#for-mac-usersyournamepath",
+    "href": "assign05.html#for-mac-usersyournamepath",
+    "title": "Assignment 5: Government Data API",
+    "section": "For Mac, “/Users/YOURNAME/path/”",
+    "text": "For Mac, “/Users/YOURNAME/path/”\nlibrary(rjson) library(jsonlite) library(data.table) library(readr)"
+  },
+  {
+    "objectID": "assign05.html#csv-method",
+    "href": "assign05.html#csv-method",
+    "title": "Assignment 5: Government Data API",
+    "section": "CSV method",
+    "text": "CSV method\ngovfiles= read.csv(file=“govinfo-search-results-2025-10-22T02_04_09.csv”, skip=2)"
+  },
+  {
+    "objectID": "assign05.html#json-method",
+    "href": "assign05.html#json-method",
+    "title": "Assignment 5: Government Data API",
+    "section": "JSON method",
+    "text": "JSON method\n\nrjson\ngf_list &lt;- rjson::fromJSON(file =“govinfo-search-results-2025-10-22T02_05_19.json”) govfile2=dplyr::bind_rows(gf_list$resultSet)\n\n\njsonlite\ngf_list1 = jsonlite::read_json(“govinfo-search-results-2025-10-22T02_05_19.json”)\n\n\nExtract the list\ngovfiles3 &lt;- gf_list1$resultSet\n\n\nOne more step\ngovfiles3 &lt;- gf_list1$resultSet |&gt; dplyr::bind_rows()"
+  },
+  {
+    "objectID": "assign05.html#try-downloading-one-document",
+    "href": "assign05.html#try-downloading-one-document",
+    "title": "Assignment 5: Government Data API",
+    "section": "Try downloading one document",
+    "text": "Try downloading one document\nstart.time &lt;- Sys.time() message(“Starting downloads”) results &lt;- 1:1 %&gt;% purrr::map_chr(~ download_govfiles_pdf(pdf_govfiles_url[.], pdf_govfiles_id[.])) message(“Finished downloads”) end.time &lt;- Sys.time() time.taken &lt;- end.time - start.time time.taken"
+  },
+  {
+    "objectID": "assign05.html#try-five",
+    "href": "assign05.html#try-five",
+    "title": "Assignment 5: Government Data API",
+    "section": "Try five",
+    "text": "Try five\nstart.time &lt;- Sys.time() message(“Starting downloads”) results &lt;- 1:5 %&gt;% purrr::map_chr(~ download_govfiles_pdf(pdf_govfiles_url[.], pdf_govfiles_id[.])) message(“Finished downloads”) end.time &lt;- Sys.time() time.taken &lt;- end.time - start.time time.taken"
+  },
+  {
+    "objectID": "assign05.html#download-all-caution-this-may-take-a-while-and-lots-of-space",
+    "href": "assign05.html#download-all-caution-this-may-take-a-while-and-lots-of-space",
+    "title": "Assignment 5: Government Data API",
+    "section": "Download all: Caution, this may take a while and lots of space",
+    "text": "Download all: Caution, this may take a while and lots of space\nstart.time &lt;- Sys.time() message(“Starting downloads”) results &lt;- 1:length(pdf_govfiles_url) %&gt;% purrr::map_chr(~ download_govfiles_pdf(pdf_govfiles_url[.], pdf_govfiles_id[.])) message(“Finished downloads”) end.time &lt;- Sys.time() time.taken &lt;- end.time - start.time time.taken"
+  },
+  {
+    "objectID": "assign05.html#exercise-try-downloading-118th-congress-congressional-hearings-in-committee-on-foreign-affairs",
+    "href": "assign05.html#exercise-try-downloading-118th-congress-congressional-hearings-in-committee-on-foreign-affairs",
+    "title": "Assignment 5: Government Data API",
+    "section": "Exercise: Try downloading 118th Congress Congressional Hearings in Committee on Foreign Affairs?",
+    "text": "Exercise: Try downloading 118th Congress Congressional Hearings in Committee on Foreign Affairs?"
+  },
+  {
+    "objectID": "assign06p1.html",
+    "href": "assign06p1.html",
+    "title": "Assignment 6: Quanteda Text Analysis Part 1",
+    "section": "",
+    "text": "# Website: https://quanteda.io/\n\nlibrary(quanteda)\n\nPackage version: 4.3.1\nUnicode version: 15.1\nICU version: 74.1\n\n\nParallel computing: 12 of 12 threads used.\n\n\nSee https://quanteda.io for tutorials and examples.\n\nlibrary(quanteda.textmodels)\nlibrary(quanteda.textplots)\nlibrary(readr)\nlibrary(ggplot2)\n\n# Twitter data about President Biden and Xi summit in Novemeber 2021\n# Do some background search/study on the event\n# \nsummit &lt;- read_csv(\"https://raw.githubusercontent.com/datageneration/datamethods/master/textanalytics/summit_11162021.csv\")\n\nRows: 14520 Columns: 90\n\n\n── Column specification ────────────────────────────────────────────────────────\nDelimiter: \",\"\nchr  (50): screen_name, text, source, reply_to_screen_name, hashtags, symbol...\ndbl  (26): user_id, status_id, display_text_width, reply_to_status_id, reply...\nlgl  (10): is_quote, is_retweet, quote_count, reply_count, ext_media_type, q...\ndttm  (4): created_at, quoted_created_at, retweet_created_at, account_create...\n\nℹ Use `spec()` to retrieve the full column specification for this data.\nℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.\n\nView(summit)\n\nsum_twt = summit$text\ntoks = tokens(sum_twt)\nsumtwtdfm &lt;- dfm(toks)\nclass(toks)\n\n[1] \"tokens\"\n\n# Latent Semantic Analysis \n## (https://quanteda.io/reference/textmodel_lsa.html)\n\nsum_lsa &lt;- textmodel_lsa(sumtwtdfm, nd=4,  margin = c(\"both\", \"documents\", \"features\"))\nsummary(sum_lsa)\n\n                Length    Class     Mode   \nsk                      4 -none-    numeric\ndocs                58080 -none-    numeric\nfeatures            63972 -none-    numeric\nmatrix_low_rank 232218360 -none-    numeric\ndata            232218360 dgCMatrix S4     \n\nhead(sum_lsa$docs)\n\n              [,1]          [,2]          [,3]          [,4]\ntext1 8.678102e-03  9.529008e-03 -3.178574e-03  1.380732e-02\ntext2 8.676818e-06 -8.806186e-06 -5.989637e-06  1.677631e-05\ntext3 2.922127e-03  6.778967e-03  1.131673e-03 -3.176902e-03\ntext4 1.046624e-02  8.884054e-04 -4.282723e-03  4.960680e-03\ntext5 3.251208e-03  8.005843e-03  2.208204e-04 -4.656367e-03\ntext6 3.251208e-03  8.005843e-03  2.208204e-04 -4.656367e-03\n\nclass(sum_lsa)\n\n[1] \"textmodel_lsa\"\n\ntweet_dfm &lt;- tokens(sum_twt, remove_punct = TRUE) %&gt;%\n  dfm()\nhead(tweet_dfm)\n\nDocument-feature matrix of: 6 documents, 15,927 features (99.89% sparse) and 0 docvars.\n       features\ndocs    breaking news us president biden amp communist china leader xi\n  text1        1    1  1         1     1   1         1     2      1  1\n  text2        0    0  0         0     0   0         0     0      0  0\n  text3        0    0  0         0     1   0         0     0      0  1\n  text4        0    0  0         1     1   0         0     0      0  1\n  text5        0    0  0         0     1   0         0     0      0  1\n  text6        0    0  0         0     1   0         0     0      0  1\n[ reached max_nfeat ... 15,917 more features ]\n\ntag_dfm &lt;- dfm_select(tweet_dfm, pattern = \"#*\")\ntoptag &lt;- names(topfeatures(tag_dfm, 100))\nhead(toptag, 20)\n\n [1] \"#china\"          \"#biden\"          \"#xijinping\"      \"#joebiden\"      \n [5] \"#america\"        \"#americans\"      \"#coronavirus\"    \"#fentanyl\"      \n [9] \"#xi\"             \"#us\"             \"#uyghurgenocide\" \"#taiwan\"        \n[13] \"#foxnews\"        \"#usa\"            \"#breaking\"       \"#news\"          \n[17] \"#ccp\"            \"#humanrights\"    \"#uyghurs\"        \"#tibetans\"      \n\nlibrary(\"quanteda.textplots\")\ntag_fcm &lt;- fcm(tag_dfm)\nhead(tag_fcm)\n\nFeature co-occurrence matrix of: 6 by 665 features.\n               features\nfeatures        #breaking #breakingnews #biden #china #usa #pray4america\n  #breaking             0             4      5      5    5             0\n  #breakingnews         0             0      4      5    4             0\n  #biden                0             0      0    443   49             0\n  #china                0             0      0      8   76             0\n  #usa                  0             0      0      0    6             0\n  #pray4america         0             0      0      0    0             0\n               features\nfeatures        #joebiden #xijinping #america #americans\n  #breaking             0          0        0          0\n  #breakingnews         0          0        0          0\n  #biden              299        370      302        295\n  #china              339        434      308        295\n  #usa                 12         15        0          0\n  #pray4america         0          0        0          0\n[ reached max_nfeat ... 655 more features ]\n\ntopgat_fcm &lt;- fcm_select(tag_fcm, pattern = toptag)\ntextplot_network(topgat_fcm, min_freq = 100, edge_alpha = 0.8, edge_size = 1)\n\n\n\n\n\n\n\nuser_dfm &lt;- dfm_select(tweet_dfm, pattern = \"@*\")\ntopuser &lt;- names(topfeatures(user_dfm, 100))\nhead(topuser, 50)\n\n [1] \"@potus\"           \"@politico\"        \"@joebiden\"        \"@jendeben\"       \n [5] \"@eneskanter\"      \"@nwadhams\"        \"@phelimkine\"      \"@nahaltoosi\"     \n [9] \"@nba\"             \"@washwizards\"     \"@pelicansnba\"     \"@capitalonearena\"\n[13] \"@kevinliptakcnn\"  \"@foxbusiness\"     \"@morningsmaria\"   \"@scmpnews\"       \n[17] \"@petermartin_pcm\" \"@nytimes\"         \"@uyghur_american\" \"@kaylatausche\"   \n[21] \"@presssec\"        \"@bpolitics\"       \"@nypost\"          \"@anderscorr\"     \n[25] \"@whnsc\"           \"@foxnews\"         \"@jewherilham\"     \"@whitehouse\"     \n[29] \"@onlyyoontv\"      \"@thehillopinion\"  \"@dannyrrussel\"    \"@learyreports\"   \n[33] \"@glubold\"         \"@betamoroney\"     \"@enilev\"          \"@evasmartai\"     \n[37] \"@globaltaiwan\"    \"@david_culver\"    \"@ethancpaul\"      \"@davidfickling\"  \n[41] \"@paulhaenle\"      \"@fredfleitz\"      \"@forbes\"          \"@asiasociety\"    \n[45] \"@nathaniel_sher\"  \"@ak_mack\"         \"@googlenews\"      \"@knottmatthew\"   \n[49] \"@voachinese\"      \"@wsj\"            \n\nuser_fcm &lt;- fcm(user_dfm)\nhead(user_fcm, 50)\n\nFeature co-occurrence matrix of: 50 by 711 features.\n                 features\nfeatures          @youtube @bfmtv @cnn @lauhaim @barackobama @joebiden\n  @youtube               0      0    0        0            0         0\n  @bfmtv                 0      0    1        1            1         1\n  @cnn                   0      0    0        1            1         1\n  @lauhaim               0      0    0        0            1         1\n  @barackobama           0      0    0        0            0         1\n  @joebiden              0      0    0        0            0         3\n  @kamalaharris          0      0    0        0            0         0\n  @hillaryclinton        0      0    0        0            0         0\n  @billclinton           0      0    0        0            0         0\n  @cbsnews               0      0    0        0            0         0\n                 features\nfeatures          @kamalaharris @hillaryclinton @billclinton @cbsnews\n  @youtube                    0               0            0        0\n  @bfmtv                      1               1            1        1\n  @cnn                        1               1            1        1\n  @lauhaim                    1               1            1        1\n  @barackobama                1               1            1        1\n  @joebiden                   1               1            1        1\n  @kamalaharris               0               1            1        1\n  @hillaryclinton             0               0            1        1\n  @billclinton                0               0            0        1\n  @cbsnews                    0               0            0        0\n[ reached max_nfeat ... 40 more features, reached max_nfeat ... 701 more features ]\n\nuser_fcm &lt;- fcm_select(user_fcm, pattern = topuser)\ntextplot_network(user_fcm, min_freq = 50, edge_color = \"darkgreen\", edge_alpha = 0.8, edge_size = 1)"
+  },
+  {
+    "objectID": "assign06p2.html",
+    "href": "assign06p2.html",
+    "title": "Assignment 6: Quanteda Text Analysis Part 2",
+    "section": "",
+    "text": "library(quanteda)\n\nPackage version: 4.3.1\nUnicode version: 15.1\nICU version: 74.1\n\n\nParallel computing: 12 of 12 threads used.\n\n\nSee https://quanteda.io for tutorials and examples.\n\nlibrary(quanteda.textmodels)\nlibrary(quanteda.textplots)\nlibrary(readr)\nlibrary(ggplot2)\n\n# Wordcloud\n# based on US presidential inaugural address texts, and metadata (for the corpus), from 1789 to present.\ndfm_inaug &lt;- corpus_subset(data_corpus_inaugural, Year &lt;= 1826) %&gt;% \n  tokens(remove_punct = TRUE) %&gt;% \n  tokens_remove(stopwords('english')) %&gt;% \n  dfm() %&gt;%\n  dfm_trim(min_termfreq = 10, verbose = FALSE)\n\nset.seed(100)\ntextplot_wordcloud(dfm_inaug)\n\n\n\n\n\n\n\ninaug_speech = data_corpus_inaugural\n\ncorpus_subset(data_corpus_inaugural, \n              President %in% c(\"Kennedy\", \"Reagan\", \"Clinton\")) %&gt;%\n  tokens(remove_punct = TRUE) %&gt;%\n  tokens_remove(stopwords(\"english\")) %&gt;%\n  dfm() %&gt;%\n  dfm_group(groups = President) %&gt;%\n  dfm_trim(min_termfreq = 5, verbose = FALSE) %&gt;%\n  textplot_wordcloud(comparison = TRUE)\n\n\n\n\n\n\n\ntextplot_wordcloud(dfm_inaug, min_count = 10,\n                   color = c('firebrick', 'pink', 'green', 'purple', 'orange', 'blue'))\n\n\n\n\n\n\n\ndata_corpus_inaugural_subset &lt;- \n  corpus_subset(data_corpus_inaugural, Year &gt; 1949)\nkwic(tokens(data_corpus_inaugural_subset), pattern = \"american\") %&gt;%\n  textplot_xray()\n\n\n\n\n\n\n\ntextplot_xray(\n  kwic(tokens(data_corpus_inaugural_subset), pattern = \"american\"),\n  kwic(tokens(data_corpus_inaugural_subset), pattern = \"people\"),\n  kwic(tokens(data_corpus_inaugural_subset), pattern = \"capitalist\")\n  \n)\n\n\n\n\n\n\n\ntheme_set(theme_bw())\ng &lt;- textplot_xray(\n  kwic(tokens(data_corpus_inaugural_subset), pattern = \"american\"),\n  kwic(tokens(data_corpus_inaugural_subset), pattern = \"people\"),\n  kwic(tokens(data_corpus_inaugural_subset), pattern = \"capitalist\")\n)\ng + aes(color = keyword) + \n  scale_color_manual(values = c(\"blue\", \"red\", \"green\")) +\n  theme(legend.position = \"none\")\n\n\n\n\n\n\n\nlibrary(quanteda.textstats)\n\nWarning: package 'quanteda.textstats' was built under R version 4.5.2\n\nfeatures_dfm_inaug &lt;- textstat_frequency(dfm_inaug, n = 100)\n\n# Sort by reverse frequency order\nfeatures_dfm_inaug$feature &lt;- with(features_dfm_inaug, reorder(feature, -frequency))\n\nggplot(features_dfm_inaug, aes(x = feature, y = frequency)) +\n  geom_point() + \n  theme(axis.text.x = element_text(angle = 90, hjust = 1))\n\n\n\n\n\n\n\n# Get frequency grouped by president\nfreq_grouped &lt;- textstat_frequency(dfm(tokens(data_corpus_inaugural_subset)), \n                                   groups = data_corpus_inaugural_subset$President)\n\n# Filter the term \"american\"\nfreq_american &lt;- subset(freq_grouped, freq_grouped$feature %in% \"american\")  \n\nggplot(freq_american, aes(x = group, y = frequency)) +\n  geom_point() + \n  scale_y_continuous(limits = c(0, 14), breaks = c(seq(0, 14, 2))) +\n  xlab(NULL) + \n  ylab(\"Frequency\") +\n  theme(axis.text.x = element_text(angle = 90, hjust = 1))\n\nWarning: Removed 1 row containing missing values or values outside the scale range\n(`geom_point()`).\n\n\n\n\n\n\n\n\ndfm_rel_freq &lt;- dfm_weight(dfm(tokens(data_corpus_inaugural_subset)), scheme = \"prop\") * 100\nhead(dfm_rel_freq)\n\nDocument-feature matrix of: 6 documents, 4,625 features (86.44% sparse) and 4 docvars.\n                 features\ndocs                      my    friends        ,    before          i\n  1953-Eisenhower 0.14582574 0.14582574 4.593511 0.1822822 0.10936930\n  1957-Eisenhower 0.20975354 0.10487677 6.345045 0.1573152 0.05243838\n  1961-Kennedy    0.19467878 0.06489293 5.451006 0.1297859 0.32446463\n  1965-Johnson    0.17543860 0.05847953 5.555556 0.2339181 0.87719298\n  1969-Nixon      0.28973510 0          5.546358 0.1241722 0.86920530\n  1973-Nixon      0.05012531 0.05012531 4.812030 0.2005013 0.60150376\n                 features\ndocs                   begin      the expression       of     those\n  1953-Eisenhower 0.03645643 6.234050 0.03645643 5.176814 0.1458257\n  1957-Eisenhower 0          5.977976 0          5.034085 0.1573152\n  1961-Kennedy    0.19467878 5.580792 0          4.218040 0.4542505\n  1965-Johnson    0          4.502924 0          3.333333 0.1754386\n  1969-Nixon      0          5.629139 0          3.890728 0.4552980\n  1973-Nixon      0          4.160401 0          3.408521 0.3007519\n[ reached max_nfeat ... 4,615 more features ]\n\nrel_freq &lt;- textstat_frequency(dfm_rel_freq, groups = dfm_rel_freq$President)\n\n# Filter the term \"american\"\nrel_freq_american &lt;- subset(rel_freq, feature %in% \"american\")  \n\nggplot(rel_freq_american, aes(x = group, y = frequency)) +\n  geom_point() + \n  scale_y_continuous(limits = c(0, 0.7), breaks = c(seq(0, 0.7, 0.1))) +\n  xlab(NULL) + \n  ylab(\"Relative frequency\") +\n  theme(axis.text.x = element_text(angle = 90, hjust = 1))\n\nWarning: Removed 1 row containing missing values or values outside the scale range\n(`geom_point()`).\n\n\n\n\n\n\n\n\ndfm_weight_pres &lt;- data_corpus_inaugural %&gt;%\n  corpus_subset(Year &gt; 2000) %&gt;%\n  tokens(remove_punct = TRUE) %&gt;%\n  tokens_remove(stopwords(\"english\")) %&gt;%\n  dfm() %&gt;%\n  dfm_weight(scheme = \"prop\")\n\n# Calculate relative frequency by president\nfreq_weight &lt;- textstat_frequency(dfm_weight_pres, n = 15, \n                                  groups = dfm_weight_pres$President)\n\nggplot(data = freq_weight, aes(x = nrow(freq_weight):1, y = frequency)) +\n  geom_point() +\n  facet_wrap(~ group, scales = \"free\") +\n  coord_flip() +\n  scale_x_continuous(breaks = nrow(freq_weight):1,\n                     labels = freq_weight$feature) +\n  labs(x = NULL, y = \"Relative frequency\")\n\n\n\n\n\n\n\n# Only select speeches by Kennedy and Reagan\npres_corpus &lt;- corpus_subset(data_corpus_inaugural, \n                             President %in% c(\"Kennedy\", \"Reagan\"))\n\n# Create a dfm grouped by president\npres_dfm &lt;- tokens(pres_corpus, remove_punct = TRUE) %&gt;%\n  tokens_remove(stopwords(\"english\")) %&gt;%\n  tokens_group(groups = President) %&gt;%\n  dfm()\n\n# Calculate keyness and determine Reagan as target group\nresult_keyness &lt;- textstat_keyness(pres_dfm, target = \"Reagan\")\n\n# Plot estimated word keyness\ntextplot_keyness(result_keyness) \n\nWarning: Using `size` aesthetic for lines was deprecated in ggplot2 3.4.0.\nℹ Please use `linewidth` instead.\nℹ The deprecated feature was likely used in the quanteda.textplots package.\n  Please report the issue at\n  &lt;https://github.com/quanteda/quanteda.textplots/issues&gt;.\n\n\n\n\n\n\n\n\n# Plot without the reference text (in this case Obama)\ntextplot_keyness(result_keyness, show_reference = FALSE)\n\n\n\n\n\n\n\nlibrary(quanteda.textmodels)\n\n# Irish budget speeches from 2010 (data from quanteda.textmodels)\n# Transform corpus to dfm\ndata(data_corpus_irishbudget2010, package = \"quanteda.textmodels\")\nie_dfm &lt;- dfm(tokens(data_corpus_irishbudget2010))\n\n# Set reference scores\nrefscores &lt;- c(rep(NA, 4), 1, -1, rep(NA, 8))\n\n# Predict Wordscores model\nws &lt;- textmodel_wordscores(ie_dfm, y = refscores, smooth = 1)\n\n# Plot estimated word positions (highlight words and print them in red)\ntextplot_scale1d(ws,\n                 highlighted = c(\"economy\", \"jobs\", \"cut\", \"billion\"), \n                 highlighted_color = \"blue\")\n\n\n\n\n\n\n\n# Get predictions\npred &lt;- predict(ws, se.fit = TRUE)\n\n# Plot estimated document positions and group by \"party\" variable\ntextplot_scale1d(pred, margin = \"documents\",\n                 groups = docvars(data_corpus_irishbudget2010, \"party\"))\n\n\n\n\n\n\n\n# Plot estimated document positions using the LBG transformation and group by \"party\" variable\n\npred_lbg &lt;- predict(ws, se.fit = TRUE, rescaling = \"lbg\")\n\ntextplot_scale1d(pred_lbg, margin = \"documents\",\n                 groups = docvars(data_corpus_irishbudget2010, \"party\"))\n\n\n\n\n\n\n\n# Estimate Wordfish model\nlibrary(\"quanteda.textmodels\")\nwf &lt;- textmodel_wordfish(dfm(tokens(data_corpus_irishbudget2010)), dir = c(6, 5))\n\n# Plot estimated word positions\ntextplot_scale1d(wf, margin = \"features\", \n                 highlighted = c(\"government\", \"global\", \"taxpayer\", \n                                 \"bank\", \"economy\", \"societies\", \"men\",\n                                 \"productivity\", \"hear\"), \n                 highlighted_color = \"firebrick\")\n\n\n\n\n\n\n\n# Plot estimated document positions\ntextplot_scale1d(wf, groups = data_corpus_irishbudget2010$party)\n\n\n\n\n\n\n\n# Transform corpus to dfm\nie_dfm &lt;- dfm(tokens(data_corpus_irishbudget2010))\n\n# Run correspondence analysis on dfm\nca &lt;- textmodel_ca(ie_dfm)\n\n# Plot estimated positions and group by party\ntextplot_scale1d(ca, margin = \"documents\",\n                 groups = docvars(data_corpus_irishbudget2010, \"party\"))\n\n\n\n\n\n\n\n\nWhen it comes to the similarities and differences between presidents among time is that some US presidents didn’t use the word “American” too frequent. It became more frequent later because it was used as a key identity during times ,such as World War 2 and the Cold War. After 1949, the terms “American”, and “people” appeared more throughout speeches by US Presidents John F. Kennedy and Ronald Reagan. The term “capitalist”, was less common but more concentrated in specific contexts such as the Cold War.\nAdditionally, the quanteda websites defines Wordfish as a Poisson scaling model that estimates one-dimension document positions that utilizes maximum likelihoods, and both the estimated position of words and the documents can be plotted."
+  },
+  {
+    "objectID": "research.html",
+    "href": "research.html",
+    "title": "Research",
+    "section": "",
+    "text": "This research focuses on data and knowledge mining, which are the processes of extracting meaningful patterns, relationships, and insights from large datasets. They combine elements of machine learning, statistics and database systems to transform them into knowledge.This research will analyze how data and knowledge mining methods are applied to the study’s research question."
+  },
+  {
+    "objectID": "assignment1.html",
+    "href": "assignment1.html",
+    "title": "Assignment 1",
+    "section": "",
+    "text": "This page includes my first assignment for my knowledge mining class."
+  },
+  {
+    "objectID": "assign1.html",
+    "href": "assign1.html",
+    "title": "Assignment 1: Information Management Applications and Database Systems",
+    "section": "",
+    "text": "Applications using database systems\nProposed domain-based applications\nNoSQL databases\nSocial media database design"
+  },
+  {
+    "objectID": "assign1.html#introduction",
+    "href": "assign1.html#introduction",
+    "title": "Assignment 1: Information Management Applications and Database Systems",
+    "section": "",
+    "text": "Applications using database systems\nProposed domain-based applications\nNoSQL databases\nSocial media database design"
+  },
+  {
+    "objectID": "assign1.html#applications-using-database-systems",
+    "href": "assign1.html#applications-using-database-systems",
+    "title": "Assignment 1: Information Management Applications and Database Systems",
+    "section": "Applications Using Database Systems",
+    "text": "Applications Using Database Systems\nQuestion 1\nName and describe three applications you have used that employ a database system to store and access persistent data."
+  },
+  {
+    "objectID": "assign1.html#overview-of-applications",
+    "href": "assign1.html#overview-of-applications",
+    "title": "Assignment 1: Information Management Applications and Database Systems",
+    "section": "Overview of Applications",
+    "text": "Overview of Applications\nThree applications I have used that employ database systems to store and access persistent data are:\n\nOnline Shopping Applications\nStreaming Services\nOnline Multiplayer Video Games"
+  },
+  {
+    "objectID": "assign1.html#online-shopping-applications",
+    "href": "assign1.html#online-shopping-applications",
+    "title": "Assignment 1: Information Management Applications and Database Systems",
+    "section": "Online Shopping Applications",
+    "text": "Online Shopping Applications\nExamples:\n\nAmazon\nShein\nTemu\nAliExpress\n\nDatabase Usage:\n\nStore product listings\nManage user accounts\nTrack order histories and shipping information\nMaintain payment records\n\nThese databases allow users to browse items, complete transactions, track orders, and view purchase histories."
+  },
+  {
+    "objectID": "assign1.html#streaming-services",
+    "href": "assign1.html#streaming-services",
+    "title": "Assignment 1: Information Management Applications and Database Systems",
+    "section": "Streaming Services",
+    "text": "Streaming Services\nExamples:\n\nNetflix\nAmazon Prime\nHBO Max\nDisney+\n\nDatabase Usage\n\nManage user profiles and subscriptions\nStore viewing history\nGenerate personalized content recommendations\nEnable access across smartphones, tablets, laptops, desktops, and gaming consoles"
+  },
+  {
+    "objectID": "assign1.html#online-multiplayer-video-games",
+    "href": "assign1.html#online-multiplayer-video-games",
+    "title": "Assignment 1: Information Management Applications and Database Systems",
+    "section": "Online Multiplayer Video Games",
+    "text": "Online Multiplayer Video Games\nExamples:\n\nCall of Duty\nFortnite\nBattlefield\nValorant\nFIFA\n\nDatabase Usage\n\nStore player accounts and user statistics\nTrack achievements and in-game currency\nRecord microtransaction data\nSupport cross-platform play (Xbox, PlayStation, PC/Steam)"
+  },
+  {
+    "objectID": "assign1.html#proposed-domain-applications",
+    "href": "assign1.html#proposed-domain-applications",
+    "title": "Assignment 1: Information Management Applications and Database Systems",
+    "section": "Proposed Domain Applications",
+    "text": "Proposed Domain Applications\nQuestion 2\nPropose three applications in domain projects and describe their purpose, functions, and interface design."
+  },
+  {
+    "objectID": "assign1.html#selected-domains",
+    "href": "assign1.html#selected-domains",
+    "title": "Assignment 1: Information Management Applications and Database Systems",
+    "section": "Selected Domains",
+    "text": "Selected Domains\n\nCybersecurity\nData Analytics\nArtificial Intelligence / Machine Learning"
+  },
+  {
+    "objectID": "assign1.html#domain-1-cybersecurity",
+    "href": "assign1.html#domain-1-cybersecurity",
+    "title": "Assignment 1: Information Management Applications and Database Systems",
+    "section": "Domain 1: Cybersecurity",
+    "text": "Domain 1: Cybersecurity\nApplication: Cyber Incident Reporting Database\n\n\nPurpose\n\nCollect and analyze cybersecurity attacks\nIdentify attack patterns\nDetect viruses\nImprove response strategies\n\n\n\n\nFunctions\n\nStore cyber-incident reports\nTrack types of attacks and source origins\nGenerate reports on prevented incidents\n\n\n\n\nInterface Design\n\nIncident submission form\nFilters by attack type and severity level\nDashboards and graphs showing incident frequency and trends"
+  },
+  {
+    "objectID": "assign1.html#domain-2-data-analytics",
+    "href": "assign1.html#domain-2-data-analytics",
+    "title": "Assignment 1: Information Management Applications and Database Systems",
+    "section": "Domain 2: Data Analytics",
+    "text": "Domain 2: Data Analytics\nApplication: Research Data Management System\n\n\nPurpose\n\nStore, organize, and manage datasets used in academic and professional research\nEnsure data safety and efficient retrieval\n\n\n\n\nFunctions\n\nStore structured and unstructured datasets\nManage data sources and collection dates\nProvide users access to query, code, and summarize datasets\n\n\n\n\nInterface Design\n\nSecure user access\nDataset upload and download forms\nFilters by date, variable, and dataset type"
+  },
+  {
+    "objectID": "assign1.html#domain-3-machine-learning-artificial-intelligence",
+    "href": "assign1.html#domain-3-machine-learning-artificial-intelligence",
+    "title": "Assignment 1: Information Management Applications and Database Systems",
+    "section": "Domain 3: Machine Learning / Artificial Intelligence",
+    "text": "Domain 3: Machine Learning / Artificial Intelligence\nApplication: Machine Learning Model Database\n\n\nPurpose\n\nStore and manage machine learning models\nConnect models to research datasets\n\n\n\n\nFunctions\n\nStore machine learning models in a centralized repository\nEstablish relationships between models and datasets\n\n\n\n\nInterface Design\n\nModel upload interface\nComparison graphs and charts for model performance"
+  },
+  {
+    "objectID": "assign1.html#why-nosql-emerged",
+    "href": "assign1.html#why-nosql-emerged",
+    "title": "Assignment 1: Information Management Applications and Database Systems",
+    "section": "Why NoSQL Emerged",
+    "text": "Why NoSQL Emerged\nQuestion 4\nTraditional relational databases became increasingly difficult to scale as data volumes grew rapidly, particularly for scientific and web-centric organizations.\nNoSQL systems emerged in response by providing:\n\nHorizontal scalability\nHigh data throughput\nFlexible, non-relational data models\n\nUnlike traditional relational database management systems, NoSQL databases prioritize performance and scalability over rigid schemas and strict consistency."
+  },
+  {
+    "objectID": "assign1.html#nosql-vs.-traditional-databases",
+    "href": "assign1.html#nosql-vs.-traditional-databases",
+    "title": "Assignment 1: Information Management Applications and Database Systems",
+    "section": "NoSQL vs. Traditional Databases",
+    "text": "NoSQL vs. Traditional Databases\nTraditional relational databases became increasingly difficult to scale as data volumes grew rapidly, particularly for scientific and web-centric organizations.\nNoSQL systems emerged in the 2000s in response to these challenges by providing:\n\nHorizontal scalability\n\nHigh data throughput\n\nFlexible, non-relational data models\n\nNoSQL databases prioritize performance and scalability over rigid schemas and strict consistency, having an advantage over traditional relational database management systems."
+  },
+  {
+    "objectID": "assign1.html#social-media-database-design",
+    "href": "assign1.html#social-media-database-design",
+    "title": "Assignment 1: Information Management Applications and Database Systems",
+    "section": "Social Media Database Design",
+    "text": "Social Media Database Design\nQuestion 6"
+  },
+  {
+    "objectID": "assign1.html#users-table",
+    "href": "assign1.html#users-table",
+    "title": "Assignment 1: Information Management Applications and Database Systems",
+    "section": "Users Table",
+    "text": "Users Table\n\nStores user account information\nUser ID, username, email address\nAuthentication credentials"
+  },
+  {
+    "objectID": "assign1.html#posts-table",
+    "href": "assign1.html#posts-table",
+    "title": "Assignment 1: Information Management Applications and Database Systems",
+    "section": "Posts Table",
+    "text": "Posts Table\n\nStores user-generated content\nPost IDs and content text\nTimestamps for creation and publication"
+  },
+  {
+    "objectID": "assign1.html#followers-table",
+    "href": "assign1.html#followers-table",
+    "title": "Assignment 1: Information Management Applications and Database Systems",
+    "section": "Followers Table",
+    "text": "Followers Table\n\nManages relationships between users\nRecords follower and following connections"
+  },
+  {
+    "objectID": "assign1.html#interactions-table",
+    "href": "assign1.html#interactions-table",
+    "title": "Assignment 1: Information Management Applications and Database Systems",
+    "section": "Interactions Table",
+    "text": "Interactions Table\n\nStores user engagement data\nLikes, comments, shares\nSaves and reposts"
+  },
+  {
+    "objectID": "assign1.html#conclusion",
+    "href": "assign1.html#conclusion",
+    "title": "Assignment 1: Information Management Applications and Database Systems",
+    "section": "Conclusion",
+    "text": "Conclusion\n\nDatabase systems support everyday applications\nDomain-specific databases enable scalable research and analysis\nNoSQL systems address modern data challenges"
+  },
+  {
+    "objectID": "assign1.html#thank-you",
+    "href": "assign1.html#thank-you",
+    "title": "Assignment 1: Information Management Applications and Database Systems",
+    "section": "Thank You",
+    "text": "Thank You"
+  },
+  {
+    "objectID": "assignment1.html#create-object-using-the-assignment-operator--",
+    "href": "assignment1.html#create-object-using-the-assignment-operator--",
+    "title": "Assignment 1: Brush Up R and Quarto",
+    "section": "Create object using the assignment operator (<-, =)",
+    "text": "Create object using the assignment operator (&lt;-, =)\n\nx &lt;- c(1,3,2,5)\nx\n\n[1] 1 3 2 5\n\nx = c(1,6,2)\nx\n\n[1] 1 6 2\n\ny = c(1,4,3)"
+  },
+  {
+    "objectID": "assignment1.html#using-function",
+    "href": "assignment1.html#using-function",
+    "title": "Assignment 1: Brush Up R and Quarto",
+    "section": "Using function",
+    "text": "Using function\n\nlength(x)  # What does length() do?\n\n[1] 3\n\nlength(y)\n\n[1] 3"
+  },
+  {
+    "objectID": "assignment1.html#using---operators",
+    "href": "assignment1.html#using---operators",
+    "title": "Assignment 1: Brush Up R and Quarto",
+    "section": "Using +, -, *, /,^ operators",
+    "text": "Using +, -, *, /,^ operators\n\nx+y\n\n[1]  2 10  5\n\nls() # List objects in the environment\n\n[1] \"x\" \"y\"\n\nrm(x,y) # Remove objects\nls()\n\ncharacter(0)\n\nrm(list=ls()) # Danger! What does this do?  Not recommended!"
+  },
+  {
+    "objectID": "assignment1.html#matrix-operations",
+    "href": "assignment1.html#matrix-operations",
+    "title": "Assignment 1: Brush Up R and Quarto",
+    "section": "Matrix operations",
+    "text": "Matrix operations\n\n?matrix\n\nstarting httpd help server ... done\n\nx=matrix(data=c(1,2,3,4), nrow=2, ncol=2) # Create a 2x2 matrix object\nx\n\n     [,1] [,2]\n[1,]    1    3\n[2,]    2    4\n\nx=matrix(c(1,2,3,4),2,2)\nmatrix(c(1,2,3,4),2,2,byrow=T) # What about byrow=F?\n\n     [,1] [,2]\n[1,]    1    2\n[2,]    3    4\n\nsqrt(x) # What does x look like?\n\n         [,1]     [,2]\n[1,] 1.000000 1.732051\n[2,] 1.414214 2.000000\n\nx\n\n     [,1] [,2]\n[1,]    1    3\n[2,]    2    4\n\nx^2\n\n     [,1] [,2]\n[1,]    1    9\n[2,]    4   16\n\nx=rnorm(50) # Generate a vector of 50 numbers using the rnorm() function\n\ny=x+rnorm(50,mean=50,sd=.1) # What does rnorm(50,mean=50,sd=.1) generate?\n\ncor(x,y) # Correlation of x and y\n\n[1] 0.9974751\n\nset.seed(1303) # Set the seed for Random Number Generator (RNG) to generate values that are reproducible.\nrnorm(50)\n\n [1] -1.1439763145  1.3421293656  2.1853904757  0.5363925179  0.0631929665\n [6]  0.5022344825 -0.0004167247  0.5658198405 -0.5725226890 -1.1102250073\n[11] -0.0486871234 -0.6956562176  0.8289174803  0.2066528551 -0.2356745091\n[16] -0.5563104914 -0.3647543571  0.8623550343 -0.6307715354  0.3136021252\n[21] -0.9314953177  0.8238676185  0.5233707021  0.7069214120  0.4202043256\n[26] -0.2690521547 -1.5103172999 -0.6902124766 -0.1434719524 -1.0135274099\n[31]  1.5732737361  0.0127465055  0.8726470499  0.4220661905 -0.0188157917\n[36]  2.6157489689 -0.6931401748 -0.2663217810 -0.7206364412  1.3677342065\n[41]  0.2640073322  0.6321868074 -1.3306509858  0.0268888182  1.0406363208\n[46]  1.3120237985 -0.0300020767 -0.2500257125  0.0234144857  1.6598706557\n\nset.seed(3) # Try different seeds?\ny=rnorm(100)"
+  },
+  {
+    "objectID": "assignment1.html#simple-descriptive-statistics-base",
+    "href": "assignment1.html#simple-descriptive-statistics-base",
+    "title": "Assignment 1: Brush Up R and Quarto",
+    "section": "Simple descriptive statistics (base)",
+    "text": "Simple descriptive statistics (base)\n\nmean(y)\n\n[1] 0.01103557\n\nvar(y)\n\n[1] 0.7328675\n\nsqrt(var(y))\n\n[1] 0.8560768\n\nsd(y)\n\n[1] 0.8560768"
+  },
+  {
+    "objectID": "assignment1.html#visualization-using-r-graphics-without-packages",
+    "href": "assignment1.html#visualization-using-r-graphics-without-packages",
+    "title": "Assignment 1: Brush Up R and Quarto",
+    "section": "Visualization using R Graphics (without packages)",
+    "text": "Visualization using R Graphics (without packages)\n\nx=rnorm(100)\ny=rnorm(100)\nplot(x,y)\n\n\n\n\n\n\n\nplot(x,y, pch=20, col = \"firebrick\") # Scatterplot for two numeric variables by default\n\n\n\n\n\n\n\nplot(x,y, pch=20, col = \"steelblue\",xlab=\"this is the x-axis\",ylab=\"this is the y-axis\",main=\"Plot of X vs Y\") # Add labels\n\n\n\n\n\n\n\npdf(\"Figure01.pdf\") # Save as pdf, add a path or it will be stored on the project directory\nplot(x,y,pch=20, col=\"forestgreen\") # Try different colors?\ndev.off() # Close the file using the dev.off function\n\npng \n  2 \n\nx=seq(1,10) # Same as x=c(1:10)\nx\n\n [1]  1  2  3  4  5  6  7  8  9 10\n\nx=1:10\nx\n\n [1]  1  2  3  4  5  6  7  8  9 10\n\nx=seq(-pi,pi,length=50)\ny=x"
+  },
+  {
+    "objectID": "assignment1.html#indexing-data-using",
+    "href": "assignment1.html#indexing-data-using",
+    "title": "Assignment 1: Brush Up R and Quarto",
+    "section": "Indexing Data using []",
+    "text": "Indexing Data using []\n\nA=matrix(1:16,4,4)\nA\n\n     [,1] [,2] [,3] [,4]\n[1,]    1    5    9   13\n[2,]    2    6   10   14\n[3,]    3    7   11   15\n[4,]    4    8   12   16\n\nA[2,3]\n\n[1] 10\n\nA[c(1,3),c(2,4)]\n\n     [,1] [,2]\n[1,]    5   13\n[2,]    7   15\n\nA[1:3,2:4]\n\n     [,1] [,2] [,3]\n[1,]    5    9   13\n[2,]    6   10   14\n[3,]    7   11   15\n\nA[1:2,]\n\n     [,1] [,2] [,3] [,4]\n[1,]    1    5    9   13\n[2,]    2    6   10   14\n\nA[,1:2]\n\n     [,1] [,2]\n[1,]    1    5\n[2,]    2    6\n[3,]    3    7\n[4,]    4    8\n\nA[1,]\n\n[1]  1  5  9 13\n\nA[-c(1,3),] # What does -c() do?\n\n     [,1] [,2] [,3] [,4]\n[1,]    2    6   10   14\n[2,]    4    8   12   16\n\nA[-c(1,3),-c(1,3,4)]\n\n[1] 6 8\n\ndim(A) # Dimensions\n\n[1] 4 4"
+  },
+  {
+    "objectID": "assignment1.html#loading-data-from-github-remote",
+    "href": "assignment1.html#loading-data-from-github-remote",
+    "title": "Assignment 1: Brush Up R and Quarto",
+    "section": "Loading Data from GitHub (remote)",
+    "text": "Loading Data from GitHub (remote)\n\nAuto=read.table(\"https://raw.githubusercontent.com/datageneration/knowledgemining/master/data/Auto.data\")\nAuto=read.table(\"https://raw.githubusercontent.com/datageneration/knowledgemining/master/data/Auto.data\",header=T,na.strings=\"?\") \nAuto=read.csv(\"https://raw.githubusercontent.com/datageneration/knowledgemining/master/data/Auto.csv\") # read csv file\n# Which function reads data faster?\n\n# Try using this simple method\n# time1 = proc.time()\n# Auto=read.csv(\"https://raw.githubusercontent.com/datageneration/knowledgemining/master/data/Auto.csv\",header=T,na.strings=\"?\")\n# proc.time()-time1\n\n# Check on data\ndim(Auto)\n\n[1] 397   9\n\nAuto[1:4,] # select rows\n\n  mpg cylinders displacement horsepower weight acceleration year origin\n1  18         8          307        130   3504         12.0   70      1\n2  15         8          350        165   3693         11.5   70      1\n3  18         8          318        150   3436         11.0   70      1\n4  16         8          304        150   3433         12.0   70      1\n                       name\n1 chevrolet chevelle malibu\n2         buick skylark 320\n3        plymouth satellite\n4             amc rebel sst\n\nAuto=na.omit(Auto)\ndim(Auto) # Notice the difference?\n\n[1] 397   9\n\nnames(Auto)\n\n[1] \"mpg\"          \"cylinders\"    \"displacement\" \"horsepower\"   \"weight\"      \n[6] \"acceleration\" \"year\"         \"origin\"       \"name\""
+  },
+  {
+    "objectID": "assignment1.html#load-data-from-islr-website",
+    "href": "assignment1.html#load-data-from-islr-website",
+    "title": "Assignment 1: Brush Up R and Quarto",
+    "section": "Load data from ISLR website",
+    "text": "Load data from ISLR website\n\nAuto=read.table(\"https://www.statlearning.com/s/Auto.data\",header=T,na.strings=\"?\")\ndim(Auto)\n\n[1] 397   9"
+  },
+  {
+    "objectID": "assignment1.html#additional-graphical-and-numerical-summaries",
+    "href": "assignment1.html#additional-graphical-and-numerical-summaries",
+    "title": "Assignment 1: Brush Up R and Quarto",
+    "section": "Additional Graphical and Numerical Summaries",
+    "text": "Additional Graphical and Numerical Summaries\n\n# plot(cylinders, mpg)\nplot(Auto$cylinders, Auto$mpg)\n\n\n\n\n\n\n\nattach(Auto)\nplot(cylinders, mpg)\n\n\n\n\n\n\n\ncylinders=as.factor(cylinders)\nplot(cylinders, mpg)\n\n\n\n\n\n\n\nplot(cylinders, mpg, col=\"red\")\n\n\n\n\n\n\n\nplot(cylinders, mpg, col=\"red\", varwidth=T)\n\n\n\n\n\n\n\nplot(cylinders, mpg, col=\"red\", varwidth=T,horizontal=T)\n\n\n\n\n\n\n\nplot(cylinders, mpg, col=\"red\", varwidth=T, xlab=\"cylinders\", ylab=\"MPG\")\n\n\n\n\n\n\n\nhist(mpg)\n\n\n\n\n\n\n\nhist(mpg,col=2)\n\n\n\n\n\n\n\nhist(mpg,col=2,breaks=15)\n\n\n\n\n\n\n\n#pairs(Auto)\npairs(~ mpg + displacement + horsepower + weight + acceleration, Auto)\n\n\n\n\n\n\n\nplot(horsepower,mpg)\n\n\n\n\n\n\n\n# identify(horsepower,mpg,name) # Interactive: point and click the dot to identify cases\nsummary(Auto)\n\n      mpg          cylinders      displacement     horsepower        weight    \n Min.   : 9.00   Min.   :3.000   Min.   : 68.0   Min.   : 46.0   Min.   :1613  \n 1st Qu.:17.50   1st Qu.:4.000   1st Qu.:104.0   1st Qu.: 75.0   1st Qu.:2223  \n Median :23.00   Median :4.000   Median :146.0   Median : 93.5   Median :2800  \n Mean   :23.52   Mean   :5.458   Mean   :193.5   Mean   :104.5   Mean   :2970  \n 3rd Qu.:29.00   3rd Qu.:8.000   3rd Qu.:262.0   3rd Qu.:126.0   3rd Qu.:3609  \n Max.   :46.60   Max.   :8.000   Max.   :455.0   Max.   :230.0   Max.   :5140  \n                                                 NA's   :5                     \n  acceleration        year           origin          name          \n Min.   : 8.00   Min.   :70.00   Min.   :1.000   Length:397        \n 1st Qu.:13.80   1st Qu.:73.00   1st Qu.:1.000   Class :character  \n Median :15.50   Median :76.00   Median :1.000   Mode  :character  \n Mean   :15.56   Mean   :75.99   Mean   :1.574                     \n 3rd Qu.:17.10   3rd Qu.:79.00   3rd Qu.:2.000                     \n Max.   :24.80   Max.   :82.00   Max.   :3.000                     \n                                                                   \n\nsummary(mpg)\n\n   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. \n   9.00   17.50   23.00   23.52   29.00   46.60"
+  },
+  {
+    "objectID": "assignment1.html#linear-regression",
+    "href": "assignment1.html#linear-regression",
+    "title": "Assignment 1: Brush Up R and Quarto",
+    "section": "Linear Regression",
+    "text": "Linear Regression\n\nptbu=c(\"MASS\",\"ISLR\")\ninstall.packages(ptbu, repos='http://cran.us.r-project.org')\n\nInstalling packages into 'C:/Users/akbar/AppData/Local/R/win-library/4.5'\n(as 'lib' is unspecified)\n\n\npackage 'MASS' successfully unpacked and MD5 sums checked\npackage 'ISLR' successfully unpacked and MD5 sums checked\n\nThe downloaded binary packages are in\n    C:\\Users\\akbar\\AppData\\Local\\Temp\\RtmpwrLcvq\\downloaded_packages\n\nlapply(ptbu, require, character.only = TRUE)\n\nLoading required package: MASS\n\n\nWarning: package 'MASS' was built under R version 4.5.2\n\n\nLoading required package: ISLR\n\n\nWarning: package 'ISLR' was built under R version 4.5.2\n\n\n\nAttaching package: 'ISLR'\n\n\nThe following object is masked _by_ '.GlobalEnv':\n\n    Auto\n\n\n[[1]]\n[1] TRUE\n\n[[2]]\n[1] TRUE\n\nlibrary(MASS)\nlibrary(ISLR)\n\n# Simple Linear Regression\n\n# fix(Boston)\nnames(Boston)\n\n [1] \"crim\"    \"zn\"      \"indus\"   \"chas\"    \"nox\"     \"rm\"      \"age\"    \n [8] \"dis\"     \"rad\"     \"tax\"     \"ptratio\" \"black\"   \"lstat\"   \"medv\"   \n\n# lm.fit=lm(medv~lstat)\nattach(Boston)\nlm.fit=lm(medv~lstat,data=Boston)\nattach(Boston)\n\nThe following objects are masked from Boston (pos = 3):\n\n    age, black, chas, crim, dis, indus, lstat, medv, nox, ptratio, rad,\n    rm, tax, zn\n\nlm.fit=lm(medv~lstat)\nlm.fit\n\n\nCall:\nlm(formula = medv ~ lstat)\n\nCoefficients:\n(Intercept)        lstat  \n      34.55        -0.95  \n\nsummary(lm.fit)\n\n\nCall:\nlm(formula = medv ~ lstat)\n\nResiduals:\n    Min      1Q  Median      3Q     Max \n-15.168  -3.990  -1.318   2.034  24.500 \n\nCoefficients:\n            Estimate Std. Error t value Pr(&gt;|t|)    \n(Intercept) 34.55384    0.56263   61.41   &lt;2e-16 ***\nlstat       -0.95005    0.03873  -24.53   &lt;2e-16 ***\n---\nSignif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1\n\nResidual standard error: 6.216 on 504 degrees of freedom\nMultiple R-squared:  0.5441,    Adjusted R-squared:  0.5432 \nF-statistic: 601.6 on 1 and 504 DF,  p-value: &lt; 2.2e-16\n\nnames(lm.fit)\n\n [1] \"coefficients\"  \"residuals\"     \"effects\"       \"rank\"         \n [5] \"fitted.values\" \"assign\"        \"qr\"            \"df.residual\"  \n [9] \"xlevels\"       \"call\"          \"terms\"         \"model\"        \n\ncoef(lm.fit)\n\n(Intercept)       lstat \n 34.5538409  -0.9500494 \n\nconfint(lm.fit)\n\n                2.5 %     97.5 %\n(Intercept) 33.448457 35.6592247\nlstat       -1.026148 -0.8739505\n\npredict(lm.fit,data.frame(lstat=(c(5,10,15))), interval=\"confidence\")\n\n       fit      lwr      upr\n1 29.80359 29.00741 30.59978\n2 25.05335 24.47413 25.63256\n3 20.30310 19.73159 20.87461\n\npredict(lm.fit,data.frame(lstat=(c(5,10,15))), interval=\"prediction\")\n\n       fit       lwr      upr\n1 29.80359 17.565675 42.04151\n2 25.05335 12.827626 37.27907\n3 20.30310  8.077742 32.52846\n\n# What is the differnce between \"conference\" and \"prediction\" difference?\n\nplot(lstat,medv)\nabline(lm.fit)\nabline(lm.fit,lwd=3)\nabline(lm.fit,lwd=3,col=\"red\")\n\n\n\n\n\n\n\nplot(lstat,medv,col=\"red\")\n\n\n\n\n\n\n\nplot(lstat,medv,pch=16)\n\n\n\n\n\n\n\nplot(lstat,medv,pch=\"+\")\n\n\n\n\n\n\n\nplot(1:20,1:20,pch=1:20)\n\n\n\n\n\n\n\npar(mfrow=c(2,2))\nplot(lm.fit)\n\n\n\n\n\n\n\nplot(predict(lm.fit), residuals(lm.fit))\nplot(predict(lm.fit), rstudent(lm.fit))\nplot(hatvalues(lm.fit))\nwhich.max(hatvalues(lm.fit))\n\n375 \n375"
+  },
+  {
+    "objectID": "assignment1.html#multiple-linear-regression",
+    "href": "assignment1.html#multiple-linear-regression",
+    "title": "Assignment 1: Brush Up R and Quarto",
+    "section": "Multiple Linear Regression",
+    "text": "Multiple Linear Regression\n\nlm.fit=lm(medv~lstat+age,data=Boston)\nsummary(lm.fit)\n\n\nCall:\nlm(formula = medv ~ lstat + age, data = Boston)\n\nResiduals:\n    Min      1Q  Median      3Q     Max \n-15.981  -3.978  -1.283   1.968  23.158 \n\nCoefficients:\n            Estimate Std. Error t value Pr(&gt;|t|)    \n(Intercept) 33.22276    0.73085  45.458  &lt; 2e-16 ***\nlstat       -1.03207    0.04819 -21.416  &lt; 2e-16 ***\nage          0.03454    0.01223   2.826  0.00491 ** \n---\nSignif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1\n\nResidual standard error: 6.173 on 503 degrees of freedom\nMultiple R-squared:  0.5513,    Adjusted R-squared:  0.5495 \nF-statistic:   309 on 2 and 503 DF,  p-value: &lt; 2.2e-16\n\nlm.fit=lm(medv~.,data=Boston)\nsummary(lm.fit)\n\n\nCall:\nlm(formula = medv ~ ., data = Boston)\n\nResiduals:\n    Min      1Q  Median      3Q     Max \n-15.595  -2.730  -0.518   1.777  26.199 \n\nCoefficients:\n              Estimate Std. Error t value Pr(&gt;|t|)    \n(Intercept)  3.646e+01  5.103e+00   7.144 3.28e-12 ***\ncrim        -1.080e-01  3.286e-02  -3.287 0.001087 ** \nzn           4.642e-02  1.373e-02   3.382 0.000778 ***\nindus        2.056e-02  6.150e-02   0.334 0.738288    \nchas         2.687e+00  8.616e-01   3.118 0.001925 ** \nnox         -1.777e+01  3.820e+00  -4.651 4.25e-06 ***\nrm           3.810e+00  4.179e-01   9.116  &lt; 2e-16 ***\nage          6.922e-04  1.321e-02   0.052 0.958229    \ndis         -1.476e+00  1.995e-01  -7.398 6.01e-13 ***\nrad          3.060e-01  6.635e-02   4.613 5.07e-06 ***\ntax         -1.233e-02  3.760e-03  -3.280 0.001112 ** \nptratio     -9.527e-01  1.308e-01  -7.283 1.31e-12 ***\nblack        9.312e-03  2.686e-03   3.467 0.000573 ***\nlstat       -5.248e-01  5.072e-02 -10.347  &lt; 2e-16 ***\n---\nSignif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1\n\nResidual standard error: 4.745 on 492 degrees of freedom\nMultiple R-squared:  0.7406,    Adjusted R-squared:  0.7338 \nF-statistic: 108.1 on 13 and 492 DF,  p-value: &lt; 2.2e-16\n\nlibrary(car)\n\nLoading required package: carData\n\n\nWarning: package 'carData' was built under R version 4.5.2\n\nvif(lm.fit)\n\n    crim       zn    indus     chas      nox       rm      age      dis \n1.792192 2.298758 3.991596 1.073995 4.393720 1.933744 3.100826 3.955945 \n     rad      tax  ptratio    black    lstat \n7.484496 9.008554 1.799084 1.348521 2.941491 \n\nlm.fit1=lm(medv~.-age,data=Boston)\nsummary(lm.fit1)\n\n\nCall:\nlm(formula = medv ~ . - age, data = Boston)\n\nResiduals:\n     Min       1Q   Median       3Q      Max \n-15.6054  -2.7313  -0.5188   1.7601  26.2243 \n\nCoefficients:\n              Estimate Std. Error t value Pr(&gt;|t|)    \n(Intercept)  36.436927   5.080119   7.172 2.72e-12 ***\ncrim         -0.108006   0.032832  -3.290 0.001075 ** \nzn            0.046334   0.013613   3.404 0.000719 ***\nindus         0.020562   0.061433   0.335 0.737989    \nchas          2.689026   0.859598   3.128 0.001863 ** \nnox         -17.713540   3.679308  -4.814 1.97e-06 ***\nrm            3.814394   0.408480   9.338  &lt; 2e-16 ***\ndis          -1.478612   0.190611  -7.757 5.03e-14 ***\nrad           0.305786   0.066089   4.627 4.75e-06 ***\ntax          -0.012329   0.003755  -3.283 0.001099 ** \nptratio      -0.952211   0.130294  -7.308 1.10e-12 ***\nblack         0.009321   0.002678   3.481 0.000544 ***\nlstat        -0.523852   0.047625 -10.999  &lt; 2e-16 ***\n---\nSignif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1\n\nResidual standard error: 4.74 on 493 degrees of freedom\nMultiple R-squared:  0.7406,    Adjusted R-squared:  0.7343 \nF-statistic: 117.3 on 12 and 493 DF,  p-value: &lt; 2.2e-16\n\nlm.fit1=update(lm.fit, ~.-age)"
+  },
+  {
+    "objectID": "assignment1.html#non-linear-transformations-of-the-predictors",
+    "href": "assignment1.html#non-linear-transformations-of-the-predictors",
+    "title": "Assignment 1: Brush Up R and Quarto",
+    "section": "Non-linear Transformations of the Predictors",
+    "text": "Non-linear Transformations of the Predictors\n\nlm.fit2=lm(medv~lstat+I(lstat^2))\nsummary(lm.fit2)\n\n\nCall:\nlm(formula = medv ~ lstat + I(lstat^2))\n\nResiduals:\n     Min       1Q   Median       3Q      Max \n-15.2834  -3.8313  -0.5295   2.3095  25.4148 \n\nCoefficients:\n             Estimate Std. Error t value Pr(&gt;|t|)    \n(Intercept) 42.862007   0.872084   49.15   &lt;2e-16 ***\nlstat       -2.332821   0.123803  -18.84   &lt;2e-16 ***\nI(lstat^2)   0.043547   0.003745   11.63   &lt;2e-16 ***\n---\nSignif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1\n\nResidual standard error: 5.524 on 503 degrees of freedom\nMultiple R-squared:  0.6407,    Adjusted R-squared:  0.6393 \nF-statistic: 448.5 on 2 and 503 DF,  p-value: &lt; 2.2e-16\n\nlm.fit=lm(medv~lstat)\nanova(lm.fit,lm.fit2)\n\nAnalysis of Variance Table\n\nModel 1: medv ~ lstat\nModel 2: medv ~ lstat + I(lstat^2)\n  Res.Df   RSS Df Sum of Sq     F    Pr(&gt;F)    \n1    504 19472                                 \n2    503 15347  1    4125.1 135.2 &lt; 2.2e-16 ***\n---\nSignif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1\n\npar(mfrow=c(2,2))\nplot(lm.fit2)\n\n\n\n\n\n\n\nlm.fit5=lm(medv~poly(lstat,5))\nsummary(lm.fit5)\n\n\nCall:\nlm(formula = medv ~ poly(lstat, 5))\n\nResiduals:\n     Min       1Q   Median       3Q      Max \n-13.5433  -3.1039  -0.7052   2.0844  27.1153 \n\nCoefficients:\n                 Estimate Std. Error t value Pr(&gt;|t|)    \n(Intercept)       22.5328     0.2318  97.197  &lt; 2e-16 ***\npoly(lstat, 5)1 -152.4595     5.2148 -29.236  &lt; 2e-16 ***\npoly(lstat, 5)2   64.2272     5.2148  12.316  &lt; 2e-16 ***\npoly(lstat, 5)3  -27.0511     5.2148  -5.187 3.10e-07 ***\npoly(lstat, 5)4   25.4517     5.2148   4.881 1.42e-06 ***\npoly(lstat, 5)5  -19.2524     5.2148  -3.692 0.000247 ***\n---\nSignif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1\n\nResidual standard error: 5.215 on 500 degrees of freedom\nMultiple R-squared:  0.6817,    Adjusted R-squared:  0.6785 \nF-statistic: 214.2 on 5 and 500 DF,  p-value: &lt; 2.2e-16\n\nsummary(lm(medv~log(rm),data=Boston))\n\n\nCall:\nlm(formula = medv ~ log(rm), data = Boston)\n\nResiduals:\n    Min      1Q  Median      3Q     Max \n-19.487  -2.875  -0.104   2.837  39.816 \n\nCoefficients:\n            Estimate Std. Error t value Pr(&gt;|t|)    \n(Intercept)  -76.488      5.028  -15.21   &lt;2e-16 ***\nlog(rm)       54.055      2.739   19.73   &lt;2e-16 ***\n---\nSignif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1\n\nResidual standard error: 6.915 on 504 degrees of freedom\nMultiple R-squared:  0.4358,    Adjusted R-squared:  0.4347 \nF-statistic: 389.3 on 1 and 504 DF,  p-value: &lt; 2.2e-16"
+  },
+  {
+    "objectID": "assignment1.html#qualitative-predictors",
+    "href": "assignment1.html#qualitative-predictors",
+    "title": "Assignment 1: Brush Up R and Quarto",
+    "section": "Qualitative Predictors",
+    "text": "Qualitative Predictors\n\n# fix(Carseats)\nnames(Carseats)\n\n [1] \"Sales\"       \"CompPrice\"   \"Income\"      \"Advertising\" \"Population\" \n [6] \"Price\"       \"ShelveLoc\"   \"Age\"         \"Education\"   \"Urban\"      \n[11] \"US\"         \n\nlm.fit=lm(Sales~.+Income:Advertising+Price:Age,data=Carseats)\nsummary(lm.fit)\n\n\nCall:\nlm(formula = Sales ~ . + Income:Advertising + Price:Age, data = Carseats)\n\nResiduals:\n    Min      1Q  Median      3Q     Max \n-2.9208 -0.7503  0.0177  0.6754  3.3413 \n\nCoefficients:\n                     Estimate Std. Error t value Pr(&gt;|t|)    \n(Intercept)         6.5755654  1.0087470   6.519 2.22e-10 ***\nCompPrice           0.0929371  0.0041183  22.567  &lt; 2e-16 ***\nIncome              0.0108940  0.0026044   4.183 3.57e-05 ***\nAdvertising         0.0702462  0.0226091   3.107 0.002030 ** \nPopulation          0.0001592  0.0003679   0.433 0.665330    \nPrice              -0.1008064  0.0074399 -13.549  &lt; 2e-16 ***\nShelveLocGood       4.8486762  0.1528378  31.724  &lt; 2e-16 ***\nShelveLocMedium     1.9532620  0.1257682  15.531  &lt; 2e-16 ***\nAge                -0.0579466  0.0159506  -3.633 0.000318 ***\nEducation          -0.0208525  0.0196131  -1.063 0.288361    \nUrbanYes            0.1401597  0.1124019   1.247 0.213171    \nUSYes              -0.1575571  0.1489234  -1.058 0.290729    \nIncome:Advertising  0.0007510  0.0002784   2.698 0.007290 ** \nPrice:Age           0.0001068  0.0001333   0.801 0.423812    \n---\nSignif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1\n\nResidual standard error: 1.011 on 386 degrees of freedom\nMultiple R-squared:  0.8761,    Adjusted R-squared:  0.8719 \nF-statistic:   210 on 13 and 386 DF,  p-value: &lt; 2.2e-16\n\nattach(Carseats)\ncontrasts(ShelveLoc)\n\n       Good Medium\nBad       0      0\nGood      1      0\nMedium    0      1"
+  },
+  {
+    "objectID": "assignment1.html#interaction-terms-including-interaction-and-single-effects",
+    "href": "assignment1.html#interaction-terms-including-interaction-and-single-effects",
+    "title": "Assignment 1: Brush Up R and Quarto",
+    "section": "Interaction Terms (including interaction and single effects)",
+    "text": "Interaction Terms (including interaction and single effects)\n\nsummary(lm(medv~lstat*age,data=Boston))\n\n\nCall:\nlm(formula = medv ~ lstat * age, data = Boston)\n\nResiduals:\n    Min      1Q  Median      3Q     Max \n-15.806  -4.045  -1.333   2.085  27.552 \n\nCoefficients:\n              Estimate Std. Error t value Pr(&gt;|t|)    \n(Intercept) 36.0885359  1.4698355  24.553  &lt; 2e-16 ***\nlstat       -1.3921168  0.1674555  -8.313 8.78e-16 ***\nage         -0.0007209  0.0198792  -0.036   0.9711    \nlstat:age    0.0041560  0.0018518   2.244   0.0252 *  \n---\nSignif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1\n\nResidual standard error: 6.149 on 502 degrees of freedom\nMultiple R-squared:  0.5557,    Adjusted R-squared:  0.5531 \nF-statistic: 209.3 on 3 and 502 DF,  p-value: &lt; 2.2e-16"
+  },
+  {
+    "objectID": "weeklyreflection1.html",
+    "href": "weeklyreflection1.html",
+    "title": "Weekly Reflection: AI, Originality, and AGI",
+    "section": "",
+    "text": "AI and Originality\n\nThe introduction of Artificial Intelligence started with the release of ChatGBT in November 2022, following other AI model releases such as Google Gemini, Claude, etc. This changed the world especially for data analysts and researchers, being used for research and coding assistance. Questions speculate whether AI can be used to brainstorm and assist with original ideas, or whether it generates the ideas for users.\nI argue that AI isn’t a tool to use for generating original ideas; rather that it draws and mixed original and previous research. I also argue that any ideas are completely “original” nowadays, as most of these designs have been publicized before, even though individuals proceed to reinvent and use them in new contexts.\n\nAGI\n\nGoogle AI defines Artificial General Intelligence (AGI) as a type of technology used for theoretical ways of understanding, learning and performing any intellectual tasks that a human can accomplish. Furthermore, it is programmed to be a research agent, helping to break through scientific research and other disciplines.\nI believe that it can be used as a research assistant to produce the best research qualities, but I also argue that it can be used incorrectly, where the model can be prompted to do the research for the user. It may not be completely accurate, but it can be used in an academic dishonest way of conducting research and analyses."
+  },
+  {
+    "objectID": "assign2.html",
+    "href": "assign2.html",
+    "title": "Assignment 2: Relational Schema and Database Concepts",
+    "section": "",
+    "text": "1. What are the differences between relation schema, relation and instance? Give an example using the university database to illustrate.\n\nAccording to the SKS textbook in chapter 2, a relation schema consists of a list of attributes and their corresponding domains. An example of a relation schema using the university database is the instructor table, specifically the columns that a list of attributes that says INSTRUCTOR(id, name, dept_name, salary)"
+  }
+]

@@ -1,0 +1,928 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.8.25">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Assignment 1: Information Management Applications and Database Systems – Kasra Akbari</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-d1897f967d4dc882e6c3c4aa210b578e.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a href="./index.html" class="navbar-brand navbar-brand-logo">
+    </a>
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">Kasra Akbari</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="./index.html"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./about.html"> 
+<span class="menu-text">About</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./research.html"> 
+<span class="menu-text">Research</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-assignments-for-data-methods" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Assignments for Data Methods</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-assignments-for-data-methods">    
+        <li>
+    <a class="dropdown-item" href="./assign01.html">
+ <span class="dropdown-text">Assignment 1: Creating a Quarto Website</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./assign02.html">
+ <span class="dropdown-text">Assignment 2: Google Trends Data</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./assign03.html">
+ <span class="dropdown-text">Assignment 3: Mapping Census Data</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./assign04.html">
+ <span class="dropdown-text">Assignment 4: Webscraping 1</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./assign05.html">
+ <span class="dropdown-text">Assignment 5: Government Data API</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./assign06p1.html">
+ <span class="dropdown-text">Assignment 6: Quanteda Text Analysis Part 1</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./assign06p2.html">
+ <span class="dropdown-text">Assignment 6: Quanteda Text Analysis Part 2</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./podcast.html">
+ <span class="dropdown-text">Podcast Review</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-assignments-for-knowledge-mining" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Assignments for Knowledge Mining</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-assignments-for-knowledge-mining">    
+        <li>
+    <a class="dropdown-item" href="./assignment1.html">
+ <span class="dropdown-text">Assignment 1: Brush Up R and Quarto</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./weeklyreflection1.html">
+ <span class="dropdown-text">Weekly Reflection: AI, Originality, and AGI</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-assignments-for-information-management" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Assignments for Information Management</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-assignments-for-information-management">    
+        <li>
+    <a class="dropdown-item" href="./assign1.html">
+ <span class="dropdown-text">Assignment 1: Information Management Applications and Database Systems</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./assign2.html">
+ <span class="dropdown-text">Assignment 2: Relational Schema and Database Concepts</span></a>
+  </li>  
+    </ul>
+  </li>
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-cvresume" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">CV/Resume</span>
+    </a>
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-cvresume">    
+        <li>
+    <a class="dropdown-item" href="./resume2025.html">
+ <span class="dropdown-text">Resume 2026</span></a>
+  </li>  
+    </ul>
+  </li>
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction">Introduction</a></li>
+  <li><a href="#applications-using-database-systems" id="toc-applications-using-database-systems" class="nav-link" data-scroll-target="#applications-using-database-systems">Applications Using Database Systems</a></li>
+  <li><a href="#overview-of-applications" id="toc-overview-of-applications" class="nav-link" data-scroll-target="#overview-of-applications">Overview of Applications</a></li>
+  <li><a href="#online-shopping-applications" id="toc-online-shopping-applications" class="nav-link" data-scroll-target="#online-shopping-applications">Online Shopping Applications</a></li>
+  <li><a href="#streaming-services" id="toc-streaming-services" class="nav-link" data-scroll-target="#streaming-services">Streaming Services</a></li>
+  <li><a href="#online-multiplayer-video-games" id="toc-online-multiplayer-video-games" class="nav-link" data-scroll-target="#online-multiplayer-video-games">Online Multiplayer Video Games</a></li>
+  <li><a href="#proposed-domain-applications" id="toc-proposed-domain-applications" class="nav-link" data-scroll-target="#proposed-domain-applications">Proposed Domain Applications</a></li>
+  <li><a href="#selected-domains" id="toc-selected-domains" class="nav-link" data-scroll-target="#selected-domains">Selected Domains</a></li>
+  <li><a href="#domain-1-cybersecurity" id="toc-domain-1-cybersecurity" class="nav-link" data-scroll-target="#domain-1-cybersecurity">Domain 1: Cybersecurity</a>
+  <ul class="collapse">
+  <li><a href="#purpose" id="toc-purpose" class="nav-link" data-scroll-target="#purpose">Purpose</a></li>
+  <li><a href="#functions" id="toc-functions" class="nav-link" data-scroll-target="#functions">Functions</a></li>
+  <li><a href="#interface-design" id="toc-interface-design" class="nav-link" data-scroll-target="#interface-design">Interface Design</a></li>
+  </ul></li>
+  <li><a href="#domain-2-data-analytics" id="toc-domain-2-data-analytics" class="nav-link" data-scroll-target="#domain-2-data-analytics">Domain 2: Data Analytics</a>
+  <ul class="collapse">
+  <li><a href="#purpose-1" id="toc-purpose-1" class="nav-link" data-scroll-target="#purpose-1">Purpose</a></li>
+  <li><a href="#functions-1" id="toc-functions-1" class="nav-link" data-scroll-target="#functions-1">Functions</a></li>
+  <li><a href="#interface-design-1" id="toc-interface-design-1" class="nav-link" data-scroll-target="#interface-design-1">Interface Design</a></li>
+  </ul></li>
+  <li><a href="#domain-3-machine-learning-artificial-intelligence" id="toc-domain-3-machine-learning-artificial-intelligence" class="nav-link" data-scroll-target="#domain-3-machine-learning-artificial-intelligence">Domain 3: Machine Learning / Artificial Intelligence</a>
+  <ul class="collapse">
+  <li><a href="#purpose-2" id="toc-purpose-2" class="nav-link" data-scroll-target="#purpose-2">Purpose</a></li>
+  <li><a href="#functions-2" id="toc-functions-2" class="nav-link" data-scroll-target="#functions-2">Functions</a></li>
+  <li><a href="#interface-design-2" id="toc-interface-design-2" class="nav-link" data-scroll-target="#interface-design-2">Interface Design</a></li>
+  </ul></li>
+  <li><a href="#why-nosql-emerged" id="toc-why-nosql-emerged" class="nav-link" data-scroll-target="#why-nosql-emerged">Why NoSQL Emerged</a></li>
+  <li><a href="#social-media-database-design" id="toc-social-media-database-design" class="nav-link" data-scroll-target="#social-media-database-design">Social Media Database Design</a></li>
+  <li><a href="#users-table" id="toc-users-table" class="nav-link" data-scroll-target="#users-table">Users Table</a></li>
+  <li><a href="#posts-table" id="toc-posts-table" class="nav-link" data-scroll-target="#posts-table">Posts Table</a></li>
+  <li><a href="#followers-table" id="toc-followers-table" class="nav-link" data-scroll-target="#followers-table">Followers Table</a></li>
+  <li><a href="#interactions-table" id="toc-interactions-table" class="nav-link" data-scroll-target="#interactions-table">Interactions Table</a></li>
+  <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion">Conclusion</a></li>
+  <li><a href="#thank-you" id="toc-thank-you" class="nav-link" data-scroll-target="#thank-you">Thank You</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Assignment 1: Information Management Applications and Database Systems</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="introduction" class="level2">
+<h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
+<ul>
+<li>Applications using database systems</li>
+<li>Proposed domain-based applications</li>
+<li>NoSQL databases</li>
+<li>Social media database design</li>
+</ul>
+<hr>
+</section>
+<section id="applications-using-database-systems" class="level2">
+<h2 class="anchored" data-anchor-id="applications-using-database-systems">Applications Using Database Systems</h2>
+<p><strong>Question 1</strong><br>
+Name and describe three applications you have used that employ a database system to store and access persistent data.</p>
+<hr>
+</section>
+<section id="overview-of-applications" class="level2">
+<h2 class="anchored" data-anchor-id="overview-of-applications">Overview of Applications</h2>
+<p>Three applications I have used that employ database systems to store and access persistent data are:</p>
+<ul>
+<li>Online Shopping Applications</li>
+<li>Streaming Services</li>
+<li>Online Multiplayer Video Games</li>
+</ul>
+<hr>
+</section>
+<section id="online-shopping-applications" class="level2">
+<h2 class="anchored" data-anchor-id="online-shopping-applications">Online Shopping Applications</h2>
+<p><strong>Examples</strong>:</p>
+<ul>
+<li><p>Amazon</p></li>
+<li><p>Shein</p></li>
+<li><p>Temu</p></li>
+<li><p>AliExpress</p></li>
+</ul>
+<p><strong>Database Usage:</strong></p>
+<ul>
+<li><p>Store product listings</p></li>
+<li><p>Manage user accounts</p></li>
+<li><p>Track order histories and shipping information</p></li>
+<li><p>Maintain payment records</p></li>
+</ul>
+<p>These databases allow users to browse items, complete transactions, track orders, and view purchase histories.</p>
+<hr>
+</section>
+<section id="streaming-services" class="level2">
+<h2 class="anchored" data-anchor-id="streaming-services">Streaming Services</h2>
+<p><strong>Examples:</strong></p>
+<ul>
+<li><p>Netflix</p></li>
+<li><p>Amazon Prime</p></li>
+<li><p>HBO Max</p></li>
+<li><p>Disney+</p></li>
+</ul>
+<p><strong>Database Usage</strong></p>
+<ul>
+<li><p>Manage user profiles and subscriptions</p></li>
+<li><p>Store viewing history</p></li>
+<li><p>Generate personalized content recommendations</p></li>
+<li><p>Enable access across smartphones, tablets, laptops, desktops, and gaming consoles</p></li>
+</ul>
+<hr>
+</section>
+<section id="online-multiplayer-video-games" class="level2">
+<h2 class="anchored" data-anchor-id="online-multiplayer-video-games">Online Multiplayer Video Games</h2>
+<p><strong>Examples</strong>:</p>
+<ul>
+<li><p>Call of Duty</p></li>
+<li><p>Fortnite</p></li>
+<li><p>Battlefield</p></li>
+<li><p>Valorant</p></li>
+<li><p>FIFA</p></li>
+</ul>
+<p><strong>Database Usage</strong></p>
+<ul>
+<li><p>Store player accounts and user statistics</p></li>
+<li><p>Track achievements and in-game currency</p></li>
+<li><p>Record microtransaction data</p></li>
+<li><p>Support cross-platform play (Xbox, PlayStation, PC/Steam)</p></li>
+</ul>
+<hr>
+</section>
+<section id="proposed-domain-applications" class="level2">
+<h2 class="anchored" data-anchor-id="proposed-domain-applications">Proposed Domain Applications</h2>
+<p><strong>Question 2</strong><br>
+Propose three applications in domain projects and describe their purpose, functions, and interface design.</p>
+<hr>
+</section>
+<section id="selected-domains" class="level2">
+<h2 class="anchored" data-anchor-id="selected-domains">Selected Domains</h2>
+<ul>
+<li>Cybersecurity</li>
+<li>Data Analytics</li>
+<li>Artificial Intelligence / Machine Learning</li>
+</ul>
+<hr>
+</section>
+<section id="domain-1-cybersecurity" class="level2">
+<h2 class="anchored" data-anchor-id="domain-1-cybersecurity">Domain 1: Cybersecurity</h2>
+<p><strong>Application:</strong> Cyber Incident Reporting Database</p>
+<hr>
+<section id="purpose" class="level3">
+<h3 class="anchored" data-anchor-id="purpose">Purpose</h3>
+<ul>
+<li>Collect and analyze cybersecurity attacks</li>
+<li>Identify attack patterns</li>
+<li>Detect viruses</li>
+<li>Improve response strategies</li>
+</ul>
+<hr>
+</section>
+<section id="functions" class="level3">
+<h3 class="anchored" data-anchor-id="functions">Functions</h3>
+<ul>
+<li>Store cyber-incident reports</li>
+<li>Track types of attacks and source origins</li>
+<li>Generate reports on prevented incidents</li>
+</ul>
+<hr>
+</section>
+<section id="interface-design" class="level3">
+<h3 class="anchored" data-anchor-id="interface-design">Interface Design</h3>
+<ul>
+<li>Incident submission form</li>
+<li>Filters by attack type and severity level</li>
+<li>Dashboards and graphs showing incident frequency and trends</li>
+</ul>
+<hr>
+</section>
+</section>
+<section id="domain-2-data-analytics" class="level2">
+<h2 class="anchored" data-anchor-id="domain-2-data-analytics">Domain 2: Data Analytics</h2>
+<p><strong>Application:</strong> Research Data Management System</p>
+<hr>
+<section id="purpose-1" class="level3">
+<h3 class="anchored" data-anchor-id="purpose-1">Purpose</h3>
+<ul>
+<li>Store, organize, and manage datasets used in academic and professional research</li>
+<li>Ensure data safety and efficient retrieval</li>
+</ul>
+<hr>
+</section>
+<section id="functions-1" class="level3">
+<h3 class="anchored" data-anchor-id="functions-1">Functions</h3>
+<ul>
+<li>Store structured and unstructured datasets</li>
+<li>Manage data sources and collection dates</li>
+<li>Provide users access to query, code, and summarize datasets</li>
+</ul>
+<hr>
+</section>
+<section id="interface-design-1" class="level3">
+<h3 class="anchored" data-anchor-id="interface-design-1">Interface Design</h3>
+<ul>
+<li>Secure user access</li>
+<li>Dataset upload and download forms</li>
+<li>Filters by date, variable, and dataset type</li>
+</ul>
+<hr>
+</section>
+</section>
+<section id="domain-3-machine-learning-artificial-intelligence" class="level2">
+<h2 class="anchored" data-anchor-id="domain-3-machine-learning-artificial-intelligence">Domain 3: Machine Learning / Artificial Intelligence</h2>
+<p><strong>Application:</strong> Machine Learning Model Database</p>
+<hr>
+<section id="purpose-2" class="level3">
+<h3 class="anchored" data-anchor-id="purpose-2">Purpose</h3>
+<ul>
+<li>Store and manage machine learning models</li>
+<li>Connect models to research datasets</li>
+</ul>
+<hr>
+</section>
+<section id="functions-2" class="level3">
+<h3 class="anchored" data-anchor-id="functions-2">Functions</h3>
+<ul>
+<li>Store machine learning models in a centralized repository</li>
+<li>Establish relationships between models and datasets</li>
+</ul>
+<hr>
+</section>
+<section id="interface-design-2" class="level3">
+<h3 class="anchored" data-anchor-id="interface-design-2">Interface Design</h3>
+<ul>
+<li>Model upload interface</li>
+<li>Comparison graphs and charts for model performance</li>
+</ul>
+<hr>
+</section>
+</section>
+<section id="why-nosql-emerged" class="level2">
+<h2 class="anchored" data-anchor-id="why-nosql-emerged">Why NoSQL Emerged</h2>
+<p><strong>Question 4</strong></p>
+<p>Traditional relational databases became increasingly difficult to scale as data volumes grew rapidly, particularly for scientific and web-centric organizations.</p>
+<p>NoSQL systems emerged in response by providing:</p>
+<ul>
+<li><p>Horizontal scalability</p></li>
+<li><p>High data throughput</p></li>
+<li><p>Flexible, non-relational data models</p></li>
+</ul>
+<p>Unlike traditional relational database management systems, NoSQL databases prioritize performance and scalability over rigid schemas and strict consistency.</p>
+<hr>
+</section>
+<section id="social-media-database-design" class="level2">
+<h2 class="anchored" data-anchor-id="social-media-database-design">Social Media Database Design</h2>
+<p><strong>Question 6</strong></p>
+<hr>
+</section>
+<section id="users-table" class="level2">
+<h2 class="anchored" data-anchor-id="users-table">Users Table</h2>
+<ul>
+<li>Stores user account information</li>
+<li>User ID, username, email address</li>
+<li>Authentication credentials</li>
+</ul>
+<hr>
+</section>
+<section id="posts-table" class="level2">
+<h2 class="anchored" data-anchor-id="posts-table">Posts Table</h2>
+<ul>
+<li>Stores user-generated content</li>
+<li>Post IDs and content text</li>
+<li>Timestamps for creation and publication</li>
+</ul>
+<hr>
+</section>
+<section id="followers-table" class="level2">
+<h2 class="anchored" data-anchor-id="followers-table">Followers Table</h2>
+<ul>
+<li>Manages relationships between users</li>
+<li>Records follower and following connections</li>
+</ul>
+<hr>
+</section>
+<section id="interactions-table" class="level2">
+<h2 class="anchored" data-anchor-id="interactions-table">Interactions Table</h2>
+<ul>
+<li>Stores user engagement data</li>
+<li>Likes, comments, shares</li>
+<li>Saves and reposts</li>
+</ul>
+<hr>
+</section>
+<section id="conclusion" class="level2">
+<h2 class="anchored" data-anchor-id="conclusion">Conclusion</h2>
+<ul>
+<li>Database systems support everyday applications</li>
+<li>Domain-specific databases enable scalable research and analysis</li>
+<li>NoSQL systems address modern data challenges</li>
+</ul>
+<hr>
+</section>
+<section id="thank-you" class="level2">
+<h2 class="anchored" data-anchor-id="thank-you">Thank You</h2>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
