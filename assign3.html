@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Assignment 5: Government Data API – Kasra Akbari</title>
+<title>Assignment 3: SQL Queries &amp; Interpreter Exercises – Kasra Akbari</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -19,41 +19,6 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
-}
-/* CSS for syntax highlighting */
-html { -webkit-text-size-adjust: 100%; }
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -248,7 +213,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Assignment 5: Government Data API</h1>
+<h1 class="title">Assignment 3: SQL Queries &amp; Interpreter Exercises</h1>
 </div>
 
 
@@ -265,160 +230,240 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<p>For this assignment, I used the gov01data.R package to scrape government documents. Three issues have been encountered, but they have been solved. Here is an overview of the scraping process:</p>
 <ol type="1">
-<li><p>File Format Requirements: The initial challenges involved downloading the dataset listings. I assumed that only the CSV file was required; however, the govdata01 package relies on both files, which in this case are the CSV and JSON files. This was a necessary step because it ensures compatibility with the package’s functions and to enable proper data extraction.</p></li>
-<li><p>Setting the File Directory<strong>:</strong> Before starting with the downloads, the CSV and JSON files were not being recognized because there was no designated directory for it. With the guidance of AI, specifially ChatGBT, I determined that a dedicated folder was required to properly organize and access the data files. As a result, I used my folder that I created for assignment 4 named <em>data</em>, and stored the CSV and JSON files, which allowed the download and processing steps to be completed successfully.</p></li>
-<li><p>File Downloads<strong>:</strong> During the first download process, the last five entries failed because the corresponding JSON records contained missing or empty PDF link fields. As a result, items 6–10 were labeled “Failed to download” due to the absence of valid PDF URLs. To resolve this issue, I obtained updated CSV and JSON files and attempted the process again with 20 government records. On the second attempt, 19 of the 20 files downloaded successfully, with only the third file failing due to a persistent missing PDF reference.</p></li>
-<li><p>Data Usability and Recommendations: Despite these challenges, the resulting dataset remains usable, as it includes a diverse range of government documents from recent times. For future development, implementing a stronger filtering mechanism—such as automatically excluding records with missing pdf link fields—would improve the overall efficiency of the document retrieval process. Below, I’ve pasted my codes where 19 out of 20 government files were downloaded.</p></li>
+<li><p>Open the Online SQL interpreter (https://www.db-book.com/university-lab-dir/sqljs.html)</p></li>
+<li><p>Write SQL codes to get a list of:</p>
+<ol type="i">
+<li>Students IDs (hint: from the takes relation)</li>
+<li>Instructors</li>
+<li>Departments</li>
+</ol></li>
 </ol>
-<div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="do">## Scraping Government data</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="do">## Website: GovInfo (https://www.govinfo.gov/app/search/)</span></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="do">## Prerequisite: Download from website the list of files to be downloaded</span></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="do">## Designed for background job</span></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Start with a clean plate and lean loading to save memory</span></span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="fu">gc</span>(<span class="at">reset=</span>T)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>          used (Mb) gc trigger (Mb) max used (Mb)
-Ncells  603820 32.3    1374165 73.4   603820 32.3
-Vcells 1096622  8.4    8388608 64.0  1096622  8.4</code></pre>
-</div>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># install.packages(c("purrr", "magrittr")</span></span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(purrr)</span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(magrittr) <span class="co"># Alternatively, load tidyverse</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="cell-output cell-output-stderr">
-<pre><code>
-Attaching package: 'magrittr'</code></pre>
-</div>
-<div class="cell-output cell-output-stderr">
-<pre><code>The following object is masked from 'package:purrr':
-
-    set_names</code></pre>
-</div>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="do">## Set path for reading the listing and home directory</span></span>
-<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="do">## For Windows, use "c:"\\directory\\subdirectory\\</span></span>
-<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a><span class="do">## For Mac, "/Users/YOURNAME/path/"</span></span>
-<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(rjson)</span>
-<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(jsonlite)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="cell-output cell-output-stderr">
-<pre><code>
-Attaching package: 'jsonlite'</code></pre>
-</div>
-<div class="cell-output cell-output-stderr">
-<pre><code>The following objects are masked from 'package:rjson':
-
-    fromJSON, toJSON</code></pre>
-</div>
-<div class="cell-output cell-output-stderr">
-<pre><code>The following object is masked from 'package:purrr':
-
-    flatten</code></pre>
-</div>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(data.table)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="cell-output cell-output-stderr">
-<pre><code>
-Attaching package: 'data.table'</code></pre>
-</div>
-<div class="cell-output cell-output-stderr">
-<pre><code>The following object is masked from 'package:purrr':
-
-    transpose</code></pre>
-</div>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(readr)</span>
-<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a><span class="do">## CSV method</span></span>
-<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a>govfiles<span class="ot">=</span> <span class="fu">read.csv</span>(<span class="at">file=</span><span class="st">"data/govinfo-search-results-2025-10-29T19_06_10.csv"</span>, <span class="at">skip=</span><span class="dv">2</span>)</span>
-<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb13-6"><a href="#cb13-6" aria-hidden="true" tabindex="-1"></a><span class="do">## JSON method</span></span>
-<span id="cb13-7"><a href="#cb13-7" aria-hidden="true" tabindex="-1"></a><span class="do">### rjson</span></span>
-<span id="cb13-8"><a href="#cb13-8" aria-hidden="true" tabindex="-1"></a>gf_list <span class="ot">&lt;-</span> rjson<span class="sc">::</span><span class="fu">fromJSON</span>(<span class="at">file =</span><span class="st">"data/govinfo-search-results-2025-10-29T19_06_42.json"</span>)</span>
-<span id="cb13-9"><a href="#cb13-9" aria-hidden="true" tabindex="-1"></a>govfile2<span class="ot">=</span>dplyr<span class="sc">::</span><span class="fu">bind_rows</span>(gf_list<span class="sc">$</span>resultSet)</span>
-<span id="cb13-10"><a href="#cb13-10" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb13-11"><a href="#cb13-11" aria-hidden="true" tabindex="-1"></a><span class="do">### jsonlite</span></span>
-<span id="cb13-12"><a href="#cb13-12" aria-hidden="true" tabindex="-1"></a>gf_list1 <span class="ot">=</span> jsonlite<span class="sc">::</span><span class="fu">read_json</span>(<span class="st">"data/govinfo-search-results-2025-10-29T19_06_42.json"</span>)</span>
-<span id="cb13-13"><a href="#cb13-13" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb13-14"><a href="#cb13-14" aria-hidden="true" tabindex="-1"></a><span class="do">### Extract the list</span></span>
-<span id="cb13-15"><a href="#cb13-15" aria-hidden="true" tabindex="-1"></a>govfiles3 <span class="ot">&lt;-</span> gf_list1<span class="sc">$</span>resultSet</span>
-<span id="cb13-16"><a href="#cb13-16" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb13-17"><a href="#cb13-17" aria-hidden="true" tabindex="-1"></a><span class="do">### One more step</span></span>
-<span id="cb13-18"><a href="#cb13-18" aria-hidden="true" tabindex="-1"></a>govfiles3 <span class="ot">&lt;-</span> gf_list1<span class="sc">$</span>resultSet <span class="sc">|&gt;</span> dplyr<span class="sc">::</span><span class="fu">bind_rows</span>()</span>
-<span id="cb13-19"><a href="#cb13-19" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb13-20"><a href="#cb13-20" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb13-21"><a href="#cb13-21" aria-hidden="true" tabindex="-1"></a><span class="co"># Preparing for bulk download of government documents</span></span>
-<span id="cb13-22"><a href="#cb13-22" aria-hidden="true" tabindex="-1"></a>govfiles<span class="sc">$</span>id <span class="ot">=</span> govfiles<span class="sc">$</span>packageId</span>
-<span id="cb13-23"><a href="#cb13-23" aria-hidden="true" tabindex="-1"></a>pdf_govfiles_url <span class="ot">=</span> govfiles3<span class="sc">$</span>pdfLink</span>
-<span id="cb13-24"><a href="#cb13-24" aria-hidden="true" tabindex="-1"></a>pdf_govfiles_id <span class="ot">&lt;-</span> govfiles3<span class="sc">$</span>index</span>
-<span id="cb13-25"><a href="#cb13-25" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb13-26"><a href="#cb13-26" aria-hidden="true" tabindex="-1"></a><span class="co"># Directory to save the pdf's</span></span>
-<span id="cb13-27"><a href="#cb13-27" aria-hidden="true" tabindex="-1"></a><span class="co"># Be sure to create a folder for storing the pdf's</span></span>
-<span id="cb13-28"><a href="#cb13-28" aria-hidden="true" tabindex="-1"></a>save_dir <span class="ot">&lt;-</span> <span class="st">"datamethods"</span></span>
-<span id="cb13-29"><a href="#cb13-29" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb13-30"><a href="#cb13-30" aria-hidden="true" tabindex="-1"></a><span class="co"># Function to download pdfs</span></span>
-<span id="cb13-31"><a href="#cb13-31" aria-hidden="true" tabindex="-1"></a>download_govfiles_pdf <span class="ot">&lt;-</span> <span class="cf">function</span>(url, id) {</span>
-<span id="cb13-32"><a href="#cb13-32" aria-hidden="true" tabindex="-1"></a>  <span class="fu">tryCatch</span>({</span>
-<span id="cb13-33"><a href="#cb13-33" aria-hidden="true" tabindex="-1"></a>    destfile <span class="ot">&lt;-</span> <span class="fu">paste0</span>(save_dir, <span class="st">"govfiles_"</span>, id, <span class="st">".pdf"</span>)</span>
-<span id="cb13-34"><a href="#cb13-34" aria-hidden="true" tabindex="-1"></a>    <span class="fu">download.file</span>(url, <span class="at">destfile =</span> destfile, <span class="at">mode =</span> <span class="st">"wb"</span>) <span class="co"># Binary files</span></span>
-<span id="cb13-35"><a href="#cb13-35" aria-hidden="true" tabindex="-1"></a>    <span class="fu">Sys.sleep</span>(<span class="fu">runif</span>(<span class="dv">1</span>, <span class="dv">1</span>, <span class="dv">3</span>))  <span class="co"># Important: random sleep between 1 and 3 seconds to avoid suspicion of "hacking" the server</span></span>
-<span id="cb13-36"><a href="#cb13-36" aria-hidden="true" tabindex="-1"></a>    <span class="fu">return</span>(<span class="fu">paste</span>(<span class="st">"Successfully downloaded:"</span>, url))</span>
-<span id="cb13-37"><a href="#cb13-37" aria-hidden="true" tabindex="-1"></a>  },</span>
-<span id="cb13-38"><a href="#cb13-38" aria-hidden="true" tabindex="-1"></a>  <span class="at">error =</span> <span class="cf">function</span>(e) {</span>
-<span id="cb13-39"><a href="#cb13-39" aria-hidden="true" tabindex="-1"></a>    <span class="fu">return</span>(<span class="fu">paste</span>(<span class="st">"Failed to download:"</span>, url))</span>
-<span id="cb13-40"><a href="#cb13-40" aria-hidden="true" tabindex="-1"></a>  })</span>
-<span id="cb13-41"><a href="#cb13-41" aria-hidden="true" tabindex="-1"></a>}</span>
-<span id="cb13-42"><a href="#cb13-42" aria-hidden="true" tabindex="-1"></a><span class="co"># Download files, potentially in parallel for speed</span></span>
-<span id="cb13-43"><a href="#cb13-43" aria-hidden="true" tabindex="-1"></a><span class="co"># Simple timer, can use package like tictoc</span></span>
-<span id="cb13-44"><a href="#cb13-44" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb13-45"><a href="#cb13-45" aria-hidden="true" tabindex="-1"></a><span class="do">## Try twenty</span></span>
-<span id="cb13-46"><a href="#cb13-46" aria-hidden="true" tabindex="-1"></a>start.time <span class="ot">&lt;-</span> <span class="fu">Sys.time</span>()</span>
-<span id="cb13-47"><a href="#cb13-47" aria-hidden="true" tabindex="-1"></a><span class="fu">message</span>(<span class="st">"Starting downloads"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="cell-output cell-output-stderr">
-<pre><code>Starting downloads</code></pre>
-</div>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>results <span class="ot">&lt;-</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">20</span> <span class="sc">%&gt;%</span> </span>
-<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a>  purrr<span class="sc">::</span><span class="fu">map_chr</span>(<span class="sc">~</span> <span class="fu">download_govfiles_pdf</span>(pdf_govfiles_url[.], pdf_govfiles_id[.]))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="cell-output cell-output-stderr">
-<pre><code>Warning in download.file(url, destfile = destfile, mode = "wb"): URL '': status
-was 'URL using bad/illegal format or missing URL'</code></pre>
-</div>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb17"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="fu">message</span>(<span class="st">"Finished downloads"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="cell-output cell-output-stderr">
-<pre><code>Finished downloads</code></pre>
-</div>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb19"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a>end.time <span class="ot">&lt;-</span> <span class="fu">Sys.time</span>()</span>
-<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a>time.taken <span class="ot">&lt;-</span> end.time <span class="sc">-</span> start.time</span>
-<span id="cb19-3"><a href="#cb19-3" aria-hidden="true" tabindex="-1"></a>time.taken</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>Time difference of 40.49169 secs</code></pre>
-</div>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb21"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Print results</span></span>
-<span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(results)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="cell-output cell-output-stdout">
-<pre><code> [1] "Successfully downloaded: https://www.govinfo.gov/content/pkg/CCAL-119scal-2025-10-29/pdf/CCAL-119scal-2025-10-29-pt2.pdf" 
- [2] "Successfully downloaded: https://www.govinfo.gov/content/pkg/CCAL-119scal-2025-10-29/pdf/CCAL-119scal-2025-10-29-pt6.pdf" 
- [3] "Failed to download: "                                                                                                     
- [4] "Successfully downloaded: https://www.govinfo.gov/content/pkg/CCAL-119hcal-2025-10-28/pdf/CCAL-119hcal-2025-10-28-pt9.pdf" 
- [5] "Successfully downloaded: https://www.govinfo.gov/content/pkg/CCAL-119hcal-2025-10-28/pdf/CCAL-119hcal-2025-10-28-pt13.pdf"
- [6] "Successfully downloaded: https://www.govinfo.gov/content/pkg/CCAL-119hcal-2025-10-28/pdf/CCAL-119hcal-2025-10-28-pt22.pdf"
- [7] "Successfully downloaded: https://www.govinfo.gov/content/pkg/BILLS-119s3056is/pdf/BILLS-119s3056is.pdf"                   
- [8] "Successfully downloaded: https://www.govinfo.gov/content/pkg/CREC-2025-10-27/pdf/CREC-2025-10-27-pt1-PgS7753-4.pdf"       
- [9] "Successfully downloaded: https://www.govinfo.gov/content/pkg/CCAL-119scal-2025-10-27/pdf/CCAL-119scal-2025-10-27-pt2.pdf" 
-[10] "Successfully downloaded: https://www.govinfo.gov/content/pkg/CCAL-119scal-2025-10-27/pdf/CCAL-119scal-2025-10-27-pt6.pdf" 
-[11] "Successfully downloaded: https://www.govinfo.gov/content/pkg/CCAL-119hcal-2025-10-24/pdf/CCAL-119hcal-2025-10-24-pt9.pdf" 
-[12] "Successfully downloaded: https://www.govinfo.gov/content/pkg/CCAL-119hcal-2025-10-24/pdf/CCAL-119hcal-2025-10-24-pt13.pdf"
-[13] "Successfully downloaded: https://www.govinfo.gov/content/pkg/CREC-2025-10-23/pdf/CREC-2025-10-23-pt1-PgD1072.pdf"         
-[14] "Successfully downloaded: https://www.govinfo.gov/content/pkg/CREC-2025-10-23/pdf/CREC-2025-10-23-pt1-PgS7722-9.pdf"       
-[15] "Successfully downloaded: https://www.govinfo.gov/content/pkg/CREC-2025-10-23/pdf/CREC-2025-10-23-pt1-PgS7729-5.pdf"       
-[16] "Successfully downloaded: https://www.govinfo.gov/content/pkg/CREC-2025-10-23/pdf/CREC-2025-10-23-pt1-PgS7730.pdf"         
-[17] "Successfully downloaded: https://www.govinfo.gov/content/pkg/CREC-2025-10-23/pdf/CREC-2025-10-23-pt1-PgS7732.pdf"         
-[18] "Successfully downloaded: https://www.govinfo.gov/content/pkg/CREC-2025-10-23/pdf/CREC-2025-10-23-pt1-PgS7733-3.pdf"       
-[19] "Successfully downloaded: https://www.govinfo.gov/content/pkg/CCAL-119scal-2025-10-23/pdf/CCAL-119scal-2025-10-23-pt2.pdf" 
-[20] "Successfully downloaded: https://www.govinfo.gov/content/pkg/CCAL-119scal-2025-10-23/pdf/CCAL-119scal-2025-10-23-pt6.pdf" </code></pre>
-</div>
-</div>
+<ul>
+<li><p>i. select * from student</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>ID</th>
+<th>name</th>
+<th>dept_name</th>
+<th>tot_cred</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>00128</td>
+<td>Zhang</td>
+<td>Comp. Sci.</td>
+<td>102</td>
+</tr>
+<tr class="even">
+<td>12345</td>
+<td>Shankar</td>
+<td>Comp. Sci.</td>
+<td>32</td>
+</tr>
+<tr class="odd">
+<td>19991</td>
+<td>Brandt</td>
+<td>History</td>
+<td>80</td>
+</tr>
+<tr class="even">
+<td>23121</td>
+<td>Chavez</td>
+<td>Finance</td>
+<td>110</td>
+</tr>
+<tr class="odd">
+<td>44553</td>
+<td>Peltier</td>
+<td>Physics</td>
+<td>56</td>
+</tr>
+<tr class="even">
+<td>45678</td>
+<td>Levy</td>
+<td>Physics</td>
+<td>46</td>
+</tr>
+<tr class="odd">
+<td>54321</td>
+<td>Williams</td>
+<td>Comp. Sci.</td>
+<td>54</td>
+</tr>
+<tr class="even">
+<td>55739</td>
+<td>Sanchez</td>
+<td>Music</td>
+<td>38</td>
+</tr>
+<tr class="odd">
+<td>70557</td>
+<td>Snow</td>
+<td>Physics</td>
+<td>0</td>
+</tr>
+<tr class="even">
+<td>76543</td>
+<td>Brown</td>
+<td>Comp. Sci.</td>
+<td>58</td>
+</tr>
+<tr class="odd">
+<td>76653</td>
+<td>Aoi</td>
+<td>Elec. Eng.</td>
+<td>60</td>
+</tr>
+<tr class="even">
+<td>98765</td>
+<td>Bourikas</td>
+<td>Elec. Eng.</td>
+<td>98</td>
+</tr>
+<tr class="odd">
+<td>98988</td>
+<td>Tanaka</td>
+<td>Biology</td>
+<td>120</td>
+</tr>
+</tbody>
+</table></li>
+<li><p>ii. select * from instructor</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>ID</th>
+<th>name</th>
+<th>dept_name</th>
+<th>salary</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>10101</td>
+<td>Srinivasan</td>
+<td>Comp. Sci.</td>
+<td>65000</td>
+</tr>
+<tr class="even">
+<td>12121</td>
+<td>Wu</td>
+<td>Finance</td>
+<td>90000</td>
+</tr>
+<tr class="odd">
+<td>15151</td>
+<td>Mozart</td>
+<td>Music</td>
+<td>40000</td>
+</tr>
+<tr class="even">
+<td>22222</td>
+<td>Einstein</td>
+<td>Physics</td>
+<td>95000</td>
+</tr>
+<tr class="odd">
+<td>32343</td>
+<td>El Said</td>
+<td>History</td>
+<td>60000</td>
+</tr>
+<tr class="even">
+<td>33456</td>
+<td>Gold</td>
+<td>Physics</td>
+<td>87000</td>
+</tr>
+<tr class="odd">
+<td>45565</td>
+<td>Katz</td>
+<td>Comp. Sci.</td>
+<td>75000</td>
+</tr>
+<tr class="even">
+<td>58583</td>
+<td>Califieri</td>
+<td>History</td>
+<td>62000</td>
+</tr>
+<tr class="odd">
+<td>76543</td>
+<td>Singh</td>
+<td>Finance</td>
+<td>80000</td>
+</tr>
+<tr class="even">
+<td>76766</td>
+<td>Crick</td>
+<td>Biology</td>
+<td>72000</td>
+</tr>
+<tr class="odd">
+<td>83821</td>
+<td>Brandt</td>
+<td>Comp. Sci.</td>
+<td>92000</td>
+</tr>
+<tr class="even">
+<td>98345</td>
+<td>Kim</td>
+<td>Elec. Eng.</td>
+<td>80000</td>
+</tr>
+</tbody>
+</table></li>
+<li><p>iii. select * from department</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>dept_name</th>
+<th>building</th>
+<th>budget</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Biology</td>
+<td>Watson</td>
+<td>90000</td>
+</tr>
+<tr class="even">
+<td>Comp. Sci.</td>
+<td>Taylor</td>
+<td>100000</td>
+</tr>
+<tr class="odd">
+<td>Elec. Eng.</td>
+<td>Taylor</td>
+<td>85000</td>
+</tr>
+<tr class="even">
+<td>Finance</td>
+<td>Painter</td>
+<td>120000</td>
+</tr>
+<tr class="odd">
+<td>History</td>
+<td>Painter</td>
+<td>50000</td>
+</tr>
+<tr class="even">
+<td>Music</td>
+<td>Packard</td>
+<td>80000</td>
+</tr>
+<tr class="odd">
+<td>Physics</td>
+<td>Watson</td>
+<td>70000</td>
+</tr>
+</tbody>
+</table></li>
+</ul>
 
 
 
