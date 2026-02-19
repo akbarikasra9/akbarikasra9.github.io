@@ -20,6 +20,41 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -242,7 +277,7 @@ Sections of this assignment were completed with the assistance of AI-based tools
 <li><p><strong>Instructors</strong></p></li>
 <li><p><strong>Departments</strong></p></li>
 </ul>
-<p>2.a: select * from student;</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode sql code-with-copy"><code class="sourceCode sql"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="kw">select</span> <span class="op">*</span> <span class="kw">from</span> student</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <table class="caption-top table">
 <thead>
 <tr class="header">
@@ -327,7 +362,7 @@ Sections of this assignment were completed with the assistance of AI-based tools
 </tr>
 </tbody>
 </table>
-<p>2.b: select * from instructor</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode sql code-with-copy"><code class="sourceCode sql"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="kw">select</span> <span class="op">*</span> <span class="kw">from</span> instructor</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <table class="caption-top table">
 <thead>
 <tr class="header">
@@ -412,7 +447,7 @@ Sections of this assignment were completed with the assistance of AI-based tools
 </tr>
 </tbody>
 </table>
-<p>2.c: select * from department</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode sql code-with-copy"><code class="sourceCode sql"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="kw">select</span> <span class="op">*</span> <span class="kw">from</span> department</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <table class="caption-top table">
 <thead>
 <tr class="header">
@@ -469,11 +504,11 @@ Sections of this assignment were completed with the assistance of AI-based tools
 <li><strong>Add names to the list.</strong></li>
 </ul>
 <p>3.a: My original code was this: Select * from Student ID &gt;= Comp. Sci., which is wrong because I didn’t include “where”. I also did not connect the student, takes, and course join tables. With ChatGPT’s assistance, I got the correct code:</p>
-<p>select distinct s.ID, s.name</p>
-<p>from student s</p>
-<p>join takes t on s.ID = t.ID</p>
-<p>join course c on t.course_id = c.course_id</p>
-<p>where c.dept_name = ‘Comp. Sci.’;</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode sql code-with-copy"><code class="sourceCode sql"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="kw">select</span> <span class="kw">distinct</span> s.<span class="kw">ID</span>, s.name</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="kw">from</span> student s</span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="kw">join</span> takes t <span class="kw">on</span> s.<span class="kw">ID</span> <span class="op">=</span> t.<span class="kw">ID</span></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="kw">join</span> course c <span class="kw">on</span> t.course_id <span class="op">=</span> c.course_id</span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a><span class="kw">where</span> c.dept_name <span class="op">=</span> <span class="st">'Comp. Sci.'</span>;</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <table class="caption-top table">
 <thead>
 <tr class="header">
@@ -509,11 +544,11 @@ Sections of this assignment were completed with the assistance of AI-based tools
 </tbody>
 </table>
 <p>3.b: Just like the previous query, I add the takes table for the grades, which looks like this:</p>
-<p>select distinct s.ID, s.name, t.grade</p>
-<p>from student s</p>
-<p>join takes t on s.ID = t.ID</p>
-<p>join course c on t.course_id = c.course_id</p>
-<p>where c.dept_name = ‘Comp. Sci.’;</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode sql code-with-copy"><code class="sourceCode sql"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="kw">select</span> <span class="kw">distinct</span> s.<span class="kw">ID</span>, s.name, t.grade</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="kw">from</span> student s</span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="kw">join</span> takes t <span class="kw">on</span> s.<span class="kw">ID</span> <span class="op">=</span> t.<span class="kw">ID</span></span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a><span class="kw">join</span> course c <span class="kw">on</span> t.course_id <span class="op">=</span> c.course_id</span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a><span class="kw">where</span> c.dept_name <span class="op">=</span> <span class="st">'Comp. Sci.'</span>;</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <table class="caption-top table">
 <thead>
 <tr class="header">
@@ -586,12 +621,13 @@ Sections of this assignment were completed with the assistance of AI-based tools
 </tbody>
 </table>
 <p>3.c: In this query, I used ChatGPT as an assistant tool . I added the student table, where I included the ID and name. Additionally, I added the takes table, where the ID and year is included as well. The main part of this query is the <em>not in</em> command, where it only keeps student ID’s that did not take any course before 2017.</p>
-<p>select s.ID, s.name</p>
-<p>from student s</p>
-<p>where s.ID not in (</p>
-<p>select t.ID</p>
-<p>from takes t</p>
-<p>where t.year &lt; 2017);</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="sourceCode sql code-with-copy"><code class="sourceCode sql"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="kw">select</span> s.<span class="kw">ID</span>, s.name</span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="kw">from</span> student s</span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a><span class="kw">where</span> s.<span class="kw">ID</span> <span class="kw">not</span> <span class="kw">in</span> (</span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>  <span class="kw">select</span> t.<span class="kw">ID</span></span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>  <span class="kw">from</span> takes t</span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a>  <span class="kw">where</span> t.<span class="dt">year</span> <span class="op">&lt;</span> <span class="dv">2017</span></span>
+<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a>);</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <table class="caption-top table">
 <thead>
 <tr class="header">
@@ -655,9 +691,9 @@ Sections of this assignment were completed with the assistance of AI-based tools
 </tbody>
 </table>
 <p>3.d: This query focuses on the instructor relation and group instructors by department names. The <em>max</em> command is finally applied within each group to calculate and compute the maximum salary per department.</p>
-<p>select dept_name, max(salary) as maximum_salary</p>
-<p>from instructor</p>
-<p>group by dept_name;</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb7"><pre class="sourceCode sql code-with-copy"><code class="sourceCode sql"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="kw">select</span> dept_name, <span class="fu">MAX</span>(salary) <span class="kw">AS</span> maximum_salary</span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="kw">from</span> instructor</span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a><span class="kw">group</span> <span class="kw">by</span> dept_name;</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <table class="caption-top table">
 <thead>
 <tr class="header">
@@ -697,11 +733,12 @@ Sections of this assignment were completed with the assistance of AI-based tools
 </tbody>
 </table>
 <p>3.e: For this part, I initially created this code: select names from min(max_salary) as lowest_of_department from ( select dept_name, max(salary) as max_salary from instructor group by dept_name ) dm;. I turned out I was incorrect. I learned from ChatGPT that Just like the previous query, I add the <em>min</em> command, which calculates the lowest salary of all departments of the per-department maximum salary.</p>
-<p>select min(maximum_salary) as lowest_of_department</p>
-<p>from (</p>
-<p>select dept_name, max(salary) as maximum_salary</p>
-<p>from instructor</p>
-<p>group by dept_name) dm;</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb8"><pre class="sourceCode sql code-with-copy"><code class="sourceCode sql"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="kw">select</span> <span class="fu">min</span>(max_salary) <span class="kw">as</span> lowest_of_department</span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="kw">from</span> (</span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>  <span class="kw">select</span> dept_name, <span class="fu">max</span>(salary) <span class="kw">as</span> maximum_salary</span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>  <span class="kw">from</span> instructor</span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a>  <span class="kw">group</span> <span class="kw">by</span> dept_name</span>
+<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a>) dm;</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <table class="caption-top table">
 <thead>
 <tr class="header">
@@ -715,17 +752,20 @@ Sections of this assignment were completed with the assistance of AI-based tools
 </tbody>
 </table>
 <p>3.f: Similar to the last query, I used ChatGPT to identify which department(s) makes the lowest salary (40000). I add the inner aggregation, where I select the department name and the maximum salary from the instructor table grouped by the department names. I then select the lowest salary and match the department to that value.</p>
-<p>select dm.dept_name, dm.maximum_salary</p>
-<p>from (</p>
-<p>select dept_name, max(salary) as maximum_salary</p>
-<p>from instructor</p>
-<p>group by dept_name ) dm</p>
-<p>where dm.maximum_salary = (</p>
-<p>select min(x.maximum_salary)</p>
-<p>from (</p>
-<p>select dept_name, max(salary) as maximum_salary</p>
-<p>from instructor</p>
-<p>group by dept_name ) x );</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb9"><pre class="sourceCode sql code-with-copy"><code class="sourceCode sql"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="kw">select</span> dm.dept_name, dm.maximum_salary</span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="kw">from</span> (</span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>  <span class="kw">select</span> dept_name, <span class="fu">max</span>(salary) <span class="kw">as</span> maximum_salary</span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>  <span class="kw">from</span> instructor</span>
+<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a>  <span class="kw">group</span> <span class="kw">by</span> dept_name</span>
+<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a>) dm</span>
+<span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a><span class="kw">where</span> dm.maximum_salary <span class="op">=</span> (</span>
+<span id="cb9-8"><a href="#cb9-8" aria-hidden="true" tabindex="-1"></a>  <span class="kw">select</span> <span class="fu">min</span>(x.maximum_salary)</span>
+<span id="cb9-9"><a href="#cb9-9" aria-hidden="true" tabindex="-1"></a>  <span class="kw">from</span> (</span>
+<span id="cb9-10"><a href="#cb9-10" aria-hidden="true" tabindex="-1"></a>    <span class="kw">select</span> dept_name, <span class="fu">max</span>(salary) <span class="kw">as</span> maximum_salary</span>
+<span id="cb9-11"><a href="#cb9-11" aria-hidden="true" tabindex="-1"></a>    <span class="kw">from</span> instructor</span>
+<span id="cb9-12"><a href="#cb9-12" aria-hidden="true" tabindex="-1"></a>    <span class="kw">group</span> <span class="kw">by</span> dept_name</span>
+<span id="cb9-13"><a href="#cb9-13" aria-hidden="true" tabindex="-1"></a>  ) x</span>
+<span id="cb9-14"><a href="#cb9-14" aria-hidden="true" tabindex="-1"></a>);</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <table class="caption-top table">
 <thead>
 <tr class="header">
@@ -741,10 +781,12 @@ Sections of this assignment were completed with the assistance of AI-based tools
 </tbody>
 </table>
 <p><strong>5. Write SQL query to find the number of students in each section. The result columns should appear in the order “courseid, secid, year, semester, num”. You do not need to output sections with 0 students.</strong></p>
-<p>5.a. For this part, I used ChatGPT as an assistance tool with this code. I selected attributes (course_id, sec_id, year, semester, and count(ID)) from the takes table. I then grouped them together and gave me the result.</p>
-<p>select course_id, sec_id, year, semester, count(ID) as num</p>
-<p>from takes</p>
-<p>group by course_id, sec_id, year, semester;</p>
+<ul>
+<li>For this part, I used ChatGPT as an assistance tool with this code. I selected attributes (course_id, sec_id, year, semester, and count(ID)) from the takes table. I then grouped them together and gave me the result.</li>
+</ul>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb10"><pre class="sourceCode sql code-with-copy"><code class="sourceCode sql"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="kw">select</span> course_id, sec_id, <span class="dt">year</span>, semester, <span class="fu">count</span>(<span class="kw">ID</span>) <span class="kw">as</span> num</span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a><span class="kw">from</span> takes</span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a><span class="kw">group</span> <span class="kw">by</span> course_id, sec_id, <span class="dt">year</span>, semester;</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <table class="caption-top table">
 <thead>
 <tr class="header">
