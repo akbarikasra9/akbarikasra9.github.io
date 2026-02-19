@@ -230,17 +230,19 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<ol type="1">
-<li><p>Open the Online SQL interpreter (https://www.db-book.com/university-lab-dir/sqljs.html)</p></li>
-<li><p>Write SQL codes to get a list of:</p>
-<ol type="i">
-<li>Students IDs (hint: from the takes relation)</li>
-<li>Instructors</li>
-<li>Departments</li>
-</ol></li>
-</ol>
+<p><strong>AI Assistance Disclosure</strong><br>
+<br>
+Sections of this assignment were completed with the assistance of AI-based tools such as *ChatGPT* for conceptual clarification and query guidance. All SQL queries were reviewed, tested, and validated by the author.<br>
+<br>
+<strong>1. Open the Online SQL Interpreter: (https://www.db-book.com/university-lab-dir/sqljs.html)</strong><br>
+<br>
+<strong>2. Write SQL codes to get a list of:</strong></p>
 <ul>
-<li><p>i. select * from student</p>
+<li><p><strong>Student IDs</strong></p></li>
+<li><p><strong>Instructors</strong></p></li>
+<li><p><strong>Departments</strong></p></li>
+</ul>
+<p>2.a: select * from student;</p>
 <table class="caption-top table">
 <thead>
 <tr class="header">
@@ -323,15 +325,9 @@ ul.task-list li input[type="checkbox"] {
 <td>Elec. Eng.</td>
 <td>98</td>
 </tr>
-<tr class="odd">
-<td>98988</td>
-<td>Tanaka</td>
-<td>Biology</td>
-<td>120</td>
-</tr>
 </tbody>
-</table></li>
-<li><p>ii. select * from instructor</p>
+</table>
+<p>2.b: select * from instructor</p>
 <table class="caption-top table">
 <thead>
 <tr class="header">
@@ -415,8 +411,8 @@ ul.task-list li input[type="checkbox"] {
 <td>80000</td>
 </tr>
 </tbody>
-</table></li>
-<li><p>iii. select * from department</p>
+</table>
+<p>2.c: select * from department</p>
 <table class="caption-top table">
 <thead>
 <tr class="header">
@@ -462,8 +458,404 @@ ul.task-list li input[type="checkbox"] {
 <td>70000</td>
 </tr>
 </tbody>
-</table></li>
+</table>
+<p><strong>3. Write in SQL codes to do the following queries:</strong></p>
+<ul>
+<li><strong>Find the ID and name of each student who has taken at least one Comp. Sci. course; make sure there are no duplicate names in the result.</strong></li>
+<li><strong>Add grades to the list.</strong></li>
+<li><strong>Find the ID and name of each student who has not taken any course offered before 2017.</strong></li>
+<li><strong>For each department, find the maximum salary of instructors in that department. You may assume that every department has at least one instructor.</strong></li>
+<li><strong>Find the lowest, across all departments, of the per-department maximum salary computed by the preceding query.</strong></li>
+<li><strong>Add names to the list.</strong></li>
 </ul>
+<p>3.a: My original code was this: Select * from Student ID &gt;= Comp. Sci., which is wrong because I didn’t include “where”. I also did not connect the student, takes, and course join tables. With ChatGPT’s assistance, I got the correct code:</p>
+<p>select distinct s.ID, s.name</p>
+<p>from student s</p>
+<p>join takes t on s.ID = t.ID</p>
+<p>join course c on t.course_id = c.course_id</p>
+<p>where c.dept_name = ‘Comp. Sci.’;</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>ID</th>
+<th>name</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>00128</td>
+<td>Zhang</td>
+</tr>
+<tr class="even">
+<td>12345</td>
+<td>Shankar</td>
+</tr>
+<tr class="odd">
+<td>45678</td>
+<td>Levy</td>
+</tr>
+<tr class="even">
+<td>54321</td>
+<td>Williams</td>
+</tr>
+<tr class="odd">
+<td>76543</td>
+<td>Brown</td>
+</tr>
+<tr class="even">
+<td>98765</td>
+<td>Bourikas</td>
+</tr>
+</tbody>
+</table>
+<p>3.b: Just like the previous query, I add the takes table for the grades, which looks like this:</p>
+<p>select distinct s.ID, s.name, t.grade</p>
+<p>from student s</p>
+<p>join takes t on s.ID = t.ID</p>
+<p>join course c on t.course_id = c.course_id</p>
+<p>where c.dept_name = ‘Comp. Sci.’;</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>ID</th>
+<th>name</th>
+<th>grade</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>00128</td>
+<td>Zhang</td>
+<td>A</td>
+</tr>
+<tr class="even">
+<td>00128</td>
+<td>Zhang</td>
+<td>A-</td>
+</tr>
+<tr class="odd">
+<td>12345</td>
+<td>Shankar</td>
+<td>C</td>
+</tr>
+<tr class="even">
+<td>12345</td>
+<td>Shankar</td>
+<td>A</td>
+</tr>
+<tr class="odd">
+<td>45678</td>
+<td>Levy</td>
+<td>F</td>
+</tr>
+<tr class="even">
+<td>45678</td>
+<td>Levy</td>
+<td>B+</td>
+</tr>
+<tr class="odd">
+<td>45678</td>
+<td>Levy</td>
+<td>B</td>
+</tr>
+<tr class="even">
+<td>54321</td>
+<td>Williams</td>
+<td>A-</td>
+</tr>
+<tr class="odd">
+<td>54321</td>
+<td>Williams</td>
+<td>B+</td>
+</tr>
+<tr class="even">
+<td>76543</td>
+<td>Brown</td>
+<td>A</td>
+</tr>
+<tr class="odd">
+<td>98765</td>
+<td>Bourikas</td>
+<td>C-</td>
+</tr>
+<tr class="even">
+<td>98765</td>
+<td>Bourikas</td>
+<td>B</td>
+</tr>
+</tbody>
+</table>
+<p>3.c: In this query, I used ChatGPT as an assistant tool . I added the student table, where I included the ID and name. Additionally, I added the takes table, where the ID and year is included as well. The main part of this query is the <em>not in</em> command, where it only keeps student ID’s that did not take any course before 2017.</p>
+<p>select s.ID, s.name</p>
+<p>from student s</p>
+<p>where s.ID not in (</p>
+<p>select t.ID</p>
+<p>from takes t</p>
+<p>where t.year &lt; 2017);</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>ID</th>
+<th>name</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>00128</td>
+<td>Zhang</td>
+</tr>
+<tr class="even">
+<td>12345</td>
+<td>Shankar</td>
+</tr>
+<tr class="odd">
+<td>19991</td>
+<td>Brandt</td>
+</tr>
+<tr class="even">
+<td>23121</td>
+<td>Chavez</td>
+</tr>
+<tr class="odd">
+<td>44553</td>
+<td>Peltier</td>
+</tr>
+<tr class="even">
+<td>45678</td>
+<td>Levy</td>
+</tr>
+<tr class="odd">
+<td>54321</td>
+<td>Williams</td>
+</tr>
+<tr class="even">
+<td>55739</td>
+<td>Sanchez</td>
+</tr>
+<tr class="odd">
+<td>70557</td>
+<td>Snow</td>
+</tr>
+<tr class="even">
+<td>76543</td>
+<td>Brown</td>
+</tr>
+<tr class="odd">
+<td>76653</td>
+<td>Aoi</td>
+</tr>
+<tr class="even">
+<td>98765</td>
+<td>Bourikas</td>
+</tr>
+<tr class="odd">
+<td>98988</td>
+<td>Tanaka</td>
+</tr>
+</tbody>
+</table>
+<p>3.d: This query focuses on the instructor relation and group instructors by department names. The <em>max</em> command is finally applied within each group to calculate and compute the maximum salary per department.</p>
+<p>select dept_name, max(salary) as maximum_salary</p>
+<p>from instructor</p>
+<p>group by dept_name;</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>dept_name</th>
+<th>maximum_salary</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Biology</td>
+<td>72000</td>
+</tr>
+<tr class="even">
+<td>Comp. Sci.</td>
+<td>92000</td>
+</tr>
+<tr class="odd">
+<td>Elec. Eng.</td>
+<td>80000</td>
+</tr>
+<tr class="even">
+<td>Finance</td>
+<td>90000</td>
+</tr>
+<tr class="odd">
+<td>History</td>
+<td>62000</td>
+</tr>
+<tr class="even">
+<td>Music</td>
+<td>40000</td>
+</tr>
+<tr class="odd">
+<td>Physics</td>
+<td>95000</td>
+</tr>
+</tbody>
+</table>
+<p>3.e: For this part, I initially created this code: select names from min(max_salary) as lowest_of_department from ( select dept_name, max(salary) as max_salary from instructor group by dept_name ) dm;. I turned out I was incorrect. I learned from ChatGPT that Just like the previous query, I add the <em>min</em> command, which calculates the lowest salary of all departments of the per-department maximum salary.</p>
+<p>select min(maximum_salary) as lowest_of_department</p>
+<p>from (</p>
+<p>select dept_name, max(salary) as maximum_salary</p>
+<p>from instructor</p>
+<p>group by dept_name) dm;</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>lowest_of_department</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>40000</td>
+</tr>
+</tbody>
+</table>
+<p>3.f: Similar to the last query, I used ChatGPT to identify which department(s) makes the lowest salary (40000). I add the inner aggregation, where I select the department name and the maximum salary from the instructor table grouped by the department names. I then select the lowest salary and match the department to that value.</p>
+<p>select dm.dept_name, dm.maximum_salary</p>
+<p>from (</p>
+<p>select dept_name, max(salary) as maximum_salary</p>
+<p>from instructor</p>
+<p>group by dept_name ) dm</p>
+<p>where dm.maximum_salary = (</p>
+<p>select min(x.maximum_salary)</p>
+<p>from (</p>
+<p>select dept_name, max(salary) as maximum_salary</p>
+<p>from instructor</p>
+<p>group by dept_name ) x );</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>dept_name</th>
+<th>maximum_salary</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Music</td>
+<td>40000</td>
+</tr>
+</tbody>
+</table>
+<p><strong>5. Write SQL query to find the number of students in each section. The result columns should appear in the order “courseid, secid, year, semester, num”. You do not need to output sections with 0 students.</strong></p>
+<p>5.a. For this part, I used ChatGPT as an assistance tool with this code. I selected attributes (course_id, sec_id, year, semester, and count(ID)) from the takes table. I then grouped them together and gave me the result.</p>
+<p>select course_id, sec_id, year, semester, count(ID) as num</p>
+<p>from takes</p>
+<p>group by course_id, sec_id, year, semester;</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>course_id</th>
+<th>sec_id</th>
+<th>year</th>
+<th>semester</th>
+<th>num</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>BIO-101</td>
+<td>1</td>
+<td>2017</td>
+<td>Summer</td>
+<td>1</td>
+</tr>
+<tr class="even">
+<td>BIO-301</td>
+<td>1</td>
+<td>2018</td>
+<td>Summer</td>
+<td>1</td>
+</tr>
+<tr class="odd">
+<td>CS-101</td>
+<td>1</td>
+<td>2017</td>
+<td>Fall</td>
+<td>6</td>
+</tr>
+<tr class="even">
+<td>CS-101</td>
+<td>1</td>
+<td>2018</td>
+<td>Spring</td>
+<td>1</td>
+</tr>
+<tr class="odd">
+<td>CS-190</td>
+<td>2</td>
+<td>2017</td>
+<td>Spring</td>
+<td>2</td>
+</tr>
+<tr class="even">
+<td>CS-315</td>
+<td>1</td>
+<td>2018</td>
+<td>Spring</td>
+<td>2</td>
+</tr>
+<tr class="odd">
+<td>CS-319</td>
+<td>1</td>
+<td>2018</td>
+<td>Spring</td>
+<td>1</td>
+</tr>
+<tr class="even">
+<td>CS-319</td>
+<td>2</td>
+<td>2018</td>
+<td>Spring</td>
+<td>1</td>
+</tr>
+<tr class="odd">
+<td>CS-347</td>
+<td>1</td>
+<td>2017</td>
+<td>Fall</td>
+<td>2</td>
+</tr>
+<tr class="even">
+<td>EE-181</td>
+<td>1</td>
+<td>2017</td>
+<td>Spring</td>
+<td>1</td>
+</tr>
+<tr class="odd">
+<td>FIN-201</td>
+<td>1</td>
+<td>2018</td>
+<td>Spring</td>
+<td>1</td>
+</tr>
+<tr class="even">
+<td>HIS-351</td>
+<td>1</td>
+<td>2018</td>
+<td>Spring</td>
+<td>1</td>
+</tr>
+<tr class="odd">
+<td>MU-199</td>
+<td>1</td>
+<td>2018</td>
+<td>Spring</td>
+<td>1</td>
+</tr>
+<tr class="even">
+<td>PHY-101</td>
+<td>1</td>
+<td>2017</td>
+<td>Fall</td>
+<td>1</td>
+</tr>
+</tbody>
+</table>
 
 
 
