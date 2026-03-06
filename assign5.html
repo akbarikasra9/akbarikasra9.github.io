@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Assignment 2: Prompt exercise – Kasra Akbari</title>
+<title>Assignment 5: E-R Diagrams, Weak Entity Sets, and SQL Exercises – Kasra Akbari</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -19,6 +19,41 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -221,7 +256,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Assignment 2: Prompt exercise</h1>
+<h1 class="title">Assignment 5: E-R Diagrams, Weak Entity Sets, and SQL Exercises</h1>
 </div>
 
 
@@ -238,76 +273,53 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<p><strong>1. An E-R diagram can be viewed as a graph. What do the following mean in terms of the structure of an enterprise schema?</strong></p>
+<p><strong>a) The graph is disconnected.</strong></p>
 <ul>
-<li><p><strong>Step 1: Initial Prompt Creation</strong></p>
+<li>This indicates that there are separate parts of the diagram that don’t have a direct relationship between the tables, which could also mean that some entities don’t have connected relationships to others. Overall, this could lead parts of the schema be isolated from the rest of the other relationships.</li>
+</ul>
+<p><strong>b) The graph has a cycle.</strong></p>
 <ul>
-<li>Task: Write a baseline prompt to request a structured systematic literature review on data mining and machine learning applications.</li>
-<li>Prompt: “Conduct a 2,500-word structured systematic literature review on the applications of data mining and machine learning in real-world domains. Include a methodology section, synthesize key findings, identify trends and gaps, and propose one testable hypothesis. Use an academic tone and emulate systematic review standards.”</li>
-<li>I submit this prompt to ChatGPT, Copilot, and Grok 3, collecting the raw outputs.</li>
-</ul></li>
-<li><p><strong>Step 2: Analyze Model Responses</strong></p>
+<li>A cycle in the graph happens when an entity is indirectly related to types of relationships, which in the case of an E-R diagram could result in redundancy and logical issues in the schema.</li>
+</ul>
+<p><strong>3. We can convert any weak entity set to a strong entity set by simply adding appropriate attributes. Why, then, do we have weak entity sets?</strong></p>
 <ul>
-<li><strong>Structure</strong>: Did it include a methodology section and follow a systematic review format?
+<li>Weak entity sets are meant to show accurate dependency relationships. Although it can be converted to a strong entity set by adding appropriate attributes, a weak entity is not able to exist independently with another entity.</li>
+</ul>
+<p><strong>4. SQL exercise:</strong></p>
+<p><strong>a) Consider the following database:</strong></p>
+<p><img src="images/clipboard-1774843206.png" class="img-fluid"></p>
+<p><strong>i. Find ID and name of each employee who lives in the same city as the location of the company for which the employee works.</strong></p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode sql code-with-copy"><code class="sourceCode sql"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="kw">Select</span> employee. <span class="kw">ID</span>, employee person_name </span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="kw">from</span> employee e </span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="kw">join</span> works w <span class="kw">on</span> e.<span class="kw">ID</span><span class="op">-</span>w.<span class="kw">ID</span> </span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="kw">join</span> company c <span class="kw">on</span> w.company_name <span class="op">-</span> c.company_name </span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="kw">where</span> c.city <span class="op">=</span> ecity</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p><strong>ii. Find ID and name of each employee who lives in the same city and on the same</strong></p>
+<p><strong>street as does her or his manager.</strong></p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode sql code-with-copy"><code class="sourceCode sql"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="kw">Select</span> employee.<span class="kw">ID</span>, employee.person_name </span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="kw">from</span> employee e </span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="kw">join</span> manages m <span class="kw">on</span> e. <span class="kw">ID</span> <span class="op">-</span> m.<span class="kw">ID</span> </span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="kw">where</span> e.city <span class="op">=</span> m.city <span class="kw">and</span>  e.street <span class="op">-</span> m.street</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p><strong>iii. Find ID and name of each employee who earns more than the average salary of all</strong></p>
+<p><strong>employees of her or his company.</strong></p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode sql code-with-copy"><code class="sourceCode sql"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="kw">select</span> employee.<span class="kw">ID</span>, employee.person_name </span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="kw">from</span> employee e </span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="kw">join</span> manages m <span class="kw">on</span> e. <span class="kw">ID</span> <span class="op">-</span> m.<span class="kw">ID</span> </span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="kw">where</span> e.city <span class="op">=</span> m.city <span class="kw">and</span> e.street <span class="op">-</span> m.street</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p><strong>b) Consider the following SQL query that seeks to find a list of titles of all courses taught in</strong></p>
+<p><strong>Spring 2017 along with the name of the instructor.</strong></p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode sql code-with-copy"><code class="sourceCode sql"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="kw">select</span> name, title </span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="kw">from</span> instructor </span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="kw">natural</span> <span class="kw">join</span> teaches </span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="kw">natural</span> <span class="kw">join</span> section </span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a><span class="kw">natural</span> <span class="kw">join</span> course </span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a><span class="kw">where</span> semester <span class="op">=</span> <span class="st">'Spring'</span> <span class="kw">and</span> <span class="dt">year</span> <span class="op">=</span> <span class="dv">2017</span> </span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p><strong>What is wring with this query?</strong></p>
 <ul>
-<li><strong>ChatGPT</strong>: Yes</li>
-<li><strong>Copilot:</strong> Yes</li>
-<li><strong>Grok:</strong> Somewhat</li>
-</ul></li>
-<li><strong>Synthesis</strong>: Were key findings from data mining and machine learning applications well-summarized?
-<ul>
-<li><strong>ChatGPT:</strong> Yes</li>
-<li><strong>Copilot<em>:</em></strong> Yes</li>
-<li><strong>Grok-3:</strong> Yes</li>
-</ul></li>
-<li><strong>Trends and Gaps</strong>: Did it identify meaningful trends and research gaps?
-<ul>
-<li><strong>ChatGPT:</strong> There was one identified major trend, the gaps however; it was satisfactory.</li>
-<li><strong>Copilot:</strong> The trends section presented general observations, and the analysis of research gaps provided greater depth.</li>
-<li><strong>Grok-3</strong>: The identified trends and research gaps were meaningful but comparatively broad.</li>
-</ul></li>
-<li><strong>Hypothesis</strong>: Was the proposed hypothesis testable and relevant?
-<ul>
-<li><strong>ChatGPT:</strong> Yes</li>
-<li><strong>Copilot:</strong> The proposed hypothesis is somewhat reliable, lacking the precision and specificity observed in <em>ChatGPT</em>’s output.</li>
-<li><strong>Grok-3</strong>: The proposed hypothesis was reasonably well-constructed. Although the model referenced relevant sources, it did not provide formal citations, limiting verifiability.</li>
-</ul></li>
-<li><strong>References</strong>: Are the citations accurate (check using Google Scholar or Semantic Scholar)
-<ul>
-<li><strong>ChatGPT</strong>: In terms of sources, the model provided citation references, upon verification, all but one source was checked on Google Scholar and appeared academically valid.</li>
-<li><strong>Copilot:</strong> The model also had a absence of citation sources or references.</li>
-<li><strong>Grok-3</strong>: Although the model referenced relevant sources, it did not provide formal citations, limiting verifiability.</li>
-</ul></li>
-</ul></li>
-<li><p><strong>Step 3: Refine the Prompt</strong></p>
-<ul>
-<li><p>Task: Revise the prompt to address deficiencies in each model’s response, creating three tailored prompts—one for ChatGPT, one for Copilot, and one for Grok 3.</p></li>
-<li><p>Refined Prompt for All Three Models: “Imagine you’re a data scientist conducting a 2,500-word systematic literature review on how data mining and machine learning are applied in domains like healthcare, finance, and education. Outline a clear methodology, synthesize on specific key findings with fresh insights, provide a detailed and clear analysis of trends and gaps, and propose one bold, testable hypothesis. Maintain a rigorous academic tone.”</p></li>
-<li><p>I test these refined prompts and compare the improved outputs.</p></li>
-</ul></li>
-<li><p><strong>Step 4: Cross Model Collaboration</strong></p>
-<ul>
-<li>Task: Integrate the best elements from each model’s output into a final systematic review. Write a new prompt for the student’s preferred model (e.g., Grok 3) to synthesize the results.</li>
-<li>Example Synthesis Prompt: “Using these drafts from three AI models [pastes outputs], produce a 2,000-word structured systematic literature review on data mining and machine learning applications. Combine the strongest methodology, findings, trends, gaps, and hypothesis into a cohesive, academically sound document.”</li>
-<li>I submit their final review and justify their synthesis decisions.</li>
-</ul></li>
-<li><p><strong>Step 5: Reflection</strong></p></li>
-<li><p>Task: Write a reflection answering:</p>
-<ul>
-<li><p>How did each model approach the systematic review differently?</p>
-<ul>
-<li><p><em>ChatGPT</em>: This model produced a well-organized literature review clear methodology section and a structured consistent systematic review format. For the synthesis, the key findings related to data mining and machine learning applications was concise and well-summarized. The review identified one trend and numerous research gaps, with the discussion of gaps being particularly specific. The proposed hypothesis was both testable and relevant. In terms of sources, the model provided citation references, upon verification, all but one source was checked on Google Scholar and appeared academically valid. Overall <em>ChatGPT’s</em> response demonstrated strong specific coverages, especially in its treatment in gap areas, though the examination of trends was limited.</p></li>
-<li><p><em>Copilot</em>: Similar to <em>ChatGPT</em>, this model contained a clear methodology section and systematic review format. Unlike the previous model, however, the output focused more on broader findings rather than detailed analytical synthesis. While the trends section presented general observations, the analysis of research gaps provided greater depth. The proposed hypothesis is somewhat reliable, lacking the precision and specificity observed in <em>ChatGPT</em>’s output. The model also had a absence of citation sources or references. Overall, Copilot was a coherent but less detailed literature review, with weaknesses primarily related to source support and analytical depth.</p></li>
-<li><p><em>Grok 3</em>: At first, the model produced a substantially shorter review than requested, generating approximately 900 words instead of 2,500 words. After clarifying the prompt for the word count, it generated the requested output. This model contains a methodology section, although it didn’t follow a systematic review protocol. Similar to <em>ChatGPT</em>, the synthesis of key findings from data mining and machine learning applications are well-summarized, and the identified trends and research gaps were meaningful but comparatively broad. The proposed hypothesis was reasonably well-constructed. Although the model referenced relevant sources, it did not provide formal citations, limiting verifiability. Overall, Grok 3 produced a competent but lesser quality review relative to the other models.</p></li>
-</ul></li>
-</ul></li>
-<li><p>Which prompt refinements yielded the results for each model?</p>
-<ul>
-<li>Regarding prompt refinements, <em>ChatGPT</em> demonstrated the best structure through its methodology and a systematic review format. In terms of the synthesis across domain, both <em>ChatGPT and Copilot</em> are equally effective, each providing balanced discussions that covered a similar range of application areas.. <em>Copilot ,</em>however, offered a more extensive discussion of trends and gaps, identifying numerous broader thematic patterns. With the respect of the hypothesis development, <em>ChatGPT</em> provided the most detailed hypothesis testing. Finally, all models generated citation references that, upon verification through <em>Google Scholar</em>, appeared to be peer-reviewed academic sources.</li>
-</ul></li>
-<li><p>What did you learn about leveraging AI for structured academic reviews?</p>
-<ul>
-<li>Through this exercise, I learned that AI isn’t the best reliable tool for writing and making structured academic literature reviews. While some AI models such as <em>ChatGPT</em> and <em>Copilot</em> can write a good academic review, their outputs may contains some flaws. For example, some models like <em>Grok-3</em> may fail to follow length or structural instructions when asked, sometimes producing outputs that is contrary from the requested format. I also learned that AI can help with citation suggestions, but it’s important to double-check the legitimacy of these citation sources through <em>Google Scholar</em> or <em>Semantic Scholar</em>. Overall, AI can be a helpful tool for brainstorming, refining writing, and checking your works and citations, but it should never be a substitute of relying on independent academic work.</li>
-</ul></li>
+<li><p>The problem in this query is how the natural join matches columns automatically with the same name between the tables.</p></li>
+<li><p>Additionally, if those rows don’t exactly match, they will disappear.</p></li>
+<li><p>Since the <em>where semester = ‘Spring’ and year = 2017</em> were applied after the natural joins, they have removed the <em>teaches, section,</em> and <em>course</em> rows.</p></li>
 </ul>
 
 
