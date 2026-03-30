@@ -412,7 +412,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb29-4"><a href="#cb29-4" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb29-5"><a href="#cb29-5" aria-hidden="true" tabindex="-1"></a><span class="fu">cor</span>(x,y) <span class="co"># Correlation of x and y</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>[1] 0.995204</code></pre>
+<pre><code>[1] 0.9963085</code></pre>
 </div>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb31"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb31-1"><a href="#cb31-1" aria-hidden="true" tabindex="-1"></a><span class="fu">set.seed</span>(<span class="dv">1303</span>) <span class="co"># Set the seed for Random Number Generator (RNG) to generate values that are reproducible.</span></span>
 <span id="cb31-2"><a href="#cb31-2" aria-hidden="true" tabindex="-1"></a><span class="fu">rnorm</span>(<span class="dv">50</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
@@ -770,7 +770,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 package 'ISLR' successfully unpacked and MD5 sums checked
 
 The downloaded binary packages are in
-    C:\Users\akbar\AppData\Local\Temp\Rtmp0oCOA1\downloaded_packages</code></pre>
+    C:\Users\akbar\AppData\Local\Temp\RtmpGokRKx\downloaded_packages</code></pre>
 </div>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb101"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb101-1"><a href="#cb101-1" aria-hidden="true" tabindex="-1"></a><span class="fu">lapply</span>(ptbu, require, <span class="at">character.only =</span> <span class="cn">TRUE</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stderr">
@@ -1400,7 +1400,7 @@ Attaching package: 'ggplot2'</code></pre>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb188"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb188-1"><a href="#cb188-1" aria-hidden="true" tabindex="-1"></a><span class="do">##install.packages("tidyverse")</span></span>
 <span id="cb188-2"><a href="#cb188-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stderr">
-<pre><code>Warning: package 'tidyverse' was built under R version 4.5.2</code></pre>
+<pre><code>Warning: package 'tidyverse' was built under R version 4.5.3</code></pre>
 </div>
 <div class="cell-output cell-output-stderr">
 <pre><code>Warning: package 'tidyr' was built under R version 4.5.3</code></pre>
@@ -1409,7 +1409,7 @@ Attaching package: 'ggplot2'</code></pre>
 <pre><code>Warning: package 'readr' was built under R version 4.5.3</code></pre>
 </div>
 <div class="cell-output cell-output-stderr">
-<pre><code>Warning: package 'dplyr' was built under R version 4.5.2</code></pre>
+<pre><code>Warning: package 'dplyr' was built under R version 4.5.3</code></pre>
 </div>
 <div class="cell-output cell-output-stderr">
 <pre><code>Warning: package 'lubridate' was built under R version 4.5.2</code></pre>
@@ -1721,6 +1721,9 @@ Total      1690 100.000</code></pre>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb229"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb229-1"><a href="#cb229-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
 <span id="cb229-2"><a href="#cb229-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(scales)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stderr">
+<pre><code>Warning: package 'scales' was built under R version 4.5.3</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
 <pre><code>
 Attaching package: 'scales'</code></pre>
 </div>
@@ -1734,40 +1737,40 @@ Attaching package: 'scales'</code></pre>
 
     col_factor</code></pre>
 </div>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb233"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb233-1"><a href="#cb233-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Make Tondu discrete (factor) with labels</span></span>
-<span id="cb233-2"><a href="#cb233-2" aria-hidden="true" tabindex="-1"></a>TEDS_2016 <span class="ot">&lt;-</span> TEDS_2016 <span class="sc">%&gt;%</span></span>
-<span id="cb233-3"><a href="#cb233-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
-<span id="cb233-4"><a href="#cb233-4" aria-hidden="true" tabindex="-1"></a>    <span class="at">Tondu =</span> <span class="fu">factor</span>(</span>
-<span id="cb233-5"><a href="#cb233-5" aria-hidden="true" tabindex="-1"></a>      Tondu,</span>
-<span id="cb233-6"><a href="#cb233-6" aria-hidden="true" tabindex="-1"></a>      <span class="at">levels =</span> <span class="fu">c</span>(<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">4</span>, <span class="dv">5</span>, <span class="dv">6</span>, <span class="dv">7</span>),</span>
-<span id="cb233-7"><a href="#cb233-7" aria-hidden="true" tabindex="-1"></a>      <span class="at">labels =</span> <span class="fu">c</span>(</span>
-<span id="cb233-8"><a href="#cb233-8" aria-hidden="true" tabindex="-1"></a>        <span class="st">"Unification now"</span>,</span>
-<span id="cb233-9"><a href="#cb233-9" aria-hidden="true" tabindex="-1"></a>        <span class="st">"Status quo, unif. in future"</span>,</span>
-<span id="cb233-10"><a href="#cb233-10" aria-hidden="true" tabindex="-1"></a>        <span class="st">"Status quo, decide later"</span>,</span>
-<span id="cb233-11"><a href="#cb233-11" aria-hidden="true" tabindex="-1"></a>        <span class="st">"Status quo forever"</span>,</span>
-<span id="cb233-12"><a href="#cb233-12" aria-hidden="true" tabindex="-1"></a>        <span class="st">"Status quo, indep. in future"</span>,</span>
-<span id="cb233-13"><a href="#cb233-13" aria-hidden="true" tabindex="-1"></a>        <span class="st">"Independence now"</span>,</span>
-<span id="cb233-14"><a href="#cb233-14" aria-hidden="true" tabindex="-1"></a>        <span class="st">"No response"</span></span>
-<span id="cb233-15"><a href="#cb233-15" aria-hidden="true" tabindex="-1"></a>      )</span>
-<span id="cb233-16"><a href="#cb233-16" aria-hidden="true" tabindex="-1"></a>    )</span>
-<span id="cb233-17"><a href="#cb233-17" aria-hidden="true" tabindex="-1"></a>  )</span>
-<span id="cb233-18"><a href="#cb233-18" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb233-19"><a href="#cb233-19" aria-hidden="true" tabindex="-1"></a>T2 <span class="ot">&lt;-</span> TEDS_2016 <span class="sc">%&gt;%</span></span>
-<span id="cb233-20"><a href="#cb233-20" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(<span class="sc">!</span><span class="fu">is.na</span>(Tondu)) <span class="sc">%&gt;%</span></span>
-<span id="cb233-21"><a href="#cb233-21" aria-hidden="true" tabindex="-1"></a>  <span class="fu">count</span>(Tondu) <span class="sc">%&gt;%</span></span>
-<span id="cb233-22"><a href="#cb233-22" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">perc =</span> n <span class="sc">/</span> <span class="fu">sum</span>(n))</span>
-<span id="cb233-23"><a href="#cb233-23" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb233-24"><a href="#cb233-24" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(T2, <span class="fu">aes</span>(<span class="at">x =</span> <span class="fu">reorder</span>(Tondu, <span class="sc">-</span>perc), <span class="at">y =</span> perc, <span class="at">fill =</span> Tondu)) <span class="sc">+</span> </span>
-<span id="cb233-25"><a href="#cb233-25" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_bar</span>(<span class="at">stat =</span> <span class="st">"identity"</span>) <span class="sc">+</span></span>
-<span id="cb233-26"><a href="#cb233-26" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_y_continuous</span>(<span class="at">labels =</span> percent) <span class="sc">+</span></span>
-<span id="cb233-27"><a href="#cb233-27" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ylab</span>(<span class="st">"Share of Respondents (%)"</span>) <span class="sc">+</span> </span>
-<span id="cb233-28"><a href="#cb233-28" aria-hidden="true" tabindex="-1"></a>  <span class="fu">xlab</span>(<span class="st">"Attitudes Toward Unification and Independence (Tondu)"</span>) <span class="sc">+</span></span>
-<span id="cb233-29"><a href="#cb233-29" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_bw</span>() <span class="sc">+</span></span>
-<span id="cb233-30"><a href="#cb233-30" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">axis.text.x =</span> <span class="fu">element_text</span>(<span class="at">angle =</span> <span class="dv">45</span>, <span class="at">hjust =</span> <span class="dv">1</span>)) <span class="sc">+</span></span>
-<span id="cb233-31"><a href="#cb233-31" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_fill_manual</span>(<span class="at">values =</span> <span class="fu">c</span>(</span>
-<span id="cb233-32"><a href="#cb233-32" aria-hidden="true" tabindex="-1"></a>    <span class="st">"steel blue"</span>,<span class="st">"forestgreen"</span>,<span class="st">"khaki1"</span>,</span>
-<span id="cb233-33"><a href="#cb233-33" aria-hidden="true" tabindex="-1"></a>    <span class="st">"orange"</span>,<span class="st">"goldenrod"</span>,<span class="st">"yellow"</span>,<span class="st">"grey"</span></span>
-<span id="cb233-34"><a href="#cb233-34" aria-hidden="true" tabindex="-1"></a>  ))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb234"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb234-1"><a href="#cb234-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Make Tondu discrete (factor) with labels</span></span>
+<span id="cb234-2"><a href="#cb234-2" aria-hidden="true" tabindex="-1"></a>TEDS_2016 <span class="ot">&lt;-</span> TEDS_2016 <span class="sc">%&gt;%</span></span>
+<span id="cb234-3"><a href="#cb234-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
+<span id="cb234-4"><a href="#cb234-4" aria-hidden="true" tabindex="-1"></a>    <span class="at">Tondu =</span> <span class="fu">factor</span>(</span>
+<span id="cb234-5"><a href="#cb234-5" aria-hidden="true" tabindex="-1"></a>      Tondu,</span>
+<span id="cb234-6"><a href="#cb234-6" aria-hidden="true" tabindex="-1"></a>      <span class="at">levels =</span> <span class="fu">c</span>(<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">4</span>, <span class="dv">5</span>, <span class="dv">6</span>, <span class="dv">7</span>),</span>
+<span id="cb234-7"><a href="#cb234-7" aria-hidden="true" tabindex="-1"></a>      <span class="at">labels =</span> <span class="fu">c</span>(</span>
+<span id="cb234-8"><a href="#cb234-8" aria-hidden="true" tabindex="-1"></a>        <span class="st">"Unification now"</span>,</span>
+<span id="cb234-9"><a href="#cb234-9" aria-hidden="true" tabindex="-1"></a>        <span class="st">"Status quo, unif. in future"</span>,</span>
+<span id="cb234-10"><a href="#cb234-10" aria-hidden="true" tabindex="-1"></a>        <span class="st">"Status quo, decide later"</span>,</span>
+<span id="cb234-11"><a href="#cb234-11" aria-hidden="true" tabindex="-1"></a>        <span class="st">"Status quo forever"</span>,</span>
+<span id="cb234-12"><a href="#cb234-12" aria-hidden="true" tabindex="-1"></a>        <span class="st">"Status quo, indep. in future"</span>,</span>
+<span id="cb234-13"><a href="#cb234-13" aria-hidden="true" tabindex="-1"></a>        <span class="st">"Independence now"</span>,</span>
+<span id="cb234-14"><a href="#cb234-14" aria-hidden="true" tabindex="-1"></a>        <span class="st">"No response"</span></span>
+<span id="cb234-15"><a href="#cb234-15" aria-hidden="true" tabindex="-1"></a>      )</span>
+<span id="cb234-16"><a href="#cb234-16" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="cb234-17"><a href="#cb234-17" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb234-18"><a href="#cb234-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb234-19"><a href="#cb234-19" aria-hidden="true" tabindex="-1"></a>T2 <span class="ot">&lt;-</span> TEDS_2016 <span class="sc">%&gt;%</span></span>
+<span id="cb234-20"><a href="#cb234-20" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(<span class="sc">!</span><span class="fu">is.na</span>(Tondu)) <span class="sc">%&gt;%</span></span>
+<span id="cb234-21"><a href="#cb234-21" aria-hidden="true" tabindex="-1"></a>  <span class="fu">count</span>(Tondu) <span class="sc">%&gt;%</span></span>
+<span id="cb234-22"><a href="#cb234-22" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">perc =</span> n <span class="sc">/</span> <span class="fu">sum</span>(n))</span>
+<span id="cb234-23"><a href="#cb234-23" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb234-24"><a href="#cb234-24" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(T2, <span class="fu">aes</span>(<span class="at">x =</span> <span class="fu">reorder</span>(Tondu, <span class="sc">-</span>perc), <span class="at">y =</span> perc, <span class="at">fill =</span> Tondu)) <span class="sc">+</span> </span>
+<span id="cb234-25"><a href="#cb234-25" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_bar</span>(<span class="at">stat =</span> <span class="st">"identity"</span>) <span class="sc">+</span></span>
+<span id="cb234-26"><a href="#cb234-26" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_y_continuous</span>(<span class="at">labels =</span> percent) <span class="sc">+</span></span>
+<span id="cb234-27"><a href="#cb234-27" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ylab</span>(<span class="st">"Share of Respondents (%)"</span>) <span class="sc">+</span> </span>
+<span id="cb234-28"><a href="#cb234-28" aria-hidden="true" tabindex="-1"></a>  <span class="fu">xlab</span>(<span class="st">"Attitudes Toward Unification and Independence (Tondu)"</span>) <span class="sc">+</span></span>
+<span id="cb234-29"><a href="#cb234-29" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_bw</span>() <span class="sc">+</span></span>
+<span id="cb234-30"><a href="#cb234-30" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">axis.text.x =</span> <span class="fu">element_text</span>(<span class="at">angle =</span> <span class="dv">45</span>, <span class="at">hjust =</span> <span class="dv">1</span>)) <span class="sc">+</span></span>
+<span id="cb234-31"><a href="#cb234-31" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_fill_manual</span>(<span class="at">values =</span> <span class="fu">c</span>(</span>
+<span id="cb234-32"><a href="#cb234-32" aria-hidden="true" tabindex="-1"></a>    <span class="st">"steel blue"</span>,<span class="st">"forestgreen"</span>,<span class="st">"khaki1"</span>,</span>
+<span id="cb234-33"><a href="#cb234-33" aria-hidden="true" tabindex="-1"></a>    <span class="st">"orange"</span>,<span class="st">"goldenrod"</span>,<span class="st">"yellow"</span>,<span class="st">"grey"</span></span>
+<span id="cb234-34"><a href="#cb234-34" aria-hidden="true" tabindex="-1"></a>  ))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output-display">
 <div>
 <figure class="figure">
