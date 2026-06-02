@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.9.36">
+<meta name="generator" content="quarto-1.9.37">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -74,7 +74,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-845c23b38eaddc0f92fda52bfe77a8c8.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="site_libs/bootstrap/bootstrap-c51defa157ccb18095ba4b35bf459923.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
@@ -277,10 +277,21 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </li>
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
-  <li class="nav-item">
-    <a class="nav-link" href="https://019dd61f-326b-aec6-a86f-4499e1e19461.share.connect.posit.cloud" target="_blank"> 
-<span class="menu-text">Game Recommender App</span></a>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-shiny-apps" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Shiny Apps</span>
+    </a>
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-shiny-apps">    
+        <li>
+    <a class="dropdown-item" href="https://019dd61f-326b-aec6-a86f-4499e1e19461.share.connect.posit.cloud" target="_blank">
+ <span class="dropdown-text">Game Recommender App</span></a>
   </li>  
+        <li>
+    <a class="dropdown-item" href="https://019e820d-8734-bbcd-099f-95738959381e.share.connect.posit.cloud/" target="_blank">
+ <span class="dropdown-text">Cyber Threat Intelligence Dashboard</span></a>
+  </li>  
+    </ul>
+  </li>
   <li class="nav-item dropdown ">
     <a class="nav-link dropdown-toggle" href="#" id="nav-menu-cvresume" role="link" data-bs-toggle="dropdown" aria-expanded="false">
  <span class="menu-text">CV/Resume</span>
@@ -288,7 +299,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-cvresume">    
         <li>
     <a class="dropdown-item" href="./resume2025.html">
- <span class="dropdown-text">Resume 2026</span></a>
+ <span class="dropdown-text">Resume</span></a>
   </li>  
     </ul>
   </li>
@@ -705,61 +716,64 @@ The following object is masked from 'package:readr':
 <span id="cb54-24"><a href="#cb54-24" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb54-25"><a href="#cb54-25" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span>(<span class="st">"Found"</span>, <span class="fu">length</span>(pdf_files), <span class="st">"PDF files</span><span class="sc">\n</span><span class="st">"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>Found 51 PDF files</code></pre>
+<pre><code>Found 54 PDF files</code></pre>
 </div>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb56"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb56-1"><a href="#cb56-1" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(pdf_files)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
-<pre><code> [1] "C:/akbarikasra9.github.io/akbarikasra9.github.io/files/ai-lab.pdf"                                                                                  
- [2] "C:/akbarikasra9.github.io/akbarikasra9.github.io/files/ai lab.pdf"                                                                                  
- [3] "C:/akbarikasra9.github.io/datamethodsgovfiles_1.pdf"                                                                                                
- [4] "C:/akbarikasra9.github.io/datamethodsgovfiles_10.pdf"                                                                                               
- [5] "C:/akbarikasra9.github.io/datamethodsgovfiles_11.pdf"                                                                                               
- [6] "C:/akbarikasra9.github.io/datamethodsgovfiles_12.pdf"                                                                                               
- [7] "C:/akbarikasra9.github.io/datamethodsgovfiles_13.pdf"                                                                                               
- [8] "C:/akbarikasra9.github.io/datamethodsgovfiles_14.pdf"                                                                                               
- [9] "C:/akbarikasra9.github.io/datamethodsgovfiles_15.pdf"                                                                                               
-[10] "C:/akbarikasra9.github.io/datamethodsgovfiles_16.pdf"                                                                                               
-[11] "C:/akbarikasra9.github.io/datamethodsgovfiles_17.pdf"                                                                                               
-[12] "C:/akbarikasra9.github.io/datamethodsgovfiles_18.pdf"                                                                                               
-[13] "C:/akbarikasra9.github.io/datamethodsgovfiles_19.pdf"                                                                                               
-[14] "C:/akbarikasra9.github.io/datamethodsgovfiles_2.pdf"                                                                                                
-[15] "C:/akbarikasra9.github.io/datamethodsgovfiles_20.pdf"                                                                                               
-[16] "C:/akbarikasra9.github.io/datamethodsgovfiles_4.pdf"                                                                                                
-[17] "C:/akbarikasra9.github.io/datamethodsgovfiles_5.pdf"                                                                                                
-[18] "C:/akbarikasra9.github.io/datamethodsgovfiles_6.pdf"                                                                                                
-[19] "C:/akbarikasra9.github.io/datamethodsgovfiles_7.pdf"                                                                                                
-[20] "C:/akbarikasra9.github.io/datamethodsgovfiles_8.pdf"                                                                                                
-[21] "C:/akbarikasra9.github.io/datamethodsgovfiles_9.pdf"                                                                                                
-[22] "C:/akbarikasra9.github.io/Figure01.pdf"                                                                                                             
-[23] "C:/akbarikasra9.github.io/files/ai-lab.pdf"                                                                                                         
-[24] "C:/akbarikasra9.github.io/images/datamethodsgovfiles_1.pdf"                                                                                         
-[25] "C:/akbarikasra9.github.io/USDOD/USDOD/1999_GPO-CRPT.pdf"                                                                                            
-[26] "C:/akbarikasra9.github.io/USDOD/USDOD/2000_asia_neac_dod_china.pdf"                                                                                 
-[27] "C:/akbarikasra9.github.io/USDOD/USDOD/2001_DoD_AR.pdf"                                                                                              
-[28] "C:/akbarikasra9.github.io/USDOD/USDOD/2002_0712china.pdf"                                                                                           
-[29] "C:/akbarikasra9.github.io/USDOD/USDOD/2003_chinaex.pdf"                                                                                             
-[30] "C:/akbarikasra9.github.io/USDOD/USDOD/2004_0528PRC.pdf"                                                                                             
-[31] "C:/akbarikasra9.github.io/USDOD/USDOD/2005_0719china.pdf"                                                                                           
-[32] "C:/akbarikasra9.github.io/USDOD/USDOD/2006_dod.pdf"                                                                                                 
-[33] "C:/akbarikasra9.github.io/USDOD/USDOD/2007_dod.pdf"                                                                                                 
-[34] "C:/akbarikasra9.github.io/USDOD/USDOD/2008_dod.pdf"                                                                                                 
-[35] "C:/akbarikasra9.github.io/USDOD/USDOD/2009_China_Military_Power_Report.pdf"                                                                         
-[36] "C:/akbarikasra9.github.io/USDOD/USDOD/2010_CMPR_Final.pdf"                                                                                          
-[37] "C:/akbarikasra9.github.io/USDOD/USDOD/2011_CMPR_Final.pdf"                                                                                          
-[38] "C:/akbarikasra9.github.io/USDOD/USDOD/2012_CMPR_Final.pdf"                                                                                          
-[39] "C:/akbarikasra9.github.io/USDOD/USDOD/2013_China_Report_FINAL.pdf"                                                                                  
-[40] "C:/akbarikasra9.github.io/USDOD/USDOD/2014_DoD_China_Report.pdf"                                                                                    
-[41] "C:/akbarikasra9.github.io/USDOD/USDOD/2015_China_Military_Power_Report.pdf"                                                                         
-[42] "C:/akbarikasra9.github.io/USDOD/USDOD/2016 China Military Power Report.pdf"                                                                         
-[43] "C:/akbarikasra9.github.io/USDOD/USDOD/2017_China_Military_Power_Report.pdf"                                                                         
-[44] "C:/akbarikasra9.github.io/USDOD/USDOD/2018_CHINA-MILITARY-POWER-REPORT.pdf"                                                                         
-[45] "C:/akbarikasra9.github.io/USDOD/USDOD/2019_CHINA_MILITARY_POWER_REPORT.pdf"                                                                         
-[46] "C:/akbarikasra9.github.io/USDOD/USDOD/2020_DOD-CHINA-MILITARY-POWER-REPORT-FINAL.pdf"                                                               
-[47] "C:/akbarikasra9.github.io/USDOD/USDOD/2021-cmpr-final.pdf"                                                                                          
-[48] "C:/akbarikasra9.github.io/USDOD/USDOD/2022-military-and-security-developments-involving-the-peoples-republic-of-china.pdf"                          
-[49] "C:/akbarikasra9.github.io/USDOD/USDOD/2023-MILITARY-AND-SECURITY-DEVELOPMENTS-PRC.PDF"                                                              
-[50] "C:/akbarikasra9.github.io/USDOD/USDOD/2024_MILITARY-AND-SECURITY-DEVELOPMENTS-PRC.PDF"                                                              
-[51] "C:/akbarikasra9.github.io/USDOD/USDOD/2025-ANNUAL-REPORT-TO-CONGRESS-MILITARY-AND-SECURITY-DEVELOPMENTS-INVOLVING-THE-PEOPLES-REPUBLIC-OF-CHINA.PDF"</code></pre>
+<pre><code> [1] "C:/akbarikasra9.github.io/akbarikasra9.github.io/akbarikasra9.github.io/files/ai-lab.pdf"                                                           
+ [2] "C:/akbarikasra9.github.io/akbarikasra9.github.io/files/ai-lab.pdf"                                                                                  
+ [3] "C:/akbarikasra9.github.io/akbarikasra9.github.io/files/ai lab.pdf"                                                                                  
+ [4] "C:/akbarikasra9.github.io/akbarikasra9.github.io/files/im-finalreport.pdf"                                                                          
+ [5] "C:/akbarikasra9.github.io/akbarikasra9.github.io/files/km-finalreport.pdf"                                                                          
+ [6] "C:/akbarikasra9.github.io/datamethodsgovfiles_1.pdf"                                                                                                
+ [7] "C:/akbarikasra9.github.io/datamethodsgovfiles_10.pdf"                                                                                               
+ [8] "C:/akbarikasra9.github.io/datamethodsgovfiles_11.pdf"                                                                                               
+ [9] "C:/akbarikasra9.github.io/datamethodsgovfiles_12.pdf"                                                                                               
+[10] "C:/akbarikasra9.github.io/datamethodsgovfiles_13.pdf"                                                                                               
+[11] "C:/akbarikasra9.github.io/datamethodsgovfiles_14.pdf"                                                                                               
+[12] "C:/akbarikasra9.github.io/datamethodsgovfiles_15.pdf"                                                                                               
+[13] "C:/akbarikasra9.github.io/datamethodsgovfiles_16.pdf"                                                                                               
+[14] "C:/akbarikasra9.github.io/datamethodsgovfiles_17.pdf"                                                                                               
+[15] "C:/akbarikasra9.github.io/datamethodsgovfiles_18.pdf"                                                                                               
+[16] "C:/akbarikasra9.github.io/datamethodsgovfiles_19.pdf"                                                                                               
+[17] "C:/akbarikasra9.github.io/datamethodsgovfiles_2.pdf"                                                                                                
+[18] "C:/akbarikasra9.github.io/datamethodsgovfiles_20.pdf"                                                                                               
+[19] "C:/akbarikasra9.github.io/datamethodsgovfiles_4.pdf"                                                                                                
+[20] "C:/akbarikasra9.github.io/datamethodsgovfiles_5.pdf"                                                                                                
+[21] "C:/akbarikasra9.github.io/datamethodsgovfiles_6.pdf"                                                                                                
+[22] "C:/akbarikasra9.github.io/datamethodsgovfiles_7.pdf"                                                                                                
+[23] "C:/akbarikasra9.github.io/datamethodsgovfiles_8.pdf"                                                                                                
+[24] "C:/akbarikasra9.github.io/datamethodsgovfiles_9.pdf"                                                                                                
+[25] "C:/akbarikasra9.github.io/Figure01.pdf"                                                                                                             
+[26] "C:/akbarikasra9.github.io/files/ai-lab.pdf"                                                                                                         
+[27] "C:/akbarikasra9.github.io/images/datamethodsgovfiles_1.pdf"                                                                                         
+[28] "C:/akbarikasra9.github.io/USDOD/USDOD/1999_GPO-CRPT.pdf"                                                                                            
+[29] "C:/akbarikasra9.github.io/USDOD/USDOD/2000_asia_neac_dod_china.pdf"                                                                                 
+[30] "C:/akbarikasra9.github.io/USDOD/USDOD/2001_DoD_AR.pdf"                                                                                              
+[31] "C:/akbarikasra9.github.io/USDOD/USDOD/2002_0712china.pdf"                                                                                           
+[32] "C:/akbarikasra9.github.io/USDOD/USDOD/2003_chinaex.pdf"                                                                                             
+[33] "C:/akbarikasra9.github.io/USDOD/USDOD/2004_0528PRC.pdf"                                                                                             
+[34] "C:/akbarikasra9.github.io/USDOD/USDOD/2005_0719china.pdf"                                                                                           
+[35] "C:/akbarikasra9.github.io/USDOD/USDOD/2006_dod.pdf"                                                                                                 
+[36] "C:/akbarikasra9.github.io/USDOD/USDOD/2007_dod.pdf"                                                                                                 
+[37] "C:/akbarikasra9.github.io/USDOD/USDOD/2008_dod.pdf"                                                                                                 
+[38] "C:/akbarikasra9.github.io/USDOD/USDOD/2009_China_Military_Power_Report.pdf"                                                                         
+[39] "C:/akbarikasra9.github.io/USDOD/USDOD/2010_CMPR_Final.pdf"                                                                                          
+[40] "C:/akbarikasra9.github.io/USDOD/USDOD/2011_CMPR_Final.pdf"                                                                                          
+[41] "C:/akbarikasra9.github.io/USDOD/USDOD/2012_CMPR_Final.pdf"                                                                                          
+[42] "C:/akbarikasra9.github.io/USDOD/USDOD/2013_China_Report_FINAL.pdf"                                                                                  
+[43] "C:/akbarikasra9.github.io/USDOD/USDOD/2014_DoD_China_Report.pdf"                                                                                    
+[44] "C:/akbarikasra9.github.io/USDOD/USDOD/2015_China_Military_Power_Report.pdf"                                                                         
+[45] "C:/akbarikasra9.github.io/USDOD/USDOD/2016 China Military Power Report.pdf"                                                                         
+[46] "C:/akbarikasra9.github.io/USDOD/USDOD/2017_China_Military_Power_Report.pdf"                                                                         
+[47] "C:/akbarikasra9.github.io/USDOD/USDOD/2018_CHINA-MILITARY-POWER-REPORT.pdf"                                                                         
+[48] "C:/akbarikasra9.github.io/USDOD/USDOD/2019_CHINA_MILITARY_POWER_REPORT.pdf"                                                                         
+[49] "C:/akbarikasra9.github.io/USDOD/USDOD/2020_DOD-CHINA-MILITARY-POWER-REPORT-FINAL.pdf"                                                               
+[50] "C:/akbarikasra9.github.io/USDOD/USDOD/2021-cmpr-final.pdf"                                                                                          
+[51] "C:/akbarikasra9.github.io/USDOD/USDOD/2022-military-and-security-developments-involving-the-peoples-republic-of-china.pdf"                          
+[52] "C:/akbarikasra9.github.io/USDOD/USDOD/2023-MILITARY-AND-SECURITY-DEVELOPMENTS-PRC.PDF"                                                              
+[53] "C:/akbarikasra9.github.io/USDOD/USDOD/2024_MILITARY-AND-SECURITY-DEVELOPMENTS-PRC.PDF"                                                              
+[54] "C:/akbarikasra9.github.io/USDOD/USDOD/2025-ANNUAL-REPORT-TO-CONGRESS-MILITARY-AND-SECURITY-DEVELOPMENTS-INVOLVING-THE-PEOPLES-REPUBLIC-OF-CHINA.PDF"</code></pre>
 </div>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb58"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb58-1"><a href="#cb58-1" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> (<span class="fu">length</span>(pdf_files) <span class="sc">==</span> <span class="dv">0</span>) {</span>
 <span id="cb58-2"><a href="#cb58-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">stop</span>(<span class="st">"No PDF files found. Check PATH_DATA and make sure the folder actually contains PDFs."</span>)</span>
@@ -1911,18 +1925,20 @@ PDF error: Expected the default config, but wasn't able to find it, or it isn't 
 <span id="cb60-21"><a href="#cb60-21" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>Dropping files with no 4-digit year in filename:
- [1] "ai-lab.pdf"                 "ai lab.pdf"                
- [3] "datamethodsgovfiles_1.pdf"  "datamethodsgovfiles_10.pdf"
- [5] "datamethodsgovfiles_11.pdf" "datamethodsgovfiles_12.pdf"
- [7] "datamethodsgovfiles_13.pdf" "datamethodsgovfiles_14.pdf"
- [9] "datamethodsgovfiles_15.pdf" "datamethodsgovfiles_16.pdf"
-[11] "datamethodsgovfiles_17.pdf" "datamethodsgovfiles_18.pdf"
-[13] "datamethodsgovfiles_19.pdf" "datamethodsgovfiles_2.pdf" 
-[15] "datamethodsgovfiles_20.pdf" "datamethodsgovfiles_4.pdf" 
-[17] "datamethodsgovfiles_5.pdf"  "datamethodsgovfiles_6.pdf" 
-[19] "datamethodsgovfiles_7.pdf"  "datamethodsgovfiles_8.pdf" 
-[21] "datamethodsgovfiles_9.pdf"  "Figure01.pdf"              
-[23] "ai-lab.pdf"                 "datamethodsgovfiles_1.pdf" </code></pre>
+ [1] "ai-lab.pdf"                 "ai-lab.pdf"                
+ [3] "ai lab.pdf"                 "im-finalreport.pdf"        
+ [5] "km-finalreport.pdf"         "datamethodsgovfiles_1.pdf" 
+ [7] "datamethodsgovfiles_10.pdf" "datamethodsgovfiles_11.pdf"
+ [9] "datamethodsgovfiles_12.pdf" "datamethodsgovfiles_13.pdf"
+[11] "datamethodsgovfiles_14.pdf" "datamethodsgovfiles_15.pdf"
+[13] "datamethodsgovfiles_16.pdf" "datamethodsgovfiles_17.pdf"
+[15] "datamethodsgovfiles_18.pdf" "datamethodsgovfiles_19.pdf"
+[17] "datamethodsgovfiles_2.pdf"  "datamethodsgovfiles_20.pdf"
+[19] "datamethodsgovfiles_4.pdf"  "datamethodsgovfiles_5.pdf" 
+[21] "datamethodsgovfiles_6.pdf"  "datamethodsgovfiles_7.pdf" 
+[23] "datamethodsgovfiles_8.pdf"  "datamethodsgovfiles_9.pdf" 
+[25] "Figure01.pdf"               "ai-lab.pdf"                
+[27] "datamethodsgovfiles_1.pdf" </code></pre>
 </div>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb62"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb62-1"><a href="#cb62-1" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> (<span class="fu">nrow</span>(DODq) <span class="sc">==</span> <span class="dv">0</span>) {</span>
 <span id="cb62-2"><a href="#cb62-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">stop</span>(<span class="st">"No valid files remain after dropping files without extractable years."</span>)</span>
@@ -2610,7 +2626,7 @@ font family not found in Windows font database</code></pre>
 <span id="cb116-18"><a href="#cb116-18" aria-hidden="true" tabindex="-1"></a>                 <span class="at">control =</span> <span class="fu">list</span>(<span class="at">seed =</span> SEED, <span class="at">burnin =</span> <span class="dv">500</span>, <span class="at">iter =</span> <span class="dv">1000</span>))</span>
 <span id="cb116-19"><a href="#cb116-19" aria-hidden="true" tabindex="-1"></a><span class="fu">toc</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>LDA fitting (k=5): 39.15 sec elapsed</code></pre>
+<pre><code>LDA fitting (k=5): 46.55 sec elapsed</code></pre>
 </div>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb118"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb118-1"><a href="#cb118-1" aria-hidden="true" tabindex="-1"></a><span class="fu">terms</span>(lda_model, <span class="dv">10</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
