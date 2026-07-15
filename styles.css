@@ -7,11 +7,14 @@
   --background-soft: #0a0d11;
   --background-card: #0d1116;
   --background-alt: #080b0e;
+
   --text-main: #f2f2ed;
-  --text-soft: #9ca5ae;
-  --text-muted: #747f89;
-  --line: rgba(255, 255, 255, 0.15);
+  --text-soft: #a2abb4;
+  --text-muted: #77818b;
+
+  --line: rgba(255, 255, 255, 0.14);
   --line-strong: rgba(255, 255, 255, 0.27);
+
   --lime: #dfff54;
   --cyan: #73e3ff;
   --dark-text: #060709;
@@ -19,11 +22,18 @@
 
 
 /* =========================================================
-   GLOBAL WEBSITE
+   GLOBAL RESET
    ========================================================= */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 
 html {
   scroll-behavior: smooth;
+  background-color: var(--background);
 }
 
 body {
@@ -41,6 +51,7 @@ body {
       transparent 30rem
     ),
     var(--background);
+
   font-family:
     Inter,
     Arial,
@@ -65,9 +76,19 @@ a:hover {
   color: var(--lime);
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/*
+  Use a subtle selection color instead of the bright yellow block
+  that previously made selected text look broken.
+*/
+
 ::selection {
-  color: var(--dark-text);
-  background-color: var(--lime);
+  color: var(--text-main);
+  background-color: rgba(115, 227, 255, 0.26);
 }
 
 
@@ -78,8 +99,10 @@ a:hover {
 .navbar {
   min-height: 72px;
   padding: 0.8rem 2.2rem;
+
   background-color: rgba(6, 7, 9, 0.96) !important;
   border-bottom: 1px solid var(--line);
+
   backdrop-filter: blur(18px);
   -webkit-backdrop-filter: blur(18px);
 }
@@ -87,6 +110,7 @@ a:hover {
 .navbar-brand,
 .navbar-title {
   color: var(--text-main) !important;
+
   font-size: 0.85rem;
   font-weight: 900;
   letter-spacing: 2px;
@@ -95,11 +119,14 @@ a:hover {
 
 .navbar-nav .nav-link {
   padding: 0.65rem 0.62rem !important;
+
   color: #a6afb7 !important;
+
   font-size: 0.62rem;
   font-weight: 800;
   letter-spacing: 1.2px;
   text-transform: uppercase;
+
   transition:
     color 0.2s ease,
     transform 0.2s ease;
@@ -122,16 +149,21 @@ a:hover {
 .dropdown-menu {
   max-height: 75vh;
   overflow-y: auto;
+
   padding: 0.65rem;
+
   background-color: #0b0e12;
   border: 1px solid var(--line-strong);
   border-radius: 0;
+
   box-shadow: 0 22px 55px rgba(0, 0, 0, 0.55);
 }
 
 .dropdown-item {
   padding: 0.7rem 0.8rem;
+
   color: #aeb7bf;
+
   font-size: 0.66rem;
   font-weight: 700;
   letter-spacing: 0.8px;
@@ -167,6 +199,7 @@ main.content {
 
 .quarto-title-block .title {
   color: var(--text-main);
+
   font-size: clamp(2.6rem, 7vw, 5.6rem);
   font-weight: 800;
   letter-spacing: -4px;
@@ -207,6 +240,7 @@ main.content strong {
 
 #TOC a {
   color: var(--text-muted);
+
   font-size: 0.74rem;
   font-weight: 700;
   letter-spacing: 0.5px;
@@ -247,12 +281,9 @@ thead {
 .callout {
   color: var(--text-soft);
   background-color: var(--background-card);
+
   border-color: var(--line-strong);
   border-radius: 0;
-}
-
-img {
-  max-width: 100%;
 }
 
 
@@ -263,18 +294,53 @@ img {
 .page-layout-full main.content {
   width: 100%;
   max-width: none;
+
   margin: 0;
   padding: 0;
 }
 
 .page-layout-full #quarto-document-content {
+  width: 100%;
+  max-width: none;
+
+  margin: 0;
   padding: 0;
 }
 
 .portfolio-home {
   width: 100%;
+
   margin: 0;
   padding: 0;
+}
+
+
+/* =========================================================
+   QUARTO WRAPPER FIXES
+   ========================================================= */
+
+/*
+  Quarto sometimes places inline content inside an extra paragraph.
+  "display: contents" allows the contained spans to behave as the
+  actual grid or flex items instead of being pushed together.
+*/
+
+.portfolio-home .hero-topline > p,
+.portfolio-home .section-topline > p {
+  display: contents !important;
+
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/*
+  Remove unnecessary paragraph margins inside button containers.
+*/
+
+.portfolio-home .hero-buttons > p,
+.portfolio-home .contact-buttons > p {
+  margin: 0 !important;
+  padding: 0 !important;
 }
 
 
@@ -284,58 +350,93 @@ img {
 
 .hero-section {
   position: relative;
+
   min-height: calc(100vh - 72px);
+
   padding: 2rem 5vw 2.5rem;
+
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
   overflow: hidden;
+
   border-bottom: 1px solid var(--line);
 }
 
 .hero-section::before {
   content: "";
+
   position: absolute;
   top: 14%;
   right: 3%;
+
   width: 410px;
   height: 410px;
+
   background:
     radial-gradient(
       circle,
       rgba(115, 227, 255, 0.09),
       transparent 68%
     );
+
   pointer-events: none;
 }
 
 .hero-section::after {
   content: "PORTFOLIO / 2026";
+
   position: absolute;
   right: -2rem;
   bottom: 2rem;
   z-index: 0;
+
   color: rgba(255, 255, 255, 0.022);
+
   font-size: clamp(5rem, 13vw, 12rem);
   font-weight: 900;
   letter-spacing: -10px;
   white-space: nowrap;
+
   pointer-events: none;
 }
+
+
+/* =========================================================
+   HERO TOPLINE
+   ========================================================= */
 
 .hero-topline {
   position: relative;
   z-index: 2;
-  display: flex;
-  justify-content: space-between;
-  gap: 1rem;
+
+  width: 100%;
+
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 2rem;
+
   padding-bottom: 1rem;
+
   color: #89939e;
+
   font-size: 0.64rem;
   font-weight: 800;
   letter-spacing: 1.7px;
+  line-height: 1.5;
   text-transform: uppercase;
+
   border-bottom: 1px solid var(--line);
+}
+
+.hero-topline span {
+  display: block;
+}
+
+.hero-topline span:last-child {
+  text-align: right;
 }
 
 .system-active {
@@ -344,13 +445,19 @@ img {
 
 .system-active::before {
   content: "";
+
   width: 7px;
   height: 7px;
+
   margin-right: 8px;
+
   display: inline-block;
+
   background-color: var(--lime);
   border-radius: 50%;
+
   box-shadow: 0 0 15px rgba(223, 255, 84, 0.9);
+
   animation: system-pulse 1.8s infinite;
 }
 
@@ -367,21 +474,34 @@ img {
   }
 }
 
+
+/* =========================================================
+   HERO LAYOUT
+   ========================================================= */
+
 .hero-layout {
   position: relative;
   z-index: 2;
+
   width: 100%;
   flex: 1;
+
   display: grid;
+
   grid-template-columns:
     minmax(0, 1.35fr)
     minmax(310px, 0.65fr);
+
   align-items: center;
+
   gap: clamp(3rem, 7vw, 8rem);
+
   padding: 4rem 0;
 }
 
 .hero-copy {
+  min-width: 0;
+
   animation: hero-entry 0.8s ease both;
 }
 
@@ -399,31 +519,60 @@ img {
 
 .hero-index {
   margin-bottom: 1.4rem;
+
   color: var(--lime);
+
   font-size: 0.7rem;
   font-weight: 800;
   letter-spacing: 2px;
+  line-height: 1.5;
   text-transform: uppercase;
 }
 
 .hero-title {
-  margin: 0;
+  position: static !important;
+
+  display: block !important;
+
+  width: 100%;
+  height: auto !important;
+
+  margin: 0 !important;
+  padding: 0 !important;
+
   color: var(--text-main);
+  background: transparent !important;
+
+  border: 0 !important;
+
   font-size: clamp(4.5rem, 11vw, 10rem);
   font-weight: 900;
   letter-spacing: -9px;
   line-height: 0.79;
   text-transform: uppercase;
+
+  white-space: normal;
+  overflow: visible;
+}
+
+.hero-title::before,
+.hero-title::after {
+  content: none !important;
 }
 
 .hero-title .outline-title {
+  position: static !important;
+
   color: transparent;
+
   -webkit-text-stroke: 1px rgba(242, 242, 237, 0.78);
 }
 
 .hero-role {
   margin-top: 2rem;
+
   color: var(--text-main);
+
   font-size: 0.78rem;
   font-weight: 800;
   letter-spacing: 1.5px;
@@ -431,31 +580,58 @@ img {
   text-transform: uppercase;
 }
 
-.hero-description {
+/*
+  The normal Markdown paragraph directly inside hero-copy
+  becomes the homepage description.
+*/
+
+.hero-copy > p:not(:has(.hero-button)) {
   max-width: 720px;
+
   margin-top: 1.3rem;
+  margin-bottom: 0;
+
   color: var(--text-soft);
+
   font-size: clamp(1rem, 1.6vw, 1.2rem);
   line-height: 1.75;
 }
 
+
+/* =========================================================
+   HERO BUTTONS
+   ========================================================= */
+
 .hero-buttons {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
   gap: 1rem;
+
   margin-top: 2.2rem;
 }
 
 .hero-button {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  min-height: 48px;
+
   padding: 0.95rem 1.3rem;
+
   color: var(--dark-text) !important;
   background-color: var(--lime);
+
   border: 1px solid var(--lime);
+
   font-size: 0.68rem;
   font-weight: 900;
   letter-spacing: 1.2px;
+  line-height: 1.2;
+  text-align: center;
   text-transform: uppercase;
+
   transition:
     color 0.2s ease,
     background-color 0.2s ease,
@@ -467,18 +643,21 @@ img {
   color: var(--dark-text) !important;
   background-color: var(--cyan);
   border-color: var(--cyan);
+
   transform: translateY(-3px);
 }
 
 .hero-button.secondary {
   color: var(--text-main) !important;
   background-color: transparent;
+
   border-color: rgba(255, 255, 255, 0.3);
 }
 
 .hero-button.secondary:hover {
   color: var(--lime) !important;
   background-color: rgba(223, 255, 84, 0.05);
+
   border-color: var(--lime);
 }
 
@@ -489,11 +668,19 @@ img {
 
 .hero-panel {
   position: relative;
+
+  min-width: 0;
+
   padding: 1.5rem;
+
   background-color: rgba(10, 13, 17, 0.9);
+
   border: 1px solid var(--line-strong);
+
   box-shadow: 0 30px 90px rgba(0, 0, 0, 0.46);
+
   animation: panel-entry 0.9s 0.15s ease both;
+
   transition:
     transform 0.25s ease,
     border-color 0.25s ease;
@@ -518,52 +705,71 @@ img {
 
 .hero-panel::before {
   content: "";
+
   position: absolute;
   top: -1px;
   left: -1px;
+
   width: 35px;
   height: 35px;
+
   border-top: 2px solid var(--lime);
   border-left: 2px solid var(--lime);
 }
 
 .hero-panel::after {
   content: "";
+
   position: absolute;
   right: -1px;
   bottom: -1px;
+
   width: 35px;
   height: 35px;
+
   border-right: 2px solid var(--cyan);
   border-bottom: 2px solid var(--cyan);
 }
 
 .panel-heading {
   padding-bottom: 1rem;
+
   color: #929ca7;
+
   font-size: 0.64rem;
   font-weight: 800;
   letter-spacing: 1.7px;
+  line-height: 1.5;
   text-transform: uppercase;
+
   border-bottom: 1px solid var(--line);
 }
 
 .panel-row {
   display: grid;
-  grid-template-columns: 94px 1fr;
+  grid-template-columns: 94px minmax(0, 1fr);
   gap: 1rem;
+
   padding: 1rem 0;
+
   border-bottom: 1px solid rgba(255, 255, 255, 0.11);
 }
 
 .panel-code {
+  display: block;
+
   color: var(--lime);
+
   font-size: 0.64rem;
   font-weight: 800;
+  line-height: 1.5;
 }
 
 .panel-value {
+  display: block;
+
   color: #dce0e3;
+
   font-size: 0.72rem;
   font-weight: 650;
   line-height: 1.55;
@@ -572,7 +778,9 @@ img {
 
 .signal-line {
   height: 3px;
+
   margin-top: 1.5rem;
+
   background-image:
     linear-gradient(
       90deg,
@@ -581,7 +789,9 @@ img {
       var(--cyan),
       transparent
     );
+
   background-size: 200% 100%;
+
   animation: signal-movement 3s linear infinite;
 }
 
@@ -598,20 +808,26 @@ img {
 .hero-scroll {
   position: relative;
   z-index: 2;
+
   display: flex;
   align-items: center;
   gap: 1rem;
+
   color: #828c96;
+
   font-size: 0.62rem;
   font-weight: 800;
   letter-spacing: 1.7px;
+  line-height: 1.5;
   text-transform: uppercase;
 }
 
 .hero-scroll::after {
   content: "";
+
   width: 100px;
   height: 1px;
+
   background-color: rgba(255, 255, 255, 0.3);
 }
 
@@ -622,7 +838,13 @@ img {
 
 .record-section {
   position: relative;
+
+  width: 100%;
+
   padding: 7rem 5vw;
+
+  overflow: visible;
+
   border-bottom: 1px solid var(--line);
 }
 
@@ -636,41 +858,169 @@ img {
     var(--background-alt);
 }
 
+
+/* =========================================================
+   SECTION TOPLINE
+   ========================================================= */
+
 .section-topline {
-  display: flex;
-  justify-content: space-between;
-  gap: 1rem;
-  margin-bottom: 2rem;
+  width: 100%;
+
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 2rem;
+
+  margin: 0 0 2rem;
+  padding: 0;
+
   color: var(--lime);
+
   font-size: 0.67rem;
   font-weight: 800;
   letter-spacing: 1.7px;
+  line-height: 1.5;
   text-transform: uppercase;
+}
+
+.section-topline span {
+  position: static !important;
+
+  display: block !important;
+
+  width: auto !important;
+
+  margin: 0 !important;
+  padding: 0 !important;
+
+  background: transparent !important;
+
+  white-space: normal;
 }
 
 .section-topline span:last-child {
   color: var(--text-muted);
+  text-align: right;
 }
 
-.record-heading {
-  max-width: 1050px;
-  margin: 0 0 3.5rem;
-  color: var(--text-main);
-  font-size: clamp(2.5rem, 6vw, 5.2rem);
-  font-weight: 800;
-  letter-spacing: -4px;
-  line-height: 0.97;
+
+/* =========================================================
+   LARGE SECTION HEADINGS — OVERLAP FIX
+   ========================================================= */
+
+.portfolio-home h2.record-heading {
+  position: static !important;
+  clear: both !important;
+
+  display: block !important;
+
+  width: 100% !important;
+  max-width: 1050px !important;
+
+  height: auto !important;
+  min-height: 0 !important;
+
+  margin: 0 0 3.5rem !important;
+  padding: 0 !important;
+
+  color: var(--text-main) !important;
+  background: transparent !important;
+  background-image: none !important;
+
+  border: 0 !important;
+
+  box-shadow: none !important;
+
+  font-size: clamp(2.5rem, 6vw, 5.2rem) !important;
+  font-weight: 800 !important;
+  letter-spacing: -4px !important;
+  line-height: 1.02 !important;
+
+  text-align: left !important;
+  text-decoration: none !important;
+  text-transform: none !important;
+
+  white-space: normal !important;
+  word-break: normal !important;
+  overflow-wrap: normal !important;
+
+  overflow: visible !important;
+  transform: none !important;
 }
+
+.portfolio-home h2.record-heading::before,
+.portfolio-home h2.record-heading::after {
+  content: none !important;
+  display: none !important;
+}
+
+.portfolio-home h2.record-heading *,
+.portfolio-home h2.record-heading a {
+  position: static !important;
+
+  color: inherit !important;
+  background: transparent !important;
+
+  border: 0 !important;
+
+  box-shadow: none !important;
+
+  text-decoration: none !important;
+  transform: none !important;
+}
+
+/*
+  Hide Quarto's heading anchor icon on the custom homepage headings.
+*/
+
+.portfolio-home h2.record-heading .anchor-section,
+.portfolio-home h2.record-heading a.anchor-section {
+  display: none !important;
+}
+
+/*
+  Remove the normal Quarto heading border and padding from these
+  custom homepage headings.
+*/
+
+.portfolio-home .record-section h2 {
+  border-bottom: 0 !important;
+}
+
+
+/* =========================================================
+   SECTION INTRODUCTION
+   ========================================================= */
 
 .record-intro {
+  position: static;
+
+  display: block;
+
   max-width: 780px;
-  margin-bottom: 3rem;
+
+  margin: 0 0 3rem;
+  padding: 0;
+
   color: var(--text-soft);
+
   font-size: 1.08rem;
   line-height: 1.75;
 }
 
+
+/* =========================================================
+   RECORD CARDS
+   ========================================================= */
+
 .record-grid {
+  position: relative;
+  z-index: 1;
+
+  clear: both;
+
+  width: 100%;
+
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 1rem;
@@ -678,13 +1028,21 @@ img {
 
 .record-card {
   position: relative;
+
+  min-width: 0;
   min-height: 330px;
+
   padding: 1.7rem;
+
   display: flex;
   flex-direction: column;
-  background-color: var(--background-card);
-  border: 1px solid var(--line);
+
   overflow: hidden;
+
+  background-color: var(--background-card);
+
+  border: 1px solid var(--line);
+
   transition:
     transform 0.25s ease,
     border-color 0.25s ease,
@@ -693,41 +1051,85 @@ img {
 
 .record-card::after {
   content: "";
+
   position: absolute;
   right: -45px;
   bottom: -45px;
+
   width: 100px;
   height: 100px;
+
   border: 1px solid rgba(115, 227, 255, 0.15);
+
   transform: rotate(45deg);
+
+  pointer-events: none;
 }
 
 .record-card:hover {
   background-color: #10151b;
   border-color: rgba(223, 255, 84, 0.55);
+
   transform: translateY(-7px);
 }
 
 .card-index {
-  margin-bottom: 3.5rem;
+  position: static;
+
+  display: block;
+
+  margin: 0 0 3.5rem;
+
   color: var(--lime);
+
   font-size: 0.66rem;
   font-weight: 800;
   letter-spacing: 1.5px;
+  line-height: 1.5;
   text-transform: uppercase;
 }
 
 .record-card h3 {
-  margin: 0 0 1.2rem;
+  position: static !important;
+
+  display: block !important;
+
+  width: 100%;
+  height: auto;
+
+  margin: 0 0 1.2rem !important;
+  padding: 0 !important;
+
   color: var(--text-main);
+  background: transparent !important;
+
+  border: 0 !important;
+
   font-size: 1.42rem;
   font-weight: 750;
   line-height: 1.15;
+
+  overflow: visible;
+}
+
+.record-card h3::before,
+.record-card h3::after {
+  content: none !important;
+}
+
+.record-card h3 .anchor-section,
+.record-card h3 a.anchor-section {
+  display: none !important;
 }
 
 .record-card p {
+  position: static;
+
   margin: 0 0 2rem;
+  padding: 0;
+
   color: var(--text-soft);
+
   font-size: 0.93rem;
   line-height: 1.72;
 }
@@ -735,11 +1137,17 @@ img {
 .text-link {
   position: relative;
   z-index: 2;
+
+  display: inline-block;
+
   margin-top: auto;
+
   color: var(--cyan);
+
   font-size: 0.67rem;
   font-weight: 850;
   letter-spacing: 1.1px;
+  line-height: 1.5;
   text-transform: uppercase;
 }
 
@@ -753,6 +1161,13 @@ img {
    ========================================================= */
 
 .tool-grid {
+  position: relative;
+  z-index: 1;
+
+  clear: both;
+
+  width: 100%;
+
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 1rem;
@@ -760,10 +1175,16 @@ img {
 
 .tool-card {
   position: relative;
+
+  min-width: 0;
+
   padding: 2rem;
+
   background-color: transparent;
+
   border-top: 1px solid var(--line-strong);
   border-bottom: 1px solid var(--line);
+
   transition:
     background-color 0.25s ease,
     transform 0.25s ease;
@@ -775,22 +1196,61 @@ img {
 }
 
 .tool-number {
-  margin-bottom: 4rem;
+  position: static;
+
+  display: block;
+
+  margin: 0 0 4rem;
+
   color: var(--cyan);
+
   font-size: 0.68rem;
   font-weight: 850;
   letter-spacing: 1.5px;
+  line-height: 1.5;
 }
 
 .tool-card h3 {
-  margin: 0 0 1rem;
+  position: static !important;
+
+  display: block !important;
+
+  width: 100%;
+  height: auto;
+
+  margin: 0 0 1rem !important;
+  padding: 0 !important;
+
   color: var(--text-main);
+  background: transparent !important;
+
+  border: 0 !important;
+
   font-size: 1.5rem;
   font-weight: 750;
+  line-height: 1.2;
+
+  overflow: visible;
+}
+
+.tool-card h3::before,
+.tool-card h3::after {
+  content: none !important;
+}
+
+.tool-card h3 .anchor-section,
+.tool-card h3 a.anchor-section {
+  display: none !important;
 }
 
 .tool-card p {
+  position: static;
+
+  margin: 0;
+  padding: 0;
+
   color: var(--text-soft);
+
   font-size: 0.94rem;
   line-height: 1.72;
 }
@@ -799,17 +1259,31 @@ img {
   display: flex;
   flex-wrap: wrap;
   gap: 0.45rem;
+
   margin-top: 2rem;
 }
 
+.tag-row > p {
+  display: contents;
+
+  margin: 0;
+  padding: 0;
+}
+
 .tag-row span {
+  display: inline-block;
+
   padding: 0.4rem 0.55rem;
+
   color: var(--lime);
   background-color: rgba(223, 255, 84, 0.045);
+
   border: 1px solid rgba(223, 255, 84, 0.24);
+
   font-size: 0.57rem;
   font-weight: 800;
   letter-spacing: 1px;
+  line-height: 1.2;
 }
 
 
@@ -818,7 +1292,12 @@ img {
    ========================================================= */
 
 .contact-section {
+  position: relative;
+
+  width: 100%;
+
   padding: 8rem 5vw;
+
   background:
     radial-gradient(
       circle at 85% 50%,
@@ -830,27 +1309,60 @@ img {
 
 .contact-label {
   margin-bottom: 2rem;
+
   color: var(--lime);
+
   font-size: 0.68rem;
   font-weight: 850;
   letter-spacing: 1.8px;
+  line-height: 1.5;
   text-transform: uppercase;
 }
 
 .contact-section h2 {
+  position: static !important;
+
+  display: block !important;
+
+  width: 100%;
   max-width: 1050px;
-  margin: 0;
+
+  height: auto !important;
+
+  margin: 0 !important;
+  padding: 0 !important;
+
   color: var(--text-main);
+  background: transparent !important;
+
+  border: 0 !important;
+
   font-size: clamp(3rem, 7vw, 6rem);
   font-weight: 850;
   letter-spacing: -5px;
-  line-height: 0.94;
+  line-height: 0.98;
+
+  overflow: visible;
 }
 
-.contact-section p {
+.contact-section h2::before,
+.contact-section h2::after {
+  content: none !important;
+}
+
+.contact-section h2 .anchor-section,
+.contact-section h2 a.anchor-section {
+  display: none !important;
+}
+
+.contact-section > p {
   max-width: 720px;
+
   margin-top: 2rem;
+  margin-bottom: 0;
+
   color: var(--text-soft);
+
   font-size: 1.05rem;
   line-height: 1.75;
 }
@@ -866,9 +1378,12 @@ img {
 
 .nav-footer {
   padding: 1.5rem 5vw;
+
   color: var(--text-muted);
   background-color: #050607;
+
   border-top: 1px solid var(--line);
+
   font-size: 0.65rem;
   font-weight: 750;
   letter-spacing: 1px;
@@ -897,10 +1412,13 @@ img {
   .navbar-collapse {
     margin-top: 0.8rem;
     padding: 1rem;
+
     background-color: #090c10;
+
     border: 1px solid var(--line);
   }
 }
+
 
 @media (max-width: 900px) {
   .hero-section {
@@ -909,7 +1427,9 @@ img {
 
   .hero-layout {
     grid-template-columns: 1fr;
+
     gap: 3rem;
+
     padding: 4rem 0;
   }
 
@@ -928,7 +1448,12 @@ img {
   }
 
   .hero-topline {
-    flex-direction: column;
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+  }
+
+  .hero-topline span:last-child {
+    text-align: left;
   }
 
   .record-section,
@@ -942,6 +1467,24 @@ img {
 /* =========================================================
    PHONE RESPONSIVENESS
    ========================================================= */
+
+@media (max-width: 700px) {
+  .section-topline {
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+  }
+
+  .section-topline span:last-child {
+    text-align: left;
+  }
+
+  .portfolio-home h2.record-heading {
+    font-size: 2.6rem !important;
+    letter-spacing: -2px !important;
+    line-height: 1.04 !important;
+  }
+}
+
 
 @media (max-width: 550px) {
   .hero-section {
@@ -958,26 +1501,26 @@ img {
     font-size: 0.69rem;
   }
 
-  .hero-description {
+  .hero-copy > p:not(:has(.hero-button)) {
     font-size: 0.98rem;
   }
 
   .hero-buttons {
     flex-direction: column;
+    align-items: stretch;
+  }
+
+  .hero-buttons > p {
+    width: 100%;
   }
 
   .hero-button {
     width: 100%;
-    text-align: center;
   }
 
   .panel-row {
     grid-template-columns: 1fr;
     gap: 0.4rem;
-  }
-
-  .section-topline {
-    flex-direction: column;
   }
 
   .record-section,
@@ -986,9 +1529,9 @@ img {
     padding-left: 1.25rem;
   }
 
-  .record-heading {
-    font-size: 2.5rem;
-    letter-spacing: -2px;
+  .portfolio-home h2.record-heading {
+    font-size: 2.35rem !important;
+    letter-spacing: -1.8px !important;
   }
 
   .contact-section h2 {
