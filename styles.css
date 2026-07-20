@@ -532,9 +532,13 @@ thead {
 .hero-title {
   position: static !important;
 
-  display: block !important;
+  display: flex !important;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
 
   width: 100%;
+  max-width: 100%;
   height: auto !important;
 
   margin: 0 !important;
@@ -545,27 +549,58 @@ thead {
 
   border: 0 !important;
 
-  font-size: clamp(4.5rem, 11vw, 10rem);
+  font-size: clamp(4.5rem, 10vw, 9rem);
   font-weight: 900;
-  letter-spacing: -9px;
-  line-height: 0.79;
+  letter-spacing: -5px;
+  line-height: 0.9;
   text-transform: uppercase;
 
   white-space: normal;
   overflow: visible;
 }
 
+.hero-title > span {
+  position: static !important;
+
+  display: block !important;
+
+  width: auto !important;
+  max-width: 100%;
+  height: auto !important;
+
+  margin: 0 !important;
+  padding: 0 !important;
+
+  color: inherit;
+  background: transparent !important;
+
+  font: inherit;
+  line-height: 0.9;
+
+  white-space: nowrap;
+  overflow: visible;
+}
+
+.hero-title > span + span {
+  margin-top: 0.06em !important;
+}
+
 .hero-title::before,
 .hero-title::after {
   content: none !important;
+  display: none !important;
 }
 
 .hero-title .outline-title {
   position: static !important;
 
-  color: transparent;
+  display: block !important;
 
-  -webkit-text-stroke: 1px rgba(242, 242, 237, 0.78);
+  color: transparent !important;
+  background: transparent !important;
+
+  -webkit-text-stroke: 1.5px rgba(242, 242, 237, 0.82);
+  text-stroke: 1.5px rgba(242, 242, 237, 0.82);
 }
 
 .hero-role {
@@ -1434,8 +1469,13 @@ thead {
   }
 
   .hero-title {
-    font-size: clamp(4rem, 20vw, 7rem);
-    letter-spacing: -6px;
+    font-size: clamp(4rem, 17vw, 7rem);
+    letter-spacing: -4px;
+    line-height: 0.92;
+  }
+
+  .hero-title > span {
+    line-height: 0.92;
   }
 
   .record-grid,
@@ -1493,8 +1533,14 @@ thead {
   }
 
   .hero-title {
-    font-size: 4.15rem;
-    letter-spacing: -5px;
+    font-size: 3.7rem;
+    letter-spacing: -2.5px;
+    line-height: 0.94;
+  }
+
+  .hero-title > span {
+    line-height: 0.94;
+    white-space: normal;
   }
 
   .hero-role {
