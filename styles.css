@@ -1603,43 +1603,6 @@ thead {
    FINAL HOMEPAGE HEADING FIX
    ========================================================= */
 
-.portfolio-home .record-heading {
-  position: static !important;
-  display: block !important;
-  clear: both !important;
-
-  width: 100% !important;
-  max-width: 1050px !important;
-  height: auto !important;
-  min-height: auto !important;
-
-  margin: 0 0 3.5rem !important;
-  padding: 0 !important;
-
-  color: var(--text-main) !important;
-  background: transparent !important;
-
-  border: none !important;
-  box-shadow: none !important;
-
-  font-size: clamp(2.5rem, 6vw, 5.2rem) !important;
-  font-weight: 800 !important;
-  letter-spacing: -4px !important;
-  line-height: 1.05 !important;
-
-  text-align: left !important;
-  text-decoration: none !important;
-  text-transform: none !important;
-
-  white-space: normal !important;
-  word-spacing: normal !important;
-  word-break: normal !important;
-  overflow-wrap: break-word !important;
-
-  overflow: visible !important;
-  transform: none !important;
-}
-
 .portfolio-home .section-topline {
   width: 100% !important;
 
@@ -1676,12 +1639,6 @@ thead {
 }
 
 @media (max-width: 700px) {
-  .portfolio-home .record-heading {
-    font-size: 2.6rem !important;
-    letter-spacing: -2px !important;
-    line-height: 1.08 !important;
-  }
-
   .portfolio-home .section-topline {
     flex-direction: column !important;
     align-items: flex-start !important;
