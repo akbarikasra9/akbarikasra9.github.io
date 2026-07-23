@@ -275,6 +275,10 @@ ul.task-list li input[type="checkbox"] {
     <a class="dropdown-item" href="https://019f8084-b222-7e03-bafd-536df8efeebb.share.connect.posit.cloud/" target="_blank">
  <span class="dropdown-text">Social Media Trend Tracker</span></a>
   </li>  
+        <li>
+    <a class="dropdown-item" href="https://akbarikasra9.shinyapps.io/Network-Analysis-Explorer/" target="_blank">
+ <span class="dropdown-text">Network Analysis Explorer</span></a>
+  </li>  
     </ul>
   </li>
   <li class="nav-item">
@@ -479,8 +483,8 @@ ul.task-list li input[type="checkbox"] {
 <div class="section-topline">
 <p>04 / APPLICATION LIBRARY APPLIED DEVELOPMENT</p>
 </div>
-<section id="additional-applications-across-entertainment-science-workflow-management-and-social-media-analytics." class="level2 record-heading">
-<h2 class="record-heading" data-anchor-id="additional-applications-across-entertainment-science-workflow-management-and-social-media-analytics.">Additional applications across entertainment, science, workflow management, and social-media analytics.</h2>
+<section id="additional-applications-across-entertainment-science-workflow-management-social-media-analytics-and-network-analysis." class="level2 record-heading">
+<h2 class="record-heading" data-anchor-id="additional-applications-across-entertainment-science-workflow-management-social-media-analytics-and-network-analysis.">Additional applications across entertainment, science, workflow management, social-media analytics, and network analysis.</h2>
 <div class="record-grid">
 <div class="record-card">
 <div class="card-index">
@@ -522,6 +526,16 @@ ul.task-list li input[type="checkbox"] {
 <p><a href="https://019f8084-b222-7e03-bafd-536df8efeebb.share.connect.posit.cloud/" class="text-link" target="_blank">LAUNCH TRACKER →</a></p>
 </section>
 </div>
+<div class="record-card">
+<div class="card-index">
+<p>APP / 08</p>
+</div>
+<section id="network-analysis-explorer" class="level3">
+<h3 data-anchor-id="network-analysis-explorer">Network Analysis Explorer</h3>
+<p>An interactive application for exploring directed and weighted relationships, identifying influential accounts, comparing centrality measurements, detecting network communities, and exporting analytical results.</p>
+<p><a href="https://akbarikasra9.shinyapps.io/Network-Analysis-Explorer/" class="text-link" target="_blank">LAUNCH EXPLORER →</a></p>
+</section>
+</div>
 </div>
 </section>
 </div>
@@ -540,6 +554,125 @@ Data analysis. Interactive technology. Applied research.
 </div>
 </div>
 </div>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  /*
+    Elements that should appear while scrolling.
+    The hero section is excluded because it already
+    has its own entrance animations.
+  */
+
+  const revealSelectors = [
+    ".record-section .section-topline",
+    ".record-section .record-heading",
+    ".record-section .record-intro",
+    ".record-section .record-card",
+    ".record-section .tool-card",
+    ".contact-section .contact-label",
+    ".contact-section h2",
+    ".contact-section > p",
+    ".contact-section .contact-buttons"
+  ];
+
+  const revealItems = document.querySelectorAll(
+    revealSelectors.join(",")
+  );
+
+  /*
+    Add the animation class and stagger items so
+    cards appear one after another.
+  */
+
+  revealItems.forEach(function (item, index) {
+
+    item.classList.add("scroll-reveal");
+
+    const parentGrid = item.closest(
+      ".record-grid, .tool-grid"
+    );
+
+    if (parentGrid) {
+      const siblings = Array.from(
+        parentGrid.children
+      );
+
+      const siblingIndex = siblings.indexOf(item);
+
+      item.style.setProperty(
+        "--reveal-delay",
+        Math.max(0, siblingIndex) * 110 + "ms"
+      );
+
+      /*
+        Alternate the direction of cards.
+      */
+
+      if (siblingIndex % 2 === 0) {
+        item.classList.add("reveal-left");
+      } else {
+        item.classList.add("reveal-right");
+      }
+
+    } else {
+      item.style.setProperty(
+        "--reveal-delay",
+        index % 3 * 80 + "ms"
+      );
+    }
+  });
+
+  /*
+    Show everything normally in older browsers
+    that do not support IntersectionObserver.
+  */
+
+  if (!("IntersectionObserver" in window)) {
+    revealItems.forEach(function (item) {
+      item.classList.add("is-visible");
+    });
+
+    return;
+  }
+
+  /*
+    Reveal each element after approximately 14%
+    of it enters the browser window.
+  */
+
+  const revealObserver = new IntersectionObserver(
+    function (entries, observer) {
+
+      entries.forEach(function (entry) {
+
+        if (entry.isIntersecting) {
+          entry.target.classList.add(
+            "is-visible"
+          );
+
+          /*
+            Stop watching after the first reveal so
+            elements do not disappear when scrolling up.
+          */
+
+          observer.unobserve(
+            entry.target
+          );
+        }
+      });
+    },
+    {
+      threshold: 0.14,
+      rootMargin: "0px 0px -7% 0px"
+    }
+  );
+
+  revealItems.forEach(function (item) {
+    revealObserver.observe(item);
+  });
+
+});
+</script>
 
 
 

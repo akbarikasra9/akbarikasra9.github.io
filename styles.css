@@ -38,7 +38,9 @@ html {
 
 body {
   margin: 0;
+
   color: var(--text-main);
+
   background:
     radial-gradient(
       circle at 80% 10%,
@@ -143,7 +145,8 @@ img {
 }
 
 .navbar-toggler:focus {
-  box-shadow: 0 0 0 0.15rem rgba(223, 255, 84, 0.2);
+  box-shadow:
+    0 0 0 0.15rem rgba(223, 255, 84, 0.2);
 }
 
 .dropdown-menu {
@@ -156,7 +159,8 @@ img {
   border: 1px solid var(--line-strong);
   border-radius: 0;
 
-  box-shadow: 0 22px 55px rgba(0, 0, 0, 0.55);
+  box-shadow:
+    0 22px 55px rgba(0, 0, 0, 0.55);
 }
 
 .dropdown-item {
@@ -200,7 +204,8 @@ main.content {
 .quarto-title-block .title {
   color: var(--text-main);
 
-  font-size: clamp(2.6rem, 7vw, 5.6rem);
+  font-size:
+    clamp(2.6rem, 7vw, 5.6rem);
   font-weight: 800;
   letter-spacing: -4px;
   line-height: 0.95;
@@ -321,7 +326,7 @@ thead {
 
 /*
   Quarto sometimes places inline content inside an extra paragraph.
-  "display: contents" allows the contained spans to behave as the
+  display: contents allows the contained spans to behave as the
   actual grid or flex items instead of being pushed together.
 */
 
@@ -384,20 +389,34 @@ thead {
   pointer-events: none;
 }
 
+/*
+  Center the complete background title and keep it small enough
+  for PORTFOLIO / 2026 to remain visible on desktop screens.
+*/
+
 .hero-section::after {
   content: "PORTFOLIO / 2026";
 
   position: absolute;
-  right: -2rem;
+  left: 50%;
+  right: auto;
   bottom: 2rem;
   z-index: 0;
 
+  width: max-content;
+  max-width: calc(100% - 8vw);
+
   color: rgba(255, 255, 255, 0.022);
 
-  font-size: clamp(5rem, 13vw, 12rem);
+  font-size:
+    clamp(4.25rem, 8vw, 8.5rem);
   font-weight: 900;
-  letter-spacing: -10px;
+  letter-spacing: -0.045em;
+  line-height: 0.9;
+  text-align: center;
   white-space: nowrap;
+
+  transform: translateX(-50%);
 
   pointer-events: none;
 }
@@ -414,7 +433,8 @@ thead {
   width: 100%;
 
   display: grid;
-  grid-template-columns: minmax(0, 1fr) auto;
+  grid-template-columns:
+    minmax(0, 1fr) auto;
   align-items: center;
   gap: 2rem;
 
@@ -456,9 +476,11 @@ thead {
   background-color: var(--lime);
   border-radius: 50%;
 
-  box-shadow: 0 0 15px rgba(223, 255, 84, 0.9);
+  box-shadow:
+    0 0 15px rgba(223, 255, 84, 0.9);
 
-  animation: system-pulse 1.8s infinite;
+  animation:
+    system-pulse 1.8s infinite;
 }
 
 @keyframes system-pulse {
@@ -494,7 +516,8 @@ thead {
 
   align-items: center;
 
-  gap: clamp(3rem, 7vw, 8rem);
+  gap:
+    clamp(3rem, 7vw, 8rem);
 
   padding: 4rem 0;
 }
@@ -502,7 +525,8 @@ thead {
 .hero-copy {
   min-width: 0;
 
-  animation: hero-entry 0.8s ease both;
+  animation:
+    hero-entry 0.8s ease both;
 }
 
 @keyframes hero-entry {
@@ -549,7 +573,8 @@ thead {
 
   border: 0 !important;
 
-  font-size: clamp(4.5rem, 10vw, 9rem);
+  font-size:
+    clamp(4.5rem, 10vw, 9rem);
   font-weight: 900;
   letter-spacing: -5px;
   line-height: 0.9;
@@ -599,8 +624,10 @@ thead {
   color: transparent !important;
   background: transparent !important;
 
-  -webkit-text-stroke: 1.5px rgba(242, 242, 237, 0.82);
-  text-stroke: 1.5px rgba(242, 242, 237, 0.82);
+  -webkit-text-stroke:
+    1.5px rgba(242, 242, 237, 0.82);
+  text-stroke:
+    1.5px rgba(242, 242, 237, 0.82);
 }
 
 .hero-role {
@@ -628,7 +655,8 @@ thead {
 
   color: var(--text-soft);
 
-  font-size: clamp(1rem, 1.6vw, 1.2rem);
+  font-size:
+    clamp(1rem, 1.6vw, 1.2rem);
   line-height: 1.75;
 }
 
@@ -712,9 +740,11 @@ thead {
 
   border: 1px solid var(--line-strong);
 
-  box-shadow: 0 30px 90px rgba(0, 0, 0, 0.46);
+  box-shadow:
+    0 30px 90px rgba(0, 0, 0, 0.46);
 
-  animation: panel-entry 0.9s 0.15s ease both;
+  animation:
+    panel-entry 0.9s 0.15s ease both;
 
   transition:
     transform 0.25s ease,
@@ -782,12 +812,14 @@ thead {
 
 .panel-row {
   display: grid;
-  grid-template-columns: 94px minmax(0, 1fr);
+  grid-template-columns:
+    94px minmax(0, 1fr);
   gap: 1rem;
 
   padding: 1rem 0;
 
-  border-bottom: 1px solid rgba(255, 255, 255, 0.11);
+  border-bottom:
+    1px solid rgba(255, 255, 255, 0.11);
 }
 
 .panel-code {
@@ -827,7 +859,8 @@ thead {
 
   background-size: 200% 100%;
 
-  animation: signal-movement 3s linear infinite;
+  animation:
+    signal-movement 3s linear infinite;
 }
 
 @keyframes signal-movement {
@@ -902,7 +935,8 @@ thead {
   width: 100%;
 
   display: grid;
-  grid-template-columns: minmax(0, 1fr) auto;
+  grid-template-columns:
+    minmax(0, 1fr) auto;
   align-items: center;
   gap: 2rem;
 
@@ -966,7 +1000,8 @@ thead {
 
   box-shadow: none !important;
 
-  font-size: clamp(2.5rem, 6vw, 5.2rem) !important;
+  font-size:
+    clamp(2.5rem, 6vw, 5.2rem) !important;
   font-weight: 800 !important;
   letter-spacing: -4px !important;
   line-height: 1.02 !important;
@@ -1005,7 +1040,7 @@ thead {
 }
 
 /*
-  Hide Quarto's heading anchor icon on the custom homepage headings.
+  Hide Quarto's heading anchor icon on custom homepage headings.
 */
 
 .portfolio-home h2.record-heading .anchor-section,
@@ -1057,7 +1092,8 @@ thead {
   width: 100%;
 
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns:
+    repeat(3, minmax(0, 1fr));
   gap: 1rem;
 }
 
@@ -1094,7 +1130,8 @@ thead {
   width: 100px;
   height: 100px;
 
-  border: 1px solid rgba(115, 227, 255, 0.15);
+  border:
+    1px solid rgba(115, 227, 255, 0.15);
 
   transform: rotate(45deg);
 
@@ -1204,7 +1241,8 @@ thead {
   width: 100%;
 
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns:
+    repeat(3, minmax(0, 1fr));
   gap: 1rem;
 }
 
@@ -1311,9 +1349,11 @@ thead {
   padding: 0.4rem 0.55rem;
 
   color: var(--lime);
-  background-color: rgba(223, 255, 84, 0.045);
+  background-color:
+    rgba(223, 255, 84, 0.045);
 
-  border: 1px solid rgba(223, 255, 84, 0.24);
+  border:
+    1px solid rgba(223, 255, 84, 0.24);
 
   font-size: 0.57rem;
   font-weight: 800;
@@ -1372,7 +1412,8 @@ thead {
 
   border: 0 !important;
 
-  font-size: clamp(3rem, 7vw, 6rem);
+  font-size:
+    clamp(3rem, 7vw, 6rem);
   font-weight: 850;
   letter-spacing: -5px;
   line-height: 0.98;
@@ -1452,6 +1493,11 @@ thead {
 
     border: 1px solid var(--line);
   }
+
+  .hero-section::after {
+    font-size:
+      clamp(4rem, 8vw, 7rem);
+  }
 }
 
 
@@ -1469,7 +1515,8 @@ thead {
   }
 
   .hero-title {
-    font-size: clamp(4rem, 17vw, 7rem);
+    font-size:
+      clamp(4rem, 17vw, 7rem);
     letter-spacing: -4px;
     line-height: 0.92;
   }
@@ -1500,6 +1547,13 @@ thead {
   .contact-section {
     padding-top: 5rem;
     padding-bottom: 5rem;
+  }
+
+  .hero-section::after {
+    bottom: 1.75rem;
+
+    font-size:
+      clamp(3.5rem, 9vw, 5.5rem);
   }
 }
 
@@ -1599,6 +1653,8 @@ thead {
     padding-left: 0;
   }
 }
+
+
 /* =========================================================
    FINAL HOMEPAGE HEADING FIX
    ========================================================= */
@@ -1647,5 +1703,87 @@ thead {
 
   .portfolio-home .section-topline span:last-child {
     text-align: left !important;
+  }
+}
+
+/* =========================================================
+   SCROLL-REVEAL ANIMATIONS
+   ========================================================= */
+
+/*
+  Elements begin slightly lower, smaller, blurred,
+  and transparent.
+*/
+
+.scroll-reveal {
+  opacity: 0;
+  filter: blur(7px);
+
+  translate: 0 42px;
+  scale: 0.985;
+
+  transition:
+    opacity 0.85s cubic-bezier(0.16, 1, 0.3, 1),
+    filter 0.85s ease,
+    translate 0.85s cubic-bezier(0.16, 1, 0.3, 1),
+    scale 0.85s cubic-bezier(0.16, 1, 0.3, 1);
+
+  transition-delay:
+    var(--reveal-delay, 0ms);
+
+  will-change:
+    opacity,
+    filter,
+    translate,
+    scale;
+}
+
+/*
+  JavaScript adds this class when the element
+  becomes visible in the browser window.
+*/
+
+.scroll-reveal.is-visible {
+  opacity: 1;
+  filter: blur(0);
+
+  translate: 0 0;
+  scale: 1;
+}
+
+/*
+  Slight horizontal entrance options used for
+  alternating cards and content areas.
+*/
+
+.scroll-reveal.reveal-left {
+  translate: -38px 20px;
+}
+
+.scroll-reveal.reveal-right {
+  translate: 38px 20px;
+}
+
+.scroll-reveal.reveal-left.is-visible,
+.scroll-reveal.reveal-right.is-visible {
+  translate: 0 0;
+}
+
+/*
+  Preserve accessibility for visitors who have
+  reduced-motion preferences enabled.
+*/
+
+@media (prefers-reduced-motion: reduce) {
+  .scroll-reveal,
+  .scroll-reveal.reveal-left,
+  .scroll-reveal.reveal-right {
+    opacity: 1;
+    filter: none;
+
+    translate: 0 0;
+    scale: 1;
+
+    transition: none;
   }
 }
