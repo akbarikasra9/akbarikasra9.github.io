@@ -9,7 +9,7 @@
   --background-alt: #080b0e;
 
   --text-main: #ffffff;
-  --text-soft: e2e6ea;
+  --text-soft: #e2e6ea;
   --text-muted: #a9b1ba;
 
   --line: rgba(255, 255, 255, 0.14);
@@ -1866,4 +1866,65 @@ main.content pre:not(.sourceCode) {
   color: #f5f7fa !important;
   background-color: #0b0e12 !important;
   border: 1px solid var(--line-strong) !important;
+}
+
+/* =========================================================
+   FINAL TEXT CONTRAST OVERRIDE
+   ========================================================= */
+
+body,
+main,
+main.content,
+#quarto-content,
+#quarto-document-content {
+  color: #e8ebef !important;
+}
+
+/* Standard page paragraphs and lists */
+main.content p,
+main.content li,
+main.content td,
+main.content th {
+  color: #e8ebef !important;
+}
+
+/* Homepage introduction text */
+.portfolio-home .record-intro,
+.portfolio-home .record-intro p {
+  color: #e8ebef !important;
+}
+
+/* Application and project descriptions */
+.portfolio-home .record-card p {
+  color: #e8ebef !important;
+}
+
+/* Technical capability descriptions */
+.portfolio-home .tool-card p {
+  color: #e8ebef !important;
+}
+
+/* Hero and contact descriptions */
+.portfolio-home .hero-copy > p:not(:has(.hero-button)),
+.portfolio-home .contact-section > p {
+  color: #e8ebef !important;
+}
+
+/* Keep headings bright white */
+.portfolio-home h1,
+.portfolio-home h2,
+.portfolio-home h3,
+main.content h1,
+main.content h2,
+main.content h3,
+main.content h4 {
+  color: #ffffff !important;
+}
+
+/* Keep navigation colors unchanged */
+.navbar,
+.navbar p,
+.navbar li,
+.navbar a {
+  color: inherit;
 }
