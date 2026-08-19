@@ -242,53 +242,10 @@ ul.task-list li input[type="checkbox"] {
   </li>
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
-  <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-shiny-apps" role="link" data-bs-toggle="dropdown" aria-expanded="false">
- <span class="menu-text">Shiny Apps</span>
-    </a>
-    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-shiny-apps">    
-        <li>
-    <a class="dropdown-item" href="https://019dd61f-326b-aec6-a86f-4499e1e19461.share.connect.posit.cloud" target="_blank">
- <span class="dropdown-text">Game Recommender</span></a>
+  <li class="nav-item">
+    <a class="nav-link" href="./shiny-apps.html"> 
+<span class="menu-text">Shiny Apps</span></a>
   </li>  
-        <li>
-    <a class="dropdown-item" href="https://019e820d-8734-bbcd-099f-95738959381e.share.connect.posit.cloud/" target="_blank">
- <span class="dropdown-text">Cyber Threat Intelligence</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="https://akbarikasra9.shinyapps.io/World_Cup_2026/" target="_blank">
- <span class="dropdown-text">World Cup Predictor</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="https://akbarikasra9.shinyapps.io/Pac-Man/" target="_blank">
- <span class="dropdown-text">PAC-MAN</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="https://akbarikasra9.shinyapps.io/ExoPlanets/" target="_blank">
- <span class="dropdown-text">NASA Exoplanet Explorer</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="https://019efd9a-3307-2030-a294-a239c77a2c8a.share.connect.posit.cloud/" target="_blank">
- <span class="dropdown-text">AI Outlook Workflow</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="https://019f8084-b222-7e03-bafd-536df8efeebb.share.connect.posit.cloud/" target="_blank">
- <span class="dropdown-text">Social Media Trend Tracker</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="https://akbarikasra9.shinyapps.io/Network-Analysis-Explorer/" target="_blank">
- <span class="dropdown-text">Network Analysis Explorer</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="https://019fbb1b-31f6-f2d3-8ee6-15c3b5e7ce83.share.connect.posit.cloud/" target="_blank">
- <span class="dropdown-text">CivicAnalyzer</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="https://019fe862-6e45-5891-77e7-a375794d6ca4.share.connect.posit.cloud/" target="_blank">
- <span class="dropdown-text">Survey Data Explorer</span></a>
-  </li>  
-    </ul>
-  </li>
   <li class="nav-item">
     <a class="nav-link" href="./resume2025.html"> 
 <span class="menu-text">CV / Resume</span></a>
@@ -564,6 +521,16 @@ ul.task-list li input[type="checkbox"] {
 <p><a href="https://019fe862-6e45-5891-77e7-a375794d6ca4.share.connect.posit.cloud/" class="text-link" target="_blank">LAUNCH EXPLORER →</a></p>
 </section>
 </div>
+<div class="record-card">
+<div class="card-index">
+<p>APP / 11</p>
+</div>
+<section id="middle-east-observatory" class="level3">
+<h3 data-anchor-id="middle-east-observatory">Middle East Observatory</h3>
+<p>Explore political, economic, governance, human-rights, infrastructure, and development indicators across the Middle East through interactive maps, country profiles, and comparative analysis.</p>
+<p><a href="https://01a01af2-c302-59b5-ae72-d91207a5b292.share.connect.posit.cloud/" class="text-link" target="_blank">LAUNCH OBSERVATORY →</a></p>
+</section>
+</div>
 </div>
 </section>
 </div>
@@ -621,6 +588,7 @@ document.addEventListener("DOMContentLoaded", function () {
     );
 
     if (parentGrid) {
+
       const siblings = Array.from(
         parentGrid.children
       );
@@ -643,11 +611,14 @@ document.addEventListener("DOMContentLoaded", function () {
       }
 
     } else {
+
       item.style.setProperty(
         "--reveal-delay",
         index % 3 * 80 + "ms"
       );
+
     }
+
   });
 
   /*
@@ -656,11 +627,13 @@ document.addEventListener("DOMContentLoaded", function () {
   */
 
   if (!("IntersectionObserver" in window)) {
+
     revealItems.forEach(function (item) {
       item.classList.add("is-visible");
     });
 
     return;
+
   }
 
   /*
@@ -674,6 +647,7 @@ document.addEventListener("DOMContentLoaded", function () {
       entries.forEach(function (entry) {
 
         if (entry.isIntersecting) {
+
           entry.target.classList.add(
             "is-visible"
           );
@@ -686,8 +660,11 @@ document.addEventListener("DOMContentLoaded", function () {
           observer.unobserve(
             entry.target
           );
+
         }
+
       });
+
     },
     {
       threshold: 0.14,

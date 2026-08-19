@@ -1928,3 +1928,259 @@ main.content h4 {
 .navbar a {
   color: inherit;
 }
+
+/* =========================================================
+   SHINY APPS PAGE
+   ========================================================= */
+
+/* Main intro area */
+
+.apps-hero {
+  width: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 4.5rem 4vw 3rem 4vw;
+  box-sizing: border-box;
+}
+
+.apps-hero .section-topline {
+  margin-bottom: 1.25rem;
+}
+
+.apps-hero .record-heading {
+  max-width: 1100px;
+  margin-bottom: 1.25rem;
+}
+
+.apps-hero .record-intro {
+  max-width: 1000px;
+  line-height: 1.7;
+}
+
+
+/* =========================================================
+   INDIVIDUAL APP SECTIONS
+   ========================================================= */
+
+.embedded-app-section {
+  width: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 4.5rem 4vw 6rem 4vw;
+  box-sizing: border-box;
+}
+
+.embedded-app-section.alternate-app {
+  background: rgba(255, 255, 255, 0.015);
+}
+
+.embedded-app-section + .embedded-app-section {
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+
+/* =========================================================
+   APP INFORMATION
+   ========================================================= */
+
+.app-showcase-header {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 0 2rem 0;
+}
+
+.app-showcase-number {
+  font-family: monospace;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  opacity: 0.65;
+  margin-bottom: 0.8rem;
+}
+
+.app-showcase-header h2 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-size: clamp(2rem, 3vw, 3rem);
+  line-height: 1.15;
+}
+
+.app-showcase-header p {
+  max-width: 1050px;
+  font-size: 1.05rem;
+  line-height: 1.7;
+  margin-bottom: 1rem;
+}
+
+.app-tags {
+  font-family: monospace;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  line-height: 1.7;
+  margin: 1.3rem 0;
+  opacity: 0.8;
+}
+
+
+/* =========================================================
+   LARGE EMBEDDED SHINY APPLICATION
+   ========================================================= */
+
+.app-embed-frame {
+  display: block;
+  width: 100%;
+  height: 850px;
+
+  margin: 2rem 0 0 0;
+  padding: 0;
+
+  overflow: hidden;
+
+  border-radius: 24px;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+
+  background: #071016;
+
+  box-shadow:
+    0 22px 65px rgba(0, 0, 0, 0.32),
+    0 0 0 1px rgba(255, 255, 255, 0.025);
+}
+
+.app-embed-frame iframe {
+  display: block !important;
+
+  width: 100% !important;
+  height: 850px !important;
+
+  min-width: 100% !important;
+  min-height: 850px !important;
+
+  max-width: none !important;
+
+  margin: 0 !important;
+  padding: 0 !important;
+
+  border: 0 !important;
+
+  background: #ffffff;
+}
+
+
+/* =========================================================
+   MAKE SHINY APPS PAGE USE AVAILABLE SCREEN WIDTH
+   ========================================================= */
+
+body:has(.apps-hero) #quarto-content {
+  width: 100%;
+  max-width: none;
+}
+
+body:has(.apps-hero) main.content {
+  width: 100% !important;
+  max-width: none !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+body:has(.apps-hero) .page-columns {
+  width: 100%;
+  max-width: none;
+}
+
+body:has(.apps-hero) .column-page,
+body:has(.apps-hero) .column-screen,
+body:has(.apps-hero) .column-body {
+  width: 100%;
+  max-width: none;
+}
+
+
+/* =========================================================
+   OPEN FULL APPLICATION LINK
+   ========================================================= */
+
+.app-showcase-header .text-link {
+  display: inline-block;
+  margin-top: 0.6rem;
+}
+
+
+/* =========================================================
+   BOTTOM CONTACT SECTION
+   ========================================================= */
+
+body:has(.apps-hero) .contact-section {
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 1100px) {
+
+  .apps-hero {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .embedded-app-section {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .app-embed-frame {
+    height: 750px;
+    border-radius: 20px;
+  }
+
+  .app-embed-frame iframe {
+    height: 750px !important;
+    min-height: 750px !important;
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+  .apps-hero {
+    padding: 3rem 1rem 2rem 1rem;
+  }
+
+  .embedded-app-section {
+    padding: 3rem 1rem 4rem 1rem;
+  }
+
+  .app-showcase-header h2 {
+    font-size: 1.8rem;
+  }
+
+  .app-showcase-header p {
+    font-size: 1rem;
+  }
+
+  .app-tags {
+    font-size: 0.7rem;
+  }
+
+  .app-embed-frame {
+    height: 700px;
+    border-radius: 14px;
+  }
+
+  .app-embed-frame iframe {
+    height: 700px !important;
+    min-height: 700px !important;
+  }
+
+}
