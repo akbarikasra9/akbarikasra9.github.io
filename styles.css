@@ -356,13 +356,13 @@ thead {
 .hero-section {
   position: relative;
 
-  min-height: calc(100vh - 72px);
+  min-height: auto;
 
-  padding: 2rem 5vw 2.5rem;
+  padding: 2rem 5vw 3.5rem;
 
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
 
   overflow: hidden;
 
@@ -385,38 +385,6 @@ thead {
       rgba(115, 227, 255, 0.09),
       transparent 68%
     );
-
-  pointer-events: none;
-}
-
-/*
-  Center the complete background title and keep it small enough
-  for PORTFOLIO / 2026 to remain visible on desktop screens.
-*/
-
-.hero-section::after {
-  content: "PORTFOLIO / 2026";
-
-  position: absolute;
-  left: 50%;
-  right: auto;
-  bottom: 2rem;
-  z-index: 0;
-
-  width: max-content;
-  max-width: calc(100% - 8vw);
-
-  color: rgba(255, 255, 255, 0.022);
-
-  font-size:
-    clamp(4.25rem, 8vw, 8.5rem);
-  font-weight: 900;
-  letter-spacing: -0.045em;
-  line-height: 0.9;
-  text-align: center;
-  white-space: nowrap;
-
-  transform: translateX(-50%);
 
   pointer-events: none;
 }
@@ -873,31 +841,6 @@ thead {
   }
 }
 
-.hero-scroll {
-  position: relative;
-  z-index: 2;
-
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-
-  color: #828c96;
-
-  font-size: 0.62rem;
-  font-weight: 800;
-  letter-spacing: 1.7px;
-  line-height: 1.5;
-  text-transform: uppercase;
-}
-
-.hero-scroll::after {
-  content: "";
-
-  width: 100px;
-  height: 1px;
-
-  background-color: rgba(255, 255, 255, 0.3);
-}
 
 
 /* =========================================================
@@ -1493,11 +1436,6 @@ thead {
 
     border: 1px solid var(--line);
   }
-
-  .hero-section::after {
-    font-size:
-      clamp(4rem, 8vw, 7rem);
-  }
 }
 
 
@@ -1547,13 +1485,6 @@ thead {
   .contact-section {
     padding-top: 5rem;
     padding-bottom: 5rem;
-  }
-
-  .hero-section::after {
-    bottom: 1.75rem;
-
-    font-size:
-      clamp(3.5rem, 9vw, 5.5rem);
   }
 }
 
@@ -1637,10 +1568,6 @@ thead {
   .contact-section h2 {
     font-size: 3rem;
     letter-spacing: -3px;
-  }
-
-  .hero-section::after {
-    display: none;
   }
 
   main.content {
