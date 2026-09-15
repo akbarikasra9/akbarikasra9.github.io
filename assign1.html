@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.9.38">
+<meta name="generator" content="quarto-1.10.18">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -12,10 +12,13 @@
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
 */
-code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
-div.columns{display: flex; gap: min(4vw, 1.5em);}
-div.column{flex: auto; overflow-x: auto;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
@@ -38,10 +41,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-6b6957c917596b414ec0b78690761e87.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-5a1953863e1f72ef3b996ef827f01ca7.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-b19f03b317908103169a621f55486452.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-19ea347c6d452625620c4be3408d5bfe.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -79,7 +82,7 @@ ul.task-list li input[type="checkbox"] {
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
-    <nav class="navbar navbar-expand-xl " data-bs-theme="dark">
+    <nav class="navbar navbar-expand-xxl " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a class="navbar-brand" href="./index.html">
@@ -240,6 +243,17 @@ ul.task-list li input[type="checkbox"] {
   </li>  
     </ul>
   </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-data-visualization" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Data Visualization</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-data-visualization">    
+        <li>
+    <a class="dropdown-item" href="./assign001.html">
+ <span class="dropdown-text">Assignment 1</span></a>
+  </li>  
+    </ul>
+  </li>
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
@@ -329,7 +343,7 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p><strong>AI Disclaimer: I used <em>ChatGPT</em> as an assistant tool in completing this assignment. Specifically, it was used to help refine wording and assist with the formatting and presentation style of my Quarto page. All final content, decisions, and submitted work remain my own.</strong></p>
+<p>AI Disclaimer: I used ChatGPT as an assistant tool in completing this assignment. Specifically, it was used to help refine wording and assist with the formatting and presentation style of my Quarto page. All final content, decisions, and submitted work remain my own.</p>
 <section id="introduction" class="level2">
 <h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
 <ul>
@@ -342,8 +356,8 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="applications-using-database-systems" class="level2">
 <h2 class="anchored" data-anchor-id="applications-using-database-systems">Applications Using Database Systems</h2>
-<p><strong>Question 1</strong><br>
-Name and describe three applications you have used that employ a database system to store and access persistent data.</p>
+<p><strong>Question 1</strong></p>
+<p>Name and describe three applications you have used that employ a database system to store and access persistent data.</p>
 <hr>
 </section>
 <section id="overview-of-applications" class="level2">
@@ -358,19 +372,19 @@ Name and describe three applications you have used that employ a database system
 </section>
 <section id="online-shopping-applications" class="level2">
 <h2 class="anchored" data-anchor-id="online-shopping-applications">Online Shopping Applications</h2>
-<p><strong>Examples</strong>:</p>
+<p><strong>Examples:</strong></p>
 <ul>
-<li><p>Amazon</p></li>
-<li><p>Shein</p></li>
-<li><p>Temu</p></li>
-<li><p>AliExpress</p></li>
+<li>Amazon</li>
+<li>Shein</li>
+<li>Temu</li>
+<li>AliExpress</li>
 </ul>
 <p><strong>Database Usage:</strong></p>
 <ul>
-<li><p>Store product listings</p></li>
-<li><p>Manage user accounts</p></li>
-<li><p>Track order histories and shipping information</p></li>
-<li><p>Maintain payment records</p></li>
+<li>Store product listings</li>
+<li>Manage user accounts</li>
+<li>Track order histories and shipping information</li>
+<li>Maintain payment records</li>
 </ul>
 <p>These databases allow users to browse items, complete transactions, track orders, and view purchase histories.</p>
 <hr>
@@ -379,43 +393,43 @@ Name and describe three applications you have used that employ a database system
 <h2 class="anchored" data-anchor-id="streaming-services">Streaming Services</h2>
 <p><strong>Examples:</strong></p>
 <ul>
-<li><p>Netflix</p></li>
-<li><p>Amazon Prime</p></li>
-<li><p>HBO Max</p></li>
-<li><p>Disney+</p></li>
+<li>Netflix</li>
+<li>Amazon Prime</li>
+<li>HBO Max</li>
+<li>Disney+</li>
 </ul>
 <p><strong>Database Usage</strong></p>
 <ul>
-<li><p>Manage user profiles and subscriptions</p></li>
-<li><p>Store viewing history</p></li>
-<li><p>Generate personalized content recommendations</p></li>
-<li><p>Enable access across smartphones, tablets, laptops, desktops, and gaming consoles</p></li>
+<li>Manage user profiles and subscriptions</li>
+<li>Store viewing history</li>
+<li>Generate personalized content recommendations</li>
+<li>Enable access across smartphones, tablets, laptops, desktops, and gaming consoles</li>
 </ul>
 <hr>
 </section>
 <section id="online-multiplayer-video-games" class="level2">
 <h2 class="anchored" data-anchor-id="online-multiplayer-video-games">Online Multiplayer Video Games</h2>
-<p><strong>Examples</strong>:</p>
+<p><strong>Examples:</strong></p>
 <ul>
-<li><p>Call of Duty</p></li>
-<li><p>Fortnite</p></li>
-<li><p>Battlefield</p></li>
-<li><p>Valorant</p></li>
-<li><p>FIFA</p></li>
+<li>Call of Duty</li>
+<li>Fortnite</li>
+<li>Battlefield</li>
+<li>Valorant</li>
+<li>FIFA</li>
 </ul>
 <p><strong>Database Usage</strong></p>
 <ul>
-<li><p>Store player accounts and user statistics</p></li>
-<li><p>Track achievements and in-game currency</p></li>
-<li><p>Record microtransaction data</p></li>
-<li><p>Support cross-platform play (Xbox, PlayStation, PC/Steam)</p></li>
+<li>Store player accounts and user statistics</li>
+<li>Track achievements and in-game currency</li>
+<li>Record microtransaction data</li>
+<li>Support cross-platform play (Xbox, PlayStation, PC/Steam)</li>
 </ul>
 <hr>
 </section>
 <section id="proposed-domain-applications" class="level2">
 <h2 class="anchored" data-anchor-id="proposed-domain-applications">Proposed Domain Applications</h2>
-<p><strong>Question 2</strong><br>
-Propose three applications in domain projects and describe their purpose, functions, and interface design.</p>
+<p><strong>Question 2</strong></p>
+<p>Propose three applications in domain projects and describe their purpose, functions, and interface design.</p>
 <hr>
 </section>
 <section id="selected-domains" class="level2">
@@ -429,7 +443,7 @@ Propose three applications in domain projects and describe their purpose, functi
 </section>
 <section id="domain-1-cybersecurity" class="level2">
 <h2 class="anchored" data-anchor-id="domain-1-cybersecurity">Domain 1: Cybersecurity</h2>
-<p><strong>Application:</strong> Cyber Incident Reporting Database</p>
+<p><strong>Application: Cyber Incident Reporting Database</strong></p>
 <hr>
 <section id="purpose" class="level3">
 <h3 class="anchored" data-anchor-id="purpose">Purpose</h3>
@@ -462,7 +476,7 @@ Propose three applications in domain projects and describe their purpose, functi
 </section>
 <section id="domain-2-data-analytics" class="level2">
 <h2 class="anchored" data-anchor-id="domain-2-data-analytics">Domain 2: Data Analytics</h2>
-<p><strong>Application:</strong> Research Data Management System</p>
+<p><strong>Application: Research Data Management System</strong></p>
 <hr>
 <section id="purpose-1" class="level3">
 <h3 class="anchored" data-anchor-id="purpose-1">Purpose</h3>
@@ -493,7 +507,7 @@ Propose three applications in domain projects and describe their purpose, functi
 </section>
 <section id="domain-3-machine-learning-artificial-intelligence" class="level2">
 <h2 class="anchored" data-anchor-id="domain-3-machine-learning-artificial-intelligence">Domain 3: Machine Learning / Artificial Intelligence</h2>
-<p><strong>Application:</strong> Machine Learning Model Database</p>
+<p><strong>Application: Machine Learning Model Database</strong></p>
 <hr>
 <section id="purpose-2" class="level3">
 <h3 class="anchored" data-anchor-id="purpose-2">Purpose</h3>
@@ -526,9 +540,9 @@ Propose three applications in domain projects and describe their purpose, functi
 <p>Traditional relational databases became increasingly difficult to scale as data volumes grew rapidly, particularly for scientific and web-centric organizations.</p>
 <p>NoSQL systems emerged in response by providing:</p>
 <ul>
-<li><p>Horizontal scalability</p></li>
-<li><p>High data throughput</p></li>
-<li><p>Flexible, non-relational data models</p></li>
+<li>Horizontal scalability</li>
+<li>High data throughput</li>
+<li>Flexible, non-relational data models</li>
 </ul>
 <p>Unlike traditional relational database management systems, NoSQL databases prioritize performance and scalability over rigid schemas and strict consistency.</p>
 <hr>
@@ -584,6 +598,8 @@ Propose three applications in domain projects and describe their purpose, functi
 </section>
 <section id="thank-you" class="level2">
 <h2 class="anchored" data-anchor-id="thank-you">Thank You</h2>
+<p>© 2026 Kasra Akbari</p>
+<p>Data Analytics · Artificial Intelligence · Research</p>
 
 
 </section>
