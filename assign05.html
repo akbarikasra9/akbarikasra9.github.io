@@ -291,6 +291,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <a class="dropdown-item" href="./assign002.html">
  <span class="dropdown-text">Assignment 2</span></a>
   </li>  
+        <li>
+    <a class="dropdown-item" href="./assign003.html">
+ <span class="dropdown-text">Assignment 3</span></a>
+  </li>  
     </ul>
   </li>
 </ul>
@@ -361,8 +365,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="fu">gc</span>(<span class="at">reset=</span>T)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>          used (Mb) gc trigger (Mb) max used (Mb)
-Ncells  604474 32.3    1376034 73.5   604474 32.3
-Vcells 1103181  8.5    8388608 64.0  1103181  8.5</code></pre>
+Ncells  604508 32.3    1376131 73.5   604508 32.3
+Vcells 1104578  8.5    8388608 64.0  1104578  8.5</code></pre>
 </div>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># install.packages(c("purrr", "magrittr")</span></span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(purrr)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
@@ -470,18 +474,27 @@ Attaching package: 'data.table'</code></pre>
 <pre><code>Warning in download.file(url, destfile = destfile, mode = "wb"): URL '': status
 was 'URL using bad/illegal format or missing URL'</code></pre>
 </div>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb22"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="fu">message</span>(<span class="st">"Finished downloads"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning in download.file(url, destfile = destfile, mode = "wb"): downloaded
+length 110048 != reported length 251210</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning in download.file(url, destfile = destfile, mode = "wb"): URL
+'https://www.govinfo.gov/content/pkg/CREC-2025-10-23/pdf/CREC-2025-10-23-pt1-PgS7733-3.pdf':
+status was 'Stream error in the HTTP/2 framing layer'</code></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb24"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a><span class="fu">message</span>(<span class="st">"Finished downloads"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stderr">
 <pre><code>Finished downloads</code></pre>
 </div>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb24"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a>end.time <span class="ot">&lt;-</span> <span class="fu">Sys.time</span>()</span>
-<span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a>time.taken <span class="ot">&lt;-</span> end.time <span class="sc">-</span> start.time</span>
-<span id="cb24-3"><a href="#cb24-3" aria-hidden="true" tabindex="-1"></a>time.taken</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb26"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a>end.time <span class="ot">&lt;-</span> <span class="fu">Sys.time</span>()</span>
+<span id="cb26-2"><a href="#cb26-2" aria-hidden="true" tabindex="-1"></a>time.taken <span class="ot">&lt;-</span> end.time <span class="sc">-</span> start.time</span>
+<span id="cb26-3"><a href="#cb26-3" aria-hidden="true" tabindex="-1"></a>time.taken</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>Time difference of 46.62039 secs</code></pre>
+<pre><code>Time difference of 2.675969 mins</code></pre>
 </div>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb26"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Print results</span></span>
-<span id="cb26-2"><a href="#cb26-2" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(results)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb28"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Print results</span></span>
+<span id="cb28-2"><a href="#cb28-2" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(results)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code> [1] "Successfully downloaded: https://www.govinfo.gov/content/pkg/CCAL-119scal-2025-10-29/pdf/CCAL-119scal-2025-10-29-pt2.pdf" 
  [2] "Successfully downloaded: https://www.govinfo.gov/content/pkg/CCAL-119scal-2025-10-29/pdf/CCAL-119scal-2025-10-29-pt6.pdf" 
@@ -500,7 +513,7 @@ was 'URL using bad/illegal format or missing URL'</code></pre>
 [15] "Successfully downloaded: https://www.govinfo.gov/content/pkg/CREC-2025-10-23/pdf/CREC-2025-10-23-pt1-PgS7729-5.pdf"       
 [16] "Successfully downloaded: https://www.govinfo.gov/content/pkg/CREC-2025-10-23/pdf/CREC-2025-10-23-pt1-PgS7730.pdf"         
 [17] "Successfully downloaded: https://www.govinfo.gov/content/pkg/CREC-2025-10-23/pdf/CREC-2025-10-23-pt1-PgS7732.pdf"         
-[18] "Successfully downloaded: https://www.govinfo.gov/content/pkg/CREC-2025-10-23/pdf/CREC-2025-10-23-pt1-PgS7733-3.pdf"       
+[18] "Failed to download: https://www.govinfo.gov/content/pkg/CREC-2025-10-23/pdf/CREC-2025-10-23-pt1-PgS7733-3.pdf"            
 [19] "Successfully downloaded: https://www.govinfo.gov/content/pkg/CCAL-119scal-2025-10-23/pdf/CCAL-119scal-2025-10-23-pt2.pdf" 
 [20] "Successfully downloaded: https://www.govinfo.gov/content/pkg/CCAL-119scal-2025-10-23/pdf/CCAL-119scal-2025-10-23-pt6.pdf" </code></pre>
 </div>
