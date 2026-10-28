@@ -1,0 +1,1029 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.10.18">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Assignment 7 – KASRA AKBARI</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-5a1953863e1f72ef3b996ef827f01ca7.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-19ea347c6d452625620c4be3408d5bfe.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<style>html{ scroll-behavior: smooth; }</style>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-xxl " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">KASRA AKBARI</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="./index.html"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./about.html"> 
+<span class="menu-text">About</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-projects" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Projects</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-projects">    
+        <li>
+    <a class="dropdown-item" href="./km.html">
+ <span class="dropdown-text">Knowledge Mining Project</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./im.html">
+ <span class="dropdown-text">Information Management Project</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="./research.html"> 
+<span class="menu-text">Research</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-data-methods" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Data Methods</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-data-methods">    
+        <li>
+    <a class="dropdown-item" href="./assign01.html">
+ <span class="dropdown-text">Assignment 1</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./assign02.html">
+ <span class="dropdown-text">Assignment 2</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./assign03.html">
+ <span class="dropdown-text">Assignment 3</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./assign04.html">
+ <span class="dropdown-text">Assignment 4</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./assign05.html">
+ <span class="dropdown-text">Assignment 5</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./assign06p1.html">
+ <span class="dropdown-text">Assignment 6 — Part 1</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./assign06p2.html">
+ <span class="dropdown-text">Assignment 6 — Part 2</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./podcast.html">
+ <span class="dropdown-text">Podcast Review</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-knowledge-mining" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Knowledge Mining</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-knowledge-mining">    
+        <li>
+    <a class="dropdown-item" href="./assignment1.html">
+ <span class="dropdown-text">Assignment 1</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./assignment2.html">
+ <span class="dropdown-text">Assignment 2</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./assignment3.html">
+ <span class="dropdown-text">Assignment 3</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./assignment4.html">
+ <span class="dropdown-text">Assignment 4</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./weeklyreflection1.html">
+ <span class="dropdown-text">Weekly Reflections</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./articlecomp.html">
+ <span class="dropdown-text">Article Comparison</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./readingrout.html">
+ <span class="dropdown-text">Reading Routine</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-information-management" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Information Management</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-information-management">    
+        <li>
+    <a class="dropdown-item" href="./assign1.html">
+ <span class="dropdown-text">Assignment 1</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./assign2.html">
+ <span class="dropdown-text">Assignment 2</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./assign3.html">
+ <span class="dropdown-text">Assignment 3</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./assign4.html">
+ <span class="dropdown-text">Assignment 4</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./assign5.html">
+ <span class="dropdown-text">Assignment 5</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./assign6.html">
+ <span class="dropdown-text">Assignment 6</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./assign7.html">
+ <span class="dropdown-text">Assignment 7</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./assign8.html">
+ <span class="dropdown-text">Assignment 8</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./AI Lab 1.html">
+ <span class="dropdown-text">AI Lab 1</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./projectprogress.html">
+ <span class="dropdown-text">Project Progress</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-data-visualization" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Data Visualization</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-data-visualization">    
+        <li>
+    <a class="dropdown-item" href="./assign001.html">
+ <span class="dropdown-text">Assignment 1</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./assign002.html">
+ <span class="dropdown-text">Assignment 2</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./assign003.html">
+ <span class="dropdown-text">Assignment 3</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./assign004.html">
+ <span class="dropdown-text">Assignment 4</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./assign005.html">
+ <span class="dropdown-text">Assignment 5</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./assign006.html">
+ <span class="dropdown-text">Assignment 6</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./assign007.html">
+ <span class="dropdown-text">Assignment 7</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./prepare-for-class-5.html">
+ <span class="dropdown-text">Prepare for Class 5</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-research-design-i" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Research Design I</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-research-design-i">    
+        <li>
+    <a class="dropdown-item" href="./assignment01.html">
+ <span class="dropdown-text">Assignment 1</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./assignment02.html">
+ <span class="dropdown-text">Assignment 2</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./assignment03.html">
+ <span class="dropdown-text">Assignment 3</span></a>
+  </li>  
+    </ul>
+  </li>
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="./shiny-apps.html"> 
+<span class="menu-text">Shiny Apps</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./power-bi.html"> 
+<span class="menu-text">Power BI</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./files/Kasra_Akbari_Resume_2026.pdf"> 
+<span class="menu-text">CV / Resume</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a></li>
+  <li><a href="#data-source" id="toc-data-source" class="nav-link" data-scroll-target="#data-source">Data Source</a></li>
+  <li><a href="#interactive-dashboard" id="toc-interactive-dashboard" class="nav-link" data-scroll-target="#interactive-dashboard">Interactive Dashboard</a></li>
+  <li><a href="#chart-9-scatterplot" id="toc-chart-9-scatterplot" class="nav-link" data-scroll-target="#chart-9-scatterplot">Chart 9: Scatterplot</a>
+  <ul class="collapse">
+  <li><a href="#healthcare-spending-and-life-expectancy" id="toc-healthcare-spending-and-life-expectancy" class="nav-link" data-scroll-target="#healthcare-spending-and-life-expectancy">Healthcare Spending and Life Expectancy</a></li>
+  </ul></li>
+  <li><a href="#chart-18-bubble-chart" id="toc-chart-18-bubble-chart" class="nav-link" data-scroll-target="#chart-18-bubble-chart">Chart 18: Bubble Chart</a>
+  <ul class="collapse">
+  <li><a href="#healthcare-spending-life-expectancy-and-economic-development" id="toc-healthcare-spending-life-expectancy-and-economic-development" class="nav-link" data-scroll-target="#healthcare-spending-life-expectancy-and-economic-development">Healthcare Spending, Life Expectancy, and Economic Development</a></li>
+  </ul></li>
+  <li><a href="#chart-7-histogram" id="toc-chart-7-histogram" class="nav-link" data-scroll-target="#chart-7-histogram">Chart 7: Histogram</a>
+  <ul class="collapse">
+  <li><a href="#distribution-of-healthcare-expenditure" id="toc-distribution-of-healthcare-expenditure" class="nav-link" data-scroll-target="#distribution-of-healthcare-expenditure">Distribution of Healthcare Expenditure</a></li>
+  </ul></li>
+  <li><a href="#reactivity-and-interaction" id="toc-reactivity-and-interaction" class="nav-link" data-scroll-target="#reactivity-and-interaction">Reactivity and Interaction</a>
+  <ul class="collapse">
+  <li><a href="#interactive-controls" id="toc-interactive-controls" class="nav-link" data-scroll-target="#interactive-controls">Interactive Controls</a></li>
+  <li><a href="#shared-reactive-data" id="toc-shared-reactive-data" class="nav-link" data-scroll-target="#shared-reactive-data">Shared Reactive Data</a></li>
+  <li><a href="#interactive-visualizations" id="toc-interactive-visualizations" class="nav-link" data-scroll-target="#interactive-visualizations">Interactive Visualizations</a></li>
+  </ul></li>
+  <li><a href="#key-takeaways" id="toc-key-takeaways" class="nav-link" data-scroll-target="#key-takeaways">Key Takeaways</a></li>
+  <li><a href="#limitations" id="toc-limitations" class="nav-link" data-scroll-target="#limitations">Limitations</a></li>
+  <li><a href="#teamwork-and-development" id="toc-teamwork-and-development" class="nav-link" data-scroll-target="#teamwork-and-development">Teamwork and Development</a></li>
+  <li><a href="#project-links" id="toc-project-links" class="nav-link" data-scroll-target="#project-links">Project Links</a></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
+  <li><a href="#ai-use-disclaimer" id="toc-ai-use-disclaimer" class="nav-link" data-scroll-target="#ai-use-disclaimer">AI Use Disclaimer</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Assignment 7</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="overview" class="level2">
+<h2 class="anchored" data-anchor-id="overview">Overview</h2>
+<p><strong>Research Question:</strong> Do countries that spend more on healthcare per person tend to have longer life expectancies?</p>
+<p>For Assignment 7, our team developed an interactive R Shiny dashboard to explore relationships between healthcare spending, life expectancy, and economic development across countries.</p>
+<p>Our dashboard includes three visualizations based on Andrew Abela’s <em>Chart Suggestions—A Thought-Starter</em>:</p>
+<ol type="1">
+<li><strong>Chart 9:</strong> Scatterplot — Relationship between two numeric variables.</li>
+<li><strong>Chart 18:</strong> Bubble Chart — Relationship among three numeric variables.</li>
+<li><strong>Chart 7:</strong> Histogram — Distribution of a numeric variable.</li>
+</ol>
+<p>These charts allow users to investigate patterns across countries and compare differences in healthcare spending and health outcomes.</p>
+</section>
+<section id="data-source" class="level2">
+<h2 class="anchored" data-anchor-id="data-source">Data Source</h2>
+<p><strong>Dataset:</strong> World Development Indicators (WDI)</p>
+<p><strong>Source:</strong> World Bank</p>
+<p><strong>Year:</strong> 2023</p>
+<p><strong>Website:</strong> https://databank.worldbank.org/source/world-development-indicators</p>
+<p>We examine the following variables:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Variable</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Healthcare Expenditure per Capita</td>
+<td>Healthcare spending per person (current US<span class="math inline">\() |
+| Life Expectancy at Birth | Expected years of life at birth |
+| GDP per Capita | Economic output per person (current US\)</span>)</td>
+</tr>
+<tr class="even">
+<td>Continent</td>
+<td>Geographic grouping of countries</td>
+</tr>
+</tbody>
+</table>
+<p>The World Development Indicators dataset provides internationally comparable measures of economic development and population health.</p>
+<p>Because countries differ in population size, income, and healthcare systems, these variables help us explore whether higher spending corresponds with better health outcomes.</p>
+</section>
+<section id="interactive-dashboard" class="level2">
+<h2 class="anchored" data-anchor-id="interactive-dashboard">Interactive Dashboard</h2>
+<p>Our team created and deployed an interactive R Shiny application using Posit Connect Cloud.</p>
+<p>The dashboard allows users to explore the data, adjust filters, and examine different relationships through three linked visualizations.</p>
+<div style="border: 1px solid #dddddd; border-radius: 12px; overflow: hidden; margin: 24px 0;">
+<iframe src="https://01a17dfd-efe1-ae0b-dd08-8437d0f03943.share.connect.posit.cloud/" width="100%" height="900" style="border: none;" loading="lazy" title="Assignment 7 Interactive Healthcare Dashboard">
+</iframe>
+</div>
+<p><a href="https://01a17dfd-efe1-ae0b-dd08-8437d0f03943.share.connect.posit.cloud/" target="_blank"><strong>Open the Full Interactive Dashboard</strong></a></p>
+</section>
+<section id="chart-9-scatterplot" class="level2">
+<h2 class="anchored" data-anchor-id="chart-9-scatterplot">Chart 9: Scatterplot</h2>
+<section id="healthcare-spending-and-life-expectancy" class="level3">
+<h3 class="anchored" data-anchor-id="healthcare-spending-and-life-expectancy">Healthcare Spending and Life Expectancy</h3>
+<p>The scatterplot examines the relationship between two quantitative variables:</p>
+<ul>
+<li><strong>X-axis:</strong> Healthcare expenditure per capita (US$).</li>
+<li><strong>Y-axis:</strong> Life expectancy at birth (years).</li>
+<li><strong>Color:</strong> Continent.</li>
+</ul>
+<p>Each point represents a country.</p>
+<p><strong>What the chart shows:</strong></p>
+<p>The visualization allows us to examine whether countries with higher healthcare expenditures tend to have longer life expectancies.</p>
+<p>It also helps identify countries that spend substantially more on healthcare without achieving correspondingly higher life expectancy.</p>
+<p>The relationship is observational and does not establish that healthcare spending causes longer life expectancy.</p>
+</section>
+</section>
+<section id="chart-18-bubble-chart" class="level2">
+<h2 class="anchored" data-anchor-id="chart-18-bubble-chart">Chart 18: Bubble Chart</h2>
+<section id="healthcare-spending-life-expectancy-and-economic-development" class="level3">
+<h3 class="anchored" data-anchor-id="healthcare-spending-life-expectancy-and-economic-development">Healthcare Spending, Life Expectancy, and Economic Development</h3>
+<p>The bubble chart expands the scatterplot by introducing a third quantitative variable.</p>
+<ul>
+<li><strong>X-axis:</strong> Healthcare expenditure per capita.</li>
+<li><strong>Y-axis:</strong> Life expectancy at birth.</li>
+<li><strong>Bubble size:</strong> GDP per capita.</li>
+<li><strong>Color:</strong> Continent.</li>
+</ul>
+<p>Each bubble represents a country.</p>
+<p><strong>What the chart shows:</strong></p>
+<p>This visualization allows us to explore how economic development relates to healthcare spending and population health.</p>
+<p>Larger bubbles represent countries with higher GDP per capita.</p>
+<p>By comparing bubble positions and sizes, users can investigate whether wealthier countries also tend to spend more on healthcare and achieve longer life expectancies.</p>
+</section>
+</section>
+<section id="chart-7-histogram" class="level2">
+<h2 class="anchored" data-anchor-id="chart-7-histogram">Chart 7: Histogram</h2>
+<section id="distribution-of-healthcare-expenditure" class="level3">
+<h3 class="anchored" data-anchor-id="distribution-of-healthcare-expenditure">Distribution of Healthcare Expenditure</h3>
+<p>Our team selected <strong>Chart 7 from Abela’s Thought-Starter</strong>, a histogram, as the third visualization.</p>
+<p>The histogram displays the distribution of healthcare expenditure per capita across countries.</p>
+<ul>
+<li><strong>X-axis:</strong> Healthcare expenditure per capita (US$).</li>
+<li><strong>Y-axis:</strong> Number of countries.</li>
+<li><strong>Grouping:</strong> Selected countries or continents.</li>
+</ul>
+<p><strong>Why this chart suits our data:</strong></p>
+<p>A histogram is appropriate because healthcare expenditure is a continuous numeric variable.</p>
+<p>Unlike the scatterplot and bubble chart, which focus on relationships, the histogram highlights how spending levels are distributed across countries.</p>
+<p>It helps identify the concentration of countries at different spending levels and whether the distribution is skewed.</p>
+</section>
+</section>
+<section id="reactivity-and-interaction" class="level2">
+<h2 class="anchored" data-anchor-id="reactivity-and-interaction">Reactivity and Interaction</h2>
+<p>Our Shiny application includes interactive features that allow users to explore the same dataset from multiple perspectives.</p>
+<section id="interactive-controls" class="level3">
+<h3 class="anchored" data-anchor-id="interactive-controls">Interactive Controls</h3>
+<p><strong>Continent selection</strong></p>
+<p>Users can select geographic regions to compare countries within or across continents.</p>
+<p><strong>Healthcare expenditure filtering</strong></p>
+<p>Users can adjust the spending range to focus on countries meeting selected criteria.</p>
+<p><strong>Chart-specific controls</strong></p>
+<p>Additional controls allow users to explore different chart settings and visual relationships.</p>
+</section>
+<section id="shared-reactive-data" class="level3">
+<h3 class="anchored" data-anchor-id="shared-reactive-data">Shared Reactive Data</h3>
+<p>The dashboard uses R Shiny’s <code>reactive()</code> functionality to maintain a common filtered dataset across multiple charts.</p>
+<p>When users change the shared filters, the relevant visualizations update together.</p>
+<p>This makes comparisons more consistent because the charts reflect the same selected observations.</p>
+</section>
+<section id="interactive-visualizations" class="level3">
+<h3 class="anchored" data-anchor-id="interactive-visualizations">Interactive Visualizations</h3>
+<p>Interactive chart features help users explore individual observations and understand differences among countries.</p>
+<p>These interactions make the dashboard more useful than a collection of static charts.</p>
+</section>
+</section>
+<section id="key-takeaways" class="level2">
+<h2 class="anchored" data-anchor-id="key-takeaways">Key Takeaways</h2>
+<p>Our dashboard demonstrates how different visualization techniques answer complementary questions.</p>
+<p><strong>Scatterplot:</strong> Examines the relationship between healthcare spending and life expectancy.</p>
+<p><strong>Bubble chart:</strong> Adds GDP per capita to investigate the role of economic development.</p>
+<p><strong>Histogram:</strong> Examines the distribution of healthcare spending across countries.</p>
+<p>Together, these visualizations help users investigate global differences in healthcare investment, economic conditions, and health outcomes.</p>
+<p>The dashboard supports exploratory analysis rather than causal conclusions.</p>
+</section>
+<section id="limitations" class="level2">
+<h2 class="anchored" data-anchor-id="limitations">Limitations</h2>
+<p>Several limitations should be considered when interpreting the visualizations:</p>
+<ul>
+<li><strong>Correlation is not causation:</strong> Higher healthcare spending does not necessarily cause longer life expectancy.</li>
+<li><strong>Other influences:</strong> Education, public health infrastructure, inequality, and healthcare accessibility may affect outcomes.</li>
+<li><strong>Cross-sectional data:</strong> A single year cannot establish how these relationships change over time.</li>
+<li><strong>Missing observations:</strong> Countries without complete data may be excluded from some comparisons.</li>
+<li><strong>National averages:</strong> Country-level measures may conceal substantial inequalities within countries.</li>
+</ul>
+</section>
+<section id="teamwork-and-development" class="level2">
+<h2 class="anchored" data-anchor-id="teamwork-and-development">Teamwork and Development</h2>
+<p>Our team collaborated on data preparation, chart development, dashboard construction, and presentation.</p>
+<p>The project brought together several components:</p>
+<ol type="1">
+<li>Obtaining and preparing World Bank data.</li>
+<li>Developing the required charts using R.</li>
+<li>Building reactive controls in Shiny.</li>
+<li>Integrating the visualizations into one dashboard.</li>
+<li>Deploying the application through Posit Connect Cloud.</li>
+<li>Publishing the dashboard on our project website.</li>
+</ol>
+<p>Individual responsibilities and contributions are documented in the repository’s <code>SYNERGY.md</code> file.</p>
+</section>
+<section id="project-links" class="level2">
+<h2 class="anchored" data-anchor-id="project-links">Project Links</h2>
+<p><strong>GitHub Repository:</strong><br>
+https://github.com/akbarikasra9/akbarikasra9.github.io</p>
+<p><strong>Interactive Shiny Application:</strong><br>
+https://01a17dfd-efe1-ae0b-dd08-8437d0f03943.share.connect.posit.cloud/</p>
+<p><strong>Assignment 7 Website:</strong><br>
+https://akbarikasra9.github.io/assign007.html</p>
+</section>
+<section id="references" class="level2">
+<h2 class="anchored" data-anchor-id="references">References</h2>
+<p>Abela, A. (2006). <em>Chart Suggestions—A Thought-Starter.</em></p>
+<p>World Bank. (2023). <em>World Development Indicators.</em> https://databank.worldbank.org/source/world-development-indicators</p>
+<p>Ho, K. (2026). <em>Assignment 7: Hackathon Part 2.</em> EPPS 6356 Data Visualization, University of Texas at Dallas.</p>
+</section>
+<section id="ai-use-disclaimer" class="level2">
+<h2 class="anchored" data-anchor-id="ai-use-disclaimer">AI Use Disclaimer</h2>
+<p>ChatGPT was used to assist with coding, debugging, organizing documentation, and improving the clarity of written explanations. It also supported the development and refinement of the R Shiny dashboard and its interactive features.</p>
+<p>All AI-generated suggestions were reviewed and adapted by the team. The team remained responsible for the data, visualizations, application functionality, interpretation of results, and final project deliverables.</p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
+            }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>© 2026 Kasra Akbari</p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+<p>Data Analytics · Artificial Intelligence · Research</p>
+</div>
+  </div>
+</footer>
+
+
+
+
+<script src="site_libs/quarto-html/zenscroll-min.js"></script>
+</body></html>
