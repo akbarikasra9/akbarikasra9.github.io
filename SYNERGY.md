@@ -40,8 +40,13 @@ We would also test the reactive filters and dashboard layout throughout developm
 **GitHub Repository:**  
 https://github.com/akbarikasra9/akbarikasra9.github.io
 
+## AI Use Disclaimer
+
+ChatGPT was used to assist with coding, debugging, organizing documentation, and improving the clarity of written explanations. It also supported the development and refinement of the R Shiny dashboard and its interactive features.
+
+All AI-generated suggestions were reviewed and adapted by the team. The team remained responsible for the data, visualizations, application functionality, interpretation of results, and final project deliverables.
+
 **Posit Connect Cloud Application:**  
 https://01a17dfd-efe1-ae0b-dd08-8437d0f03943.share.connect.posit.cloud/
-
 **Assignment 7 Website:**  
 https://akbarikasra9.github.io/assign007.html
