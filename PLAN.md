@@ -41,3 +41,97 @@ U.S. Census Bureau. (n.d.). American Community Survey 5-year estimates, Table S0
 U.S. Department of Agriculture, Economic Research Service. (2024). 2023 Rural-Urban Continuum Codes [Data set]. https://www.ers.usda.gov/data-products/rural-urban-continuum-codes
 
 Villarreal, A., and Tamborini, C. R. (2023). The economic assimilation of second-generation men: An analysis of earnings trajectories using administrative records. Demography, 60(5), 1415–1440. https://doi.org/10.1215/00703370-10924116
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+# Assignment 9: Spatial Mapping Plan
+
+## 1. Geographic Units and Boundaries
+
+The Texas Change Atlas examines geographic differences between foreign-born and native-born Texans across all 254 Texas counties.
+
+Each geographic unit represents one county, identified by its five-digit Federal Information Processing Standards (FIPS) code, stored as `GEOID`.
+
+County-level data are stored in `county_change.csv`, while geographic boundaries are stored in `tx_counties.rds`. These datasets are joined using `GEOID`, which provides a consistent geographic identifier.
+
+The spatial join preserves all 254 Texas county boundaries, including counties without available estimates. Missing values are displayed separately rather than replaced with estimated values.
+
+The boundary file originates from the existing Texas Change Atlas project. Its original geographic source should be documented alongside the dataset.
+
+## 2. Variables and Mapping Methods
+
+The project examines three principal measures:
+
+| Variable | Measurement type | Units | Visualization |
+|---|---|---|---|
+| Earnings score | Index | 100 represents equal earnings | Choropleth |
+| College degree gap | Difference between shares | Percentage points | Choropleth |
+| Unemployment gap | Difference between rates | Percentage points | Choropleth |
+| County population | Count | Residents | Proportional symbols |
+
+The choropleth maps use normalized measures to compare counties. County population is represented using proportional symbols because it measures an absolute count rather than a rate or index.
+
+The dashboard also examines reported changes between the 2015–2019 and 2020–2024 ACS measurement periods.
+
+For change-focused maps, teal represents narrowing differences, coral represents widening differences, and gray represents no clear change. Darker colors indicate larger observed changes within their reported classifications.
+
+Counties with insufficient estimates or reliability concerns are identified separately. The original reported classifications are preserved without inventing additional statistical significance results.
+
+## 3. Coordinate Reference Systems
+
+Three coordinate reference systems are used:
+
+**EPSG:4326 — Geographic coordinates**
+
+County boundaries are stored or transformed to longitude and latitude coordinates. This format provides compatibility with geographic datasets and Leaflet.
+
+**EPSG:5070 — NAD83 / Conus Albers Equal Area**
+
+This projection is used for static Texas maps because it preserves relative area across the contiguous United States. It is appropriate for comparing county geography without the area distortion associated with Web Mercator.
+
+**EPSG:3857 — Web Mercator**
+
+Leaflet displays interactive maps using Web Mercator. The application supplies county geometries in EPSG:4326, which Leaflet projects for browser display.
+
+The static mapping exercise also compares EPSG:4326, EPSG:3857, and EPSG:5070 to demonstrate how projections influence geographic appearance.
+
+## 4. Interactive Map and Dashboard
+
+The reactive map is incorporated into the Texas Change Atlas Shiny dashboard, extending the visualizations developed for Assignment 8.
+
+The dashboard allows users to explore county-level differences through several interactive controls:
+
+- **Indicator:** Select earnings, college degree gap, or unemployment gap.
+- **County classification:** Filter counties by the available metro/rural categories.
+- **Measurement period:** Select 2015–2019 or 2020–2024 as the reference period for summary values.
+- **Map navigation:** Zoom and explore individual county boundaries, including detailed Dallas–Fort Worth and Houston views.
+
+A shared Shiny `reactive()` dataset controls the geographic observations displayed on the map, summary statistics, and companion chart.
+
+The dashboard updates the number of counties with available data, the number with missing values, the median of the selected measure, and a chart highlighting counties with large reported changes.
+
+County popups provide additional information, including the county name, reported values, observed change, county classification, and data-quality qualifications.
+
+Data and geographic boundaries are loaded and joined outside the Shiny server to avoid unnecessary repeated processing.
+
+## 5. Data Sources and Limitations
+
+The primary county-level data come from the U.S. Census Bureau's American Community Survey (ACS), including Table S0501, for the 2015–2019 and 2020–2024 measurement periods.
+
+County classifications use the USDA Rural-Urban Continuum Codes.
+
+Some counties do not have available estimates for every variable. These missing observations are preserved and identified rather than removed or imputed.
+
+The maps describe geographic patterns and reported differences between measurement periods. They do not establish causal relationships.
+
+Reported change classifications are maintained from the existing analysis. The mapping application does not independently recalculate statistical significance or margins of error when the necessary underlying information is unavailable.
+
+## 6. Assignment Deliverables
+
+The Assignment 9 deliverables are:
+
+- **Part A:** This spatial mapping plan in `PLAN.md`.
+- **Part B:** Static maps published through `maps.qmd`, including the spatial join, projection comparison, choropleth, classification comparison, and proportional-symbol map.
+- **Part C:** A reactive Leaflet map within the Texas Change Atlas Shiny dashboard, deployed through Posit Connect Cloud and embedded on the project website.
+
+The source code and supporting datasets are maintained in the project repository to support transparency and reproducibility.
